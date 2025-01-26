@@ -88,7 +88,9 @@ def transform(metadata, savingPath=outputDir, isErrorDealing=False):
     songName = metadata["name"]
     illustrationPath = os.path.join(illustrationDir, metadata["illustration"])
     musicPath = os.path.join(musicDir, metadata["music"])
-
+    if not os.path.exists(illustrationPath) and not os.path.exists(musicPath):
+        print("Error: 音频文件或图片文件不存在")
+        return
 
     #依次处理铺面
     for chart in metadata["charts"]:
@@ -98,6 +100,10 @@ def transform(metadata, savingPath=outputDir, isErrorDealing=False):
         inputChartPath = os.path.join(chartDir, chart["chart"])
         outputName = "%s [%s]"%(metadata["name"], level)
         print("  正在处理 %s 谱面"%level)
+
+        if not os.path.exists(inputChartPath):
+            print("Error: 谱面文件不存在!")
+            continue
 
         with open(inputChartPath,"r",encoding="utf-8") as file_json:
             inputChart = json.loads(file_json.read())

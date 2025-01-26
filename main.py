@@ -29,6 +29,7 @@ class MusicPlayer:
 #程序运行目录检查，配置加载
 datapath = config.dataPath
 songsInformationFile = os.path.join(datapath, "songsInformation.json")
+onProcessingSongsInformationFile = os.path.join(datapath, "onProcessingSongsInformation.json")
 musicsPath = config.musicsPath
 illustrationPath = config.illustrationsPath
 
@@ -56,15 +57,64 @@ def selectDir():
                                 title="选择文件保存目录")
     return filepath
 
-    
-
-def generateLutAndPezFiles(musicList, mode=0):
-    #生成完整谱面查找表和谱面文件
-    player = MusicPlayer()
-    songsInformation = {"metadatas":[],
-                 "errors": {"informationError": [],
+def readSongsInformation() -> dict:
+    #读取歌曲信息,保存至全局变量
+    global songsInformation
+    try:   
+        songsInformation
+    except NameError:
+        if os.path.exists(songsInformationFile):
+            with open(songsInformationFile, "r", encoding='utf-8') as f:
+                songsInformation = json.loads(f.read())
+        else:
+            print("未找到本地数据文件")
+            songsInformation = {"metadatas":[],
+                    "errors": {"informationError": [],
                     "chartFileNotFoundError": [],
                     "illustrationNotFoundError": []}}
+
+def saveSongsInformation():
+    #存储歌曲信息
+    global songsInformation
+    with open(songsInformationFile, "w", encoding="utf-8") as f:
+        json.dump(songsInformation, f, ensure_ascii=False, indent=4)
+
+def saveOnProcessingSongsInformation(data):
+    #存储歌曲信息
+    with open(onProcessingSongsInformationFile, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+    
+
+def generateLutAndPezFiles(musicList, mode=0, lastOnProcessingSongsInformation=None):
+    #根据musicList生成谱面查找表和谱面文件
+    #mode 0: 正常模式，自动识别歌曲并获取元数据
+    #mode 1: 错误处理模式，手动给定wiki链接，程序自动抓取数据
+    #mode 2: 错误处理模式，手动输入全部元数据
+    player = MusicPlayer()
+
+    def checkIfSongExist(songName):
+        #检查是否已经存在该歌曲
+        existedSongs = [i["song"] for i in onProcessingSongsInformation["metadatas"] ]
+        existedSongs.extend(onProcessingSongsInformation["errors"]["informationError"])
+        existedSongs.extend([i["song"] for i in onProcessingSongsInformation["errors"]["illustrationNotFoundError"] ])
+        existedSongs.extend([i["song"] for i in onProcessingSongsInformation["errors"]["chartFileNotFoundError"] ])
+        for i in existSongs:
+            if i == metadata["name"]:
+                print("检测到重复歌曲")
+                return True
+        return False
+
+    #加载进度
+    if lastOnProcessingSongsInformation == None:
+        onProcessingSongsInformation = {"metadatas":[],
+                    "errors": {"informationError": [],
+                    "chartFileNotFoundError": [],
+                    "illustrationNotFoundError": []}}
+    else:
+        onProcessingSongsInformation = lastOnProcessingSongsInformation
+
+    errors = onProcessingSongsInformation["errors"]
+
     print("""
     开始处理
     注意：此处按下ctrl+c(终止程序快捷键)，可以直接终止程序并保存（仍有一定概率触发异常）。""")
@@ -80,40 +130,27 @@ def generateLutAndPezFiles(musicList, mode=0):
             durationOfMusicFile = int(player.play(musicPath))
 
             if mode == 0:
-                #存储歌曲信息
-                with open(songsInformationFile, "w", encoding="utf-8") as f:
-                    json.dump(songsInformation, f, ensure_ascii=False, indent=4)
-
                 #正常模式下识别歌曲并获取歌曲元数据
                 #听歌识曲
                 recognizedSongName = songRecognize.songRecognize()
                 player.stop()
                 if recognizedSongName == None:
-                    songsInformation["errors"]["informationError"].append(music)
+                    errors["informationError"].append(music)
                     continue
 
                 #元数据抓取
                 metadata = metadataGrab.searchSong(recognizedSongName)
                 if metadata == None:
-                    songsInformation["errors"]["informationError"].append(music)
+                    errors["informationError"].append(music)
                     continue
 
                 #重复歌曲检测
-                skipThisSong = False
-                existSongs = [*songsInformation["metadatas"]]
-                for i in songsInformation["errors"]:
-                    existSongs.extend(songsInformation["errors"][i])
-                for i in existSongs:
-                    if i == metadata["name"]:
-                        print("检测到重复歌曲")
-                        skipThisSong = True
-                        break
-                if skipThisSong:
+                if checkIfSongExist(metadata["name"]):
                     continue
                 
                 #歌曲时长匹配检测
                 if not metadata["duration"] in range(durationOfMusicFile-3, durationOfMusicFile+3) :
-                    songsInformation["errors"]["informationError"].append(music)
+                    errors["informationError"].append(music)
                     print("歌曲时长不匹配:")
                     print(" 本地文件: " + str(durationOfMusicFile))
                     print(" wiki记录: " + str(metadata["duration"]))
@@ -121,55 +158,37 @@ def generateLutAndPezFiles(musicList, mode=0):
                 metadata["music"] = music
 
             elif mode == 1:
-                #错误处理模式：手动搜索模式
+                #手动搜索模式
                 url = input("请输入wiki链接，留空跳过：")
                 player.stop()
                 if url == "":
                     print("Error: 跳过")
-                    songsInformation["errors"]["informationError"].append(music)
+                    errors["informationError"].append(music)
                     continue
 
                 metadata = metadataGrab.metadataGrab(url)
                 if metadata == None:
                     print("Error: 获取元数据失败")
-                    songsInformation["errors"]["informationError"].append(music)
+                    errors["informationError"].append(music)
                     continue
 
                 #重复歌曲检测
-                skipThisSong = False
-                existSongs = [*songsInformation["metadatas"]]
-                for i in songsInformation["errors"]:
-                    existSongs.extend(songsInformation["errors"][i])
-                for i in existSongs:
-                    if i == metadata["name"]:
-                        print("检测到重复歌曲")
-                        skipThisSong = True
-                        break
-                if skipThisSong:
+                if checkIfSongExist(metadata["name"]):
                     continue
 
             elif mode == 2:
-                #错误处理模式：手动输入全部元数据模式
+                #手动输入全部元数据模式
                 skipThisSong = False
                 while True:
                     songName = input("曲名（留空跳过此歌曲）：")
                     player.stop()
                     if songName == "":
-                        songsInformation["errors"]["informationError"].append(music)
+                        errors["informationError"].append(music)
                         skipThisSong = True
                         break
 
                     #重复歌曲检测
-                    skipThisSong = False
-                    existSongs = [*songsInformation["metadatas"]]
-                    for i in songsInformation["errors"]:
-                        existSongs.extend(songsInformation["errors"][i])
-                    for i in existSongs:
-                        if i == metadata["name"]:
-                            print("检测到重复歌曲")
-                            skipThisSong = True
-                            break
-                    if skipThisSong:
+                    if checkIfSongExist(metadata["name"]):
                         continue
                     
                     duration = None
@@ -236,12 +255,12 @@ def generateLutAndPezFiles(musicList, mode=0):
             illustrationBin = metadataGrab.fileBinTextGet(metadata["illustrationUrl"])
             if illustrationBin == None:
                 print("曲绘下载失败")
-                songsInformation["errors"]["illustrationNotFoundError"].append(metadata)
+                errors["illustrationNotFoundError"].append(metadata)
                 continue
             if useExistedIllustration:
                 illustrationFileName = illustrationSearch.illustrationSearch(illustrationBin)
                 if illustrationFileName == None:
-                    songsInformation["errors"]["illustrationNotFoundError"].append(metadata)
+                    errors["illustrationNotFoundError"].append(metadata)
                     continue
             else:
                 illustrationFileName = metadata["name"] + ".png"
@@ -261,16 +280,16 @@ def generateLutAndPezFiles(musicList, mode=0):
             
             if searchResultBpm == -1:
                 #-1为满足条件谱面数量大于1而无法确定的情况
-                songsInformation["errors"]["chartFileNotFoundError"].append(metadata)
+                errors["chartFileNotFoundError"].append(metadata)
                 continue
             elif searchResultBpm == None:
                 #None为没有满足条件的谱面的情况，这通常是由于wiki信息有误，因此归为infoError
-                songsInformation["errors"]["informationError"].append(music)
+                errors["informationError"].append(music)
                 continue
             metadata["bpm"] = searchResultBpm
 
 
-            songsInformation["metadatas"].append(metadata)
+            onProcessingSongsInformation["metadatas"].append(metadata)
 
             #谱面生成
             chartTransform.transform(metadata)
@@ -283,12 +302,9 @@ def generateLutAndPezFiles(musicList, mode=0):
         print(e)
     finally:
         player.stop()
-        if mode == 0:
-            print("正在保存")
-            with open(songsInformationFile, "w", encoding="utf-8") as f:
-                    json.dump(songsInformation, f, ensure_ascii=False, indent=4)
+        saveOnProcessingSongsInformation(onProcessingSongsInformation)
 
-    return songsInformation
+    return onProcessingSongsInformation
 
 
 
@@ -303,19 +319,17 @@ def illustrationNotFoundErrorHandling():
         注意：在b模式下，在文件选择窗口点击取消会跳过歌曲
         注意：在b模式下，会自动播放歌曲，请注意音量。""")
     
+    choiceD = input("按下回车键开始,输入n返回")
+    if choiceD == "n":
+        return
+    
     while not choice in ["a", "b"]:
         choice = input("请输入单个小写字母> ")
 
     if choice == "b":
         player = MusicPlayer()
         
-    global songsInformation
-    #尝试加载元数据
-    try:
-        songsInformation
-    except NameError:
-        with open(songsInformationFile, "r", encoding='utf-8') as f:
-            songsInformation = json.loads(f.read())
+    readSongsInformation()
 
     errors  = songsInformation["errors"]["illustrationNotFoundError"]
     formerErrorNum = len(errors)
@@ -325,6 +339,7 @@ def illustrationNotFoundErrorHandling():
 
     for i in range(formerErrorNum):
         metadata = errors[i]
+        music = metadata["music"]
         print("\n处理："+ metadata["name"])
 
         if choice == "a":
@@ -379,6 +394,25 @@ def illustrationNotFoundErrorHandling():
         else:
             metadata["illustration"] = illustrationFileName
 
+
+        #谱面搜索
+        searchResultBpm = chartSearch.searchChartFilename(metadata["charts"])
+        #部分曲子实际上没有Legacy难度，故删除之。
+        for i in range(len(metadata["charts"])):
+            chart = metadata["charts"][i]
+            if chart["level"] == "Legacy" and chart["chart"] == "":
+                del metadata["charts"][i]
+        
+        if searchResultBpm == -1:
+            #-1为满足条件谱面数量大于1而无法确定的情况
+            errors["chartFileNotFoundError"].append(metadata)
+            continue
+        elif searchResultBpm == None:
+            #None为没有满足条件的谱面的情况，这通常是由于wiki信息有误，因此归为infoError
+            errors["informationError"].append(music)
+            continue
+        metadata["bpm"] = searchResultBpm
+
         #转换铺面
         chartTransform.transform(metadata)
         #追加至metadata
@@ -394,84 +428,130 @@ def illustrationNotFoundErrorHandling():
     print("未处理 " + str(len(undealedErrors)))
 
     #存储歌曲信息
-    with open(songsInformationFile, "w", encoding="utf-8") as f:
-        json.dump(songsInformation, f, ensure_ascii=False, indent=4)
+    saveSongsInformation()
 
 
 
-def manualInformationHandling(musicList=[], isErrorHandling=False):
-    #处理信息未找到错误
+def informationHandling(option=1):
+    #信息收集函数，根据需要进行手动或自动信息收集
+    #实现谱面、元数据全新生成、部分更新、信息错误处理
+    #option 1: 信息错误处理
+    #option 2: 更新本地数据文件
+    #option 3: 重置本地数据文件（仅包括谱面元数据）
+
     #尝试加载元数据
-    global songsInformation
-    try:
-        songsInformation
-    except NameError:
-        if os.path.exists(songsInformationFile):
-            with open(songsInformationFile, "r", encoding='utf-8') as f:
-                songsInformation = json.loads(f.read())
-        else:
-            print("未找到本地数据文件")
-            songsInformation = {"metadatas":[],
-                    "errors": {"informationError": [],
-                    "chartFileNotFoundError": [],
-                    "illustrationNotFoundError": []}}
+    readSongsInformation()
 
-    if isErrorHandling:
-        errors  = songsInformation["errors"]["informationError"]
-        musicList = errors
-        numOfMusics = len(errors)
+
+    #判断运行模式：全自动0、半自动1、手动2，并输出提示信息
+    if option == 1:
         print("""\n进行歌曲信息错误处理
             此错误包含3种情况：
             1. 听歌识曲失败
             2. 没有搜到歌曲信息
             3. wiki记录的歌曲时长 与 本地音频文件时长 间 误差超过范围
-            4. wiki记录的谱面物量有误，导致搜不到相应谱子""")
-        
+            4. wiki记录的谱面物量有误，导致搜不到相应谱子\n""")
+    
     choice = ""
-    print("""请选择信息收集方式：
+    if option == 1 or not useAutoSongRecognizing:
+        #手动模式
+        print("""请选择信息收集方式：
         a. 在给出的wiki中手动搜索到所听到的歌曲，然后将页面地址输入程序，由程序抓据")
         b. 手动输入所听到的歌曲的所有数据（不建议活受罪）
-        注意：输入只有一次机会，请小心不要打错字，否则可能引起幽蓝边境异象(雾)
+        注意：a选项中输入只有一次机会，请小心不要打错字，否则可能引起幽蓝边境异象(雾)
         注意：会自动播放歌曲，请注意音量。""")
-    
-    while not choice in ["a", "b"]:
-        choice = input("请输入单个小写字母> ")
+        choice = ""
+        while not choice in ["a", "b"]:
+            choice = input("请输入单个小写字母> ")
 
-    if choice == "a":
-        mode = 1
-        print("""请在浏览器中打开此地址(必须为此地址)：https://phigros.fandom.com/wiki/Special:Search
-        接下来，你将会听到音乐播放
-        请在上述页面中搜索你听到的音乐，并将其wiki页面对应的地址复制下来，然后输入到本程序中。
-        tips.你可以通过打开对应wiki并复制地址栏地址，也可以通过直接右键超链接，复制wiki链接地址获取地址。
-        例如：
-        你听到“登，登登登，登登登，等登邓灯蹬瞪凳磴嶝噔僜墱澄”
-        所以，你在搜索框搜索“Rrhar'il”
-        你找到了对应的搜索结果，是第一条，其标题链接写着：Rrhar'il
-        你右键了那个链接，点击了“复制链接地址”，复制了如下链接地址：https://phigros.fandom.com/wiki/Rrhar'il
-        你返回终端，在光标闪烁的位置右键点击，将其粘贴在程序内，然后按下了回车键。\n""")
+        if choice == "a":
+            mode = 1
+            print("""请在浏览器中打开此地址(必须为此地址)：https://phigros.fandom.com/wiki/Special:Search
+            接下来，你将会听到音乐播放
+            请在上述页面中搜索你听到的音乐，并将其wiki页面对应的地址复制下来，然后输入到本程序中。
+            tips.你可以通过打开对应wiki并复制地址栏地址，也可以通过直接右键超链接，复制wiki链接地址获取地址。
+            例如：
+            你听到“登，登登登，登登登，等登邓灯蹬瞪凳磴嶝噔僜墱澄”
+            所以，你在搜索框搜索“Rrhar'il”
+            你找到了对应的搜索结果，是第一条，其标题链接写着：Rrhar'il
+            你右键了那个链接，点击了“复制链接地址”，复制了如下链接地址：https://phigros.fandom.com/wiki/Rrhar'il
+            你返回终端，在光标闪烁的位置右键点击，将其粘贴在程序内，然后按下了回车键。\n""")
+        else:
+            mode = 2
+            print("""请任意找一个提供歌曲信息的地方
+            接下来，你将会听到音乐播放
+            你需要根据音乐回答以下问题：
+                曲名 曲师 绘师 歌曲持续时间 曲绘图片的在线链接
+                每个难度的 谱面定数 物量 谱师
+            根据提示，将答案输入程序并按下回车。
+            注意：持续时间、谱面定数、物量需要为整数值
+            注意：曲绘图片的在线链接 可以直接复制你找的wiki的（推荐），也可以上网搜，
+                一般在图片上右键会有复制图像链接的选项，实在不会上网搜。
+            注意：愚人节曲和其看门曲是两个不同的曲子，不要弄混
+                愚人节曲只有SP难度，因此任意一个曲子，只要填了SP难度的信息，都会直接跳过其他所有难度。
+                
+            本程序默认自动采集fandom wiki的数据，但是其中包含一些错误，为了进行交叉验证，不建议在此处使用fandom wiki。
+            推荐wiki：萌娘百科，https://zh.moegirl.org.cn/Phigros/谱面信息\n""")
     else:
-        mode = 2
-        print("""请任意找一个提供歌曲信息的地方
-        接下来，你将会听到音乐播放
-        你需要根据音乐回答以下问题：
-            曲名 曲师 绘师 歌曲持续时间 曲绘图片的在线链接
-            每个难度的 谱面定数 物量 谱师
-        根据提示，将答案输入程序并按下回车。
-        注意：持续时间、谱面定数、物量需要为整数值
-        注意：曲绘图片的在线链接 可以直接复制你找的wiki的（推荐），也可以上网搜，
-            一般在图片上右键会有复制图像链接的选项，实在不会上网搜。
-        注意：愚人节曲和其看门曲是两个不同的曲子，不要弄混
-            愚人节曲只有SP难度，因此任意一个曲子，只要填了SP难度的信息，都会直接跳过其他所有难度。
-              
-        本程序默认自动采集fandom wiki的数据，但是其中包含一些错误，为了进行交叉验证，不建议在此处使用fandom wiki。
-        推荐wiki：萌娘百科，https://zh.moegirl.org.cn/Phigros/谱面信息\n""")
-        
-    input("按下回车开始程序")
-    print("普通高中phigros听力测试现在开始(雾)")
-    
-    #战后结算
-    newSongsInformation = generateLutAndPezFiles(musicList, mode)
+        #自动模式
+        print("\n请保证听歌识曲软件处于正确状态")
+        mode = 0
 
+    choiceD = input("按下回车键开始,输入n返回")
+    if choiceD == "n":
+        return
+    
+    print("普通高中phigros听力测试现在开始(雾)")
+
+
+    #根据模式生成musicList
+    if option == 1:
+        errors  = songsInformation["errors"]["informationError"]
+        musicList = errors
+    elif option == 2:
+        print("检查新音频文件中……")
+        musicList = [music for music in os.listdir(musicsPath) if "wav" in music]
+        for existMusic in songsInformation["metadatas"]:
+            if existMusic["music"] in musicList:
+                musicList.remove(existMusic["music"])
+            else:
+                print(" 新增：" + existMusic["music"])
+        print("共新增：" + str(len(musicList)))
+    elif option == 3:
+        musicList = [music["music"] for music in songsInformation["metadatas"]]
+
+
+    #在onProcessingSongsInformationFile存在的情况下，尝试加载先前进度加载
+    if os.path.exists(onProcessingSongsInformationFile):
+        choiceC = input("检测到上次未完成的进度，是否继续？(y/n)")
+        if choiceC == "y":
+            #防止数据文件不完整导致崩溃
+            try:
+                with open(onProcessingSongsInformationFile, "r", encoding='utf-8') as f:
+                    onProcessingSongsInformation = json.loads(f.read())
+            except:
+                onProcessingSongsInformation = None
+                print("Error: 读取进度文件失败")
+            
+            #剔除重复歌曲
+            existedSongs = [i["song"] for i in onProcessingSongsInformation["metadatas"] ]
+            existedSongs.extend(onProcessingSongsInformation["errors"]["informationError"])
+            existedSongs.extend([i["song"] for i in onProcessingSongsInformation["errors"]["illustrationNotFoundError"] ])
+            existedSongs.extend([i["song"] for i in onProcessingSongsInformation["errors"]["chartFileNotFoundError"] ])
+            for i in existedSongs:
+                if i["music"] in musicList:
+                    musicList.remove(i["music"])
+            print("剩余未处理歌曲数：" + str(len(musicList)))
+        else:
+            onProcessingSongsInformation = None
+    
+    numOfMusics = len(errors)
+
+
+    #信息处理
+    newSongsInformation = generateLutAndPezFiles(musicList, mode, onProcessingSongsInformation)
+
+    #战后结算
     numOfSuccessAddressedErrors = len(newSongsInformation["metadatas"])
     numOfFailedAddressedErrors = sum([len(newSongsInformation["errors"]["illustrationNotFoundError"]), 
                                     len(newSongsInformation["errors"]["chartFileNotFoundError"]),
@@ -479,7 +559,7 @@ def manualInformationHandling(musicList=[], isErrorHandling=False):
     numOfTotalAddressedErrors = numOfSuccessAddressedErrors + numOfFailedAddressedErrors
 
     #元数据整合
-    if isErrorHandling:
+    if option == 1:
         songsInformation["metadatas"].extend(newSongsInformation["metadatas"])
         songsInformation["errors"]["illustrationNotFoundError"].extend(newSongsInformation["errors"]["illustrationNotFoundError"])
         songsInformation["errors"]["chartFileNotFoundError"].extend(newSongsInformation["errors"]["chartFileNotFoundError"])
@@ -487,9 +567,14 @@ def manualInformationHandling(musicList=[], isErrorHandling=False):
             songsInformation["errors"]["informationError"] = newSongsInformation["errors"]["informationError"] + errors[numOfTotalAddressedErrors:]
         else:
             songsInformation["errors"]["informationError"] = newSongsInformation["errors"]["informationError"]
+    elif option == 2:
+        songsInformation["metadatas"].extend(newSongsInformation["metadatas"])
+        songsInformation["errors"]["illustrationNotFoundError"].extend(newSongsInformation["errors"]["illustrationNotFoundError"])
+        songsInformation["errors"]["chartFileNotFoundError"].extend(newSongsInformation["errors"]["chartFileNotFoundError"])
+        songsInformation["errors"]["informationError"].extend(newSongsInformation["errors"]["informationError"])
     else:
         songsInformation = newSongsInformation
-    
+
 
     #存储歌曲信息
     with open(songsInformationFile, "w", encoding="utf-8") as f:
@@ -512,24 +597,20 @@ def chartFileNotFoundErrorDealing():
 
           你需要先选择一个文件夹作为谱子保存的地方。
           """)
-    input("按下回车键开始")
+    choiceD = input("按下回车键开始,输入n返回")
+    if choiceD == "n":
+        return
 
     savingPath = selectDir()
 
-    global songsInformation
-    try:
-        songsInformation
-    except NameError:
-        with open(songsInformationFile, "r", encoding='utf-8') as f:
-            songsInformation = json.loads(f.read())
+    readSongsInformation()
     
     errors = songsInformation["errors"]["chartFileNotFoundError"]
     numOfErrors = len(errors)
 
     for index in range(numOfErrors):
         #存储元数据
-        with open(songsInformationFile, "w", encoding="utf-8") as f:
-            json.dump(songsInformation, f, ensure_ascii=False, indent=4)
+        saveSongsInformation()
 
         metadata = errors[index]
         music = metadata["music"]
@@ -603,70 +684,91 @@ def chartFileNotFoundErrorDealing():
 
         print("处理成功！")
 
-    #存储元数据
-    with open(songsInformationFile, "w", encoding="utf-8") as f:
-        json.dump(songsInformation, f, ensure_ascii=False, indent=4)
+    saveSongsInformation()
 
-        
-musicList = [music for music in os.listdir(musicsPath) if "wav" in music]
-#musicList = ["music #2491.wav"]
-#generateLutAndPezFiles(musicList)
-#informationErrorHandling()
-#chartFileNotFoundErrorDealing()
-#illustrationNotFoundErrorHandling()
+
 
 
 if __name__ == "__main__":
     print("""欢迎使用本谱面转换程序程序
     在使用之前，请确保您已经完全阅读github主页上的内容，并已完成程序相关配置。""")
+
+    #尝试加载元数据
+    readSongsInformation()
     
     while True:
         choiceA = int(input("""
 请选择功能：
     【1】 根据本地数据，直接生成全部谱面文件（首次使用请选择）
-    【2】 根据本地数据，补全未转换的谱面（程序中途崩溃请选择）
-    【3】 更新本地数据文件（将新版本phi的文件直接追加到相应目录中后，使用此项更新）
-    【4】 重置本地数据文件（仅包括谱面元数据）
-    【5】 重置本地数据文件（全部）
-    【6】 错误谱面处理
+    【2】 更新本地数据文件（将新版本phi的文件直接追加到相应目录中后，使用此项更新）
+    【3】 重置本地数据文件（仅包括谱面元数据）
+    【4】 重置本地数据文件（全部）
+    【5】 错误谱面处理
 请输入一位整数：
               """))
         
         match choiceA:
             case 1:
-                #直接生成谱面文件
-                pass
+                #根据本地数据文件直接生成谱面文件
+                print("将根据本地数据文件直接生成全部谱面文件")
+                print("请确保所有原始文件均已放入相应文件夹")
+                choiceB = input("直接按下回车开始，输入n取消。")
+                if choiceB == "n":
+                    continue
+
+                for metadata in songsInformation["metadatas"]:
+                    chartTransform.transform(metadata)
+                print("处理完成")
 
             case 2:
-                #补全未转换的谱面
-                pass
+                #更新本地数据文件
+                #检查是否有新的音频文件，据此更新本地数据文件并生成对应的新谱面文件
+                #结束后将新生成的文件复制到输出目录的New目录下。
+                print("将检查对应目录中是否有新的音频文件，据此更新本地数据文件")
+                choiceB = input("直接按下回车开始，输入n取消。")
+                if choiceB == "n":
+                    continue
+                informationHandling(option = 2)
 
             case 3:
-                #更新本地数据文件
-                pass
-
-            case 4:
                 #重置本地数据文件（仅包括谱面元数据）
-                musicList = [music for music in os.listdir(musicsPath) if "wav" in music]
-                if useAutoSongRecognizing == True:
-                    print("\n请保证听歌识曲软件处于正确状态")
-                    print("注意，原先的歌曲元数据（包括错误信息）将被完全覆盖。")
-                    choiceB = input("直接按下回车开始，输入n取消。")
-                    if choiceB == "n":
-                        continue
-                    generateLutAndPezFiles(musicList=musicList)
-                else:
-                    print("注意，原先的歌曲元数据（包括错误信息）将被完全覆盖。")
-                    choiceB = input("直接按下回车开始，输入n取消。")
-                    if choiceB == "n":
-                        continue
-                    manualInformationHandling(musicList=musicList, isErrorHandling=False)
+                print("注意，原先的歌曲元数据（包括错误信息）将被完全覆盖。")
+                choiceB = input("直接按下回车开始，输入n取消。")
+                if choiceB == "n":
+                    continue
+                informationHandling(option = 3)
                     
-            case 5:
-                #重置全部数据文件
-                pass
+            case 4:
+                #重置全部本地数据文件
+                print("注意，原先的歌曲元数据（包括错误信息）将被完全覆盖。")
+                choiceB = input("直接按下回车开始，输入n取消。")
+                if choiceB == "n":
+                    continue
 
-            case 6:
+                chartSearch.generatechartFilenameLUT()
+                illustrationSearch.generateIllustrationLUT()
+                informationHandling(option = 3)
+
+            case 5:
                 #错误处理
-                pass
+                print("请选择要人工处理的错误")
+                print("【1】谱面信息错误：%s个" % str(len(songsInformation["errors"]["informationError"])))
+                print("【2】曲绘未找到：%s个" % str(len(songsInformation["errors"]["illustrationNotFoundError"])))
+                print("【3】谱面未找到：%s个" % str(len(songsInformation["errors"]["chartFileNotFoundError"])))
+                print("【4】全部错误处理")
+                choiceB = int(input("请输入一位整数："))
+                match choiceB:
+                    case 1:
+                        informationHandling(option = 1)
+                    case 2:
+                        illustrationNotFoundErrorHandling()
+                    case 3:
+                        chartFileNotFoundErrorDealing()
+                    case 4:
+                        informationHandling(option = 1)
+                        illustrationNotFoundErrorHandling()
+                        chartFileNotFoundErrorDealing()
+                    case _:
+                        print("输入错误，请重新选择")
+                        continue
         

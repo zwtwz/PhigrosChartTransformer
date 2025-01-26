@@ -1,0 +1,42 @@
+{
+    "metadatas": [
+        {
+            "name": "Random",
+            "composer": "Sobrem X Silentroom",
+            "illustrator": "Harkiadel",
+            "illustration": "Illustration #5820.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/b/b1/Random_jacket.png/revision/latest?cb=20230402150246",
+            "music": "music #2491.wav",
+            "duration": 136,
+            "bpm": 132.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6",
+                    "numOfNotes": "275",
+                    "chart": "Chart_EZ #2859",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "12.2",
+                    "numOfNotes": "568",
+                    "chart": "Chart_HD #1028",
+                    "charter": "IMD_6"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.7",
+                    "numOfNotes": "732",
+                    "chart": "Chart_IN #4522",
+                    "charter": "_鉄"
+                }
+            ]
+        }
+    ],
+    "errors": {
+        "informationError": [],
+        "chartFileNotFoundError": [],
+        "illustrationNotFoundError": []
+    }
+}

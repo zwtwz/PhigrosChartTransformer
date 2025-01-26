@@ -1,0 +1,8 @@
+__pycache__
+Charts/*
+Illustrations/*
+Musics/*
+Output/*
+programFileBackups/*
+data/illustrateFilenameLUT.json
+data/chartFilenameLUT.json

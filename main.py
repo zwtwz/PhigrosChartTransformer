@@ -98,7 +98,7 @@ def generateLutAndPezFiles(musicList, mode=0, lastOnProcessingSongsInformation=N
         existedSongs.extend(onProcessingSongsInformation["errors"]["informationError"])
         existedSongs.extend([i["song"] for i in onProcessingSongsInformation["errors"]["illustrationNotFoundError"] ])
         existedSongs.extend([i["song"] for i in onProcessingSongsInformation["errors"]["chartFileNotFoundError"] ])
-        for i in existSongs:
+        for i in existedSongs:
             if i == metadata["name"]:
                 print("检测到重复歌曲")
                 return True

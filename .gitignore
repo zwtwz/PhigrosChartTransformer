@@ -6,3 +6,4 @@ Output/*
 programFileBackups/*
 data/illustrateFilenameLUT.json
 data/chartFilenameLUT.json
+data/onProcessingSongsInformation.json

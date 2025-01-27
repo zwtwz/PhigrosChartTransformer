@@ -34,11 +34,11 @@ def generatechartFilenameLUT(rootPath):
             with open(chartPath, 'r', encoding='utf-8') as f:
                 singelChartInfomation = {}
                 js = json.load(f)
-                NON = str(getNumber(js))
-                NONIndex.append(NON) #物量列表
+                non = str(getNumber(js))
+                NONIndex.append(non) #物量列表
                 singelChartInfomation["chart"] = filename
                 singelChartInfomation["bpm"] = js["judgeLineList"][0]["bpm"]
-                levelSpecilizedInfomations.append((NON, singelChartInfomation))
+                levelSpecilizedInfomations.append((non, singelChartInfomation))
 
         #无需排序，格式化索引
         foramtedLevelSpecilizedInfomations = {}

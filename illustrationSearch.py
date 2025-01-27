@@ -114,7 +114,7 @@ def illustrationSearch(img1Bin):
         if similarity > mostSimilarImg[1]:
             mostSimilarImg = [img2[0], similarity]
     
-    if mostSimilarImg[1] >= 0.4:
+    if mostSimilarImg[1] >= 0.30:
         print("查找到图片：%s 相似度：%s" % (mostSimilarImg[0], mostSimilarImg[1]))
         return mostSimilarImg[0]
     else:

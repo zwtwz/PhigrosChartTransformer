@@ -4597,597 +4597,3510 @@
                     "charter": "BarbariaNER<<<1|man>>> vs. JKy"
                 }
             ]
+        },
+        {
+            "name": "Winter ↑cube↓",
+            "composer": "Ctymax feat. NceS",
+            "illustrator": "翠冷兮",
+            "illustration": "Illustration #103.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/3/3a/Winter_%E2%86%91cube%E2%86%93_jacket.png/revision/latest?cb=20200319022503",
+            "music": "music #1080.wav",
+            "duration": 156,
+            "bpm": 104.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "3.5",
+                    "numOfNotes": "306",
+                    "chart": "Chart_EZ #4315",
+                    "charter": "Ctymax after 7 years"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "8.2",
+                    "numOfNotes": "449",
+                    "chart": "Chart_HD #901",
+                    "charter": "Salt"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.4",
+                    "numOfNotes": "733",
+                    "chart": "Chart_IN #720",
+                    "charter": "百九十八"
+                }
+            ]
+        },
+        {
+            "name": "NO ONE YES MAN",
+            "composer": "MYUKKE.",
+            "illustrator": "青鸟",
+            "illustration": "Illustration #1113.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/e/eb/NO_ONE_YES_MAN_jacket.png/revision/latest?cb=20200901051718",
+            "music": "music #1193.wav",
+            "duration": 161,
+            "bpm": 170.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6.5",
+                    "numOfNotes": "394",
+                    "chart": "Chart_EZ #4933",
+                    "charter": "Ctymax"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.9",
+                    "numOfNotes": "612",
+                    "chart": "Chart_HD #5634",
+                    "charter": "晨"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.4",
+                    "numOfNotes": "844",
+                    "chart": "Chart_IN #4926",
+                    "charter": "晨 vs Ctymax"
+                }
+            ]
+        },
+        {
+            "name": "HumaN",
+            "composer": "SOTUI",
+            "illustrator": "CH",
+            "illustration": "Illustration #1811.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/b/be/HumaN_jacket.png/revision/latest?cb=20200319062410",
+            "music": "music #126.wav",
+            "duration": 134,
+            "bpm": 180.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "3",
+                    "numOfNotes": "111",
+                    "chart": "Chart_EZ #2238",
+                    "charter": "Clutter"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "8.1",
+                    "numOfNotes": "222",
+                    "chart": "Chart_HD #3249",
+                    "charter": "Clutter"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "12.9",
+                    "numOfNotes": "554",
+                    "chart": "Chart_IN #386",
+                    "charter": "CN_115+TangScend"
+                }
+            ]
+        },
+        {
+            "name": "DESTRUCTION 3,2,1",
+            "composer": "Normal1zer vs. Broken Nerdz",
+            "illustrator": "rN",
+            "illustration": "Illustration #4230.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/c/c1/DESTRUCTION_321.webp/revision/latest?cb=20230422143428",
+            "music": "music #1425.wav",
+            "duration": 160,
+            "bpm": 321.321,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "8.5",
+                    "numOfNotes": "1060",
+                    "chart": "Chart_EZ #1338",
+                    "charter": "{Demolition,Devastation,Destruction}"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "13.1",
+                    "numOfNotes": "1250",
+                    "chart": "Chart_HD #3162",
+                    "charter": "{Devastation,Destruction}"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.8",
+                    "numOfNotes": "1532",
+                    "chart": "Chart_IN #2920",
+                    "charter": "{Destruction}"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "16.6",
+                    "numOfNotes": "2330",
+                    "chart": "Chart_AT #1500",
+                    "charter": "∅"
+                }
+            ]
+        },
+        {
+            "name": "神話",
+            "composer": "Pica & M2U",
+            "illustrator": "mology (青鸟&V17AMax Modified)",
+            "illustration": "Illustration #3490.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/8/84/%E7%A5%9E%E8%A9%B1_jacket.png/revision/latest?cb=20230610145521",
+            "music": "music #1553.wav",
+            "duration": 142,
+            "bpm": 130.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "4",
+                    "numOfNotes": "289",
+                    "chart": "Chart_EZ #3939",
+                    "charter": "雜"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "8.9",
+                    "numOfNotes": "433",
+                    "chart": "Chart_HD #788",
+                    "charter": "波"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.6",
+                    "numOfNotes": "735",
+                    "chart": "Chart_IN #875",
+                    "charter": "P & U"
+                }
+            ]
+        },
+        {
+            "name": "You are the Miserable",
+            "composer": "t+pazolite",
+            "illustrator": "Lanota ⓒ Noxy Game Inc.",
+            "illustration": "Illustration #2814.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/3/38/You_Are_The_Miserable_jacket.png/revision/latest?cb=20220610115604",
+            "music": "music #1640.wav",
+            "duration": 164,
+            "bpm": 163.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6",
+                    "numOfNotes": "486",
+                    "chart": "Chart_EZ #3491",
+                    "charter": "M3d1uM"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.7",
+                    "numOfNotes": "762",
+                    "chart": "Chart_HD #3228",
+                    "charter": "M3d1uM"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.2",
+                    "numOfNotes": "893",
+                    "chart": "Chart_IN #258",
+                    "charter": "We are the Miserable"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "15.6",
+                    "numOfNotes": "1344",
+                    "chart": "Chart_AT #4039",
+                    "charter": "Pat Brick Man Mr.C & Mr.B"
+                }
+            ]
+        },
+        {
+            "name": "Distorted Fate",
+            "composer": "Sakuzyo",
+            "illustrator": "knife美工刀",
+            "illustration": "Illustration #3700.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/6/68/Distorted_Fate.webp/revision/latest?cb=20230421122357",
+            "music": "music #1725.wav",
+            "duration": 165,
+            "bpm": 150.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "8.1",
+                    "numOfNotes": "594",
+                    "chart": "Chart_EZ #2358",
+                    "charter": "De Fiance"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "13.5",
+                    "numOfNotes": "970",
+                    "chart": "Chart_HD #3618",
+                    "charter": "Doubt Ful"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.9",
+                    "numOfNotes": "1449",
+                    "chart": "Chart_IN #4385",
+                    "charter": "Divination Fortune"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "16.7",
+                    "numOfNotes": "1283",
+                    "chart": "Chart_AT #1799",
+                    "charter": "unDefined Future"
+                }
+            ]
+        },
+        {
+            "name": "NYA!!! (Phigros ver.)",
+            "composer": "FLuoRiTe/姜米條",
+            "illustrator": "NEKO&海产",
+            "illustration": "Illustration #3906.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/e/e0/NYA%21%21%21_new_jacket.png/revision/latest?cb=20220521163646",
+            "music": "music #1818.wav",
+            "duration": 156,
+            "bpm": 154.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "2",
+                    "numOfNotes": "122",
+                    "chart": "Chart_EZ #1871",
+                    "charter": ""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "8.6",
+                    "numOfNotes": "428",
+                    "chart": "Chart_HD #5673",
+                    "charter": ""
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.1",
+                    "numOfNotes": "666",
+                    "chart": "Chart_IN #2944",
+                    "charter": ""
+                }
+            ]
+        },
+        {
+            "name": "Träne",
+            "composer": "MALVA.",
+            "illustrator": "しえろ",
+            "illustration": "Illustration #2657.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/1/12/Tr%C3%A4ne_jacket.png/revision/latest?cb=20201224104222",
+            "music": "music #1961.wav",
+            "duration": 147,
+            "bpm": 135.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "1.5",
+                    "numOfNotes": "148",
+                    "chart": "Chart_EZ #2648",
+                    "charter": ""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "6.5",
+                    "numOfNotes": "420",
+                    "chart": "Chart_HD #107",
+                    "charter": ""
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.2",
+                    "numOfNotes": "661",
+                    "chart": "Chart_IN #2462",
+                    "charter": ""
+                }
+            ]
+        },
+        {
+            "name": "Another Me",
+            "composer": "D_AAN",
+            "illustrator": "ZG",
+            "illustration": "Illustration #42.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/e/e8/Another_Me_D_AAN_jacket.png/revision/latest?cb=20211225114948",
+            "music": "music #1963.wav",
+            "duration": 166,
+            "bpm": 210.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "455",
+                    "chart": "Chart_EZ #891",
+                    "charter": "Pcat"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "9.2",
+                    "numOfNotes": "715",
+                    "chart": "Chart_HD #1226",
+                    "charter": "Another cat"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.4",
+                    "numOfNotes": "1449",
+                    "chart": "Chart_IN #4337",
+                    "charter": "NerSAN vs. Ctymax as \"泥头鱼\""
+                }
+            ]
+        },
+        {
+            "name": "心の記憶",
+            "composer": "A-39/沙包P",
+            "illustrator": "爱39的Konya",
+            "illustration": "Illustration #1646.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/7/7b/%E5%BF%83%E3%81%AE%E8%A8%98%E6%86%B6_jacket.png/revision/latest?cb=20240904043221",
+            "music": "music #2025.wav",
+            "duration": 163,
+            "bpm": 150.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "3.5",
+                    "numOfNotes": "311",
+                    "chart": "Chart_EZ #505",
+                    "charter": "Su1fuR"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "9.1",
+                    "numOfNotes": "629",
+                    "chart": "Chart_HD #3318",
+                    "charter": "Su1fuR"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.3",
+                    "numOfNotes": "804",
+                    "chart": "Chart_IN #931",
+                    "charter": "N-23"
+                }
+            ]
+        },
+        {
+            "name": "Äventyr",
+            "composer": "Grand Thaw/Rigël Theatre",
+            "illustrator": "Grand Thaw/Rigël Theatre",
+            "illustration": "Illustration #1784.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/9/9c/%C3%84ventyr_jacket.png/revision/latest?cb=20201224104042",
+            "music": "music #205.wav",
+            "duration": 160,
+            "bpm": 132.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "3",
+                    "numOfNotes": "345",
+                    "chart": "Chart_EZ #5576",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "9.4",
+                    "numOfNotes": "626",
+                    "chart": "Chart_HD #5777",
+                    "charter": "Snorkel"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.7",
+                    "numOfNotes": "954",
+                    "chart": "Chart_IN #5662",
+                    "charter": "Barbarianerman vs. Snorkel"
+                }
+            ]
+        },
+        {
+            "name": "Shadow",
+            "composer": "姜米條&SumaiLight",
+            "illustrator": "御坂果子",
+            "illustration": "Illustration #5645.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/8/86/Shadow_jacket.png/revision/latest?cb=20210305094859",
+            "music": "music #2077.wav",
+            "duration": 162,
+            "bpm": 172.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6",
+                    "numOfNotes": "393",
+                    "chart": "Chart_EZ #5786",
+                    "charter": "晨"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.3",
+                    "numOfNotes": "549",
+                    "chart": "Chart_HD #4871",
+                    "charter": "晨"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.5",
+                    "numOfNotes": "840",
+                    "chart": "Chart_IN #2147",
+                    "charter": "Sillyp vs 晨"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "15.9",
+                    "numOfNotes": "1089",
+                    "chart": "Chart_AT #5110",
+                    "charter": "J0(_)12|\\|3y'5 3|\\||)"
+                }
+            ]
+        },
+        {
+            "name": "S.A.T.E.L.L.I.T.E.",
+            "composer": "かめりあ",
+            "illustrator": "青鸟",
+            "illustration": "Illustration #495.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/f/ff/S.A.T.E.L.L.I.T.E._jacket.png/revision/latest?cb=20230831153741",
+            "music": "music #2281.wav",
+            "duration": 195,
+            "bpm": 150.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "345",
+                    "chart": "Chart_EZ #424",
+                    "charter": "XMT wishing upon a satellite"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "9.9",
+                    "numOfNotes": "600",
+                    "chart": "Chart_HD #3408",
+                    "charter": "B.A.R.B.A.R.I.A.N.E.R.M.A.N"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.6",
+                    "numOfNotes": "897",
+                    "chart": "Chart_IN #4415",
+                    "charter": "L.I.K.E.Y"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "15.8",
+                    "numOfNotes": "1098",
+                    "chart": "Chart_AT #4194",
+                    "charter": "N.E.R.1.9.8."
+                }
+            ]
+        },
+        {
+            "name": "Dlyrotz",
+            "composer": "Likey",
+            "illustrator": "DoublePian",
+            "illustration": "Illustration #44.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/9/9c/Dlyrotz_jacket.png/revision/latest?cb=20200319051408",
+            "music": "music #2335.wav",
+            "duration": 122,
+            "bpm": 175.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "398",
+                    "chart": "Chart_EZ #893",
+                    "charter": "Su1fuR"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "9.4",
+                    "numOfNotes": "458",
+                    "chart": "Chart_HD #198",
+                    "charter": "Su1fuR"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.7",
+                    "numOfNotes": "584",
+                    "chart": "Chart_IN #3129",
+                    "charter": "XMT小咩兔 vs Barbarianerman"
+                }
+            ]
+        },
+        {
+            "name": "Freaky Undulations ~Noble Knights of Tune~",
+            "composer": "Jehezukiel + KURORAK",
+            "illustrator": "PEZZ feat. 祈莲 & CattoHato",
+            "illustration": "Illustration #1710.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/1/1c/Freaky_Undulations_~Noble_Knights_of_Tune~_jacket.png/revision/latest?cb=20240225172752",
+            "music": "music #2364.wav",
+            "duration": 138,
+            "bpm": 202.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "7",
+                    "numOfNotes": "292",
+                    "chart": "Chart_EZ #3882",
+                    "charter": "Ner ~Freaky Cat of Charting~"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.9",
+                    "numOfNotes": "621",
+                    "chart": "Chart_HD #4099",
+                    "charter": "ARE YOU JEITIE!!!"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.1",
+                    "numOfNotes": "1020",
+                    "chart": "Chart_IN #4272",
+                    "charter": "<= Noblesse Jeitie =>"
+                }
+            ]
+        },
+        {
+            "name": "尊師 ～The Guru～",
+            "composer": "rider",
+            "illustrator": "1B",
+            "illustration": "Illustration #4058.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/1/14/%E5%B0%8A%E5%B8%AB_%EF%BD%9EThe_Guru%EF%BD%9E_jacket.png/revision/latest?cb=20200329125234",
+            "music": "music #2471.wav",
+            "duration": 129,
+            "bpm": 152.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6",
+                    "numOfNotes": "386",
+                    "chart": "Chart_EZ #1781",
+                    "charter": "M3d1uM"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.6",
+                    "numOfNotes": "565",
+                    "chart": "Chart_HD #3785",
+                    "charter": "M3d1uM"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.2",
+                    "numOfNotes": "738",
+                    "chart": "Chart_IN #2148",
+                    "charter": "奥術 ~The Empyr~"
+                }
+            ]
+        },
+        {
+            "name": "Ποσειδών",
+            "composer": "1112 vs. Star＊",
+            "illustrator": "老张",
+            "illustration": "Illustration #1596.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/9/9a/%CE%A0%CE%BF%CF%83%CE%B5%CE%B9%CE%B4%CF%8E%CE%BD_jacket.png/revision/latest?cb=20201127210105",
+            "music": "music #2711.wav",
+            "duration": 123,
+            "bpm": 175.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6",
+                    "numOfNotes": "533",
+                    "chart": "Chart_EZ #1571",
+                    "charter": "Jαckψ a.k.a JKy"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "8.4",
+                    "numOfNotes": "397",
+                    "chart": "Chart_HD #3255",
+                    "charter": "Jαckψ"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "12.8",
+                    "numOfNotes": "450",
+                    "chart": "Chart_IN #2317",
+                    "charter": "Jαckψ feat. Βαρβαροςαντρας"
+                }
+            ]
+        },
+        {
+            "name": "千紫万紅",
+            "composer": "r0y vs. WABI",
+            "illustrator": "中本ひょうり",
+            "illustration": "Illustration #5713.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/c/cd/%E5%8D%83%E7%B4%AB%E4%B8%87%E7%B4%85_jacket.png/revision/latest?cb=20240705081753",
+            "music": "music #2720.wav",
+            "duration": 155,
+            "bpm": 203.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "4.5",
+                    "numOfNotes": "240",
+                    "chart": "Chart_EZ #4800",
+                    "charter": "Rikko"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "12.1",
+                    "numOfNotes": "779",
+                    "chart": "Chart_HD #121",
+                    "charter": "実戦 with Rikko"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.6",
+                    "numOfNotes": "1200",
+                    "chart": "Chart_IN #3650",
+                    "charter": "Salt & Barbarianerman"
+                }
+            ]
+        },
+        {
+            "name": "明鏡烈火",
+            "composer": "M-UE vs. Reku Mochizuki",
+            "illustrator": "中本ひょうり",
+            "illustration": "Illustration #4510.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/8/8f/%E6%98%8E%E9%8F%A1%E7%83%88%E7%81%AB_jacket.png/revision/latest?cb=20240705083752",
+            "music": "music #2847.wav",
+            "duration": 133,
+            "bpm": 200.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6.5",
+                    "numOfNotes": "376",
+                    "chart": "Chart_EZ #4791",
+                    "charter": "COC feat. Su1fuR"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.3",
+                    "numOfNotes": "566",
+                    "chart": "Chart_HD #1481",
+                    "charter": "COC feat. Su1fuR"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.8",
+                    "numOfNotes": "886",
+                    "chart": "Chart_IN #157",
+                    "charter": "Arenn Salty feat. LDA"
+                }
+            ]
+        },
+        {
+            "name": "Igallta",
+            "composer": "Se-U-Ra",
+            "illustrator": "Se-U-Ra",
+            "illustration": "Illustration #873.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/5/5d/Igallta_jacket.png/revision/latest?cb=20200901051311",
+            "music": "music #2891.wav",
+            "duration": 140,
+            "bpm": 230.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "7.5",
+                    "numOfNotes": "414",
+                    "chart": "Chart_EZ #4807",
+                    "charter": "信仰の剣『生』"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "12.7",
+                    "numOfNotes": "601",
+                    "chart": "Chart_HD #793",
+                    "charter": "平川の剣『士』"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.7",
+                    "numOfNotes": "1018",
+                    "chart": "Chart_IN #3242",
+                    "charter": "夜明の剣『靈』"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "16.7",
+                    "numOfNotes": "1114",
+                    "chart": "Chart_AT #5561",
+                    "charter": "断罪の剣『神』"
+                }
+            ]
+        },
+        {
+            "name": "-SURREALISM-",
+            "composer": "Itsuki",
+            "illustrator": "喵n葵",
+            "illustration": "Illustration #1152.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/a/ae/-SURREALISM-_jacket.png/revision/latest?cb=20200329124434",
+            "music": "music #3075.wav",
+            "duration": 154,
+            "bpm": 180.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "338",
+                    "chart": "Chart_EZ #3442",
+                    "charter": "Su1fuR"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "9.4",
+                    "numOfNotes": "571",
+                    "chart": "Chart_HD #1163",
+                    "charter": "Su1fuR"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.4",
+                    "numOfNotes": "914",
+                    "chart": "Chart_IN #188",
+                    "charter": "-StupiGGy- fixed by 晨"
+                }
+            ]
+        },
+        {
+            "name": "[PRAW]",
+            "composer": "BlueWind",
+            "illustrator": "老张",
+            "illustration": "Illustration #1745.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/b/b5/PRAW_new_jacket.png/revision/latest?cb=20200619115337",
+            "music": "music #3157.wav",
+            "duration": 157,
+            "bpm": 210.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6",
+                    "numOfNotes": "413",
+                    "chart": "Chart_EZ #3367",
+                    "charter": "Likey"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.6",
+                    "numOfNotes": "575",
+                    "chart": "Chart_HD #1817",
+                    "charter": "Likey"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.1",
+                    "numOfNotes": "1171",
+                    "chart": "Chart_IN #2770",
+                    "charter": "晨 vs. 阿爽"
+                }
+            ]
+        },
+        {
+            "name": "DataErr0r",
+            "composer": "Cosmograph",
+            "illustrator": "Photonskyto",
+            "illustration": "Illustration #101.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/5/55/DataErr0r.jpg/revision/latest?cb=20220901102735",
+            "music": "music #3239.wav",
+            "duration": 126,
+            "bpm": 180.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6",
+                    "numOfNotes": "50",
+                    "chart": "Chart_EZ #1166",
+                    "charter": "[!!12:|<|<o!!]"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.6",
+                    "numOfNotes": "400",
+                    "chart": "Chart_HD #1925",
+                    "charter": "Rikko"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.6",
+                    "numOfNotes": "613",
+                    "chart": "Chart_IN #4366",
+                    "charter": "TangScend -Err0rederci-"
+                }
+            ]
+        },
+        {
+            "name": "Cereris",
+            "composer": "SunsetRay/NceS",
+            "illustrator": "IvyTowers",
+            "illustration": "Illustration #3926.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/7/7e/Cereris_new_jacket.png/revision/latest?cb=20211023035058",
+            "music": "music #3290.wav",
+            "duration": 168,
+            "bpm": 175.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5.5",
+                    "numOfNotes": "490",
+                    "chart": "Chart_EZ #4860",
+                    "charter": "Su1fuR"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.9",
+                    "numOfNotes": "701",
+                    "chart": "Chart_HD #851",
+                    "charter": "Su1fuR"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.8",
+                    "numOfNotes": "898",
+                    "chart": "Chart_IN #1891",
+                    "charter": "StupiGGy"
+                }
+            ]
+        },
+        {
+            "name": "もぺもぺ",
+            "composer": "LeaF",
+            "illustrator": "Cycats",
+            "illustration": "Illustration #4952.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/b/be/MopemopeBG.png/revision/latest?cb=20190929013049",
+            "music": "music #3365.wav",
+            "duration": 110,
+            "bpm": 200.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "2",
+                    "numOfNotes": "125",
+                    "chart": "Chart_EZ #1268",
+                    "charter": "阿爽 fixed by Barbarianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "6.5",
+                    "numOfNotes": "289",
+                    "chart": "Chart_HD #1363",
+                    "charter": "阿爽 fixed by Barbarianerman"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "11.1",
+                    "numOfNotes": "412",
+                    "chart": "Chart_IN #3309",
+                    "charter": "阿爽"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "14.9",
+                    "numOfNotes": "720",
+                    "chart": "Chart_AT #1830",
+                    "charter": "阿爽"
+                }
+            ]
+        },
+        {
+            "name": "CROSS†SOUL",
+            "composer": "HyuN feat. Syepias",
+            "illustrator": "knife美工刀",
+            "illustration": "Illustration #1588.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/1/13/CROSS%E2%80%A0SOUL_jacket.png/revision/latest?cb=20200501090954",
+            "music": "music #3369.wav",
+            "duration": 139,
+            "bpm": 200.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "7.5",
+                    "numOfNotes": "517",
+                    "chart": "Chart_EZ #1750",
+                    "charter": "無†極"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "12.8",
+                    "numOfNotes": "892",
+                    "chart": "Chart_HD #4085",
+                    "charter": "無†極 fixed by Rikko"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.9",
+                    "numOfNotes": "1305",
+                    "chart": "Chart_IN #4075",
+                    "charter": "無†極"
+                }
+            ]
+        },
+        {
+            "name": "ジングルベル(Jingle Bell)",
+            "composer": "A-39/沙包P",
+            "illustrator": "爱39的Konya",
+            "illustration": "Illustration #1464.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/f/fb/%E3%82%B8%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%99%E3%83%AB%28Jingle_Bell%29_jacket.png/revision/latest?cb=20211225114629",
+            "music": "music #339.wav",
+            "duration": 167,
+            "bpm": 175.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "4.5",
+                    "numOfNotes": "639",
+                    "chart": "Chart_EZ #1030",
+                    "charter": "merry CNrisTimas"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "8.3",
+                    "numOfNotes": "492",
+                    "chart": "Chart_HD #3063",
+                    "charter": "merry XM AS"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.5",
+                    "numOfNotes": "1239",
+                    "chart": "Chart_IN #2082",
+                    "charter": "NerSANTA vs. BarbarianerSLEDGE"
+                }
+            ]
+        },
+        {
+            "name": "Cthugha",
+            "composer": "USAO",
+            "illustrator": "谷地 (青鸟 modified)",
+            "illustration": "Illustration #139.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/5/5c/Cthugha_jacket.png/revision/latest?cb=20210528132552",
+            "music": "music #3396.wav",
+            "duration": 155,
+            "bpm": 213.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6",
+                    "numOfNotes": "378",
+                    "chart": "Chart_EZ #2997",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.8",
+                    "numOfNotes": "697",
+                    "chart": "Chart_HD #1144",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.6",
+                    "numOfNotes": "1333",
+                    "chart": "Chart_IN #847",
+                    "charter": "Gausbon"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "15.8",
+                    "numOfNotes": "1444",
+                    "chart": "Chart_AT",
+                    "charter": "百九十八 feat. NerSAN"
+                }
+            ]
+        },
+        {
+            "name": "With You",
+            "composer": "Cashew",
+            "illustrator": "ADZUKI",
+            "illustration": "Illustration #4939.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/3/34/With_You_jacket.png/revision/latest?cb=20210618101019",
+            "music": "music #3416.wav",
+            "duration": 126,
+            "bpm": 170.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "3.5",
+                    "numOfNotes": "226",
+                    "chart": "Chart_EZ #1674",
+                    "charter": ""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "9.3",
+                    "numOfNotes": "654",
+                    "chart": "Chart_HD #460",
+                    "charter": ""
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.4",
+                    "numOfNotes": "774",
+                    "chart": "Chart_IN #4336",
+                    "charter": ""
+                }
+            ]
+        },
+        {
+            "name": "I Must Say No",
+            "composer": "TangJuan",
+            "illustrator": "cycats",
+            "illustration": "Illustration #2851.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/d/d5/I_Must_Say_No_jacket.png/revision/latest?cb=20220520174134",
+            "music": "music #3501.wav",
+            "duration": 119,
+            "bpm": 175.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "2.5",
+                    "numOfNotes": "76",
+                    "chart": "Chart_EZ #2285",
+                    "charter": "Likey"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "9.5",
+                    "numOfNotes": "364",
+                    "chart": "Chart_HD #3864",
+                    "charter": "JKy"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.5",
+                    "numOfNotes": "470",
+                    "chart": "Chart_IN #2135",
+                    "charter": "Likey & 百九十八"
+                }
+            ]
+        },
+        {
+            "name": "Speed Up!",
+            "composer": "DarTokki",
+            "illustrator": "TNiK",
+            "illustration": "Illustration #241.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/4/49/Speed_Up%21_new_jacket.png/revision/latest?cb=20211023034650",
+            "music": "music #3502.wav",
+            "duration": 141,
+            "bpm": 145.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "4.5",
+                    "numOfNotes": "262",
+                    "chart": "Chart_EZ #2717",
+                    "charter": ""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.3",
+                    "numOfNotes": "463",
+                    "chart": "Chart_HD #1907",
+                    "charter": ""
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.3",
+                    "numOfNotes": "711",
+                    "chart": "Chart_IN #5625",
+                    "charter": ""
+                }
+            ]
+        },
+        {
+            "name": "瓷岁",
+            "composer": "茶鸣拾贰律",
+            "illustrator": "茶鸣拾贰律",
+            "illustration": "Illustration #3016.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/d/dd/%E7%93%B7%E5%B2%81_jacket.png/revision/latest?cb=20230122130100",
+            "music": "music #3549.wav",
+            "duration": 167,
+            "bpm": 126.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "3.5",
+                    "numOfNotes": "120",
+                    "chart": "Chart_EZ #5090",
+                    "charter": "【流】年大吉"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "6.5",
+                    "numOfNotes": "309",
+                    "chart": "Chart_HD #3846",
+                    "charter": "【流】年大吉"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "7",
+                    "numOfNotes": "365",
+                    "chart": "Chart_IN #4960",
+                    "charter": "【兔】年大吉"
+                }
+            ]
+        },
+        {
+            "name": "Get Ready!!",
+            "composer": "iF",
+            "illustrator": "あおお/A-ZERO, morph",
+            "illustration": "Illustration #355.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/e/e4/Get_Ready%21%21_jacket.png/revision/latest?cb=20210430095504",
+            "music": "music #3553.wav",
+            "duration": 130,
+            "bpm": 142.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "363",
+                    "chart": "Chart_EZ #4065",
+                    "charter": ""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.2",
+                    "numOfNotes": "584",
+                    "chart": "Chart_HD #3056",
+                    "charter": ""
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.8",
+                    "numOfNotes": "819",
+                    "chart": "Chart_IN #741",
+                    "charter": ""
+                }
+            ]
+        },
+        {
+            "name": "Time to Night Sky (feat. Lee Yu Jin)",
+            "composer": "HyuN & KLYDIX",
+            "illustrator": "ZG",
+            "illustration": "Illustration #2872.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/0/0a/Time_to_Night_Sky_%28feat._Lee_Yu_Jin%29_jacket.png/revision/latest?cb=20211224200920",
+            "music": "music #3899.wav",
+            "duration": 131,
+            "bpm": 128.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "3",
+                    "numOfNotes": "165",
+                    "chart": "Chart_EZ #2016",
+                    "charter": "Rikko"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.1",
+                    "numOfNotes": "559",
+                    "chart": "Chart_HD #3372",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.6",
+                    "numOfNotes": "540",
+                    "chart": "Chart_IN #338",
+                    "charter": "Likey & 198ar"
+                }
+            ]
+        },
+        {
+            "name": "Rubbish Sorting",
+            "composer": "Ctymax vs. NceS",
+            "illustrator": "knife美工刀",
+            "illustration": "Illustration #5592.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/8/86/Rubbish_Sorting_jacket.png/revision/latest?cb=20200329130441",
+            "music": "music #394.wav",
+            "duration": 166,
+            "bpm": 128.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "3.5",
+                    "numOfNotes": "229",
+                    "chart": "Chart_EZ #1857",
+                    "charter": ""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "9.4",
+                    "numOfNotes": "475",
+                    "chart": "Chart_HD #2028",
+                    "charter": ""
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.2",
+                    "numOfNotes": "613",
+                    "chart": "Chart_IN #3865",
+                    "charter": ""
+                }
+            ]
+        },
+        {
+            "name": "華灯爱",
+            "composer": "闫东炜",
+            "illustrator": "IvyTowers",
+            "illustration": "Illustration #2685.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/e/ee/%E8%8F%AF%E7%81%AF%E7%88%B1_jacket.png/revision/latest?cb=20200329125625",
+            "music": "music #3943.wav",
+            "duration": 114,
+            "bpm": 120.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6",
+                    "numOfNotes": "312",
+                    "chart": "Chart_EZ #481",
+                    "charter": "HaraKuma"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.5",
+                    "numOfNotes": "357",
+                    "chart": "Chart_HD #1931",
+                    "charter": "HaraKuma"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.1",
+                    "numOfNotes": "520",
+                    "chart": "Chart_IN #3705",
+                    "charter": "Barbarianerman"
+                }
+            ]
+        },
+        {
+            "name": "The Chariot ~REVIIVAL~",
+            "composer": "Attoclef",
+            "illustrator": "翠冷兮",
+            "illustration": "Illustration #4242.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/c/c6/The_Chariot_~REVIIVAL~_jacket.png/revision/latest?cb=20230421193857",
+            "music": "music #4001.wav",
+            "duration": 145,
+            "bpm": 190.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "520",
+                    "chart": "Chart_EZ #1715",
+                    "charter": "M3d1uM"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "9.5",
+                    "numOfNotes": "660",
+                    "chart": "Chart_HD #328",
+                    "charter": "Alloces"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.1",
+                    "numOfNotes": "1009",
+                    "chart": "Chart_IN #2709",
+                    "charter": "Ctymax drives in BlindForest"
+                }
+            ]
+        },
+        {
+            "name": "ストレイソウル・アラウンド",
+            "composer": "みーに",
+            "illustrator": "伊恩 (青鸟 Modified)",
+            "illustration": "Illustration #4191.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/7/76/%E3%82%B9%E3%83%88%E3%83%AC%E3%82%A4%E3%82%BD%E3%82%A6%E3%83%AB%E3%83%BB%E3%82%A2%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%89_jacket.png/revision/latest?cb=20240120144635",
+            "music": "music #4057.wav",
+            "duration": 136,
+            "bpm": 150.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "324",
+                    "chart": "Chart_EZ #4503",
+                    "charter": "JKy as \"Stray Cat\""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.4",
+                    "numOfNotes": "486",
+                    "chart": "Chart_HD #3534",
+                    "charter": "Stray Cat Around"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.5",
+                    "numOfNotes": "908",
+                    "chart": "Chart_IN #3859",
+                    "charter": "クラッタ・アナザー・ラウンド"
+                }
+            ]
+        },
+        {
+            "name": "Parallel Retrogression(Game Ver.)",
+            "composer": "Tetrajectory",
+            "illustrator": "青鸟",
+            "illustration": "Illustration #5063.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/1/11/Parallel_Retrogression%28Game_Ver.%29_jacket.png/revision/latest?cb=20201016092602",
+            "music": "music #4103.wav",
+            "duration": 143,
+            "bpm": 175.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "7",
+                    "numOfNotes": "507",
+                    "chart": "Chart_EZ #5194",
+                    "charter": ""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.7",
+                    "numOfNotes": "697",
+                    "chart": "Chart_HD #5599",
+                    "charter": ""
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.4",
+                    "numOfNotes": "851",
+                    "chart": "Chart_IN #2738",
+                    "charter": ""
+                }
+            ]
+        },
+        {
+            "name": "life flashes before weeb eyes",
+            "composer": "BilliumMoto",
+            "illustrator": "百九十八",
+            "illustration": "Illustration #3512.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/0/0d/Life_flashes_before_weeb_eyes_jacket.png/revision/latest?cb=20200320103934",
+            "music": "music #4147.wav",
+            "duration": 157,
+            "bpm": 227.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6.5",
+                    "numOfNotes": "567",
+                    "chart": "Chart_EZ #923",
+                    "charter": ""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.9",
+                    "numOfNotes": "960",
+                    "chart": "Chart_HD #4701",
+                    "charter": ""
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.8",
+                    "numOfNotes": "1065",
+                    "chart": "Chart_IN #4886",
+                    "charter": ""
+                }
+            ]
+        },
+        {
+            "name": "Introduction",
+            "composer": "姜米條 & ElousΛ.-FZ",
+            "illustrator": "L-sp4",
+            "illustration": "Illustration #2679.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/c/ce/Introduction_jacket.png/revision/latest?cb=20200407134454",
+            "music": "music #4204.wav",
+            "duration": 149,
+            "bpm": 138.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "1",
+                    "numOfNotes": "93",
+                    "chart": "Chart_EZ #1285",
+                    "charter": ""
+                }
+            ]
+        },
+        {
+            "name": "Retribution",
+            "composer": "nm-y & Kry.exe",
+            "illustrator": "NerSAN",
+            "illustration": "Illustration #1849.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/0/00/Retribution_jacket.png/revision/latest?cb=20230422144445",
+            "music": "music #4233.wav",
+            "duration": 157,
+            "bpm": 190.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6",
+                    "numOfNotes": "555",
+                    "chart": "Chart_EZ #5085",
+                    "charter": "NerSAN"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.6",
+                    "numOfNotes": "868",
+                    "chart": "Chart_HD #5695",
+                    "charter": "NerSAN"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.8",
+                    "numOfNotes": "1358",
+                    "chart": "Chart_IN #2856",
+                    "charter": "Ner as \"SP∆DE\""
+                }
+            ]
+        },
+        {
+            "name": "暗夜苏醒 (REANIMATE)",
+            "composer": "Warak",
+            "illustrator": "MHK (青鸟 modified)",
+            "illustration": "Illustration #4054.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/1/1f/%E6%9A%97%E5%A4%9C%E8%8B%8F%E9%86%92_%28REANIMATE%29_jacket.png/revision/latest?cb=20240818054020",
+            "music": "music #4261.wav",
+            "duration": 157,
+            "bpm": 174.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "236",
+                    "chart": "Chart_EZ #5153",
+                    "charter": "Deep Dark Ctymax"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "12.8",
+                    "numOfNotes": "842",
+                    "chart": "Chart_HD #1180",
+                    "charter": "reanimate_6k_nm.imd"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.4",
+                    "numOfNotes": "1262",
+                    "chart": "Chart_IN #3858",
+                    "charter": "StupiGGy -The Startline-"
+                }
+            ]
+        },
+        {
+            "name": "Shine After",
+            "composer": "ADean & JocularACE",
+            "illustrator": "海里狄七 feat. 存艺",
+            "illustration": "Illustration #5691.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/8/8d/Shine_After_jacket.png/revision/latest?cb=20240510175649",
+            "music": "music #4397.wav",
+            "duration": 160,
+            "bpm": 170.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "4",
+                    "numOfNotes": "262",
+                    "chart": "Chart_EZ #4447",
+                    "charter": "Su1fuR"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "9.9",
+                    "numOfNotes": "647",
+                    "chart": "Chart_HD #1687",
+                    "charter": "Su1fuR"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.6",
+                    "numOfNotes": "800",
+                    "chart": "Chart_IN #4360",
+                    "charter": "Salt & Uvernight"
+                }
+            ]
+        },
+        {
+            "name": "聖夜讃歌",
+            "composer": "A-39/沙包P",
+            "illustrator": "绀屋",
+            "illustration": "Illustration #2070.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/9/92/%E8%81%96%E5%A4%9C%E8%AE%83%E6%AD%8C_jacket.png/revision/latest?cb=20231230153757",
+            "music": "music #4483.wav",
+            "duration": 186,
+            "bpm": 175.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "4",
+                    "numOfNotes": "402",
+                    "chart": "Chart_EZ #5444",
+                    "charter": "爽夜讃歌"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.1",
+                    "numOfNotes": "593",
+                    "chart": "Chart_HD #1301",
+                    "charter": "爽夜讃歌"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.3",
+                    "numOfNotes": "1339",
+                    "chart": "Chart_IN #809",
+                    "charter": "NerSANTA & Gausbell"
+                }
+            ]
+        },
+        {
+            "name": "Quantum Hyperspace",
+            "composer": "D_AAN",
+            "illustrator": "sa1t",
+            "illustration": "Illustration #2097.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/f/f5/Quantum_Hyperspace_jacket.png/revision/latest?cb=20240225172814",
+            "music": "music #4642.wav",
+            "duration": 118,
+            "bpm": 200.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6",
+                    "numOfNotes": "443",
+                    "chart": "Chart_EZ #2885",
+                    "charter": "Bariantum Hyperianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.2",
+                    "numOfNotes": "790",
+                    "chart": "Chart_HD #2381",
+                    "charter": "Bariantum Hyperianerman"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.8",
+                    "numOfNotes": "888",
+                    "chart": "Chart_IN #245",
+                    "charter": "IMD_0B0110"
+                }
+            ]
+        },
+        {
+            "name": "Journey with You",
+            "composer": "Iris",
+            "illustrator": "BTKCyber (青鸟 modified)",
+            "illustration": "Illustration #1371.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/3/3d/Journey_with_You_jacket.png/revision/latest?cb=20231202183731",
+            "music": "music #4773.wav",
+            "duration": 140,
+            "bpm": 150.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5.5",
+                    "numOfNotes": "60",
+                    "chart": "Chart_EZ #4167",
+                    "charter": "jouR.ney with hold"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.1",
+                    "numOfNotes": "175",
+                    "chart": "Chart_HD #3481",
+                    "charter": "jouR.ney to the end 【CORVERED】"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.8",
+                    "numOfNotes": "562",
+                    "chart": "Chart_IN #5763",
+                    "charter": "Su1fuR -All about YOU & ME-"
+                }
+            ]
+        },
+        {
+            "name": "雪降り、メリクリ",
+            "composer": "A-39",
+            "illustrator": "犀牛坨动画工坊",
+            "illustration": "Illustration #3083.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/2/22/%E9%9B%AA%E9%99%8D%E3%82%8A%E3%80%81%E3%83%A1%E3%83%AA%E3%82%AF%E3%83%AA_jacket.png/revision/latest?cb=20201224104236",
+            "music": "music #4889.wav",
+            "duration": 158,
+            "bpm": 180.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5.5",
+                    "numOfNotes": "316",
+                    "chart": "Chart_EZ #118",
+                    "charter": "Merry xmAS"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.4",
+                    "numOfNotes": "559",
+                    "chart": "Chart_HD #1438",
+                    "charter": "Merry ChristymAxS"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.3",
+                    "numOfNotes": "939",
+                    "chart": "Chart_IN #1851",
+                    "charter": "N\\erry Xmas"
+                }
+            ]
+        },
+        {
+            "name": "Demiurge",
+            "composer": "Rabpit",
+            "illustrator": "青鸟",
+            "illustration": "Illustration #240.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/1/1d/Demiurge_jacket.png/revision/latest?cb=20220318085712",
+            "music": "music #5026.wav",
+            "duration": 169,
+            "bpm": 111.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "1.5",
+                    "numOfNotes": "100",
+                    "chart": "Chart_EZ #5737",
+                    "charter": "\"Manufacturer\" ~ Rikko"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "7.5",
+                    "numOfNotes": "445",
+                    "chart": "Chart_HD #2886",
+                    "charter": "\"Creator\" ~ StupiGGy"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "11.8",
+                    "numOfNotes": "520",
+                    "chart": "Chart_IN #3197",
+                    "charter": "\"Demiurge\" ~ Dawn"
+                }
+            ]
+        },
+        {
+            "name": "micro.wav",
+            "composer": "dandeless",
+            "illustrator": "snake.ribs",
+            "illustration": "Illustration #4671.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/c/c6/Micro.wav_jacket.png/revision/latest?cb=20200901051659",
+            "music": "music #5062.wav",
+            "duration": 160,
+            "bpm": 172.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6",
+                    "numOfNotes": "196",
+                    "chart": "Chart_EZ #230",
+                    "charter": ""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.7",
+                    "numOfNotes": "459",
+                    "chart": "Chart_HD #1454",
+                    "charter": ""
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.6",
+                    "numOfNotes": "649",
+                    "chart": "Chart_IN #4259",
+                    "charter": ""
+                }
+            ]
+        },
+        {
+            "name": "inferior",
+            "composer": "姜米條",
+            "illustrator": "群青kurara",
+            "illustration": "Illustration #1487.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/1/1b/Inferior_.jpg/revision/latest?cb=20220901102813",
+            "music": "music #5124.wav",
+            "duration": 126,
+            "bpm": 200.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "7",
+                    "numOfNotes": "226",
+                    "chart": "Chart_EZ #3676",
+                    "charter": "Ner, the inferior"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "7.5",
+                    "numOfNotes": "489",
+                    "chart": "Chart_HD #456",
+                    "charter": "Ner, the inferior"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.6",
+                    "numOfNotes": "755",
+                    "chart": "Chart_IN #1427",
+                    "charter": "JKy, the inferior"
+                }
+            ]
+        },
+        {
+            "name": "桜樹街道",
+            "composer": "kozato snow",
+            "illustrator": "あおお/A-ZERO, morph",
+            "illustration": "Illustration #2420.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/4/40/%E6%A1%9C%E6%A8%B9%E8%A1%97%E9%81%93_jacket.png/revision/latest?cb=20210430095743",
+            "music": "music #5129.wav",
+            "duration": 145,
+            "bpm": 135.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "3.5",
+                    "numOfNotes": "292",
+                    "chart": "Chart_EZ #4903",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "7.5",
+                    "numOfNotes": "421",
+                    "chart": "Chart_HD #1691",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.4",
+                    "numOfNotes": "459",
+                    "chart": "Chart_IN #1840",
+                    "charter": "百九十八"
+                }
+            ]
+        },
+        {
+            "name": "ATHAZA",
+            "composer": "LeaF",
+            "illustrator": "御坂果子",
+            "illustration": "Illustration #2290.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/c/c1/ATHAZA_jacket.png/revision/latest?cb=20240904043206",
+            "music": "music #5164.wav",
+            "duration": 163,
+            "bpm": 280.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "8.1",
+                    "numOfNotes": "479",
+                    "chart": "Chart_EZ #2331",
+                    "charter": "LDAJOY&PLEASENT ^V^ LDA"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "12.9",
+                    "numOfNotes": "662",
+                    "chart": "Chart_HD #349",
+                    "charter": "ANGER&SORROW >^< LDA"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.5",
+                    "numOfNotes": "1137",
+                    "chart": "Chart_IN #4879",
+                    "charter": "Affection&memories \\// Salt&Simon_Axis"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "16.2",
+                    "numOfNotes": "1344",
+                    "chart": "Chart_AT #2036",
+                    "charter": "FORGET::CLUTTER"
+                }
+            ]
+        },
+        {
+            "name": "萤火虫の怨",
+            "composer": "闫东炜",
+            "illustrator": "L-sp4",
+            "illustration": "Illustration #2967.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/e/e8/%E8%90%A4%E7%81%AB%E8%99%AB%E3%81%AE%E6%80%A8_jacket.png/revision/latest?cb=20200329131438",
+            "music": "music #5539.wav",
+            "duration": 158,
+            "bpm": 200.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "4.5",
+                    "numOfNotes": "245",
+                    "chart": "Chart_EZ #5577",
+                    "charter": ""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.6",
+                    "numOfNotes": "746",
+                    "chart": "Chart_HD #1737",
+                    "charter": ""
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.1",
+                    "numOfNotes": "885",
+                    "chart": "Chart_IN #2327",
+                    "charter": ""
+                }
+            ]
+        },
+        {
+            "name": "Cuvism³",
+            "composer": "Fl00t vs Halv",
+            "illustrator": "sikkari",
+            "illustration": "Illustration #3470.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/2/2c/Cuvism%C2%B3_jacket.png/revision/latest?cb=20240729060329",
+            "music": "music #5638.wav",
+            "duration": 161,
+            "bpm": 194.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "3",
+                    "numOfNotes": "222",
+                    "chart": "Chart_EZ #5779",
+                    "charter": "Rikko"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "12.1",
+                    "numOfNotes": "761",
+                    "chart": "Chart_HD #5632",
+                    "charter": "Rikko³ [Normal]"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.9",
+                    "numOfNotes": "830",
+                    "chart": "Chart_IN #3463",
+                    "charter": "Rikko"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "16.4",
+                    "numOfNotes": "1088",
+                    "chart": "Chart_AT #5455",
+                    "charter": "JKy vs StrayCat"
+                }
+            ]
+        },
+        {
+            "name": "零號車輛",
+            "composer": "seatrus",
+            "illustrator": "2Al4wU4",
+            "illustration": "Illustration #3148.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/9/9f/%E9%9B%B6%E8%99%9F%E8%BB%8A%E8%BC%9B_new_jacket.png/revision/latest?cb=20231104104710",
+            "music": "music #5728.wav",
+            "duration": 143,
+            "bpm": 240.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "7",
+                    "numOfNotes": "594",
+                    "chart": "Chart_EZ #3524",
+                    "charter": "零號宇夜"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "12.3",
+                    "numOfNotes": "1058",
+                    "chart": "Chart_HD #1867",
+                    "charter": "壹號阿爽"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.8",
+                    "numOfNotes": "1240",
+                    "chart": "Chart_IN #3457",
+                    "charter": "Pcat【零】198"
+                }
+            ]
+        },
+        {
+            "name": "月詠に鳴る",
+            "composer": "Feryquitous feat. 藍月なくる",
+            "illustrator": "SEGA(V17AMax Modified)",
+            "illustration": "Illustration #4239.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/e/e1/%E6%9C%88%E8%A9%A0%E3%81%AB%E9%B3%B4%E3%82%8B_jacket.webp/revision/latest?cb=20240901062917",
+            "music": "music #5744.wav",
+            "duration": 135,
+            "bpm": 180.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6",
+                    "numOfNotes": "293",
+                    "chart": "Chart_EZ #4496",
+                    "charter": "IUIsauce"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.1",
+                    "numOfNotes": "544",
+                    "chart": "Chart_HD #3067",
+                    "charter": "Salt"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.7",
+                    "numOfNotes": "858",
+                    "chart": "Chart_IN #344",
+                    "charter": "Myna feat. Sleepyhead"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "15.5",
+                    "numOfNotes": "938",
+                    "chart": "Chart_AT #4296",
+                    "charter": "StupiGGy"
+                }
+            ]
+        },
+        {
+            "name": "Cervelle Connexion",
+            "composer": "SCTL",
+            "illustrator": "SCTL",
+            "illustration": "Illustration #1400.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/3/37/Cervelle_Connexion_jacket.png/revision/latest?cb=20210115103235",
+            "music": "music #5767.wav",
+            "duration": 147,
+            "bpm": 142.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "301",
+                    "chart": "Chart_EZ #4133",
+                    "charter": ""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.3",
+                    "numOfNotes": "569",
+                    "chart": "Chart_HD #4877",
+                    "charter": ""
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.5",
+                    "numOfNotes": "563",
+                    "chart": "Chart_IN #1484",
+                    "charter": ""
+                }
+            ]
+        },
+        {
+            "name": "君往何处 (Quo Vadis)",
+            "composer": "M2U",
+            "illustrator": "LRAY (青鸟 modified)",
+            "illustration": "Illustration #4352.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/1/1a/%E5%90%9B%E5%BE%80%E4%BD%95%E5%A4%84_%28Quo_Vadis%29_jacket.png/revision/latest?cb=20240818054044",
+            "music": "music #638.wav",
+            "duration": 147,
+            "bpm": 160.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "4",
+                    "numOfNotes": "208",
+                    "chart": "Chart_EZ #1503",
+                    "charter": "Where are Ctymax and 阿爽?"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "8.6",
+                    "numOfNotes": "390",
+                    "chart": "Chart_HD #5750",
+                    "charter": "Where are Ctymax and 阿爽?"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.5",
+                    "numOfNotes": "935",
+                    "chart": "Chart_IN #3880",
+                    "charter": "Salt"
+                }
+            ]
+        },
+        {
+            "name": "Sparkle New Life",
+            "composer": "rider",
+            "illustrator": "1B",
+            "illustration": "Illustration #3528.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/3/39/Sparkle_New_Life_jacket.png/revision/latest?cb=20200329130928",
+            "music": "music #715.wav",
+            "duration": 138,
+            "bpm": 150.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "4",
+                    "numOfNotes": "305",
+                    "chart": "Chart_EZ #1805",
+                    "charter": "Sparkle Ctymax"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "9.2",
+                    "numOfNotes": "497",
+                    "chart": "Chart_HD #754",
+                    "charter": "Sparkle Ctymax"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "12.8",
+                    "numOfNotes": "684",
+                    "chart": "Chart_IN #5028",
+                    "charter": "Sparkle Ctymax fixed by 百九十八"
+                }
+            ]
+        },
+        {
+            "name": "Indelible Scar",
+            "composer": "Noah",
+            "illustrator": "兜",
+            "illustration": "Illustration #4468.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/6/6d/Indelible_Scar_jacket.png/revision/latest?cb=20240411180336",
+            "music": "music #722.wav",
+            "duration": 166,
+            "bpm": 223.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "7.5",
+                    "numOfNotes": "316",
+                    "chart": "Chart_EZ #159",
+                    "charter": "Clutter & Barbarianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.7",
+                    "numOfNotes": "733",
+                    "chart": "Chart_HD #2426",
+                    "charter": "Salt & Barbarianerman"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.3",
+                    "numOfNotes": "844",
+                    "chart": "Chart_IN #5030",
+                    "charter": "Likey affected by Ancestral Xhronicle"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "16.1",
+                    "numOfNotes": "1207",
+                    "chart": "Chart_AT #1700",
+                    "charter": "上班睡大觉_Sleepyhead"
+                }
+            ]
+        },
+        {
+            "name": "volcanic",
+            "composer": "DETRO a.k.a. ルゼ",
+            "illustrator": "あおお/A-ZERO, morph",
+            "illustration": "Illustration #4382.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/1/1d/Volcanic_jacket.png/revision/latest?cb=20210430095809",
+            "music": "music #752.wav",
+            "duration": 137,
+            "bpm": 191.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "7.5",
+                    "numOfNotes": "1052",
+                    "chart": "Chart_EZ #296",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.9",
+                    "numOfNotes": "985",
+                    "chart": "Chart_HD #76",
+                    "charter": "Rikko"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.6",
+                    "numOfNotes": "1178",
+                    "chart": "Chart_IN #256",
+                    "charter": "Ctymax in a volcano, very delicious"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "16.2",
+                    "numOfNotes": "1650",
+                    "chart": "Chart_AT #4725",
+                    "charter": "Alloces"
+                }
+            ]
+        },
+        {
+            "name": "Engine x Start!! (melody mix)",
+            "composer": "CrossingSound",
+            "illustrator": "赤芽",
+            "illustration": "Illustration #2674.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/d/d3/Engine_x_Start%21%21_%28melody_mix%29_jacket.png/revision/latest?cb=20200319052652",
+            "music": "music #769.wav",
+            "duration": 92,
+            "bpm": 186.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "2.5",
+                    "numOfNotes": "75",
+                    "chart": "Chart_EZ #2010",
+                    "charter": "Clutter"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "8.6",
+                    "numOfNotes": "192",
+                    "chart": "Chart_HD #2287",
+                    "charter": "Clutter"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.4",
+                    "numOfNotes": "433",
+                    "chart": "Chart_IN #465",
+                    "charter": "Arenn Saki & Catcats"
+                }
+            ]
+        },
+        {
+            "name": "いざ、参ります",
+            "composer": "U-ske feat. 棗いつき",
+            "illustrator": "緑風マルト",
+            "illustration": "Illustration #2751.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/8/8d/%E3%81%84%E3%81%96%E3%80%81%E5%8F%82%E3%82%8A%E3%81%BE%E3%81%99_jacket.png/revision/latest?cb=20220701154902",
+            "music": "music #795.wav",
+            "duration": 102,
+            "bpm": 188.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "4",
+                    "numOfNotes": "188",
+                    "chart": "Chart_EZ #3418",
+                    "charter": "Clutter & Barbarianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "9.6",
+                    "numOfNotes": "441",
+                    "chart": "Chart_HD #3389",
+                    "charter": "Clutter & Barbarianerman"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.8",
+                    "numOfNotes": "865",
+                    "chart": "Chart_IN #498",
+                    "charter": "小咩兔、参上"
+                }
+            ]
+        },
+        {
+            "name": "Rainy Season",
+            "composer": "Abyss Idols",
+            "illustrator": "Robin",
+            "illustration": "Illustration #3307.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/4/49/Rainy_Season_jacket.png/revision/latest?cb=20221105135103",
+            "music": "music.wav",
+            "duration": 115,
+            "bpm": 188.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5.5",
+                    "numOfNotes": "304",
+                    "chart": "Chart_EZ #3009",
+                    "charter": "StupiGGy"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.7",
+                    "numOfNotes": "594",
+                    "chart": "Chart_HD #3033",
+                    "charter": "StupiGGy"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.4",
+                    "numOfNotes": "660",
+                    "chart": "Chart_IN #3015",
+                    "charter": "Rainky Season"
+                }
+            ]
+        },
+        {
+            "name": "Non-Melodic Ragez",
+            "composer": "Normal1zer",
+            "illustrator": "cycats",
+            "illustration": "Illustration #3264.png",
+            "illustrationUrl": "https://img.moegirl.org.cn/common/thumb/f/fe/Non-Melodic_Ragez_Phigros.png/456px-Non-Melodic_Ragez_Phigros.png",
+            "music": "music #2203.wav",
+            "duration": 139,
+            "bpm": 205.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": 5.5,
+                    "numOfNotes": 347,
+                    "chart": "Chart_EZ #4786",
+                    "charter": "Clutter"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": 11.8,
+                    "numOfNotes": 675,
+                    "chart": "Chart_HD #1085",
+                    "charter": "Clutter"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": 15.7,
+                    "numOfNotes": 1235,
+                    "chart": "Chart_IN #326",
+                    "charter": "分化者 fixed by Barbarianerman"
+                }
+            ]
+        },
+        {
+            "name": "MOBILYS",
+            "composer": "Dachs",
+            "illustrator": "わっふゑ",
+            "illustration": "Illustration #4453.png",
+            "illustrationUrl": "https://img.moegirl.org.cn/common/thumb/4/45/MOBILYS_Phigros.png/456px-MOBILYS_Phigros.png",
+            "music": "music #2345.wav",
+            "duration": 163,
+            "bpm": 144.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": 5.0,
+                    "numOfNotes": 311,
+                    "chart": "Chart_EZ #1389",
+                    "charter": "百九十八"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": 9.7,
+                    "numOfNotes": 530,
+                    "chart": "Chart_HD #1694",
+                    "charter": "百九十八"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": 14.4,
+                    "numOfNotes": 938,
+                    "chart": "Chart_IN #189",
+                    "charter": "StupiGGy vs. 百九十八 ft. 野从"
+                }
+            ]
+        },
+        {
+            "name": "望影の方舟Six",
+            "composer": "Se-U-Ra",
+            "illustrator": "鲸弑",
+            "illustration": "Illustration #2199.png",
+            "illustrationUrl": "https://img.moegirl.org.cn/common/thumb/e/e2/Houyou_no_hakobune_Six_Phigros.png/456px-Houyou_no_hakobune_Six_Phigros.png",
+            "music": "music #362.wav",
+            "duration": 0,
+            "bpm": 209.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": 6.5,
+                    "numOfNotes": 276,
+                    "chart": "Chart_EZ #4344",
+                    "charter": "六回目Traveler Scend"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": 12.1,
+                    "numOfNotes": 526,
+                    "chart": "Chart_HD #4945",
+                    "charter": "六回目Traveler Scend"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": 15.7,
+                    "numOfNotes": 1066,
+                    "chart": "Chart_IN #336",
+                    "charter": "六回目Traveler Scend as ‘Knight of Arq’"
+                }
+            ]
+        },
+        {
+            "name": "G.V.N.(Glitter,Vomitus and Neon)",
+            "composer": "Salty Salt & Unfold33",
+            "illustrator": "祈莲",
+            "illustration": "Illustration #3098.png",
+            "illustrationUrl": "https://img.moegirl.org.cn/common/thumb/7/7f/GVN_Phigros.png/456px-GVN_Phigros.png",
+            "music": "music #3895.wav",
+            "duration": 0,
+            "bpm": 175.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": 5.0,
+                    "numOfNotes": 635,
+                    "chart": "Chart_EZ #4070",
+                    "charter": "B.B.M."
+                },
+                {
+                    "level": "HD",
+                    "difficulty": 9.5,
+                    "numOfNotes": 900,
+                    "chart": "Chart_HD #3094",
+                    "charter": "B.B.M."
+                },
+                {
+                    "level": "IN",
+                    "difficulty": 15.6,
+                    "numOfNotes": 1541,
+                    "chart": "Chart_IN #1678",
+                    "charter": "A.S.H."
+                }
+            ]
+        },
+        {
+            "name": "风屿",
+            "composer": "闫东炜",
+            "illustrator": "cycats",
+            "illustration": "Illustration #3069.png",
+            "illustrationUrl": "https://img.moegirl.org.cn/common/thumb/e/ef/%E9%A3%8E%E5%B1%BF_Phigros.png/456px-%E9%A3%8E%E5%B1%BF_Phigros.png",
+            "music": "music #4101.wav",
+            "duration": 0,
+            "bpm": 170.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": 6.0,
+                    "numOfNotes": 368,
+                    "chart": "Chart_EZ #1307",
+                    "charter": "Arenn Saki vs Catcats vs 百九十八"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": 10.3,
+                    "numOfNotes": 802,
+                    "chart": "Chart_HD #3329",
+                    "charter": "Arenn Saki vs Catcats vs 百九十八"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": 13.9,
+                    "numOfNotes": 1156,
+                    "chart": "Chart_IN #4019",
+                    "charter": "Arenn Saki vs Catcats vs 百九十八"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": 14.8,
+                    "numOfNotes": 1236,
+                    "chart": "Chart_AT #3655",
+                    "charter": "JKy"
+                }
+            ]
+        },
+        {
+            "name": "Lyrith -迷宮リリス-",
+            "composer": "ユメミド",
+            "illustrator": "何呵",
+            "illustration": "Illustration #3078.png",
+            "illustrationUrl": "https://img.moegirl.org.cn/common/thumb/b/b0/Phigros_Lyrith.png/456px-Phigros_Lyrith.png",
+            "music": "music #4178.wav",
+            "duration": 0,
+            "bpm": 177.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": 5.0,
+                    "numOfNotes": 248,
+                    "chart": "Chart_EZ #1718",
+                    "charter": "Arenn Saki as \"mAze\""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": 11.6,
+                    "numOfNotes": 700,
+                    "chart": "Chart_HD #4940",
+                    "charter": "Arenn Saki as \"mAze\""
+                },
+                {
+                    "level": "IN",
+                    "difficulty": 15.8,
+                    "numOfNotes": 1267,
+                    "chart": "Chart_IN #1218",
+                    "charter": "XMT as \"eX-MentalisT\""
+                },
+                {
+                    "level": "AT",
+                    "difficulty": 16.2,
+                    "numOfNotes": 1236,
+                    "chart": "Chart_AT #4215",
+                    "charter": "CN_115 as \"prediCameNt\""
+                }
+            ]
+        },
+        {
+            "name": "Chronos Collapse - La Campanella",
+            "composer": "SunsetRay",
+            "illustrator": "老张",
+            "illustration": "Illustration #1404.png",
+            "illustrationUrl": "https://img.moegirl.org.cn/common/thumb/6/6d/CCLC_Phigros.jpeg/456px-CCLC_Phigros.jpeg",
+            "music": "music #79.wav",
+            "duration": 0,
+            "bpm": 180.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": 3.0,
+                    "numOfNotes": 350,
+                    "chart": "Chart_EZ #819",
+                    "charter": "Pcat‘Scatter’"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": 11.5,
+                    "numOfNotes": 773,
+                    "chart": "Chart_HD #2666",
+                    "charter": "阿爽‘Destroy’"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": 15.9,
+                    "numOfNotes": 1500,
+                    "chart": "Chart_IN #4154",
+                    "charter": "NerSAN vs. 阿爽‘Collapse’"
+                }
+            ]
+        },
+        {
+            "name": "Break Over",
+            "composer": "K-Forest",
+            "illustrator": "圆规compasses",
+            "illustration": "Break Over.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/3/3c/Break_Over_jacket.png/revision/latest?cb=20221126115007",
+            "music": "music #1252.wav",
+            "duration": 130,
+            "bpm": 185.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "300",
+                    "chart": "Chart_EZ #286",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.8",
+                    "numOfNotes": "919",
+                    "chart": "Chart_HD #1758",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.1",
+                    "numOfNotes": "910",
+                    "chart": "Chart_IN #2153",
+                    "charter": "百九十八 vs Barbarianerman"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "14.9",
+                    "numOfNotes": "570",
+                    "chart": "Chart_AT #4516",
+                    "charter": "百九十八"
+                }
+            ]
+        },
+        {
+            "name": "c.s.q.n",
+            "composer": "Aoi",
+            "illustrator": "Ctymax vs. TNiK feat. 出前",
+            "illustration": "c.s.q.n.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/e/e8/C.s.q.n.jpeg/revision/latest?cb=20220923120858",
+            "music": "music #1328.wav",
+            "duration": 125,
+            "bpm": 174.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "330",
+                    "chart": "Chart_EZ #3080",
+                    "charter": "b.b.n.m"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "12.5",
+                    "numOfNotes": "755",
+                    "chart": "Chart_HD #2319",
+                    "charter": "h.o.m.e.e.e."
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.7",
+                    "numOfNotes": "1066",
+                    "chart": "Chart_IN #4359",
+                    "charter": "s.t.p.g"
+                }
+            ]
+        },
+        {
+            "name": "Bougainvillea",
+            "composer": "Jade",
+            "illustrator": "TNiK",
+            "illustration": "Bougainvillea.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/d/dd/Bougainvillea_jacket.png/revision/latest?cb=20230520072736",
+            "music": "music #1923.wav",
+            "duration": 117,
+            "bpm": 120.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "4",
+                    "numOfNotes": "300",
+                    "chart": "Chart_EZ #780",
+                    "charter": ""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "8.3",
+                    "numOfNotes": "347",
+                    "chart": "Chart_HD #417",
+                    "charter": ""
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.2",
+                    "numOfNotes": "662",
+                    "chart": "Chart_IN #3298",
+                    "charter": ""
+                }
+            ]
+        },
+        {
+            "name": "Silence is Golden, Speech is Golden",
+            "composer": "NIWASHI",
+            "illustrator": "Jerry & OsuMe65",
+            "illustration": "Silence is Golden, Speech is Golden.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/0/0a/Silence_is_Golden%2C_Speech_is_Golden_jacket.png/revision/latest?cb=20231110145701",
+            "music": "music #1995.wav",
+            "duration": 165,
+            "bpm": 177.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "376",
+                    "chart": "Chart_EZ #3968",
+                    "charter": "Clutter is coppery, Tumult is coppery"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "9.7",
+                    "numOfNotes": "795",
+                    "chart": "Chart_HD #5450",
+                    "charter": "XMT is silvery, 小咩兔 is silvery"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.5",
+                    "numOfNotes": "1273",
+                    "chart": "Chart_IN #1469",
+                    "charter": "Hara is golden, Kuma is golden"
+                }
+            ]
+        },
+        {
+            "name": "Upshift",
+            "composer": "Iriss-Frantzz",
+            "illustrator": "Iriss=Frantzz=s-don",
+            "illustration": "Upshift.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/3/37/Upshift_jacket.png/revision/latest?cb=20230225184328",
+            "music": "music #2661.wav",
+            "duration": 141,
+            "bpm": 155.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5.5",
+                    "numOfNotes": "630",
+                    "chart": "Chart_EZ #2186",
+                    "charter": "Lumiere"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.8",
+                    "numOfNotes": "545",
+                    "chart": "Chart_HD #2834",
+                    "charter": "CorruptedEntity & 野从"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.4",
+                    "numOfNotes": "946",
+                    "chart": "Chart_IN #3509",
+                    "charter": "_鉄"
+                }
+            ]
+        },
+        {
+            "name": "Grimheart",
+            "composer": "Puru",
+            "illustrator": "临时工 & 倪尔",
+            "illustration": "Grimheart.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/2/2d/Grimheart_jacket.webp/revision/latest?cb=20240901191421",
+            "music": "music #3453.wav",
+            "duration": 153,
+            "bpm": 170.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "3",
+                    "numOfNotes": "132",
+                    "chart": "Chart_EZ #1776",
+                    "charter": "SimonAxis"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "8.9",
+                    "numOfNotes": "349",
+                    "chart": "Chart_HD",
+                    "charter": "SimonAxis"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.8",
+                    "numOfNotes": "577",
+                    "chart": "Chart_IN #817",
+                    "charter": "WhiteCat."
+                }
+            ]
+        },
+        {
+            "name": "Now Is The Time, Do It",
+            "composer": "Roy Mikelate",
+            "illustrator": "青鸟",
+            "illustration": "Now Is The Time, Do It.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/f/f2/Now_Is_The_Time%2C_Do_It_jacket.png/revision/latest?cb=20230520072717",
+            "music": "music #1653.wav",
+            "duration": 134,
+            "bpm": 158.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "4.5",
+                    "numOfNotes": "246",
+                    "chart": "Chart_EZ #2981",
+                    "charter": "M3d1uM"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.7",
+                    "numOfNotes": "777",
+                    "chart": "Chart_HD #1944",
+                    "charter": "M3d1uM"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.3",
+                    "numOfNotes": "795",
+                    "chart": "Chart_IN #4667",
+                    "charter": "Pat Brick Man Mr.N feat. Ner of Time"
+                }
+            ]
+        },
+        {
+            "name": "Feast远东之宴",
+            "composer": "茶鸣拾贰律",
+            "illustrator": "茶鸣拾贰律",
+            "illustration": "Feast远东之宴.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/c/c6/Feast%E8%BF%9C%E4%B8%9C%E4%B9%8B%E5%AE%B4_jacket.png/revision/latest?cb=20230121192731",
+            "music": "music #1351.wav",
+            "duration": 150,
+            "bpm": 128.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6.5",
+                    "numOfNotes": "600",
+                    "chart": "Chart_EZ #3092",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.9",
+                    "numOfNotes": "800",
+                    "chart": "Chart_HD #3844",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.3",
+                    "numOfNotes": "1000",
+                    "chart": "Chart_IN #5032",
+                    "charter": "Gino"
+                }
+            ]
+        },
+        {
+            "name": "盏茗",
+            "composer": "茶鸣拾贰律",
+            "illustrator": "茶鸣拾贰律",
+            "illustration": "盏茗.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/5/58/%E7%9B%8F%E8%8C%97_jacket.png/revision/latest?cb=20221014164444",
+            "music": "music #1719.wav",
+            "duration": 130,
+            "bpm": 131.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "2",
+                    "numOfNotes": "83",
+                    "chart": "Chart_EZ #1918",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "4.5",
+                    "numOfNotes": "176",
+                    "chart": "Chart_HD #3972",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.3",
+                    "numOfNotes": "706",
+                    "chart": "Chart_IN #2733",
+                    "charter": "NerSAN sipping XMTea"
+                }
+            ]
+        },
+        {
+            "name": "INFiNiTE ENERZY -Overdoze-",
+            "composer": "Reku Mochizuki",
+            "illustrator": "knife美工刀",
+            "illustration": "INFiNiTE ENERZY -Overdoze-.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/1/1a/INFiNiTE_ENERZY_-Overdoze-_jacket.png/revision/latest?cb=20220430022733",
+            "music": "music #3281.wav",
+            "duration": 121,
+            "bpm": 180.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "7.5",
+                    "numOfNotes": "333",
+                    "chart": "Chart_EZ #3395",
+                    "charter": "while(TangScend<=TangScend);"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "12.4",
+                    "numOfNotes": "666",
+                    "chart": "Chart_HD #4271",
+                    "charter": "while(TangScend>=TangScend);"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.7",
+                    "numOfNotes": "888",
+                    "chart": "Chart_IN #219",
+                    "charter": "while(TangScend==TangScend);"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "16.3",
+                    "numOfNotes": "888",
+                    "chart": "Chart_AT #4761",
+                    "charter": "while(TangScend=TangScend);"
+                }
+            ]
+        },
+        {
+            "name": "インフェルノシティ",
+            "composer": "Ponchi♪ feat. はぁち",
+            "illustrator": "LESYEF & 藍瀬 まなみ",
+            "illustration": "インフェルノシティ.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/f/f2/%E3%82%A4%E3%83%B3%E3%83%95%E3%82%A7%E3%83%AB%E3%83%8E%E3%82%B7%E3%83%86%E3%82%A3_jacket.jpg/revision/latest?cb=20230225183958",
+            "music": "music #4125.wav",
+            "duration": 124,
+            "bpm": 215.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "352",
+                    "chart": "Chart_EZ #3640",
+                    "charter": "Su1fuR"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.2",
+                    "numOfNotes": "578",
+                    "chart": "Chart_HD #5619",
+                    "charter": "Alloces feat. Uvernight"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.5",
+                    "numOfNotes": "1275",
+                    "chart": "Chart_IN #1165",
+                    "charter": "Alloces"
+                }
+            ]
+        },
+        {
+            "name": "Eradication Catastrophe",
+            "composer": "NceS",
+            "illustrator": "海产",
+            "illustration": "Eradication Catastrophe.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/2/29/Eradication_Catastrophe_jacket.png/revision/latest?cb=20200319044855",
+            "music": "music #886.wav",
+            "duration": 127,
+            "bpm": 120.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "3.5",
+                    "numOfNotes": "181",
+                    "chart": "Chart_EZ #4490",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "7.5",
+                    "numOfNotes": "200",
+                    "chart": "Chart_HD #786",
+                    "charter": "Barbarianerman fixed by Clutter"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "12.7",
+                    "numOfNotes": "593",
+                    "chart": "Chart_IN #3445",
+                    "charter": "Barbarianerman"
+                }
+            ]
+        },
+        {
+            "name": "狂喜蘭舞",
+            "composer": "LeaF",
+            "illustrator": "DoublePian",
+            "illustration": "狂喜蘭舞.png",
+            "illustrationUrl": "https://img.moegirl.org.cn/common/thumb/1/18/Kxlw_phi.jpg/456px-Kxlw_phi.jpg",
+            "music": "music #1878.wav",
+            "duration": 161,
+            "bpm": 230.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": 7.0,
+                    "numOfNotes": 472,
+                    "chart": "Chart_EZ #5443",
+                    "charter": "Catcats aka. 無極 VS H.C.C. fixed by 晨"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": 11.7,
+                    "numOfNotes": 651,
+                    "chart": "Chart_HD #744",
+                    "charter": "Catcats aka. 無極 VS H.C.C. fixed by Pcat"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": 14.5,
+                    "numOfNotes": 968,
+                    "chart": "Chart_IN #128",
+                    "charter": "晨"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": 16.1,
+                    "numOfNotes": 1325,
+                    "chart": "Chart_AT #2402",
+                    "charter": "Catcats aka. 無極 VS H.C.C. fixed by 野从&晨"
+                }
+            ]
+        },
+        {
+            "name": "opia",
+            "composer": "rN",
+            "illustrator": "rN @ 湯元画伯",
+            "illustration": "opia.png",
+            "illustrationUrl": "https://img.moegirl.org.cn/common/thumb/4/40/Opia_Phigros.png/456px-Opia_Phigros.png",
+            "music": "music #2934.wav",
+            "duration": 0,
+            "bpm": 193.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": 5.5,
+                    "numOfNotes": 233,
+                    "chart": "Chart_EZ #5654",
+                    "charter": "BlindForest"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": 11.6,
+                    "numOfNotes": 548,
+                    "chart": "Chart_HD #1773",
+                    "charter": "BlindForest 'Observing'"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": 15.5,
+                    "numOfNotes": 793,
+                    "chart": "Chart_IN #1254",
+                    "charter": "Jeitie & CorruptedEntity ‘Hollow’"
+                }
+            ]
+        },
+        {
+            "name": "青丘",
+            "composer": "BLACK 0",
+            "illustrator": "BLACK 0",
+            "illustration": "青丘.png",
+            "illustrationUrl": "https://img.moegirl.org.cn/common/thumb/9/94/%E9%9D%92%E4%B8%98_Phigros.png/456px-%E9%9D%92%E4%B8%98_Phigros.png",
+            "music": "music #4094.wav",
+            "duration": 0,
+            "bpm": 180.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": 5.5,
+                    "numOfNotes": 284,
+                    "chart": "Chart_EZ #4281",
+                    "charter": "Ctymax"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": 10.5,
+                    "numOfNotes": 534,
+                    "chart": "Chart_HD #2644",
+                    "charter": "Su1fuR"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": 15.3,
+                    "numOfNotes": 1304,
+                    "chart": "Chart_IN #677",
+                    "charter": "KillJoy"
+                }
+            ]
+        },
+        {
+            "name": "今天不是明天",
+            "composer": "PIKASONIC feat. 兰音Reine",
+            "illustrator": "KiTA & 一击即溃",
+            "illustration": "今天不是明天.png",
+            "illustrationUrl": "https://img.moegirl.org.cn/common/thumb/3/3b/Jtbsmt_Phigros.png/456px-Jtbsmt_Phigros.png",
+            "music": "music #4121.wav",
+            "duration": 0,
+            "bpm": 125.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": 3.0,
+                    "numOfNotes": 294,
+                    "chart": "Chart_EZ #1899",
+                    "charter": "扫佛不是嫂夫"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": 8.5,
+                    "numOfNotes": 546,
+                    "chart": "Chart_HD #1155",
+                    "charter": "扫佛不是嫂夫"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": 13.5,
+                    "numOfNotes": 913,
+                    "chart": "Chart_IN #4668",
+                    "charter": "杂波不是杂啵，野从不是野丛"
+                }
+            ]
+        },
+        {
+            "name": "Nhelv",
+            "composer": "Silentroom",
+            "illustrator": "駿",
+            "illustration": "Nhelv.png",
+            "illustrationUrl": "https://img.moegirl.org.cn/common/thumb/e/ea/Nhelv_Phigros.jpeg/456px-Nhelv_Phigros.jpeg",
+            "music": "music #508.wav",
+            "duration": 0,
+            "bpm": 174.59,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": 1.5,
+                    "numOfNotes": 196,
+                    "chart": "Chart_EZ #5781",
+                    "charter": "野从"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": 11.9,
+                    "numOfNotes": 571,
+                    "chart": "Chart_HD #2725",
+                    "charter": "StupiGGy"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": 15.4,
+                    "numOfNotes": 833,
+                    "chart": "Chart_IN #3661",
+                    "charter": "森德雷斯 vs. 百九十八"
+                }
+            ]
+        },
+        {
+            "name": "MARENOL",
+            "composer": "LeaF",
+            "illustrator": "喵n葵",
+            "illustration": "MARENOL.png",
+            "illustrationUrl": "https://img.moegirl.org.cn/common/thumb/0/0f/MARENOL_Phigros.png/456px-MARENOL_Phigros.png",
+            "music": "music #4460.wav",
+            "duration": 149,
+            "bpm": 140.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "2",
+                    "numOfNotes": "95",
+                    "chart": "Chart_EZ #4719",
+                    "charter": "H.C.C. fixed by Barbarianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.2",
+                    "numOfNotes": "467",
+                    "chart": "Chart_HD #2715",
+                    "charter": "H.C.C. fixed by Barbarianerman"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.2",
+                    "numOfNotes": "689",
+                    "chart": "Chart_IN #2668",
+                    "charter": "百九十八"
+                }
+            ]
+        },
+        {
+            "name": "Random",
+            "composer": "Sobrem X Silentroom",
+            "illustrator": "Harkiadel",
+            "illustration": "Illustration #5820.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/b/b1/Random_jacket.png/revision/latest?cb=20230402150246",
+            "music": "music #1041.wav",
+            "duration": 136,
+            "bpm": 132.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6",
+                    "numOfNotes": "275",
+                    "chart": "Chart_EZ #2859",
+                    "charter": "Barbarianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "12.2",
+                    "numOfNotes": "568",
+                    "chart": "Chart_HD #1028",
+                    "charter": "IMD_6"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.7",
+                    "numOfNotes": "732",
+                    "chart": "Chart_IN #4522",
+                    "charter": "_鉄"
+                }
+            ]
+        },
+        {
+            "name": "Xenolith",
+            "composer": "Tatsh",
+            "illustrator": "2Al4wU4",
+            "illustration": "Illustration #4430.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/f/f2/Xenolith_jacket.png/revision/latest?cb=20240411180405",
+            "music": "music #1761.wav",
+            "duration": 138,
+            "bpm": 170.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "202",
+                    "chart": "Chart_EZ #1749",
+                    "charter": "RXhuang"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "8.5",
+                    "numOfNotes": "533",
+                    "chart": "Chart_HD #2952",
+                    "charter": "RXhuang"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.6",
+                    "numOfNotes": "789",
+                    "chart": "Chart_IN #3058",
+                    "charter": "Xlutter guided by three Oaths"
+                }
+            ]
+        },
+        {
+            "name": "HAZARD",
+            "composer": "Limpid",
+            "illustrator": "ZG",
+            "illustration": "Illustration #3237.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/f/f4/HAZARD_jacket.png/revision/latest?cb=20211225114917",
+            "music": "music #3302.wav",
+            "duration": 127,
+            "bpm": 128.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "4.5",
+                    "numOfNotes": "283",
+                    "chart": "Chart_EZ #2104",
+                    "charter": "NerSAN"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.9",
+                    "numOfNotes": "507",
+                    "chart": "Chart_HD #1407",
+                    "charter": "NerSAN"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.7",
+                    "numOfNotes": "588",
+                    "chart": "Chart_IN #4069",
+                    "charter": "阿爽"
+                }
+            ]
+        },
+        {
+            "name": "Aphasia",
+            "composer": "闫东炜",
+            "illustrator": "笔记RE",
+            "illustration": "Illustration #514.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/6/62/Aphasia_new_jacket.png/revision/latest?cb=20211023034721",
+            "music": "music #3831.wav",
+            "duration": 116,
+            "bpm": 128.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "4",
+                    "numOfNotes": "283",
+                    "chart": "Chart_EZ #4021",
+                    "charter": ""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "8.8",
+                    "numOfNotes": "362",
+                    "chart": "Chart_HD #4892",
+                    "charter": ""
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "13.1",
+                    "numOfNotes": "553",
+                    "chart": "Chart_IN #4763",
+                    "charter": ""
+                }
+            ]
+        },
+        {
+            "name": "Break Through The Barrier",
+            "composer": "lixound",
+            "illustrator": "Xquid",
+            "illustration": "Illustration #3142.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/d/da/Break_Through_The_Barrier_jacket.png/revision/latest?cb=20200320103847",
+            "music": "music #3878.wav",
+            "duration": 132,
+            "bpm": 176.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5.5",
+                    "numOfNotes": "419",
+                    "chart": "Chart_EZ #317",
+                    "charter": "Su1fuR"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "10.1",
+                    "numOfNotes": "581",
+                    "chart": "Chart_HD #1384",
+                    "charter": "Su1fuR"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.5",
+                    "numOfNotes": "1090",
+                    "chart": "Chart_IN #3123",
+                    "charter": "百九十八"
+                },
+                {
+                    "level": "Legacy",
+                    "difficulty": "15",
+                    "numOfNotes": "1293",
+                    "chart": "Chart_Legacy #2991",
+                    "charter": "Catcats"
+                }
+            ]
+        },
+        {
+            "name": "Rrhar'il",
+            "composer": "Team Grimoire",
+            "illustrator": "犀牛坨动画工坊",
+            "illustration": "Illustration #4211.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/e/e5/Rrhar%27il_jacket.png/revision/latest?cb=20211023035116",
+            "music": "music #4010.wav",
+            "duration": 132,
+            "bpm": 190.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "7",
+                    "numOfNotes": "446",
+                    "chart": "Chart_EZ #1431",
+                    "charter": "RDRT -p 19:08:31"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "12.7",
+                    "numOfNotes": "700",
+                    "chart": "Chart_HD #2987",
+                    "charter": "RDRT -p 20:02:21"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.7",
+                    "numOfNotes": "1300",
+                    "chart": "Chart_IN #2124",
+                    "charter": "RDRT -p 20:08:31"
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "16.8",
+                    "numOfNotes": "1300",
+                    "chart": "Chart_AT #4684",
+                    "charter": "RWND -p 16493:62786:92551"
+                }
+            ]
+        },
+        {
+            "name": "开心病",
+            "composer": "闫东炜",
+            "illustrator": "喵n葵",
+            "illustration": "Illustration #3026.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/e/e0/%E5%BC%80%E5%BF%83%E7%97%85_new_jacket.png/revision/latest?cb=20230422194704",
+            "music": "music #4787.wav",
+            "duration": 115,
+            "bpm": 131.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "6",
+                    "numOfNotes": "399",
+                    "chart": "Chart_EZ #1308",
+                    "charter": "HaraKuma"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.5",
+                    "numOfNotes": "601",
+                    "chart": "Chart_HD #4450",
+                    "charter": "HaraKuma"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.2",
+                    "numOfNotes": "840",
+                    "chart": "Chart_IN #5136",
+                    "charter": "Barbarianerman feat. 晨"
+                }
+            ]
+        },
+        {
+            "name": "Spasmodic",
+            "composer": "姜米條☆颶風~♫元力上人♫",
+            "illustrator": "昔璃☆暴雨~♫危難聖帝♫",
+            "illustration": "Illustration #3570.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/1/1d/Spasmodic_jacket.png/revision/latest?cb=20200329125334",
+            "music": "music #1825.wav",
+            "duration": 155,
+            "bpm": 200.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "8.2",
+                    "numOfNotes": "637",
+                    "chart": "Chart_EZ #5710",
+                    "charter": ""
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "13.3",
+                    "numOfNotes": "904",
+                    "chart": "Chart_HD #283",
+                    "charter": ""
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.2",
+                    "numOfNotes": "1389",
+                    "chart": "Chart_IN #645",
+                    "charter": ""
+                },
+                {
+                    "level": "AT",
+                    "difficulty": "16.3",
+                    "numOfNotes": "1671",
+                    "chart": "Chart_AT #2138",
+                    "charter": ""
+                }
+            ]
+        },
+        {
+            "name": "月下缭乱",
+            "composer": "月見静華 vs. LUNARiUM",
+            "illustrator": "TNiK",
+            "illustration": "Illustration #1340.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/a/ab/%E6%9C%88%E4%B8%8B%E7%BC%AD%E4%B9%B1.jpg/revision/latest?cb=20220802123920",
+            "music": "music #1861.wav",
+            "duration": 150,
+            "bpm": 175.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "419",
+                    "chart": "Chart_EZ #2102",
+                    "charter": "XMT小咩兔"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "9.4",
+                    "numOfNotes": "533",
+                    "chart": "Chart_HD #3633",
+                    "charter": "XMT小咩兔"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "14.8",
+                    "numOfNotes": "969",
+                    "chart": "Chart_IN #5458",
+                    "charter": "iv"
+                }
+            ]
+        },
+        {
+            "name": "PANIC PARADISE",
+            "composer": "DJ SHION.Y",
+            "illustrator": "百九十八",
+            "illustration": "Illustration #2948.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/0/0a/PANIC_PARADISE_jacket.png/revision/latest?cb=20240225172723",
+            "music": "music #3193.wav",
+            "duration": 128,
+            "bpm": 170.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "367",
+                    "chart": "Chart_EZ #5717",
+                    "charter": "Barianic Beradise"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "11.5",
+                    "numOfNotes": "533",
+                    "chart": "Chart_HD #2978",
+                    "charter": "Barianic Beradise"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.4",
+                    "numOfNotes": "881",
+                    "chart": "Chart_IN #1583",
+                    "charter": "Su1fuR -FAISEURS DE PANIQUE-"
+                }
+            ]
+        },
+        {
+            "name": "ぱぴぷぴぷぴぱ",
+            "composer": "ころねぽち With 立秋",
+            "illustrator": "上倉エク",
+            "illustration": "Illustration #1076.png",
+            "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/e/e0/%E3%81%B1%E3%81%B4%E3%81%B7%E3%81%B4%E3%81%B7%E3%81%B4%E3%81%B1_jacket.png/revision/latest?cb=20230730153708",
+            "music": "music #4744.wav",
+            "duration": 178,
+            "bpm": 200.0,
+            "charts": [
+                {
+                    "level": "EZ",
+                    "difficulty": "5",
+                    "numOfNotes": "637",
+                    "chart": "Chart_EZ #4287",
+                    "charter": "ParParianerman"
+                },
+                {
+                    "level": "HD",
+                    "difficulty": "12.3",
+                    "numOfNotes": "1290",
+                    "chart": "Chart_HD #895",
+                    "charter": "ParParianerman"
+                },
+                {
+                    "level": "IN",
+                    "difficulty": "15.5",
+                    "numOfNotes": "1243",
+                    "chart": "Chart_IN #1433",
+                    "charter": "さるふるふるさ"
+                }
+            ]
         }
     ],
     "errors": {
-        "informationError": [
-            "music #1080.wav",
-            "music #1193.wav",
-            "music #126.wav",
-            "music #1351.wav",
-            "music #1425.wav",
-            "music #1553.wav",
-            "music #1640.wav",
-            "music #1653.wav",
-            "music #1719.wav",
-            "music #172.wav",
-            "music #1725.wav",
-            "music #1818.wav",
-            "music #1825.wav",
-            "music #1861.wav",
-            "music #1878.wav",
-            "music #1961.wav",
-            "music #1963.wav",
-            "music #2025.wav",
-            "music #205.wav",
-            "music #2077.wav",
-            "music #2203.wav",
-            "music #2281.wav",
-            "music #2335.wav",
-            "music #2345.wav",
-            "music #2364.wav",
-            "music #2440.wav",
-            "music #2471.wav",
-            "music #260.wav",
-            "music #2711.wav",
-            "music #2720.wav",
-            "music #2847.wav",
-            "music #2891.wav",
-            "music #2934.wav",
-            "music #2959.wav",
-            "music #3075.wav",
-            "music #3157.wav",
-            "music #3193.wav",
-            "music #3239.wav",
-            "music #3281.wav",
-            "music #3290.wav",
-            "music #3365.wav",
-            "music #3369.wav",
-            "music #339.wav",
-            "music #3396.wav",
-            "music #3416.wav",
-            "music #3501.wav",
-            "music #3502.wav",
-            "music #3549.wav",
-            "music #3553.wav",
-            "music #362.wav",
-            "music #3895.wav",
-            "music #3899.wav",
-            "music #394.wav",
-            "music #3943.wav",
-            "music #4001.wav",
-            "music #4057.wav",
-            "music #4094.wav",
-            "music #4101.wav",
-            "music #4103.wav",
-            "music #4121.wav",
-            "music #4125.wav",
-            "music #4147.wav",
-            "music #4178.wav",
-            "music #4204.wav",
-            "music #4233.wav",
-            "music #4261.wav",
-            "music #4397.wav",
-            "music #4483.wav",
-            "music #4642.wav",
-            "music #4744.wav",
-            "music #4750.wav",
-            "music #4773.wav",
-            "music #4889.wav",
-            "music #5026.wav",
-            "music #5062.wav",
-            "music #508.wav",
-            "music #5124.wav",
-            "music #5129.wav",
-            "music #5164.wav",
-            "music #5539.wav",
-            "music #5638.wav",
-            "music #5728.wav",
-            "music #5744.wav",
-            "music #5767.wav",
-            "music #638.wav",
-            "music #715.wav",
-            "music #722.wav",
-            "music #752.wav",
-            "music #769.wav",
-            "music #79.wav",
-            "music #795.wav",
-            "music #886.wav",
-            "music.wav"
-        ],
-        "chartFileNotFoundError": [
-            {
-                "name": "Random",
-                "composer": "Sobrem X Silentroom",
-                "illustrator": "Harkiadel",
-                "illustration": "Illustration #5820.png",
-                "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/b/b1/Random_jacket.png/revision/latest?cb=20230402150246",
-                "music": "music #1041.wav",
-                "duration": 136,
-                "bpm": "",
-                "charts": [
-                    {
-                        "level": "EZ",
-                        "difficulty": "6",
-                        "numOfNotes": "275",
-                        "chart": "",
-                        "charter": "Barbarianerman"
-                    },
-                    {
-                        "level": "HD",
-                        "difficulty": "12.2",
-                        "numOfNotes": "568",
-                        "chart": "Chart_HD #1028",
-                        "charter": "IMD_6"
-                    },
-                    {
-                        "level": "IN",
-                        "difficulty": "14.7",
-                        "numOfNotes": "732",
-                        "chart": "",
-                        "charter": "_鉄"
-                    }
-                ]
-            },
-            {
-                "name": "Xenolith",
-                "composer": "Tatsh",
-                "illustrator": "2Al4wU4",
-                "illustration": "Illustration #4430.png",
-                "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/f/f2/Xenolith_jacket.png/revision/latest?cb=20240411180405",
-                "music": "music #1761.wav",
-                "duration": 138,
-                "bpm": "",
-                "charts": [
-                    {
-                        "level": "EZ",
-                        "difficulty": "5",
-                        "numOfNotes": "202",
-                        "chart": "Chart_EZ #1749",
-                        "charter": "RXhuang"
-                    },
-                    {
-                        "level": "HD",
-                        "difficulty": "8.5",
-                        "numOfNotes": "533",
-                        "chart": "",
-                        "charter": "RXhuang"
-                    },
-                    {
-                        "level": "IN",
-                        "difficulty": "14.6",
-                        "numOfNotes": "789",
-                        "chart": "Chart_IN #3058",
-                        "charter": "Xlutter guided by three Oaths"
-                    }
-                ]
-            },
-            {
-                "name": "HAZARD",
-                "composer": "Limpid",
-                "illustrator": "ZG",
-                "illustration": "Illustration #3237.png",
-                "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/f/f4/HAZARD_jacket.png/revision/latest?cb=20211225114917",
-                "music": "music #3302.wav",
-                "duration": 127,
-                "bpm": "",
-                "charts": [
-                    {
-                        "level": "EZ",
-                        "difficulty": "4.5",
-                        "numOfNotes": "283",
-                        "chart": "",
-                        "charter": "NerSAN"
-                    },
-                    {
-                        "level": "HD",
-                        "difficulty": "10.9",
-                        "numOfNotes": "507",
-                        "chart": "",
-                        "charter": "NerSAN"
-                    },
-                    {
-                        "level": "IN",
-                        "difficulty": "14.7",
-                        "numOfNotes": "588",
-                        "chart": "Chart_IN #4069",
-                        "charter": "阿爽"
-                    }
-                ]
-            },
-            {
-                "name": "Aphasia",
-                "composer": "闫东炜",
-                "illustrator": "笔记RE",
-                "illustration": "Illustration #514.png",
-                "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/6/62/Aphasia_new_jacket.png/revision/latest?cb=20211023034721",
-                "music": "music #3831.wav",
-                "duration": 116,
-                "bpm": "",
-                "charts": [
-                    {
-                        "level": "EZ",
-                        "difficulty": "4",
-                        "numOfNotes": "283",
-                        "chart": "",
-                        "charter": ""
-                    },
-                    {
-                        "level": "HD",
-                        "difficulty": "8.8",
-                        "numOfNotes": "362",
-                        "chart": "Chart_HD #4892",
-                        "charter": ""
-                    },
-                    {
-                        "level": "IN",
-                        "difficulty": "13.1",
-                        "numOfNotes": "553",
-                        "chart": "Chart_IN #4763",
-                        "charter": ""
-                    }
-                ]
-            },
-            {
-                "name": "Break Through The Barrier",
-                "composer": "lixound",
-                "illustrator": "Xquid",
-                "illustration": "Illustration #3142.png",
-                "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/d/da/Break_Through_The_Barrier_jacket.png/revision/latest?cb=20200320103847",
-                "music": "music #3878.wav",
-                "duration": 132,
-                "bpm": "",
-                "charts": [
-                    {
-                        "level": "EZ",
-                        "difficulty": "5.5",
-                        "numOfNotes": "419",
-                        "chart": "",
-                        "charter": "Su1fuR"
-                    },
-                    {
-                        "level": "HD",
-                        "difficulty": "10.1",
-                        "numOfNotes": "581",
-                        "chart": "",
-                        "charter": "Su1fuR"
-                    },
-                    {
-                        "level": "IN",
-                        "difficulty": "14.5",
-                        "numOfNotes": "1090",
-                        "chart": "Chart_IN #3123",
-                        "charter": "百九十八"
-                    },
-                    {
-                        "level": "Legacy",
-                        "difficulty": "15",
-                        "numOfNotes": "1293",
-                        "chart": "Chart_Legacy #2991",
-                        "charter": "Catcats"
-                    }
-                ]
-            },
-            {
-                "name": "Rrhar'il",
-                "composer": "Team Grimoire",
-                "illustrator": "犀牛坨动画工坊",
-                "illustration": "Illustration #4211.png",
-                "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/e/e5/Rrhar%27il_jacket.png/revision/latest?cb=20211023035116",
-                "music": "music #4010.wav",
-                "duration": 132,
-                "bpm": "",
-                "charts": [
-                    {
-                        "level": "EZ",
-                        "difficulty": "7",
-                        "numOfNotes": "446",
-                        "chart": "Chart_EZ #1431",
-                        "charter": "RDRT -p 19:08:31"
-                    },
-                    {
-                        "level": "HD",
-                        "difficulty": "12.7",
-                        "numOfNotes": "700",
-                        "chart": "",
-                        "charter": "RDRT -p 20:02:21"
-                    },
-                    {
-                        "level": "IN",
-                        "difficulty": "15.7",
-                        "numOfNotes": "1300",
-                        "chart": "Chart_IN #2124",
-                        "charter": "RDRT -p 20:08:31"
-                    },
-                    {
-                        "level": "AT",
-                        "difficulty": "16.8",
-                        "numOfNotes": "1300",
-                        "chart": "Chart_AT #4684",
-                        "charter": "RWND -p 16493:62786:92551"
-                    }
-                ]
-            },
-            {
-                "name": "开心病",
-                "composer": "闫东炜",
-                "illustrator": "喵n葵",
-                "illustration": "Illustration #3026.png",
-                "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/e/e0/%E5%BC%80%E5%BF%83%E7%97%85_new_jacket.png/revision/latest?cb=20230422194704",
-                "music": "music #4787.wav",
-                "duration": 115,
-                "bpm": "",
-                "charts": [
-                    {
-                        "level": "EZ",
-                        "difficulty": "6",
-                        "numOfNotes": "399",
-                        "chart": "Chart_EZ #1308",
-                        "charter": "HaraKuma"
-                    },
-                    {
-                        "level": "HD",
-                        "difficulty": "11.5",
-                        "numOfNotes": "601",
-                        "chart": "",
-                        "charter": "HaraKuma"
-                    },
-                    {
-                        "level": "IN",
-                        "difficulty": "14.2",
-                        "numOfNotes": "840",
-                        "chart": "",
-                        "charter": "Barbarianerman feat. 晨"
-                    }
-                ]
-            }
-        ],
-        "illustrationNotFoundError": [
-            {
-                "name": "Break Over",
-                "composer": "K-Forest",
-                "illustrator": "圆规compasses",
-                "illustration": "",
-                "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/3/3c/Break_Over_jacket.png/revision/latest?cb=20221126115007",
-                "music": "music #1252.wav",
-                "duration": 130,
-                "bpm": "",
-                "charts": [
-                    {
-                        "level": "EZ",
-                        "difficulty": "5",
-                        "numOfNotes": "300",
-                        "chart": "",
-                        "charter": "Barbarianerman"
-                    },
-                    {
-                        "level": "HD",
-                        "difficulty": "11.8",
-                        "numOfNotes": "919",
-                        "chart": "",
-                        "charter": "Barbarianerman"
-                    },
-                    {
-                        "level": "IN",
-                        "difficulty": "14.1",
-                        "numOfNotes": "910",
-                        "chart": "",
-                        "charter": "百九十八 vs Barbarianerman"
-                    },
-                    {
-                        "level": "AT",
-                        "difficulty": "14.9",
-                        "numOfNotes": "570",
-                        "chart": "",
-                        "charter": "百九十八"
-                    }
-                ]
-            },
-            {
-                "name": "c.s.q.n",
-                "composer": "Aoi",
-                "illustrator": "Ctymax vs. TNiK feat. 出前",
-                "illustration": "",
-                "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/e/e8/C.s.q.n.jpeg/revision/latest?cb=20220923120858",
-                "music": "music #1328.wav",
-                "duration": 125,
-                "bpm": "",
-                "charts": [
-                    {
-                        "level": "EZ",
-                        "difficulty": "5",
-                        "numOfNotes": "330",
-                        "chart": "",
-                        "charter": "b.b.n.m"
-                    },
-                    {
-                        "level": "HD",
-                        "difficulty": "12.5",
-                        "numOfNotes": "755",
-                        "chart": "",
-                        "charter": "h.o.m.e.e.e."
-                    },
-                    {
-                        "level": "IN",
-                        "difficulty": "15.7",
-                        "numOfNotes": "1066",
-                        "chart": "",
-                        "charter": "s.t.p.g"
-                    }
-                ]
-            },
-            {
-                "name": "Bougainvillea",
-                "composer": "Jade",
-                "illustrator": "TNiK",
-                "illustration": "",
-                "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/d/dd/Bougainvillea_jacket.png/revision/latest?cb=20230520072736",
-                "music": "music #1923.wav",
-                "duration": 117,
-                "bpm": "",
-                "charts": [
-                    {
-                        "level": "EZ",
-                        "difficulty": "4",
-                        "numOfNotes": "300",
-                        "chart": "",
-                        "charter": ""
-                    },
-                    {
-                        "level": "HD",
-                        "difficulty": "8.3",
-                        "numOfNotes": "347",
-                        "chart": "",
-                        "charter": ""
-                    },
-                    {
-                        "level": "IN",
-                        "difficulty": "13.2",
-                        "numOfNotes": "662",
-                        "chart": "",
-                        "charter": ""
-                    }
-                ]
-            },
-            {
-                "name": "Silence is Golden, Speech is Golden",
-                "composer": "NIWASHI",
-                "illustrator": "Jerry & OsuMe65",
-                "illustration": "",
-                "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/0/0a/Silence_is_Golden%2C_Speech_is_Golden_jacket.png/revision/latest?cb=20231110145701",
-                "music": "music #1995.wav",
-                "duration": 165,
-                "bpm": "",
-                "charts": [
-                    {
-                        "level": "EZ",
-                        "difficulty": "5",
-                        "numOfNotes": "376",
-                        "chart": "",
-                        "charter": "Clutter is coppery, Tumult is coppery"
-                    },
-                    {
-                        "level": "HD",
-                        "difficulty": "9.7",
-                        "numOfNotes": "795",
-                        "chart": "",
-                        "charter": "XMT is silvery, 小咩兔 is silvery"
-                    },
-                    {
-                        "level": "IN",
-                        "difficulty": "15.5",
-                        "numOfNotes": "1273",
-                        "chart": "",
-                        "charter": "Hara is golden, Kuma is golden"
-                    }
-                ]
-            },
-            {
-                "name": "Upshift",
-                "composer": "Iriss-Frantzz",
-                "illustrator": "Iriss=Frantzz=s-don",
-                "illustration": "",
-                "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/3/37/Upshift_jacket.png/revision/latest?cb=20230225184328",
-                "music": "music #2661.wav",
-                "duration": 141,
-                "bpm": "",
-                "charts": [
-                    {
-                        "level": "EZ",
-                        "difficulty": "5.5",
-                        "numOfNotes": "630",
-                        "chart": "",
-                        "charter": "Lumiere"
-                    },
-                    {
-                        "level": "HD",
-                        "difficulty": "10.8",
-                        "numOfNotes": "545",
-                        "chart": "",
-                        "charter": "CorruptedEntity & 野从"
-                    },
-                    {
-                        "level": "IN",
-                        "difficulty": "15.4",
-                        "numOfNotes": "946",
-                        "chart": "",
-                        "charter": "_鉄"
-                    }
-                ]
-            },
-            {
-                "name": "Grimheart",
-                "composer": "Puru",
-                "illustrator": "临时工 & 倪尔",
-                "illustration": "",
-                "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/2/2d/Grimheart_jacket.webp/revision/latest?cb=20240901191421",
-                "music": "music #3453.wav",
-                "duration": 153,
-                "bpm": "",
-                "charts": [
-                    {
-                        "level": "EZ",
-                        "difficulty": "3",
-                        "numOfNotes": "132",
-                        "chart": "",
-                        "charter": "SimonAxis"
-                    },
-                    {
-                        "level": "HD",
-                        "difficulty": "8.9",
-                        "numOfNotes": "349",
-                        "chart": "",
-                        "charter": "SimonAxis"
-                    },
-                    {
-                        "level": "IN",
-                        "difficulty": "13.8",
-                        "numOfNotes": "577",
-                        "chart": "",
-                        "charter": "WhiteCat."
-                    }
-                ]
-            },
-            {
-                "name": "MARENOL",
-                "composer": "LeaF",
-                "illustrator": "喵n葵",
-                "illustration": "",
-                "illustrationUrl": "/wiki/Songs#Single_Collection",
-                "music": "music #4460.wav",
-                "duration": 149,
-                "bpm": "",
-                "charts": [
-                    {
-                        "level": "EZ",
-                        "difficulty": "2",
-                        "numOfNotes": "95",
-                        "chart": "",
-                        "charter": "H.C.C. fixed by Barbarianerman"
-                    },
-                    {
-                        "level": "HD",
-                        "difficulty": "10.2",
-                        "numOfNotes": "467",
-                        "chart": "",
-                        "charter": "H.C.C. fixed by Barbarianerman"
-                    },
-                    {
-                        "level": "IN",
-                        "difficulty": "14.2",
-                        "numOfNotes": "689",
-                        "chart": "",
-                        "charter": "百九十八"
-                    },
-                    {
-                        "level": "Legacy",
-                        "difficulty": "14.5",
-                        "numOfNotes": "1368",
-                        "chart": "",
-                        "charter": "H.C.C. fixed by Barbarianerman"
-                    }
-                ]
-            }
-        ]
+        "informationError": [],
+        "chartFileNotFoundError": [],
+        "illustrationNotFoundError": []
     }
 }

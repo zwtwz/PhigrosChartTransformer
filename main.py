@@ -29,10 +29,21 @@ class MusicPlayer:
 #程序运行目录检查，配置加载
 datapath = config.dataPath
 songsInformationFile = os.path.join(datapath, "songsInformation.json")
+ignoredSongsFile = os.path.join(datapath, "ignoredSongs.json")
 onProcessingSongsInformationFile = os.path.join(datapath, "onProcessingSongsInformation.json")
 musicsPath = config.musicsPath
 illustrationPath = config.illustrationsPath
 chartPath = config.inputChartsPath
+handlingLevels = config.handlingLevels
+
+for handlingLevel in handlingLevels:
+    if not handlingLevel in ("IN", "EZ", "HD", "SP", "Legacy", "AT"):
+        print("Error: 配置文件中的handlingLevels参数错误")
+        exit()
+if "SP" in handlingLevels:
+    #将SP提到最前，满足查找谱面时的顺序
+    handlingLevels.remove("SP")
+    handlingLevels.insert(0, "SP")
 
 paths = config.paths
 for i in paths:
@@ -59,21 +70,24 @@ def selectDir():
     return filepath
 
 def readSongsInformation():
-    #读取歌曲信息,保存至全局变量
-    global songsInformation
-    try:   
-        songsInformation
-    except NameError:
-        if os.path.exists(songsInformationFile):
-            with open(songsInformationFile, "r", encoding='utf-8') as f:
-                songsInformation = json.loads(f.read())
-        else:
-            print("未找到本地数据文件")
-            songsInformation = {"metadatas":[],
-                    "errors": {"informationError": [],
-                    "chartFileNotFoundError": [],
-                    "illustrationNotFoundError": []}}
+    if os.path.exists(songsInformationFile):
+        with open(songsInformationFile, "r", encoding='utf-8') as f:
+            songsInformation = json.loads(f.read())
+    else:
+        print("未找到本地数据文件")
+        songsInformation = {"metadatas":[],
+                "errors": {"informationError": [],
+                "chartFileNotFoundError": [],
+                "illustrationNotFoundError": []}}
     return songsInformation
+
+def readIgnoredSongs():
+    if os.path.exists(ignoredSongsFile):
+        with open(ignoredSongsFile, "r", encoding='utf-8') as f:
+            ignoredSongs = json.loads(f.read())
+    else:
+        ignoredSongs = []
+    return ignoredSongs
 
 def saveSongsInformation(songsInformation):
     #存储歌曲信息
@@ -84,6 +98,10 @@ def saveOnProcessingSongsInformation(data):
     #存储歌曲信息
     with open(onProcessingSongsInformationFile, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
+
+def saveIgnoredSongs(ignoredSongs):
+    with open(ignoredSongsFile, "w", encoding="utf-8") as f:
+        json.dump(ignoredSongs, f, ensure_ascii=False, indent=4)
     
 
 def generateLutAndPezFiles(musicList, mode=0, lastOnProcessingSongsInformation=None):
@@ -95,12 +113,14 @@ def generateLutAndPezFiles(musicList, mode=0, lastOnProcessingSongsInformation=N
     numOfMusic = len(musicList)
 
     def checkIfSongExist(songName):
+        nonlocal numOfMusic
         #检查是否已经存在该歌曲
         existedSongs = [i["name"] for i in onProcessingSongsInformation["metadatas"] ]
+        existedSongs.extend([i for i in onProcessingSongsInformation["errors"]["informationError"] ])
         existedSongs.extend([i["name"] for i in onProcessingSongsInformation["errors"]["illustrationNotFoundError"] ])
         existedSongs.extend([i["name"] for i in onProcessingSongsInformation["errors"]["chartFileNotFoundError"] ])
-        for i in existedSongs:
-            if i == songName:
+        for existedSong in existedSongs:
+            if existedSong == songName:
                 print("检测到重复歌曲")
                 numOfMusic -= 1
                 return True
@@ -195,14 +215,15 @@ def generateLutAndPezFiles(musicList, mode=0, lastOnProcessingSongsInformation=N
                     if checkIfSongExist(songName):
                         continue
                     
-                    duration = None
-                    while duration == None:
-                        durationText = input("持续时间(Duration), 格式： mm:ss   > ")
-                        durationList = re.split(":", durationText.replace(" ", ""))
-                        try:
-                            duration = int(durationList[0]) * 60 + int(durationList[1])
-                        except:
-                            print("请按正确格式输入(冒号用英文半角)持续时间")
+                    #手动输入时不检查歌曲持续时间，因此不用填。
+                    #duration = None
+                    #while duration == None:
+                    #    durationText = input("持续时间(Duration), 格式： mm:ss   > ")
+                    #    durationList = re.split(":", durationText.replace(" ", ""))
+                    #    try:
+                    #        duration = int(durationList[0]) * 60 + int(durationList[1])
+                    #    except:
+                    #        print("请按正确格式输入(冒号用英文半角)持续时间")
 
                     metadata = {
                         "name": songName,
@@ -211,14 +232,14 @@ def generateLutAndPezFiles(musicList, mode=0, lastOnProcessingSongsInformation=N
                         "illustration": "",
                         "illustrationUrl": input("曲绘图片的在线链接（可以在图片上右键，复制图片链接）："),
                         "music": music,
-                        "duration": duration,
+                        "duration": 0,
                         "bpm": "",
                         "charts": None
                     }
 
                     charts = []
                     lastCharter = "佚名"
-                    for level in ("SP", "EZ", "HD", "IN", "AT", "Legacy"):
+                    for level in handlingLevels:
                         print("填写%s难度谱面信息：" % level)
                         difficulty = input("  谱面定数(Level)（留空跳过此难度）：")
                         if difficulty == "":
@@ -231,10 +252,20 @@ def generateLutAndPezFiles(musicList, mode=0, lastOnProcessingSongsInformation=N
                             charter = lastCharter
                         else:
                             lastCharter = charter
+
+                        while True:
+                            try:
+                                numOfNotes = int(input("  物量(Note count)（整数）："))
+                            except:
+                                print("Error: 请输入整数")
+                                continue
+                            else:
+                                break
+
                         chart = {
                             "level": level,
                             "difficulty": difficulty,
-                            "numOfNotes": int(input("  物量(Note count)（整数）：")),
+                            "numOfNotes": numOfNotes,
                             "chart": "",
                             "charter": charter
                         }
@@ -250,9 +281,11 @@ def generateLutAndPezFiles(musicList, mode=0, lastOnProcessingSongsInformation=N
                     continue
 
 
-            #曲名非法字符剔除
+            #非法字符剔除
             pattern = r'[<>:"/\\|?*\x00-\x1F]'
             metadata["name"] = re.sub(pattern, "_", metadata["name"])
+            pattern = r'"'
+            metadata["illustrator"] = re.sub(pattern, "_", metadata["illustrator"])
 
 
             #曲绘文件搜索或保存
@@ -329,7 +362,7 @@ def illustrationNotFoundErrorHandling():
         return
     
     while not choice in ["a", "b"]:
-        choice = input("请输入单个小写字母> ")
+        choice = input("请从上面选一个选项，并输入单个小写字母后按下回车> ")
 
     if choice == "b":
         player = MusicPlayer()
@@ -339,7 +372,10 @@ def illustrationNotFoundErrorHandling():
     errors  = songsInformation["errors"]["illustrationNotFoundError"]
     formerErrorNum = len(errors)
     #创建列表，存储新产生的错误
-    undealedErrors = []
+    newSongsInformation = {"metadatas":[],
+                        "errors": {"informationError": [],
+                        "chartFileNotFoundError": [],
+                        "illustrationNotFoundError": []}}
 
 
     for i in range(formerErrorNum):
@@ -352,7 +388,7 @@ def illustrationNotFoundErrorHandling():
             illustrationBin = metadataGrab.fileBinTextGet(metadata["illustrationUrl"])
             if illustrationBin == None:
                 print("曲绘下载失败")
-                undealedErrors.append(metadata)
+                newSongsInformation["errors"]["illustrationNotFoundError"].append(metadata)
                 continue
 
         elif choice == "b":
@@ -366,7 +402,6 @@ def illustrationNotFoundErrorHandling():
             else:
                 print("Error: 歌曲音频文件不存在！")
                 print(musicPath)
-                undealedErrors.append(metadata)
                 continue
 
             illustrationFilePath = selectFile()
@@ -377,7 +412,7 @@ def illustrationNotFoundErrorHandling():
             if illustrationFilePath == "":
                 print("Error: 跳过歌曲")
                 player.stop()
-                undealedErrors.append(metadata)
+                newSongsInformation["errors"]["illustrationNotFoundError"].append(metadata)
                 continue
 
             player.stop()
@@ -410,30 +445,50 @@ def illustrationNotFoundErrorHandling():
         
         if searchResultBpm == -1:
             #-1为满足条件谱面数量大于1而无法确定的情况
-            errors["chartFileNotFoundError"].append(metadata)
+            newSongsInformation["errors"]["chartFileNotFoundError"].append(metadata)
             continue
         elif searchResultBpm == None:
             #None为没有满足条件的谱面的情况，这通常是由于wiki信息有误，因此归为infoError
-            errors["informationError"].append(music)
+            newSongsInformation["errors"]["informationError"].append(music)
             continue
         metadata["bpm"] = searchResultBpm
 
         #转换铺面
         chartTransform.transform(metadata)
         #追加至metadata
-        songsInformation["metadatas"].append(metadata)
+        newSongsInformation["metadatas"].append(metadata)
         print("处理成功！")
         
-    #直接替换原有错误列表
-    songsInformation["errors"]["illustrationNotFoundError"] = undealedErrors
-    
-    
-    print("处理完成：")
-    print("成功处理 " + str(formerErrorNum - len(undealedErrors)))
-    print("未处理 " + str(len(undealedErrors)))
+
+    #战后结算
+    numOfSuccessAddressed = len(newSongsInformation["metadatas"])
+    numOfFailedAddressed = sum([len(newSongsInformation["errors"]["illustrationNotFoundError"]), 
+                                    len(newSongsInformation["errors"]["chartFileNotFoundError"]),
+                                    len(newSongsInformation["errors"]["informationError"])])
+    numOfTotalAddressed = numOfSuccessAddressed + numOfFailedAddressed
+    numOfUnhandled = formerErrorNum - numOfTotalAddressed
+
+
+    #合并数据
+    songsInformation["metadatas"].extend(newSongsInformation["metadatas"])
+    songsInformation["errors"]["chartFileNotFoundError"].extend(newSongsInformation["errors"]["chartFileNotFoundError"])
+    songsInformation["errors"]["informationError"].extend(newSongsInformation["errors"]["informationError"])
+    if numOfTotalAddressed < formerErrorNum:
+        songsInformation["errors"]["illustrationNotFoundError"] = newSongsInformation["errors"]["illustrationNotFoundError"] + errors[numOfTotalAddressed:]
+    else:
+        songsInformation["errors"]["illustrationNotFoundError"] = newSongsInformation["errors"]["illustrationNotFoundError"]
 
     #存储歌曲信息
     saveSongsInformation(songsInformation)
+    
+    print("处理完成：")
+    print("总数 " + str(formerErrorNum))
+    print("成功处理 " + str(numOfSuccessAddressed))
+    print("处理失败 " + str(numOfFailedAddressed))
+    print("未处理 " + str(numOfUnhandled))
+    print("请立即检查并处理错误歌曲。")
+    input("\n按下回车退出")
+    exit()
 
 
 
@@ -446,6 +501,7 @@ def informationHandling(option=1):
 
     #尝试加载元数据
     songsInformation = readSongsInformation()
+    ignoredSongs = readIgnoredSongs()
 
 
     #判断运行模式：全自动0、半自动1、手动2，并输出提示信息
@@ -462,9 +518,10 @@ def informationHandling(option=1):
         #手动模式
         print("""请选择信息收集方式：
         a. 在给出的wiki中手动搜索到所听到的歌曲，然后将页面地址输入程序，由程序抓据
-        b. 手动输入所听到的歌曲的所有数据（不建议活受罪）
+        b. 手动输入所听到的歌曲的所有数据（非必要不要用，比较受罪。）
         注意：a选项中输入只有一次机会，请小心不要打错字，否则可能引起幽蓝边境异象(雾)
         注意：会自动播放歌曲，请注意音量。""")
+        print("对于自动、半自动处理无法解决的问题，请尝试手动解决。")
         choice = ""
         while not choice in ["a", "b"]:
             choice = input("请输入单个小写字母> ")
@@ -529,7 +586,7 @@ def informationHandling(option=1):
     #在onProcessingSongsInformationFile存在的情况下，尝试加载先前进度加载
     numOfFormerProcessedMusics = 0
     if os.path.exists(onProcessingSongsInformationFile):
-        choiceC = input("检测到上次未完成的进度，是否继续？(y/n)")
+        choiceC = input("检测到上次未完成的进度，是否继续？(y/其他)")
         if choiceC == "y":
             #防止数据文件不完整导致崩溃
             try:
@@ -554,6 +611,11 @@ def informationHandling(option=1):
             onProcessingSongsInformation = None
     else:
         onProcessingSongsInformation = None
+
+    #剔除忽略的谱面
+    for ignoredSong in ignoredSongs:
+        if ignoredSong in musicList:
+            musicList.remove(ignoredSong)
     
     numOfMusics = len(musicList)
 
@@ -605,10 +667,23 @@ def informationHandling(option=1):
 
 
 def chartFileNotFoundErrorDealing():
+    def checkIfSongExist(songName):
+        #检查是否已经存在该歌曲
+        existedSongs = [i["name"] for i in songsInformation["metadatas"] ]
+        existedSongs.extend([i["name"] for i in songsInformation["errors"]["illustrationNotFoundError"] ])
+        existedSongs.extend([i for i in songsInformation["errors"]["informationError"] ])
+        for i in existedSongs:
+            if i == songName:
+                print("检测到重复歌曲")
+                return True
+        return False
+    
     print("""进行谱面未找到错误处理
           此错误是由在查找谱面的过程中，通过bpm与物量无法定位到唯一谱面导致的。
           接下来，对于每个无法确定的谱面，程序将分别生成编号的多个谱面文件，
           你需要手动将他们导入phira（有电脑版）或其他模拟器，手动确定正确的文件，然后在程序中选择。
+
+          注意：此处按下ctrl+c(终止程序快捷键)会触发幽蓝边境异象（雾）并使数据丢失。
 
           你需要先选择一个文件夹作为谱子保存的地方。
           """)
@@ -622,27 +697,13 @@ def chartFileNotFoundErrorDealing():
     numOfErrors = len(errors)
 
     for index in range(numOfErrors):
-        #存储元数据
-        saveSongsInformation(songsInformation)
-
-        metadata = errors[index]
+        metadata = deepcopy(errors[index])
         music = metadata["music"]
         songName = metadata["name"]
         print("\n处理(%s/%s, %s%%)：%s"%(index+1, numOfErrors, str(int((index+1) * 100 / numOfErrors)), songName ))
 
         #重复歌曲检测
-        skipThisSong = False
-        existSongs = [*songsInformation["metadatas"]]
-        for i in songsInformation["errors"]:
-            if i == "chartFileNotFoundError":
-                continue
-            existSongs.extend(songsInformation["errors"][i])
-        for i in existSongs:
-            if i == metadata["name"]:
-                print("检测到重复歌曲")
-                skipThisSong = True
-                break
-        if skipThisSong:
+        if checkIfSongExist(songName):
             continue
 
         #谱面搜索
@@ -693,24 +754,28 @@ def chartFileNotFoundErrorDealing():
         #谱面生成
         chartTransform.transform(metadata)
         songsInformation["metadatas"].append(metadata)
-        del songsInformation["errors"]["chartFileNotFoundError"][index]
-
         print("处理成功！")
 
+    print("处理完成")
+    songsInformation["errors"]["chartFileNotFoundError"].clear()
     saveSongsInformation(songsInformation)
 
 
 
 
 if __name__ == "__main__":
-    print("""欢迎使用本谱面转换程序程序
+    print("""欢迎使用本谱面转换程序
     在使用之前，请确保您已经完全阅读github主页上的内容，并已完成程序相关配置。
     如果遇到异常终止，请选择您最后进行的操作，并按提示加载进度文件（仅部分功能支持回档）""")
-    
+
+    print("目前启用难度：")
+    for level in handlingLevels:
+        print(level, end=" ")
+
     while True:
         #尝试加载元数据
-        readSongsInformation()
-        choiceA = int(input("""
+        songsInformation = readSongsInformation()
+        choiceA = input("""
 请选择功能：
     【1】 根据本地数据，直接生成全部谱面文件（首次使用请选择）
     【2】 更新本地数据文件（将新版本phi的文件直接追加到相应目录中后，使用此项更新）
@@ -718,10 +783,10 @@ if __name__ == "__main__":
     【4】 重置本地数据文件（全部）
     【5】 错误谱面处理（有错误存在时务必处理完错误）
 请输入一位整数：
-              """))
+              """)
         
         match choiceA:
-            case 1:
+            case "1":
                 #根据本地数据文件直接生成谱面文件
                 print("将根据本地数据文件直接生成全部谱面文件")
                 print("请确保所有原始文件均已放入相应文件夹")
@@ -733,17 +798,16 @@ if __name__ == "__main__":
                     chartTransform.transform(metadata)
                 print("处理完成")
 
-            case 2:
+            case "2":
                 #更新本地数据文件
                 #检查是否有新的音频文件，据此更新本地数据文件并生成对应的新谱面文件
-                #结束后将新生成的文件复制到输出目录的New目录下。
                 print("将检查对应目录中是否有新的音频文件，据此更新本地数据文件")
                 choiceB = input("直接按下回车开始，输入n取消。")
                 if choiceB == "n":
                     continue
                 informationHandling(option = 2)
 
-            case 3:
+            case "3":
                 #重置本地数据文件（仅包括谱面元数据）
                 print("注意，原先的歌曲元数据（包括错误信息）将被重置。")
                 choiceB = input("直接按下回车开始，输入n取消。")
@@ -751,7 +815,7 @@ if __name__ == "__main__":
                     continue
                 informationHandling(option = 3)
                     
-            case 4:
+            case "4":
                 #重置全部本地数据文件
                 print("注意，全部本地数据文件将被重置。")
                 choiceB = input("直接按下回车开始，输入n取消。")
@@ -762,13 +826,13 @@ if __name__ == "__main__":
                 illustrationSearch.generateIllustrationLUT()
                 informationHandling(option = 3)
 
-            case 5:
+            case "5":
                 #错误处理
                 print("请选择要人工处理的错误")
                 print("【1】谱面信息错误：%s个" % str(len(songsInformation["errors"]["informationError"])))
                 print("【2】曲绘未找到：%s个" % str(len(songsInformation["errors"]["illustrationNotFoundError"])))
                 print("【3】谱面未找到：%s个" % str(len(songsInformation["errors"]["chartFileNotFoundError"])))
-                print("【4】全部错误处理")
+                print("【4】忽略现存的谱面信息错误")
                 print("注意：任何一类错误，只有当其被完全处理（即“未处理”为0）时，\n  处理结果才会被整合进数据文件，在此之间只会保存处理进度。")
                 choiceB = input("请输入一位整数：")
                 match choiceB:
@@ -779,10 +843,32 @@ if __name__ == "__main__":
                     case "3":
                         chartFileNotFoundErrorDealing()
                     case "4":
-                        informationHandling(option = 1)
-                        illustrationNotFoundErrorHandling()
-                        chartFileNotFoundErrorDealing()
+                        print("""注意，此操作将会将谱面信息错误列表中现存的歌曲全部添加到忽略列表中，不再处理
+此操作还会删除已存在的进度文件。
+除非你已经筋疲力尽、走投无路，否则不要使用此功能。
+想要恢复他们需要自行修改数据文件(./data/ignoredSongs.json)""")
+                        print("\n以下文件将会被忽略：")
+                        for i in songsInformation["errors"]["informationError"]:
+                            print(i)
+                        choiceC = input("按下万恶的回车开始，输入n取消。")
+                        if choiceC == "n":
+                            continue
+
+                        ignoredSongs = songsInformation["errors"]["informationError"]
+                        saveIgnoredSongs(ignoredSongs)
+                        songsInformation["errors"]["informationError"].clear()
+                        saveSongsInformation(songsInformation)
+                        print("已忽略。")
+
+                        if os.path.exists(onProcessingSongsInformationFile):
+                            os.remove(onProcessingSongsInformationFile)
+                        print("已删除进度文件。")
+
                     case _:
                         print("输入错误，请重新选择")
                         continue
+
+            case _:
+                print("输入错误，请重新选择")
+                continue
         

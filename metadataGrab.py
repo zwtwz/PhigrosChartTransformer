@@ -2,6 +2,8 @@
 import requests, json, re, config
 from lxml import html, etree
 
+handlingLevels = config.handlingLevels
+
 requests.urllib3.disable_warnings() #不知道为什么我这里ssl证书老是有问题，所以忽略警告
 
 url = 'https://phigros.fandom.com/wiki/Special:Search'
@@ -121,7 +123,8 @@ def metadataGrab(matchedLink):
                     "chart": "",
                     "charter": charters[i]
                 }
-            charts.append(chart)
+            if chart["level"] in handlingLevels:
+                charts.append(chart)
 
         metadata = {
             "name": songName,
@@ -153,15 +156,21 @@ def searchSong(songName):
     #如果无匹配项，尝试依次删除首位字符搜索，直到字符串过短
     #歌名关键字剔除特殊符号和'phigros'等无关词汇
     print("开始抓取歌曲元数据……")
-    pattern = r'[()（）\[\]【】. ,-]'
+    pattern = r'[()（）\[\]【】. ,-/]'
     banedWords = ["phigros", "ver", "单曲精选"]
     items = re.split(pattern, songName.lower())
     cleanedItems = [i for i in items 
                     if i not in banedWords 
                     and i != '']
 
-    for i in range(len(cleanedItems)):
-        searchWord = " ".join(cleanedItems[0:len(cleanedItems)-i])
+    for i in range(len(cleanedItems) * 2):
+        if i < len(cleanedItems):
+            #逐个向前删除关键词匹配
+            searchWord = " ".join(cleanedItems[0:len(cleanedItems)-i])
+        else:
+            #逐个向后删除关键词匹配
+            searchWord = " ".join(cleanedItems[i - len(cleanedItems):len(cleanedItems)])
+            
         print("搜索中：" + searchWord)
         htmltreeOfSearchResult = getElements(url, {'query': searchWord})
         if htmltreeOfSearchResult is not None:
@@ -183,9 +192,6 @@ def searchSong(songName):
                     result = metadataGrab(matchedLink)
                     if result is not None:
                         return result
-    
-    print("未找到搜索到匹配项")
-    return None
 
 if __name__ == "__main__":
     songname = input("输入歌名进行查询")

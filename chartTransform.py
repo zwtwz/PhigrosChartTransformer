@@ -8,6 +8,7 @@ outputDir = config.outputChartsPath
 illustrationDir = config.illustrationsPath
 musicDir = config.musicsPath
 chartDir = config.inputChartsPath
+handlingLevels = config.handlingLevels
 
 
 #音符转换逻辑
@@ -97,7 +98,14 @@ def transform(metadata, savingPath=outputDir, isErrorDealing=False):
         difficulty = str(chart["difficulty"])
         level = chart["level"]
         displayedDifficulty = "%s Lv.%s"%(level, str(int(float(difficulty))))
+
+        if not level in handlingLevels and not isErrorDealing:
+            continue
+        
         inputChartPath = os.path.join(chartDir, chart["chart"])
+        if not os.path.exists(inputChartPath):
+            os.mkdir(inputChartPath)
+        
         outputName = "%s [%s]"%(metadata["name"], level)
         print("  正在处理 %s 谱面"%level)
 
@@ -136,7 +144,7 @@ def transform(metadata, savingPath=outputDir, isErrorDealing=False):
             outputChart["META"]["level"],
             outputChart["META"]["composer"],
             outputChart["META"]["charter"])
-        infoyaml = "name: {}\nlevel: {}\ndifficulty: {}\nillustrator: {}\ntip: {}\nintro: {}\nformat: null".format(
+        infoyaml = 'name: "{}"\nlevel: {}\ndifficulty: {}\nillustrator: "{}"\ntip: "{}"\nintro: "{}"\nformat: null'.format(
             songName,
             displayedDifficulty,
             difficulty,

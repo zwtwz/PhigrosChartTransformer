@@ -111,6 +111,7 @@ def generateLutAndPezFiles(musicList, mode=0, lastOnProcessingSongsInformation=N
     #mode 2: 错误处理模式，手动输入全部元数据
     player = MusicPlayer()
     numOfMusic = len(musicList)
+    ignoredSongs = readIgnoredSongs()
 
     def checkIfSongExist(songName):
         nonlocal numOfMusic
@@ -144,6 +145,7 @@ def generateLutAndPezFiles(musicList, mode=0, lastOnProcessingSongsInformation=N
     try:
         for i in range(numOfMusic):
             saveOnProcessingSongsInformation(onProcessingSongsInformation)
+            saveIgnoredSongs(ignoredSongs)
             music = musicList[i]
             i += 1
             #开始处理
@@ -168,6 +170,7 @@ def generateLutAndPezFiles(musicList, mode=0, lastOnProcessingSongsInformation=N
 
                 #重复歌曲检测
                 if checkIfSongExist(metadata["name"]):
+                    ignoredSongs.append(music)
                     continue
                 
                 #歌曲时长匹配检测
@@ -196,6 +199,7 @@ def generateLutAndPezFiles(musicList, mode=0, lastOnProcessingSongsInformation=N
 
                 #重复歌曲检测
                 if checkIfSongExist(metadata["name"]):
+                    ignoredSongs.append(music)
                     continue
 
                 metadata["music"] = music
@@ -213,6 +217,7 @@ def generateLutAndPezFiles(musicList, mode=0, lastOnProcessingSongsInformation=N
 
                     #重复歌曲检测
                     if checkIfSongExist(songName):
+                        ignoredSongs.append(music)
                         continue
                     
                     #手动输入时不检查歌曲持续时间，因此不用填。
@@ -578,7 +583,6 @@ def informationHandling(option=1):
                 musicList.remove(existMusic["music"])
             else:
                 print(" 新增：" + existMusic["music"])
-        print("共新增：" + str(len(musicList)))
     elif option == 3:
         musicList = [music for music in os.listdir(musicsPath) if "wav" in music]
 
@@ -606,7 +610,6 @@ def informationHandling(option=1):
                     musicList.remove(i)
                     numOfFormerProcessedMusics += 1
             print("成功加载%s个谱面" % str(numOfFormerProcessedMusics))
-            print("剩余未处理歌曲数：" + str(len(musicList)))
         else:
             onProcessingSongsInformation = None
     else:
@@ -618,6 +621,7 @@ def informationHandling(option=1):
             musicList.remove(ignoredSong)
     
     numOfMusics = len(musicList)
+    print("共有%s个音频文件需要处理" % str(numOfMusics))
 
 
     #信息处理
@@ -854,7 +858,8 @@ if __name__ == "__main__":
                         if choiceC == "n":
                             continue
 
-                        ignoredSongs = songsInformation["errors"]["informationError"]
+                        ignoredSongs = readIgnoredSongs()
+                        ignoredSongs.extend([i for i in songsInformation["errors"]["informationError"] if i not in ignoredSongs])
                         saveIgnoredSongs(ignoredSongs)
                         songsInformation["errors"]["informationError"].clear()
                         saveSongsInformation(songsInformation)

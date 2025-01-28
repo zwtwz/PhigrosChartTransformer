@@ -39,7 +39,7 @@ handlingLevels = ["EZ", "HD", "IN", "AT", "SP", "Legacy"]
 useAutoSongRecognizing = False
 
 # tesseractOCR的可执行文件路径，需要手动本地安装。
-tesseractPath = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+tesseractPath = r'.\Tesseract-OCR\tesseract.exe'
 
 # 听歌识曲OCR识别点位
 # 歌名显示范围

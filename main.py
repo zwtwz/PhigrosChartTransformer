@@ -5,6 +5,17 @@ from tinytag import TinyTag
 from copy import deepcopy
 
 import config
+
+#程序运行目录检查，配置加载
+datapath = config.dataPath
+songsInformationFile = os.path.join(datapath, "songsInformation.json")
+ignoredSongsFile = os.path.join(datapath, "ignoredSongs.json")
+onProcessingSongsInformationFile = os.path.join(datapath, "onProcessingSongsInformation.json")
+musicsPath = config.musicsPath
+illustrationPath = config.illustrationsPath
+chartPath = config.inputChartsPath
+handlingLevels = config.handlingLevels
+
 import chartSearch
 import songRecognize
 import metadataGrab
@@ -25,19 +36,10 @@ class MusicPlayer:
     def is_playing(self):
         return pygame.mixer.music.get_busy()
 
-
-#程序运行目录检查，配置加载
-datapath = config.dataPath
-songsInformationFile = os.path.join(datapath, "songsInformation.json")
-ignoredSongsFile = os.path.join(datapath, "ignoredSongs.json")
-onProcessingSongsInformationFile = os.path.join(datapath, "onProcessingSongsInformation.json")
-musicsPath = config.musicsPath
-illustrationPath = config.illustrationsPath
-chartPath = config.inputChartsPath
-handlingLevels = config.handlingLevels
+   
 
 for handlingLevel in handlingLevels:
-    if not handlingLevel in ("IN", "EZ", "HD", "SP", "Legacy", "AT"):
+    if not handlingLevel in ["IN", "EZ", "HD", "SP", "Legacy", "AT"]:
         print("Error: 配置文件中的handlingLevels参数错误")
         exit()
 if "SP" in handlingLevels:

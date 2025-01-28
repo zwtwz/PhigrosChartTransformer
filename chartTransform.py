@@ -110,7 +110,7 @@ def transform(metadata, savingPath=outputDir, isErrorDealing=False):
         print("  正在处理 %s 谱面"%level)
 
         if not os.path.exists(inputChartPath):
-            print("Error: 谱面文件不存在!")
+            print("Error: 谱面文件不存在!" + inputChartPath)
             continue
 
         with open(inputChartPath,"r",encoding="utf-8") as file_json:

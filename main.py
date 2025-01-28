@@ -16,11 +16,30 @@ illustrationPath = config.illustrationsPath
 chartPath = config.inputChartsPath
 handlingLevels = config.handlingLevels
 
+paths = config.paths
+for i in paths:
+    if not os.path.exists(i):
+        os.mkdir(i)
+
 import chartSearch
 import songRecognize
 import metadataGrab
 import chartTransform
 import illustrationSearch
+
+for handlingLevel in handlingLevels:
+    if not handlingLevel in ["IN", "EZ", "HD", "SP", "Legacy", "AT"]:
+        print("Error: 配置文件中的handlingLevels参数错误")
+        exit()
+if "SP" in handlingLevels:
+    #将SP提到最前，满足查找谱面时的顺序
+    handlingLevels.remove("SP")
+    handlingLevels.insert(0, "SP")
+
+
+useExistedIllustration = config.useExistedIllustration
+handlingLevels = config.handlingLevels
+useAutoSongRecognizing = config.useAutoSongRecognizing
 
 #音乐集成
 class MusicPlayer:
@@ -35,26 +54,6 @@ class MusicPlayer:
         pygame.mixer.music.unload()
     def is_playing(self):
         return pygame.mixer.music.get_busy()
-
-   
-
-for handlingLevel in handlingLevels:
-    if not handlingLevel in ["IN", "EZ", "HD", "SP", "Legacy", "AT"]:
-        print("Error: 配置文件中的handlingLevels参数错误")
-        exit()
-if "SP" in handlingLevels:
-    #将SP提到最前，满足查找谱面时的顺序
-    handlingLevels.remove("SP")
-    handlingLevels.insert(0, "SP")
-
-paths = config.paths
-for i in paths:
-    if not os.path.exists(i):
-        os.mkdir(i)
-
-useExistedIllustration = config.useExistedIllustration
-handlingLevels = config.handlingLevels
-useAutoSongRecognizing = config.useAutoSongRecognizing
 
 
 
@@ -786,7 +785,7 @@ if __name__ == "__main__":
     【1】 根据本地数据，直接生成全部谱面文件（首次使用请选择）
     【2】 更新本地数据文件（将新版本phi的文件直接追加到相应目录中后，使用此项更新）
     【3】 重置本地数据文件（仅包括谱面元数据）
-    【4】 重置本地数据文件（全部）
+    【4】 重置歌曲查找表和曲绘查找表
     【5】 错误谱面处理（有错误存在时务必处理完错误）
 请输入一位整数：
               """)
@@ -801,6 +800,16 @@ if __name__ == "__main__":
                     continue
 
                 for metadata in songsInformation["metadatas"]:
+                    #检查音频文件、曲绘是否存在
+                    musicPath = os.path.join(musicsPath, metadata["music"])
+                    illustrationPath = os.path.join(illustrationPath, metadata["illustration"])
+                    if not os.path.exists(musicPath):
+                        print("Error: 音频文件不存在 " + musicPath)
+                        continue
+                    if not os.path.exists(illustrationPath):
+                        print("Error: 曲绘文件不存在 " + illustrationPath)
+                        continue
+                    
                     chartTransform.transform(metadata)
                 print("处理完成")
 
@@ -822,15 +831,13 @@ if __name__ == "__main__":
                 informationHandling(option = 3)
                     
             case "4":
-                #重置全部本地数据文件
-                print("注意，全部本地数据文件将被重置。")
+                #重置查找表
                 choiceB = input("直接按下回车开始，输入n取消。")
                 if choiceB == "n":
                     continue
 
                 chartSearch.generatechartFilenameLUT(chartPath)
                 illustrationSearch.generateIllustrationLUT()
-                informationHandling(option = 3)
 
             case "5":
                 #错误处理

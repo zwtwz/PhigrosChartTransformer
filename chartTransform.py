@@ -84,6 +84,7 @@ metadata = {
 
 
 def transform(metadata, savingPath=outputDir, isErrorDealing=False):
+    """转换谱面，生成pez文件"""
     print("开始转换谱面...")
     #读取歌曲元数据
     songName = metadata["name"]

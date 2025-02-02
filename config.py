@@ -5,14 +5,15 @@ currentPath = os.getcwd()
 
 # 程序运行目录，如有需要自行更改（虽然我没测试过改了以后能不能运行）
 rootPath = currentPath # 根目录，默认为当前路径
-dataPath = os.path.join(rootPath, 'data') # 数据文件目录
-inputChartsPath = os.path.join(rootPath, 'Charts') # 原始谱面目录
-illustrationsPath = os.path.join(rootPath, 'Illustrations') # 曲绘目录
-musicsPath = os.path.join(rootPath, 'Musics') # 音乐目录
-outputChartsPath = os.path.join(rootPath, 'Output') # 输出谱面目录
-
-#别动
-paths = [rootPath, dataPath, inputChartsPath, illustrationsPath, musicsPath, outputChartsPath]
+paths = {
+    "rootPath" : rootPath,
+    "dataPath" : os.path.join(rootPath, 'data'), # 数据文件目录
+    "cacheDataPath" : os.path.join(rootPath, 'data', 'cache'), # 数据缓存目录
+    "inputChartsPath" : os.path.join(rootPath, 'Charts'), # 原始谱面目录
+    "illustrationsPath" : os.path.join(rootPath, 'Illustrations'), # 曲绘目录
+    "musicsPath" : os.path.join(rootPath, 'Musics'), # 音乐目录
+    "outputChartsPath" : os.path.join(rootPath, 'Output') # 输出谱面目录
+}
 
 # 控制是否在曲绘文件夹内搜索使用已存在的曲绘文件
 # （就是phi包内自带的）

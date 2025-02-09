@@ -4,10 +4,8 @@ Illustrations/*
 Musics/*
 Output/*
 programFileBackups/*
-data/illustrationFilenameLUT.json
-data/chartFilenameLUT.json
-data/onProcessingSongsInformation.json
 data/cache
+data/illustrationFilenameLUT.json
 dist
 build
 main.spec

@@ -593,6 +593,7 @@ def update_songs_info_file():
 
 if __name__ == "__main__":
     print(prompts.欢迎)
+    print("当前数据库对应游戏版本: " + db.get("info.version"))
 
     print("目前启用难度：")
     for level in enabled_levels:
@@ -622,6 +623,9 @@ if __name__ == "__main__":
                 chartSearch.update_chart_filename_lut(charts_path)
                 illustrationSearch.updateIllustrationLUT()
                 update_songs_info_file()
+                db.set("info.version",input("请输入新的数据库对应游戏版本号: "))
+                db.commit()
+                
             case "3":
                 #重置本地数据文件（仅包括谱面元数据）
                 print("注意，原先的歌曲元数据（包括错误信息）将被重置。")

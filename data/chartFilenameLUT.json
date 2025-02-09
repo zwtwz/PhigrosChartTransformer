@@ -1,0 +1,5795 @@
+{
+  "EZ": [
+    {
+      "chart": "Chart_EZ #9",
+      "num_of_notes": 312,
+      "bpm": 170.0,
+      "md5": "1732909b30f5fb7a96c5edfc108e5d9a",
+      "old_filename": "Chart_EZ #9"
+    },
+    {
+      "chart": "Chart_EZ #1085",
+      "num_of_notes": 639,
+      "bpm": 175.0,
+      "md5": "18c29de32e693c19f866e50c5ba761ce",
+      "old_filename": "Chart_EZ #1085"
+    },
+    {
+      "chart": "Chart_EZ #1091",
+      "num_of_notes": 365,
+      "bpm": 180.0,
+      "md5": "075274a4956677a169080459a4e7f2d1",
+      "old_filename": "Chart_EZ #1091"
+    },
+    {
+      "chart": "Chart_EZ #1106",
+      "num_of_notes": 270,
+      "bpm": 200.0,
+      "md5": "5ccdcb5f9fb6552b94051d807031eb31",
+      "old_filename": "Chart_EZ #1106"
+    },
+    {
+      "chart": "Chart_EZ #1144",
+      "num_of_notes": 223,
+      "bpm": 182.0,
+      "md5": "f4873159ace99ab4f427d9cc961c059c",
+      "old_filename": "Chart_EZ #1144"
+    },
+    {
+      "chart": "Chart_EZ #114",
+      "num_of_notes": 307,
+      "bpm": 120.0,
+      "md5": "11649ff3d201530cc2da99be4ead4247",
+      "old_filename": "Chart_EZ #114"
+    },
+    {
+      "chart": "Chart_EZ #1181",
+      "num_of_notes": 280,
+      "bpm": 110.0,
+      "md5": "29e5b2877bdfa0e367f201c64ddbcfd1",
+      "old_filename": "Chart_EZ #1181"
+    },
+    {
+      "chart": "Chart_EZ #118",
+      "num_of_notes": 354,
+      "bpm": 195.0,
+      "md5": "eea5c16a58d0b5f3e64715aa33b9a0ff",
+      "old_filename": "Chart_EZ #118"
+    },
+    {
+      "chart": "Chart_EZ #1198",
+      "num_of_notes": 273,
+      "bpm": 132.0,
+      "md5": "20aea260bf9d70b5f8c7cef8cb51df4f",
+      "old_filename": "Chart_EZ #1198"
+    },
+    {
+      "chart": "Chart_EZ #1221",
+      "num_of_notes": 50,
+      "bpm": 180.0,
+      "md5": "37b41b35fd9dc8eb91330b59eb6b58b5",
+      "old_filename": "Chart_EZ #1221"
+    },
+    {
+      "chart": "Chart_EZ #1229",
+      "num_of_notes": 482,
+      "bpm": 184.0,
+      "md5": "f2b287a6ded309d4a23596514984729f",
+      "old_filename": "Chart_EZ #1229"
+    },
+    {
+      "chart": "Chart_EZ #123",
+      "num_of_notes": 316,
+      "bpm": 180.0,
+      "md5": "e2848602a1115a29ec39a45dee6d5cc6",
+      "old_filename": "Chart_EZ #123"
+    },
+    {
+      "chart": "Chart_EZ #1243",
+      "num_of_notes": 164,
+      "bpm": 160.0,
+      "md5": "740e5fcefd4b3699aa390042af00b83d",
+      "old_filename": "Chart_EZ #1243"
+    },
+    {
+      "chart": "Chart_EZ #1315",
+      "num_of_notes": 310,
+      "bpm": 177.0,
+      "md5": "f33d3dc363b4b6572d5b6d9dd42e0b29",
+      "old_filename": "Chart_EZ #1315"
+    },
+    {
+      "chart": "Chart_EZ #1323",
+      "num_of_notes": 125,
+      "bpm": 200.0,
+      "md5": "903628ee8728ade840a406c102bb86ff",
+      "old_filename": "Chart_EZ #1323"
+    },
+    {
+      "chart": "Chart_EZ #1330",
+      "num_of_notes": 334,
+      "bpm": 150.0,
+      "md5": "8250bcc311221eace0ab8a8cac96babe",
+      "old_filename": "Chart_EZ #1330"
+    },
+    {
+      "chart": "Chart_EZ #1340",
+      "num_of_notes": 93,
+      "bpm": 138.0,
+      "md5": "75a59c2d205d8809de9081729dd5a783",
+      "old_filename": "Chart_EZ #1340"
+    },
+    {
+      "chart": "Chart_EZ #1350",
+      "num_of_notes": 277,
+      "bpm": 132.0,
+      "md5": "268b03a5b4894e276e17229d8e1b9655",
+      "old_filename": "Chart_EZ #1350"
+    },
+    {
+      "chart": "Chart_EZ #1364",
+      "num_of_notes": 368,
+      "bpm": 170.0,
+      "md5": "b9ba770bd73a66662620d50c44fa6bc5",
+      "old_filename": "Chart_EZ #1364"
+    },
+    {
+      "chart": "Chart_EZ #1365",
+      "num_of_notes": 399,
+      "bpm": 131.0,
+      "md5": "d4b0d2d46a3e6c1185bcfa4ab388c69c",
+      "old_filename": "Chart_EZ #1365"
+    },
+    {
+      "chart": "Chart_EZ #1369",
+      "num_of_notes": 127,
+      "bpm": 155.0,
+      "md5": "8bec2fcdf9ffcd97988d312607708d25",
+      "old_filename": "Chart_EZ #1369"
+    },
+    {
+      "chart": "Chart_EZ #1395",
+      "num_of_notes": 1060,
+      "bpm": 321.321,
+      "md5": "57570540b9bc63c7a6238712c35a7aba",
+      "old_filename": "Chart_EZ #1395"
+    },
+    {
+      "chart": "Chart_EZ #1407",
+      "num_of_notes": 313,
+      "bpm": 172.0,
+      "md5": "04a8736dfee0ae0ed608f71d90d0f5ed",
+      "old_filename": "Chart_EZ #1407"
+    },
+    {
+      "chart": "Chart_EZ #1421",
+      "num_of_notes": 217,
+      "bpm": 120.0,
+      "md5": "608141c70ab2ccb89e52755475fa8b23",
+      "old_filename": "Chart_EZ #1421"
+    },
+    {
+      "chart": "Chart_EZ #1443",
+      "num_of_notes": 325,
+      "bpm": 185.0,
+      "md5": "173aef5883e7da2944c9814dffcb6109",
+      "old_filename": "Chart_EZ #1443"
+    },
+    {
+      "chart": "Chart_EZ #1449",
+      "num_of_notes": 311,
+      "bpm": 144.0,
+      "md5": "a4053114415ae8c7e7f7156655abba7b",
+      "old_filename": "Chart_EZ #1449"
+    },
+    {
+      "chart": "Chart_EZ #1470",
+      "num_of_notes": 338,
+      "bpm": 227.0,
+      "md5": "14581b3d5ea866a9d986b37e9aad8c1b",
+      "old_filename": "Chart_EZ #1470"
+    },
+    {
+      "chart": "Chart_EZ #1493",
+      "num_of_notes": 210,
+      "bpm": 150.0,
+      "md5": "b3ad5da39e9af2255cb80ea8f374b268",
+      "old_filename": "Chart_EZ #1493"
+    },
+    {
+      "chart": "Chart_EZ #1494",
+      "num_of_notes": 446,
+      "bpm": 190.0,
+      "md5": "1b679bbf015af0deb0e3e9fc5f65a270",
+      "old_filename": "Chart_EZ #1494"
+    },
+    {
+      "chart": "Chart_EZ #1568",
+      "num_of_notes": 208,
+      "bpm": 160.0,
+      "md5": "9e1c76ffd165dfa444b466c66371d218",
+      "old_filename": "Chart_EZ #1568"
+    },
+    {
+      "chart": "Chart_EZ #1588",
+      "num_of_notes": 401,
+      "bpm": 179.0,
+      "md5": "616f51b9f30dd287166aaf66f3bf1970",
+      "old_filename": "Chart_EZ #1588"
+    },
+    {
+      "chart": "Chart_EZ #1591",
+      "num_of_notes": 319,
+      "bpm": 180.0,
+      "md5": "2091071cda5d9526e21f34ed61206947",
+      "old_filename": "Chart_EZ #1591"
+    },
+    {
+      "chart": "Chart_EZ #1593",
+      "num_of_notes": 352,
+      "bpm": 200.0,
+      "md5": "41cd6c00f04e7c2fc0290a8453ea2183",
+      "old_filename": "Chart_EZ #1593"
+    },
+    {
+      "chart": "Chart_EZ #1614",
+      "num_of_notes": 519,
+      "bpm": 200.0,
+      "md5": "9290e32c15a1f5393badbbccd3cf3924",
+      "old_filename": "Chart_EZ #1614"
+    },
+    {
+      "chart": "Chart_EZ #1622",
+      "num_of_notes": 141,
+      "bpm": 145.0,
+      "md5": "4a2957eb44c15ad30ce68aabeb98d898",
+      "old_filename": "Chart_EZ #1622"
+    },
+    {
+      "chart": "Chart_EZ #1641",
+      "num_of_notes": 533,
+      "bpm": 175.0,
+      "md5": "06b9a7f71ebf09c99308e52c297b2d98",
+      "old_filename": "Chart_EZ #1641"
+    },
+    {
+      "chart": "Chart_EZ #1650",
+      "num_of_notes": 295,
+      "bpm": 190.0,
+      "md5": "952f9a570a637a64d428b2dadfd5438f",
+      "old_filename": "Chart_EZ #1650"
+    },
+    {
+      "chart": "Chart_EZ #168",
+      "num_of_notes": 316,
+      "bpm": 223.0,
+      "md5": "7ed3a356ef114af856f6e2968a70a78e",
+      "old_filename": "Chart_EZ #168"
+    },
+    {
+      "chart": "Chart_EZ #1712",
+      "num_of_notes": 190,
+      "bpm": 128.0,
+      "md5": "6ecd82c00dfa0becddca7c34fd27750d",
+      "old_filename": "Chart_EZ #1712"
+    },
+    {
+      "chart": "Chart_EZ #1746",
+      "num_of_notes": 226,
+      "bpm": 170.0,
+      "md5": "e05c527b6a3144382a9a00027dc6a641",
+      "old_filename": "Chart_EZ #1746"
+    },
+    {
+      "chart": "Chart_EZ #1787",
+      "num_of_notes": 520,
+      "bpm": 190.0,
+      "md5": "175a6ef46f53ec8d82d3b7decbc387a1",
+      "old_filename": "Chart_EZ #1787"
+    },
+    {
+      "chart": "Chart_EZ #1790",
+      "num_of_notes": 248,
+      "bpm": 177.0,
+      "md5": "d8c68de1eedf1b30b7f55d36ac41e2ca",
+      "old_filename": "Chart_EZ #1790"
+    },
+    {
+      "chart": "Chart_EZ #1804",
+      "num_of_notes": 203,
+      "bpm": 210.0,
+      "md5": "7a00719cb85fe766bb3e74298aeb4efa",
+      "old_filename": "Chart_EZ #1804"
+    },
+    {
+      "chart": "Chart_EZ #1814",
+      "num_of_notes": 391,
+      "bpm": 193.0,
+      "md5": "23c3b2b46f4c475840a5f7aee6636d05",
+      "old_filename": "Chart_EZ #1814"
+    },
+    {
+      "chart": "Chart_EZ #1821",
+      "num_of_notes": 1057,
+      "bpm": 174.0,
+      "md5": "d92ca2283ca0d1a0ece09e1eb735ab52",
+      "old_filename": "Chart_EZ #1821"
+    },
+    {
+      "chart": "Chart_EZ #1824",
+      "num_of_notes": 202,
+      "bpm": 170.0,
+      "md5": "5107abbac3e2d71079ef84e4837d7ffa",
+      "old_filename": "Chart_EZ #1824"
+    },
+    {
+      "chart": "Chart_EZ #1825",
+      "num_of_notes": 517,
+      "bpm": 200.0,
+      "md5": "049596ba5f43f705cd7480b608ec6d0e",
+      "old_filename": "Chart_EZ #1825"
+    },
+    {
+      "chart": "Chart_EZ #1851",
+      "num_of_notes": 132,
+      "bpm": 170.0,
+      "md5": "8a8e79060eee7b5cae3c122b2563cfe1",
+      "old_filename": "Chart_EZ #1851"
+    },
+    {
+      "chart": "Chart_EZ #1856",
+      "num_of_notes": 386,
+      "bpm": 152.0,
+      "md5": "2569a07c4a90948a0fb433867ac7b2c8",
+      "old_filename": "Chart_EZ #1856"
+    },
+    {
+      "chart": "Chart_EZ #1878",
+      "num_of_notes": 242,
+      "bpm": 174.0,
+      "md5": "99ca67546035e0959a54dde0ada46425",
+      "old_filename": "Chart_EZ #1878"
+    },
+    {
+      "chart": "Chart_EZ #1882",
+      "num_of_notes": 305,
+      "bpm": 150.0,
+      "md5": "9c1e5c4f45e63a10fd7dd84cb2ea4844",
+      "old_filename": "Chart_EZ #1882"
+    },
+    {
+      "chart": "Chart_EZ #1937",
+      "num_of_notes": 229,
+      "bpm": 128.0,
+      "md5": "2e097eef52cd5806647d5a958b9cea56",
+      "old_filename": "Chart_EZ #1937"
+    },
+    {
+      "chart": "Chart_EZ #1951",
+      "num_of_notes": 122,
+      "bpm": 154.0,
+      "md5": "b7c7586fd8dedfd7ef176654397d13aa",
+      "old_filename": "Chart_EZ #1951"
+    },
+    {
+      "chart": "Chart_EZ #1963",
+      "num_of_notes": 261,
+      "bpm": 175.0,
+      "md5": "cdfd5799bf4c0637a13e0f9bb99b61b6",
+      "old_filename": "Chart_EZ #1963"
+    },
+    {
+      "chart": "Chart_EZ #1979",
+      "num_of_notes": 294,
+      "bpm": 125.0,
+      "md5": "bd85bd7a307fc92abf5d71d32b0f63c5",
+      "old_filename": "Chart_EZ #1979"
+    },
+    {
+      "chart": "Chart_EZ #2001",
+      "num_of_notes": 83,
+      "bpm": 131.0,
+      "md5": "b3cf049844232daaa57b5b0cd455f006",
+      "old_filename": "Chart_EZ #2001"
+    },
+    {
+      "chart": "Chart_EZ #2019",
+      "num_of_notes": 271,
+      "bpm": 180.0,
+      "md5": "8996f0638b117a2c59d2626b8d826bb1",
+      "old_filename": "Chart_EZ #2019"
+    },
+    {
+      "chart": "Chart_EZ #2044",
+      "num_of_notes": 288,
+      "bpm": 160.0,
+      "md5": "4b1d4c4f8d2874e989606b122a46a662",
+      "old_filename": "Chart_EZ #2044"
+    },
+    {
+      "chart": "Chart_EZ #2097",
+      "num_of_notes": 75,
+      "bpm": 186.0,
+      "md5": "80966bdcd642c1b40067ec69f9fb1078",
+      "old_filename": "Chart_EZ #2097"
+    },
+    {
+      "chart": "Chart_EZ",
+      "num_of_notes": 165,
+      "bpm": 128.0,
+      "md5": "9e761c1508a7a50a1482db2eb051989a",
+      "old_filename": "Chart_EZ"
+    },
+    {
+      "chart": "Chart_EZ #2129",
+      "num_of_notes": 252,
+      "bpm": 160.0,
+      "md5": "f50bb0f49d6ce3fd45f61cb305723820",
+      "old_filename": "Chart_EZ #2129"
+    },
+    {
+      "chart": "Chart_EZ #2192",
+      "num_of_notes": 419,
+      "bpm": 175.0,
+      "md5": "25cfc237184d326f44e42da8fde31271",
+      "old_filename": "Chart_EZ #2192"
+    },
+    {
+      "chart": "Chart_EZ #2194",
+      "num_of_notes": 283,
+      "bpm": 128.0,
+      "md5": "42a0aa9f978e6b18a5677f14cd79c767",
+      "old_filename": "Chart_EZ #2194"
+    },
+    {
+      "chart": "Chart_EZ #2232",
+      "num_of_notes": 330,
+      "bpm": 141.0,
+      "md5": "30b078f3147770e1b3926e645c3154a8",
+      "old_filename": "Chart_EZ #2232"
+    },
+    {
+      "chart": "Chart_EZ #2259",
+      "num_of_notes": 183,
+      "bpm": 150.0,
+      "md5": "d523e9bcda301625933b02ccd0073521",
+      "old_filename": "Chart_EZ #2259"
+    },
+    {
+      "chart": "Chart_EZ #2269",
+      "num_of_notes": 338,
+      "bpm": 120.0,
+      "md5": "fb63117329d19b5516fcee17b2e52598",
+      "old_filename": "Chart_EZ #2269"
+    },
+    {
+      "chart": "Chart_EZ #2276",
+      "num_of_notes": 630,
+      "bpm": 155.0,
+      "md5": "0953603cbf127433c8dba21846d88a7d",
+      "old_filename": "Chart_EZ #2276"
+    },
+    {
+      "chart": "Chart_EZ #2328",
+      "num_of_notes": 111,
+      "bpm": 180.0,
+      "md5": "4fa79573ffc8d839d38bd3844389e1fd",
+      "old_filename": "Chart_EZ #2328"
+    },
+    {
+      "chart": "Chart_EZ #2337",
+      "num_of_notes": 66,
+      "bpm": 140.0,
+      "md5": "c5759a43c0f327bb77f6d872882a109e",
+      "old_filename": "Chart_EZ #2337"
+    },
+    {
+      "chart": "Chart_EZ #2367",
+      "num_of_notes": 240,
+      "bpm": 175.0,
+      "md5": "1f97ffaa1a29e489f9dd4105a2fe5449",
+      "old_filename": "Chart_EZ #2367"
+    },
+    {
+      "chart": "Chart_EZ #2375",
+      "num_of_notes": 76,
+      "bpm": 175.0,
+      "md5": "60876a6c952333b4dad47eb53f397f89",
+      "old_filename": "Chart_EZ #2375"
+    },
+    {
+      "chart": "Chart_EZ #2383",
+      "num_of_notes": 181,
+      "bpm": 180.0,
+      "md5": "d53e5489457136e14780c4243601cb53",
+      "old_filename": "Chart_EZ #2383"
+    },
+    {
+      "chart": "Chart_EZ #249",
+      "num_of_notes": 196,
+      "bpm": 172.0,
+      "md5": "6485c9d8ddd57f41648e36d1bb7cf44a",
+      "old_filename": "Chart_EZ #249"
+    },
+    {
+      "chart": "Chart_EZ #2405",
+      "num_of_notes": 285,
+      "bpm": 132.0,
+      "md5": "4142a7e33aff60c2983527a9e716ec2f",
+      "old_filename": "Chart_EZ #2405"
+    },
+    {
+      "chart": "Chart_EZ #2421",
+      "num_of_notes": 479,
+      "bpm": 280.0,
+      "md5": "90d5a0f64baf279d648e16f30dba2a98",
+      "old_filename": "Chart_EZ #2421"
+    },
+    {
+      "chart": "Chart_EZ #2448",
+      "num_of_notes": 450,
+      "bpm": 160.0,
+      "md5": "7f0fbe938404a2865dc8fce8ba17c828",
+      "old_filename": "Chart_EZ #2448"
+    },
+    {
+      "chart": "Chart_EZ #2450",
+      "num_of_notes": 594,
+      "bpm": 150.0,
+      "md5": "cdb5987ad81b70e3dc96153af2efaa61",
+      "old_filename": "Chart_EZ #2450"
+    },
+    {
+      "chart": "Chart_EZ #2451",
+      "num_of_notes": 123,
+      "bpm": 175.0,
+      "md5": "2b8f1488d1114166a18e5d7c69b0218f",
+      "old_filename": "Chart_EZ #2451"
+    },
+    {
+      "chart": "Chart_EZ #2469",
+      "num_of_notes": 444,
+      "bpm": 193.0,
+      "md5": "f8ebe888df43aebb1252d628c7df5637",
+      "old_filename": "Chart_EZ #2469"
+    },
+    {
+      "chart": "Chart_EZ #2475",
+      "num_of_notes": 184,
+      "bpm": 172.0,
+      "md5": "fe2ed13e38aaa945811cb47f3197b3f5",
+      "old_filename": "Chart_EZ #2475"
+    },
+    {
+      "chart": "Chart_EZ #2492",
+      "num_of_notes": 282,
+      "bpm": 160.0,
+      "md5": "5945c08f227743f442506c235ed5427b",
+      "old_filename": "Chart_EZ #2492"
+    },
+    {
+      "chart": "Chart_EZ #2521",
+      "num_of_notes": 286,
+      "bpm": 132.0,
+      "md5": "eadfbcb51bb48afc27d2e2da163e744d",
+      "old_filename": "Chart_EZ #2521"
+    },
+    {
+      "chart": "Chart_EZ #269",
+      "num_of_notes": 138,
+      "bpm": 180.0,
+      "md5": "291d8735004017acf0c565d951e6634c",
+      "old_filename": "Chart_EZ #269"
+    },
+    {
+      "chart": "Chart_EZ #2591",
+      "num_of_notes": 274,
+      "bpm": 158.0,
+      "md5": "2db0592486fb341e44a3b4c0e1adb544",
+      "old_filename": "Chart_EZ #2591"
+    },
+    {
+      "chart": "Chart_EZ #2708",
+      "num_of_notes": 588,
+      "bpm": 180.0,
+      "md5": "45382c2e16b96d7d7d32fe8e757a483f",
+      "old_filename": "Chart_EZ #2708"
+    },
+    {
+      "chart": "Chart_EZ #2747",
+      "num_of_notes": 148,
+      "bpm": 135.0,
+      "md5": "e9f3c2bce28264303ba162e646e50201",
+      "old_filename": "Chart_EZ #2747"
+    },
+    {
+      "chart": "Chart_EZ #2772",
+      "num_of_notes": 259,
+      "bpm": 150.0,
+      "md5": "049859de2db96329be452ae843b65663",
+      "old_filename": "Chart_EZ #2772"
+    },
+    {
+      "chart": "Chart_EZ #2777",
+      "num_of_notes": 195,
+      "bpm": 170.0,
+      "md5": "e5403c731894bc3d7cb5cb8ae719cdbb",
+      "old_filename": "Chart_EZ #2777"
+    },
+    {
+      "chart": "Chart_EZ #2802",
+      "num_of_notes": 259,
+      "bpm": 140.0,
+      "md5": "94115088126475ce72c43b1b732b4654",
+      "old_filename": "Chart_EZ #2802"
+    },
+    {
+      "chart": "Chart_EZ #2819",
+      "num_of_notes": 262,
+      "bpm": 145.0,
+      "md5": "376c9ec95cbb1312f32b7ed2692bbd3a",
+      "old_filename": "Chart_EZ #2819"
+    },
+    {
+      "chart": "Chart_EZ #2820",
+      "num_of_notes": 369,
+      "bpm": 188.0,
+      "md5": "9db184cdd8ae1d703a9c8f593b805244",
+      "old_filename": "Chart_EZ #2820"
+    },
+    {
+      "chart": "Chart_EZ #302",
+      "num_of_notes": 187,
+      "bpm": 174.0,
+      "md5": "a7f0b1d02684c28bf4216e705ca53ea6",
+      "old_filename": "Chart_EZ #302"
+    },
+    {
+      "chart": "Chart_EZ #306",
+      "num_of_notes": 156,
+      "bpm": 136.0,
+      "md5": "6908e3f5bc9419fcb19fbd3a2b9966f7",
+      "old_filename": "Chart_EZ #306"
+    },
+    {
+      "chart": "Chart_EZ #2968",
+      "num_of_notes": 275,
+      "bpm": 132.0,
+      "md5": "a295d4f85d2d3c6fd476e59bff8f98db",
+      "old_filename": "Chart_EZ #2968"
+    },
+    {
+      "chart": "Chart_EZ #313",
+      "num_of_notes": 300,
+      "bpm": 185.0,
+      "md5": "d2bb9c1f440ec8afba33c85c63ccfd89",
+      "old_filename": "Chart_EZ #313"
+    },
+    {
+      "chart": "Chart_EZ #2972",
+      "num_of_notes": 378,
+      "bpm": 150.0,
+      "md5": "10a470cef48073941719d1fe38c9d7d8",
+      "old_filename": "Chart_EZ #2972"
+    },
+    {
+      "chart": "Chart_EZ #2997",
+      "num_of_notes": 443,
+      "bpm": 200.0,
+      "md5": "f2e95f3ee3ae77253651c153bdfd4e33",
+      "old_filename": "Chart_EZ #2997"
+    },
+    {
+      "chart": "Chart_EZ #3000",
+      "num_of_notes": 446,
+      "bpm": 180.0,
+      "md5": "a0625c04a43ac7437dcf6e7a60a53d5a",
+      "old_filename": "Chart_EZ #3000"
+    },
+    {
+      "chart": "Chart_EZ #3018",
+      "num_of_notes": 436,
+      "bpm": 140.0,
+      "md5": "48a8dafb87d30b646d09b86f9702c0da",
+      "old_filename": "Chart_EZ #3018"
+    },
+    {
+      "chart": "Chart_EZ #323",
+      "num_of_notes": 1052,
+      "bpm": 191.0,
+      "md5": "a4657232124f7e92adebf7e4376ba78d",
+      "old_filename": "Chart_EZ #323"
+    },
+    {
+      "chart": "Chart_EZ #3090",
+      "num_of_notes": 512,
+      "bpm": 146.0,
+      "md5": "ffe198dab0ed1304c5fe96921319c5e0",
+      "old_filename": "Chart_EZ #3090"
+    },
+    {
+      "chart": "Chart_EZ #3097",
+      "num_of_notes": 246,
+      "bpm": 158.0,
+      "md5": "4fe6ccfe8e32b512487639a6e1d9b81d",
+      "old_filename": "Chart_EZ #3097"
+    },
+    {
+      "chart": "Chart_EZ #3105",
+      "num_of_notes": 194,
+      "bpm": 110.0,
+      "md5": "e49d02fea9cab1929b7f1fec4c8be87b",
+      "old_filename": "Chart_EZ #3105"
+    },
+    {
+      "chart": "Chart_EZ #3113",
+      "num_of_notes": 378,
+      "bpm": 213.0,
+      "md5": "e4cec7ba6ebd4b4589e96a46abc0da69",
+      "old_filename": "Chart_EZ #3113"
+    },
+    {
+      "chart": "Chart_EZ #3125",
+      "num_of_notes": 304,
+      "bpm": 188.0,
+      "md5": "e5f26a4d90134ff4c01328fbd600899f",
+      "old_filename": "Chart_EZ #3125"
+    },
+    {
+      "chart": "Chart_EZ #3138",
+      "num_of_notes": 207,
+      "bpm": 220.0,
+      "md5": "54cacf368128692236cd1555fa76ff36",
+      "old_filename": "Chart_EZ #3138"
+    },
+    {
+      "chart": "Chart_EZ #331",
+      "num_of_notes": 153,
+      "bpm": 250.0,
+      "md5": "d07feb80bd012c606d5d438df15f3e10",
+      "old_filename": "Chart_EZ #331"
+    },
+    {
+      "chart": "Chart_EZ #3170",
+      "num_of_notes": 455,
+      "bpm": 170.0,
+      "md5": "26f27be0ea640d630d386892677d25b5",
+      "old_filename": "Chart_EZ #3170"
+    },
+    {
+      "chart": "Chart_EZ #3200",
+      "num_of_notes": 330,
+      "bpm": 174.0,
+      "md5": "a8982bf49bcef9c5796300c7b2067697",
+      "old_filename": "Chart_EZ #3200"
+    },
+    {
+      "chart": "Chart_EZ #3204",
+      "num_of_notes": 465,
+      "bpm": 191.0,
+      "md5": "6608aba16216d939e2b44f9547c5e78a",
+      "old_filename": "Chart_EZ #3204"
+    },
+    {
+      "chart": "Chart_EZ #3206",
+      "num_of_notes": 328,
+      "bpm": 206.0,
+      "md5": "8b1ee751b985535e4c11d88109ca32b7",
+      "old_filename": "Chart_EZ #3206"
+    },
+    {
+      "chart": "Chart_EZ #3212",
+      "num_of_notes": 600,
+      "bpm": 128.0,
+      "md5": "3e9ecf977f116c5800987fb33707eb29",
+      "old_filename": "Chart_EZ #3212"
+    },
+    {
+      "chart": "Chart_EZ #3276",
+      "num_of_notes": 308,
+      "bpm": 222.0,
+      "md5": "3e241c1579b94e149080b476b80ac020",
+      "old_filename": "Chart_EZ #3276"
+    },
+    {
+      "chart": "Chart_EZ #3278",
+      "num_of_notes": 461,
+      "bpm": 190.0,
+      "md5": "135b8c3e0da7ce4065421e7569d3615c",
+      "old_filename": "Chart_EZ #3278"
+    },
+    {
+      "chart": "Chart_EZ #344",
+      "num_of_notes": 419,
+      "bpm": 176.0,
+      "md5": "1326f568e686d4977031eee4c493d2b7",
+      "old_filename": "Chart_EZ #344"
+    },
+    {
+      "chart": "Chart_EZ #3330",
+      "num_of_notes": 186,
+      "bpm": 160.0,
+      "md5": "21caee425db8b8d35eb374a3a8ebff0a",
+      "old_filename": "Chart_EZ #3330"
+    },
+    {
+      "chart": "Chart_EZ #3435",
+      "num_of_notes": 152,
+      "bpm": 180.0,
+      "md5": "39363f9fec8bd8573faa0cfbc1d393b9",
+      "old_filename": "Chart_EZ #3435"
+    },
+    {
+      "chart": "Chart_EZ #3466",
+      "num_of_notes": 256,
+      "bpm": 151.0,
+      "md5": "2bb761ecf352f3e436241186d8e78ee0",
+      "old_filename": "Chart_EZ #3466"
+    },
+    {
+      "chart": "Chart_EZ #3492",
+      "num_of_notes": 470,
+      "bpm": 112.0,
+      "md5": "a5eb777a337592ab2e246325a04e3879",
+      "old_filename": "Chart_EZ #3492"
+    },
+    {
+      "chart": "Chart_EZ #3508",
+      "num_of_notes": 413,
+      "bpm": 210.0,
+      "md5": "c9bb9a0f6d6e3fd264542d1e0f79fc11",
+      "old_filename": "Chart_EZ #3508"
+    },
+    {
+      "chart": "Chart_EZ #3536",
+      "num_of_notes": 333,
+      "bpm": 180.0,
+      "md5": "4546dbd3f5b179f5c67e3e7458c274d1",
+      "old_filename": "Chart_EZ #3536"
+    },
+    {
+      "chart": "Chart_EZ #3551",
+      "num_of_notes": 321,
+      "bpm": 128.0,
+      "md5": "1a5d26f79dd1f34df99f71730dd73d83",
+      "old_filename": "Chart_EZ #3551"
+    },
+    {
+      "chart": "Chart_EZ #3556",
+      "num_of_notes": 505,
+      "bpm": 126.0,
+      "md5": "9e973ad4a49ef97db73ded10788006a7",
+      "old_filename": "Chart_EZ #3556"
+    },
+    {
+      "chart": "Chart_EZ #3559",
+      "num_of_notes": 188,
+      "bpm": 188.0,
+      "md5": "35ed0514edeb4a432c029f3b557836eb",
+      "old_filename": "Chart_EZ #3559"
+    },
+    {
+      "chart": "Chart_EZ #3583",
+      "num_of_notes": 338,
+      "bpm": 180.0,
+      "md5": "3680316a32f5672b260a2b603e80e821",
+      "old_filename": "Chart_EZ #3583"
+    },
+    {
+      "chart": "Chart_EZ #3591",
+      "num_of_notes": 114,
+      "bpm": 128.0,
+      "md5": "e4bb532d4a9a68b8e9502aedb011b7d2",
+      "old_filename": "Chart_EZ #3591"
+    },
+    {
+      "chart": "Chart_EZ #3623",
+      "num_of_notes": 262,
+      "bpm": 164.0,
+      "md5": "2bd7678486d9b81fbfe40c6b07a0e777",
+      "old_filename": "Chart_EZ #3623"
+    },
+    {
+      "chart": "Chart_EZ #3637",
+      "num_of_notes": 486,
+      "bpm": 163.0,
+      "md5": "3232fec39520c769a1a0ef5b3e4cb170",
+      "old_filename": "Chart_EZ #3637"
+    },
+    {
+      "chart": "Chart_EZ #3647",
+      "num_of_notes": 281,
+      "bpm": 132.0,
+      "md5": "fffe2ec1f2e78dea43063b67aacd3f6d",
+      "old_filename": "Chart_EZ #3647"
+    },
+    {
+      "chart": "Chart_EZ #3674",
+      "num_of_notes": 220,
+      "bpm": 128.0,
+      "md5": "8d040fbb910a5fe97f08ba7d21541d3e",
+      "old_filename": "Chart_EZ #3674"
+    },
+    {
+      "chart": "Chart_EZ #3675",
+      "num_of_notes": 594,
+      "bpm": 240.0,
+      "md5": "d6e59c5c07c2004ecaf7e4c16aade8f1",
+      "old_filename": "Chart_EZ #3675"
+    },
+    {
+      "chart": "Chart_EZ #3722",
+      "num_of_notes": 210,
+      "bpm": 127.0,
+      "md5": "1909b3d404455f5e72a5f0726e349e03",
+      "old_filename": "Chart_EZ #3722"
+    },
+    {
+      "chart": "Chart_EZ #3771",
+      "num_of_notes": 117,
+      "bpm": 128.0,
+      "md5": "06f76cb2fb239c9e16d2b671dd1b3dc2",
+      "old_filename": "Chart_EZ #3771"
+    },
+    {
+      "chart": "Chart_EZ #3796",
+      "num_of_notes": 352,
+      "bpm": 215.0,
+      "md5": "8455d0f4c70ae064f5291b1916afc443",
+      "old_filename": "Chart_EZ #3796"
+    },
+    {
+      "chart": "Chart_EZ #3815",
+      "num_of_notes": 141,
+      "bpm": 134.0,
+      "md5": "5b9bdbd3cfda2e52d42f055bb7403bf4",
+      "old_filename": "Chart_EZ #3815"
+    },
+    {
+      "chart": "Chart_EZ #3818",
+      "num_of_notes": 285,
+      "bpm": 145.0,
+      "md5": "8ca8e711587211367deb5f20d05b7978",
+      "old_filename": "Chart_EZ #3818"
+    },
+    {
+      "chart": "Chart_EZ #3834",
+      "num_of_notes": 226,
+      "bpm": 200.0,
+      "md5": "f6628af797ebb2ca47539ce73db4f2d3",
+      "old_filename": "Chart_EZ #3834"
+    },
+    {
+      "chart": "Chart_EZ #3836",
+      "num_of_notes": 330,
+      "bpm": 165.0,
+      "md5": "26a9aa1fcc526f5384d962e631045fd4",
+      "old_filename": "Chart_EZ #3836"
+    },
+    {
+      "chart": "Chart_EZ #3978",
+      "num_of_notes": 230,
+      "bpm": 158.0,
+      "md5": "badaa8cccca067de90091ee73e8cebd5",
+      "old_filename": "Chart_EZ #3978"
+    },
+    {
+      "chart": "Chart_EZ #3981",
+      "num_of_notes": 364,
+      "bpm": 125.0,
+      "md5": "b13501d9eb0abe38c06a2da5c9cbed47",
+      "old_filename": "Chart_EZ #3981"
+    },
+    {
+      "chart": "Chart_EZ #4012",
+      "num_of_notes": 177,
+      "bpm": 150.0,
+      "md5": "559b0af7dff585024bb1c71daae1f58f",
+      "old_filename": "Chart_EZ #4012"
+    },
+    {
+      "chart": "Chart_EZ #4043",
+      "num_of_notes": 292,
+      "bpm": 101.0,
+      "md5": "457ebccd69fd9fc4a06c4a2963b7252f",
+      "old_filename": "Chart_EZ #4043"
+    },
+    {
+      "chart": "Chart_EZ #420",
+      "num_of_notes": 318,
+      "bpm": 175.0,
+      "md5": "7712cd732bae7510d899e5e8e26634f6",
+      "old_filename": "Chart_EZ #420"
+    },
+    {
+      "chart": "Chart_EZ #4083",
+      "num_of_notes": 626,
+      "bpm": 301.0,
+      "md5": "9ac1f48884f335cbe1b12f88bfcd0f95",
+      "old_filename": "Chart_EZ #4083"
+    },
+    {
+      "chart": "Chart_EZ #4100",
+      "num_of_notes": 289,
+      "bpm": 130.0,
+      "md5": "e8c4b34cd8de14143e4b6c9e2ec54d7f",
+      "old_filename": "Chart_EZ #4100"
+    },
+    {
+      "chart": "Chart_EZ #4102",
+      "num_of_notes": 290,
+      "bpm": 180.0,
+      "md5": "0e5c85af2cecd12c0de2be6b11ba585d",
+      "old_filename": "Chart_EZ #4102"
+    },
+    {
+      "chart": "Chart_EZ #4124",
+      "num_of_notes": 258,
+      "bpm": 158.0,
+      "md5": "eebf18c1beb74c362c05419795ebc516",
+      "old_filename": "Chart_EZ #4124"
+    },
+    {
+      "chart": "Chart_EZ #4129",
+      "num_of_notes": 376,
+      "bpm": 177.0,
+      "md5": "376b085feb73a351ce21a93f3ed4da92",
+      "old_filename": "Chart_EZ #4129"
+    },
+    {
+      "chart": "Chart_EZ #4135",
+      "num_of_notes": 194,
+      "bpm": 140.0,
+      "md5": "65d1b14aee21cbb3681507970558ecbf",
+      "old_filename": "Chart_EZ #4135"
+    },
+    {
+      "chart": "Chart_EZ #4139",
+      "num_of_notes": 226,
+      "bpm": 180.0,
+      "md5": "bc5d83b9e9b7785fb2acf0df046065d5",
+      "old_filename": "Chart_EZ #4139"
+    },
+    {
+      "chart": "Chart_EZ #4141",
+      "num_of_notes": 340,
+      "bpm": 200.0,
+      "md5": "329fecd3522140e183ee7a9b484cea90",
+      "old_filename": "Chart_EZ #4141"
+    },
+    {
+      "chart": "Chart_EZ #4182",
+      "num_of_notes": 283,
+      "bpm": 128.0,
+      "md5": "c904e32acd9b4ddf0628aa14d165c646",
+      "old_filename": "Chart_EZ #4182"
+    },
+    {
+      "chart": "Chart_EZ #4193",
+      "num_of_notes": 291,
+      "bpm": 196.0,
+      "md5": "fa39ae476be6533a071469cd611b339d",
+      "old_filename": "Chart_EZ #4193"
+    },
+    {
+      "chart": "Chart_EZ #4216",
+      "num_of_notes": 288,
+      "bpm": 140.0,
+      "md5": "201ac2f3dc21c08aa08c02204dac8390",
+      "old_filename": "Chart_EZ #4216"
+    },
+    {
+      "chart": "Chart_EZ #4229",
+      "num_of_notes": 363,
+      "bpm": 142.0,
+      "md5": "baa72d2e8bc319a38b8489ca638a339b",
+      "old_filename": "Chart_EZ #4229"
+    },
+    {
+      "chart": "Chart_EZ #4234",
+      "num_of_notes": 635,
+      "bpm": 175.0,
+      "md5": "713e534596d1d640e7a3c0e1a8f1fd8b",
+      "old_filename": "Chart_EZ #4234"
+    },
+    {
+      "chart": "Chart_EZ #4253",
+      "num_of_notes": 666,
+      "bpm": 219.0,
+      "md5": "f3c0b29326baa966a32519ca59f4e290",
+      "old_filename": "Chart_EZ #4253"
+    },
+    {
+      "chart": "Chart_EZ #4255",
+      "num_of_notes": 462,
+      "bpm": 112.0,
+      "md5": "9b23ef1ad35546bc3493f092b1dfbcf0",
+      "old_filename": "Chart_EZ #4255"
+    },
+    {
+      "chart": "Chart_EZ #4299",
+      "num_of_notes": 301,
+      "bpm": 142.0,
+      "md5": "de6e710ab96cb043823dc9311228229e",
+      "old_filename": "Chart_EZ #4299"
+    },
+    {
+      "chart": "Chart_EZ #4317",
+      "num_of_notes": 220,
+      "bpm": 155.0,
+      "md5": "d397f17fb5891c20e2f93dea3df19da0",
+      "old_filename": "Chart_EZ #4317"
+    },
+    {
+      "chart": "Chart_EZ #4333",
+      "num_of_notes": 60,
+      "bpm": 150.0,
+      "md5": "47ef8862f450c40b1f709e38c7474467",
+      "old_filename": "Chart_EZ #4333"
+    },
+    {
+      "chart": "Chart_EZ #452",
+      "num_of_notes": 281,
+      "bpm": 160.0,
+      "md5": "d56f501df338831e11745dee176ca7bf",
+      "old_filename": "Chart_EZ #452"
+    },
+    {
+      "chart": "Chart_EZ #454",
+      "num_of_notes": 345,
+      "bpm": 150.0,
+      "md5": "ccde38abe93e6bc4aea80cf2c9de8114",
+      "old_filename": "Chart_EZ #454"
+    },
+    {
+      "chart": "Chart_EZ #456",
+      "num_of_notes": 366,
+      "bpm": 216.0,
+      "md5": "039f70b2aaceabfc74831e8e1b620e8f",
+      "old_filename": "Chart_EZ #456"
+    },
+    {
+      "chart": "Chart_EZ #4435",
+      "num_of_notes": 281,
+      "bpm": 132.0,
+      "md5": "35d21d4395a1c4f0df20fe9c0c953f53",
+      "old_filename": "Chart_EZ #4435"
+    },
+    {
+      "chart": "Chart_EZ #4452",
+      "num_of_notes": 284,
+      "bpm": 180.0,
+      "md5": "da9d74183052b515a5e3f03e73bbcf7f",
+      "old_filename": "Chart_EZ #4452"
+    },
+    {
+      "chart": "Chart_EZ #4456",
+      "num_of_notes": 219,
+      "bpm": 134.0,
+      "md5": "0fc679eff8b1602853dade8acff7a542",
+      "old_filename": "Chart_EZ #4456"
+    },
+    {
+      "chart": "Chart_EZ #4458",
+      "num_of_notes": 637,
+      "bpm": 200.0,
+      "md5": "f6aead88a80a0606eac87554425618d6",
+      "old_filename": "Chart_EZ #4458"
+    },
+    {
+      "chart": "Chart_EZ #4470",
+      "num_of_notes": 443,
+      "bpm": 184.0,
+      "md5": "f3d90ad0e76af915994f40d5e6a8cba1",
+      "old_filename": "Chart_EZ #4470"
+    },
+    {
+      "chart": "Chart_EZ #4474",
+      "num_of_notes": 200,
+      "bpm": 191.0,
+      "md5": "84d693412979b9ebd7914b40a52a1710",
+      "old_filename": "Chart_EZ #4474"
+    },
+    {
+      "chart": "Chart_EZ #4490",
+      "num_of_notes": 306,
+      "bpm": 104.0,
+      "md5": "4593e58de61c830f4d6224d974ce10ba",
+      "old_filename": "Chart_EZ #4490"
+    },
+    {
+      "chart": "Chart_EZ #4517",
+      "num_of_notes": 136,
+      "bpm": 200.0,
+      "md5": "b031a38a96fca34b53a0025b45233c1b",
+      "old_filename": "Chart_EZ #4517"
+    },
+    {
+      "chart": "Chart_EZ #4522",
+      "num_of_notes": 276,
+      "bpm": 209.0,
+      "md5": "5f624162f4dcd1295ffe663b2b5cde95",
+      "old_filename": "Chart_EZ #4522"
+    },
+    {
+      "chart": "Chart_EZ #467",
+      "num_of_notes": 264,
+      "bpm": 180.0,
+      "md5": "5cf3261b38c05023a46a89443481e851",
+      "old_filename": "Chart_EZ #467"
+    },
+    {
+      "chart": "Chart_EZ #470",
+      "num_of_notes": 224,
+      "bpm": 173.0,
+      "md5": "5e493505608b4803e1b8f2e2f22f894c",
+      "old_filename": "Chart_EZ #470"
+    },
+    {
+      "chart": "Chart_EZ #4619",
+      "num_of_notes": 308,
+      "bpm": 175.0,
+      "md5": "fc2ce71f5b68fee02bbc56ff018ee0b9",
+      "old_filename": "Chart_EZ #4619"
+    },
+    {
+      "chart": "Chart_EZ #4634",
+      "num_of_notes": 262,
+      "bpm": 170.0,
+      "md5": "68bfa91525b704dc8db63b4a862dcc3b",
+      "old_filename": "Chart_EZ #4634"
+    },
+    {
+      "chart": "Chart_EZ #4641",
+      "num_of_notes": 340,
+      "bpm": 140.0,
+      "md5": "697ba9b00489a8d1deb447d151de0ff1",
+      "old_filename": "Chart_EZ #4641"
+    },
+    {
+      "chart": "Chart_EZ #4652",
+      "num_of_notes": 136,
+      "bpm": 128.0,
+      "md5": "29869cae2d32910c03d41d703f11f9af",
+      "old_filename": "Chart_EZ #4652"
+    },
+    {
+      "chart": "Chart_EZ #4658",
+      "num_of_notes": 214,
+      "bpm": 180.0,
+      "md5": "79fce300601c934a9fbd9d0533196828",
+      "old_filename": "Chart_EZ #4658"
+    },
+    {
+      "chart": "Chart_EZ #4669",
+      "num_of_notes": 491,
+      "bpm": 190.0,
+      "md5": "358f6b0421713e3c349fffba8719a248",
+      "old_filename": "Chart_EZ #4669"
+    },
+    {
+      "chart": "Chart_EZ #4677",
+      "num_of_notes": 181,
+      "bpm": 120.0,
+      "md5": "7bab5eae229cd6e44bcfda7ac6fd5c4c",
+      "old_filename": "Chart_EZ #4677"
+    },
+    {
+      "chart": "Chart_EZ #4685",
+      "num_of_notes": 338,
+      "bpm": 170.0,
+      "md5": "7b406e6296f52c827d6157999cf309c9",
+      "old_filename": "Chart_EZ #4685"
+    },
+    {
+      "chart": "Chart_EZ #4686",
+      "num_of_notes": 293,
+      "bpm": 180.0,
+      "md5": "3b6d2833606d1900643e82a009fe03b2",
+      "old_filename": "Chart_EZ #4686"
+    },
+    {
+      "chart": "Chart_EZ #4693",
+      "num_of_notes": 324,
+      "bpm": 150.0,
+      "md5": "fd5eb6311fcf9fd247b622131aa287ee",
+      "old_filename": "Chart_EZ #4693"
+    },
+    {
+      "chart": "Chart_EZ #4701",
+      "num_of_notes": 426,
+      "bpm": 192.0,
+      "md5": "364d30c163f11b731392c07f90d5b67d",
+      "old_filename": "Chart_EZ #4701"
+    },
+    {
+      "chart": "Chart_EZ #4837",
+      "num_of_notes": 188,
+      "bpm": 140.0,
+      "md5": "2e1195f0e407a5014c47161d0ace3fed",
+      "old_filename": "Chart_EZ #4837"
+    },
+    {
+      "chart": "Chart_EZ #4911",
+      "num_of_notes": 95,
+      "bpm": 140.0,
+      "md5": "eb94353a11a9f51635f78e9be231ea1f",
+      "old_filename": "Chart_EZ #4911"
+    },
+    {
+      "chart": "Chart_EZ #4942",
+      "num_of_notes": 310,
+      "bpm": 192.0,
+      "md5": "d321c42c38f9078446970868cfdcaf09",
+      "old_filename": "Chart_EZ #4942"
+    },
+    {
+      "chart": "Chart_EZ #4974",
+      "num_of_notes": 450,
+      "bpm": 190.0,
+      "md5": "4af5a8644e0531b8812d43760f6e761b",
+      "old_filename": "Chart_EZ #4974"
+    },
+    {
+      "chart": "Chart_EZ #4982",
+      "num_of_notes": 347,
+      "bpm": 205.0,
+      "md5": "04fe1e3bfbcc6f46b5c905a20abb48bd",
+      "old_filename": "Chart_EZ #4982"
+    },
+    {
+      "chart": "Chart_EZ #4987",
+      "num_of_notes": 188,
+      "bpm": 179.0,
+      "md5": "f82ad2f2df3b2e49e42c0c951b23eb94",
+      "old_filename": "Chart_EZ #4987"
+    },
+    {
+      "chart": "Chart_EZ #4989",
+      "num_of_notes": 376,
+      "bpm": 200.0,
+      "md5": "da282d9447edea916a0b2be3b4d28678",
+      "old_filename": "Chart_EZ #4989"
+    },
+    {
+      "chart": "Chart_EZ #4998",
+      "num_of_notes": 240,
+      "bpm": 203.0,
+      "md5": "fa53eb77dd26110677f7eabc6ed60a3d",
+      "old_filename": "Chart_EZ #4998"
+    },
+    {
+      "chart": "Chart_EZ #5005",
+      "num_of_notes": 414,
+      "bpm": 230.0,
+      "md5": "6da99e73dee02e6c9d621aacc39b0cb5",
+      "old_filename": "Chart_EZ #5005"
+    },
+    {
+      "chart": "Chart_EZ #520",
+      "num_of_notes": 312,
+      "bpm": 120.0,
+      "md5": "2eec5159b94629a58196b2bfd8155be2",
+      "old_filename": "Chart_EZ #520"
+    },
+    {
+      "chart": "Chart_EZ #5030",
+      "num_of_notes": 423,
+      "bpm": 175.0,
+      "md5": "d600bb7a7baf692f88096a9d9694d566",
+      "old_filename": "Chart_EZ #5030"
+    },
+    {
+      "chart": "Chart_EZ #5035",
+      "num_of_notes": 323,
+      "bpm": 192.0,
+      "md5": "75c46bc94674cd8cff92794969abed0c",
+      "old_filename": "Chart_EZ #5035"
+    },
+    {
+      "chart": "Chart_EZ #5036",
+      "num_of_notes": 278,
+      "bpm": 148.0,
+      "md5": "6e03fd192a22257b459636d2470ca1e5",
+      "old_filename": "Chart_EZ #5036"
+    },
+    {
+      "chart": "Chart_EZ #525",
+      "num_of_notes": 299,
+      "bpm": 192.0,
+      "md5": "23029e50f931d9b6adf658340afe15c0",
+      "old_filename": "Chart_EZ #525"
+    },
+    {
+      "chart": "Chart_EZ #5058",
+      "num_of_notes": 490,
+      "bpm": 175.0,
+      "md5": "b729a90e9da1d474607bbc675320bcb1",
+      "old_filename": "Chart_EZ #5058"
+    },
+    {
+      "chart": "Chart_EZ #5060",
+      "num_of_notes": 178,
+      "bpm": 180.0,
+      "md5": "8808853c6c58a09086df3784fab46c1f",
+      "old_filename": "Chart_EZ #5060"
+    },
+    {
+      "chart": "Chart_EZ #5104",
+      "num_of_notes": 292,
+      "bpm": 135.0,
+      "md5": "bc6c2711756b26cfde2693451a9cee85",
+      "old_filename": "Chart_EZ #5104"
+    },
+    {
+      "chart": "Chart_EZ #5109",
+      "num_of_notes": 355,
+      "bpm": 180.0,
+      "md5": "481d7a8e0ad00190bbc11dfe8b161d95",
+      "old_filename": "Chart_EZ #5109"
+    },
+    {
+      "chart": "Chart_EZ #5124",
+      "num_of_notes": 696,
+      "bpm": 197.0,
+      "md5": "1413ab52534832aa47e54b3f9126efe6",
+      "old_filename": "Chart_EZ #5124"
+    },
+    {
+      "chart": "Chart_EZ #5134",
+      "num_of_notes": 394,
+      "bpm": 170.0,
+      "md5": "91bc07763aa47ce206b5b2e711a390d7",
+      "old_filename": "Chart_EZ #5134"
+    },
+    {
+      "chart": "Chart_EZ #5218",
+      "num_of_notes": 345,
+      "bpm": 128.0,
+      "md5": "8a689b7608f9a33353ed7e24248d0168",
+      "old_filename": "Chart_EZ #5218"
+    },
+    {
+      "chart": "Chart_EZ #5238",
+      "num_of_notes": 246,
+      "bpm": 180.0,
+      "md5": "4628c55bdc1eee1adaca687ebd15b710",
+      "old_filename": "Chart_EZ #5238"
+    },
+    {
+      "chart": "Chart_EZ #544",
+      "num_of_notes": 311,
+      "bpm": 150.0,
+      "md5": "55c4f07da4112352495b70b5a50ed415",
+      "old_filename": "Chart_EZ #544"
+    },
+    {
+      "chart": "Chart_EZ #5286",
+      "num_of_notes": 555,
+      "bpm": 190.0,
+      "md5": "7584e0b710e0c21240cb604aff52174c",
+      "old_filename": "Chart_EZ #5286"
+    },
+    {
+      "chart": "Chart_EZ #5291",
+      "num_of_notes": 120,
+      "bpm": 126.0,
+      "md5": "9f86cb72921de20ec96a9d0b01891982",
+      "old_filename": "Chart_EZ #5291"
+    },
+    {
+      "chart": "Chart_EZ #5295",
+      "num_of_notes": 221,
+      "bpm": 180.0,
+      "md5": "3533a4841ae72018201e25cb6361886b",
+      "old_filename": "Chart_EZ #5295"
+    },
+    {
+      "chart": "Chart_EZ #5320",
+      "num_of_notes": 1127,
+      "bpm": 280.0,
+      "md5": "6070b49897f808301cecb441b50bda69",
+      "old_filename": "Chart_EZ #5320"
+    },
+    {
+      "chart": "Chart_EZ #5354",
+      "num_of_notes": 492,
+      "bpm": 230.0,
+      "md5": "385c9a1c33923a28a2ac00f89cc477d4",
+      "old_filename": "Chart_EZ #5354"
+    },
+    {
+      "chart": "Chart_EZ #5358",
+      "num_of_notes": 236,
+      "bpm": 174.0,
+      "md5": "5dd6a14ef00e9d921c005aa3a6329e88",
+      "old_filename": "Chart_EZ #5358"
+    },
+    {
+      "chart": "Chart_EZ #5379",
+      "num_of_notes": 499,
+      "bpm": 205.0,
+      "md5": "d2fd64f5408793d1d76a849245d24e47",
+      "old_filename": "Chart_EZ #5379"
+    },
+    {
+      "chart": "Chart_EZ #5401",
+      "num_of_notes": 507,
+      "bpm": 175.0,
+      "md5": "1aefec76627f45f7ab9d298d2fb1d72f",
+      "old_filename": "Chart_EZ #5401"
+    },
+    {
+      "chart": "Chart_EZ #5650",
+      "num_of_notes": 472,
+      "bpm": 230.0,
+      "md5": "81c210d740e6288d4a38db2b437425e6",
+      "old_filename": "Chart_EZ #5650"
+    },
+    {
+      "chart": "Chart_EZ #5654",
+      "num_of_notes": 402,
+      "bpm": 175.0,
+      "md5": "82210e29b8e06365af1e20e6991aabb4",
+      "old_filename": "Chart_EZ #5654"
+    },
+    {
+      "chart": "Chart_EZ #5768",
+      "num_of_notes": 275,
+      "bpm": 132.0,
+      "md5": "06e809e7652fa042b938aacabd7393c9",
+      "old_filename": "Chart_EZ #5768"
+    },
+    {
+      "chart": "Chart_EZ #5773",
+      "num_of_notes": 328,
+      "bpm": 175.0,
+      "md5": "c55abe00fdb7840d08d8aed53472c41c",
+      "old_filename": "Chart_EZ #5773"
+    },
+    {
+      "chart": "Chart_EZ #5786",
+      "num_of_notes": 345,
+      "bpm": 132.0,
+      "md5": "a4dda797b27bed8e4340fe73fa64c587",
+      "old_filename": "Chart_EZ #5786"
+    },
+    {
+      "chart": "Chart_EZ #5790",
+      "num_of_notes": 245,
+      "bpm": 200.0,
+      "md5": "8856290deb21a4ff35d749e68e62a136",
+      "old_filename": "Chart_EZ #5790"
+    },
+    {
+      "chart": "Chart_EZ #5798",
+      "num_of_notes": 170,
+      "bpm": 128.0,
+      "md5": "68afd35990325d6a8b7b0168f7e593ad",
+      "old_filename": "Chart_EZ #5798"
+    },
+    {
+      "chart": "Chart_EZ #5872",
+      "num_of_notes": 233,
+      "bpm": 193.0,
+      "md5": "677f23c514041c7c45c3e9ca89cfb3b9",
+      "old_filename": "Chart_EZ #5872"
+    },
+    {
+      "chart": "Chart_EZ #5882",
+      "num_of_notes": 262,
+      "bpm": 197.0,
+      "md5": "986b74ca0ee1b68a86c1a9460bd42cc3",
+      "old_filename": "Chart_EZ #5882"
+    },
+    {
+      "chart": "Chart_EZ #5904",
+      "num_of_notes": 169,
+      "bpm": 130.0,
+      "md5": "c37735f6529f5b8413760f6e020be582",
+      "old_filename": "Chart_EZ #5904"
+    },
+    {
+      "chart": "Chart_EZ #5934",
+      "num_of_notes": 637,
+      "bpm": 200.0,
+      "md5": "5d82d4bbc07d71c431e2a9f02da2d463",
+      "old_filename": "Chart_EZ #5934"
+    },
+    {
+      "chart": "Chart_EZ #5941",
+      "num_of_notes": 367,
+      "bpm": 170.0,
+      "md5": "af32277e0ff4b14c5ec3575071dc6348",
+      "old_filename": "Chart_EZ #5941"
+    },
+    {
+      "chart": "Chart_EZ #5948",
+      "num_of_notes": 421,
+      "bpm": 212.0,
+      "md5": "d71c998d98c8c1dcb0c5d49602b6bab3",
+      "old_filename": "Chart_EZ #5948"
+    },
+    {
+      "chart": "Chart_EZ #5961",
+      "num_of_notes": 100,
+      "bpm": 111.0,
+      "md5": "ee6b6d958787bbfbd182c0b57ee1c402",
+      "old_filename": "Chart_EZ #5961"
+    },
+    {
+      "chart": "Chart_EZ #5978",
+      "num_of_notes": 140,
+      "bpm": 120.0,
+      "md5": "36d25ac4e14103531d1950d9f385a372",
+      "old_filename": "Chart_EZ #5978"
+    },
+    {
+      "chart": "Chart_EZ #5995",
+      "num_of_notes": 285,
+      "bpm": 150.0,
+      "md5": "a8d8a0e9245cdb14fed676a8f2035196",
+      "old_filename": "Chart_EZ #5995"
+    },
+    {
+      "chart": "Chart_EZ #6008",
+      "num_of_notes": 222,
+      "bpm": 194.0,
+      "md5": "f979572df4f645d22cbbbb6a1943c1a8",
+      "old_filename": "Chart_EZ #6008"
+    },
+    {
+      "chart": "Chart_EZ #6010",
+      "num_of_notes": 196,
+      "bpm": 174.59,
+      "md5": "aa72dac1574e4824b2884fc06923ec87",
+      "old_filename": "Chart_EZ #6010"
+    },
+    {
+      "chart": "Chart_EZ #6015",
+      "num_of_notes": 393,
+      "bpm": 172.0,
+      "md5": "9cfda2254ed0551c3119965a03f29458",
+      "old_filename": "Chart_EZ #6015"
+    },
+    {
+      "chart": "Chart_EZ #674",
+      "num_of_notes": 392,
+      "bpm": 140.0,
+      "md5": "ac67d5da96bd412da2b75e5d2b9895db",
+      "old_filename": "Chart_EZ #674"
+    },
+    {
+      "chart": "Chart_EZ #714",
+      "num_of_notes": 60,
+      "bpm": 128.0,
+      "md5": "a2308949dbc2a51fa0a2ae7f6e74841d",
+      "old_filename": "Chart_EZ #714"
+    },
+    {
+      "chart": "Chart_EZ #783",
+      "num_of_notes": 222,
+      "bpm": 175.0,
+      "md5": "3f012e75574fa9f79d3ab417b040592f",
+      "old_filename": "Chart_EZ #783"
+    },
+    {
+      "chart": "Chart_EZ #799",
+      "num_of_notes": 216,
+      "bpm": 174.0,
+      "md5": "3c4c236221eb96e48faca43e443d628b",
+      "old_filename": "Chart_EZ #799"
+    },
+    {
+      "chart": "Chart_EZ #800",
+      "num_of_notes": 520,
+      "bpm": 150.0,
+      "md5": "40f4acbff4557467e89921bd9b9ee22f",
+      "old_filename": "Chart_EZ #800"
+    },
+    {
+      "chart": "Chart_EZ #829",
+      "num_of_notes": 215,
+      "bpm": 165.0,
+      "md5": "deca393904dc91aacf31360405e97083",
+      "old_filename": "Chart_EZ #829"
+    },
+    {
+      "chart": "Chart_EZ #80",
+      "num_of_notes": 393,
+      "bpm": 145.0,
+      "md5": "bd9daca3b5c0b85a5f0f1ddf0540e840",
+      "old_filename": "Chart_EZ #80"
+    },
+    {
+      "chart": "Chart_EZ #831",
+      "num_of_notes": 300,
+      "bpm": 120.0,
+      "md5": "4643a1fe6dcfa3a5150a561d1c2007ff",
+      "old_filename": "Chart_EZ #831"
+    },
+    {
+      "chart": "Chart_EZ #872",
+      "num_of_notes": 350,
+      "bpm": 180.0,
+      "md5": "1b0adcd0295c712f7e53f306664f1397",
+      "old_filename": "Chart_EZ #872"
+    },
+    {
+      "chart": "Chart_EZ #89",
+      "num_of_notes": 219,
+      "bpm": 190.0,
+      "md5": "7f122c567c1714664bbc282e40739770",
+      "old_filename": "Chart_EZ #89"
+    },
+    {
+      "chart": "Chart_EZ #944",
+      "num_of_notes": 455,
+      "bpm": 210.0,
+      "md5": "da1cc0197005421f27a09af10eeb3cee",
+      "old_filename": "Chart_EZ #944"
+    },
+    {
+      "chart": "Chart_EZ #946",
+      "num_of_notes": 398,
+      "bpm": 175.0,
+      "md5": "903fbc2d3a712cafd09bec017755a800",
+      "old_filename": "Chart_EZ #946"
+    },
+    {
+      "chart": "Chart_EZ #978",
+      "num_of_notes": 567,
+      "bpm": 227.0,
+      "md5": "b9b9bcf56cfd215677e922e4699bf6ac",
+      "old_filename": "Chart_EZ #978"
+    },
+    {
+      "chart": "Chart_EZ #979",
+      "num_of_notes": 159,
+      "bpm": 155.0,
+      "md5": "bb0eec03322019dd8c66019f45495439",
+      "old_filename": "Chart_EZ #979"
+    },
+    {
+      "chart": "Chart_EZ_Error",
+      "num_of_notes": 277,
+      "bpm": 209.0,
+      "md5": "ae3b8bc846a268b76c147a9e70fca789",
+      "old_filename": "Chart_EZ_Error"
+    },
+    {
+      "chart": "Chart_EZ #157",
+      "num_of_notes": 346,
+      "bpm": 160.0,
+      "md5": "1793f5c7f498ddce7cd7b451ea2df4fe",
+      "old_filename": "Chart_EZ #157"
+    },
+    {
+      "chart": "Chart_EZ #193",
+      "num_of_notes": 262,
+      "bpm": 188.0,
+      "md5": "fec8c35910586451db8b90cd79455f99",
+      "old_filename": "Chart_EZ #193"
+    },
+    {
+      "chart": "Chart_EZ #258",
+      "num_of_notes": 283,
+      "bpm": 161.0,
+      "md5": "223f40e1a115c3c99e0c8f0e3d2ff1dc",
+      "old_filename": "Chart_EZ #258"
+    },
+    {
+      "chart": "Chart_EZ #303",
+      "num_of_notes": 90,
+      "bpm": 160.0,
+      "md5": "7d2aec8b87e1a024195eb56b4b5b49e2",
+      "old_filename": "Chart_EZ #303"
+    },
+    {
+      "chart": "Chart_EZ #3593",
+      "num_of_notes": 138,
+      "bpm": 180.0,
+      "md5": "92f29b88aa46b90c5d669a860ee6cb84",
+      "old_filename": "Chart_EZ #3593"
+    },
+    {
+      "chart": "Chart_EZ #3732",
+      "num_of_notes": 268,
+      "bpm": 180.0,
+      "md5": "63c039f978ea08b6cb5a36245a8f487d",
+      "old_filename": "Chart_EZ #3732"
+    },
+    {
+      "chart": "Chart_EZ #3807",
+      "num_of_notes": 317,
+      "bpm": 167.0,
+      "md5": "b6107f7930d589f1481cc691e6eeecb6",
+      "old_filename": "Chart_EZ #3807"
+    },
+    {
+      "chart": "Chart_EZ #4436",
+      "num_of_notes": 351,
+      "bpm": 198.0,
+      "md5": "7fd2d931b68a9c40a795c7bf45085dd9",
+      "old_filename": "Chart_EZ #4436"
+    },
+    {
+      "chart": "Chart_EZ #4922",
+      "num_of_notes": 193,
+      "bpm": 150.0,
+      "md5": "0cfb4e15e8c640f6badd40ff817c9c1b",
+      "old_filename": "Chart_EZ #4922"
+    },
+    {
+      "chart": "Chart_EZ #5339",
+      "num_of_notes": 479,
+      "bpm": 175.0,
+      "md5": "0301a3b1bf16fcbe29cb90d43e0127f8",
+      "old_filename": "Chart_EZ #5339"
+    },
+    {
+      "chart": "Chart_EZ #560",
+      "num_of_notes": 265,
+      "bpm": 170.0,
+      "md5": "ad00b60a9d1b6737b44a58efd3cf9efb",
+      "old_filename": "Chart_EZ #560"
+    },
+    {
+      "chart": "Chart_EZ #786",
+      "num_of_notes": 273,
+      "bpm": 220.0,
+      "md5": "2ef60629ee0d605440ec9320328c768b",
+      "old_filename": "Chart_EZ #786"
+    },
+    {
+      "chart": "Chart_EZ #953",
+      "num_of_notes": 231,
+      "bpm": 205.0,
+      "md5": "828ad8a0400b545397307be4e6c8d5ad",
+      "old_filename": "Chart_EZ #953"
+    }
+  ],
+  "HD": [
+    {
+      "chart": "Chart_HD #67",
+      "num_of_notes": 349,
+      "bpm": 170.0,
+      "md5": "8a43f36ab5089e719a923ba936e3509d",
+      "old_filename": "Chart_HD #67"
+    },
+    {
+      "chart": "Chart_HD #1083",
+      "num_of_notes": 568,
+      "bpm": 132.0,
+      "md5": "a92cd19664693d00f8de15c2b12eb66f",
+      "old_filename": "Chart_HD #1083"
+    },
+    {
+      "chart": "Chart_HD #1094",
+      "num_of_notes": 733,
+      "bpm": 200.0,
+      "md5": "24e92c3812cae898a323d301a255428c",
+      "old_filename": "Chart_HD #1094"
+    },
+    {
+      "chart": "Chart_HD #1099",
+      "num_of_notes": 587,
+      "bpm": 177.0,
+      "md5": "0dba1bc317ccf74246cc91759215c392",
+      "old_filename": "Chart_HD #1099"
+    },
+    {
+      "chart": "Chart_HD #1115",
+      "num_of_notes": 801,
+      "bpm": 172.0,
+      "md5": "a6e5cd496b576fa3d4f5676eb2a849bc",
+      "old_filename": "Chart_HD #1115"
+    },
+    {
+      "chart": "Chart_HD #109",
+      "num_of_notes": 420,
+      "bpm": 135.0,
+      "md5": "54743d6a18a89f1c2126c25fc75363d2",
+      "old_filename": "Chart_HD #109"
+    },
+    {
+      "chart": "Chart_HD #1140",
+      "num_of_notes": 675,
+      "bpm": 205.0,
+      "md5": "16a0714deca7a5f7dbb65606bf6c956c",
+      "old_filename": "Chart_HD #1140"
+    },
+    {
+      "chart": "Chart_HD #1155",
+      "num_of_notes": 689,
+      "bpm": 184.0,
+      "md5": "0abf367722624421926d1a139d98fe2a",
+      "old_filename": "Chart_HD #1155"
+    },
+    {
+      "chart": "Chart_HD #1190",
+      "num_of_notes": 446,
+      "bpm": 170.0,
+      "md5": "5baa39cc9f09fc8ee29e495efe3024d2",
+      "old_filename": "Chart_HD #1190"
+    },
+    {
+      "chart": "Chart_HD #1199",
+      "num_of_notes": 697,
+      "bpm": 213.0,
+      "md5": "99ded8d248a411f9d64546f2b3aeed3b",
+      "old_filename": "Chart_HD #1199"
+    },
+    {
+      "chart": "Chart_HD #1210",
+      "num_of_notes": 546,
+      "bpm": 125.0,
+      "md5": "9c580fdcdc1ebf6f7c0a51b86985949c",
+      "old_filename": "Chart_HD #1210"
+    },
+    {
+      "chart": "Chart_HD #1211",
+      "num_of_notes": 444,
+      "bpm": 128.0,
+      "md5": "adbe93abc7b7744dd9ba8b3e6bc16698",
+      "old_filename": "Chart_HD #1211"
+    },
+    {
+      "chart": "Chart_HD #1213",
+      "num_of_notes": 603,
+      "bpm": 132.0,
+      "md5": "fd1d9210de7cc5ee317b69a30cbb35f6",
+      "old_filename": "Chart_HD #1213"
+    },
+    {
+      "chart": "Chart_HD #1215",
+      "num_of_notes": 443,
+      "bpm": 134.0,
+      "md5": "3bd991b5a13917edb429a149eebc4739",
+      "old_filename": "Chart_HD #1215"
+    },
+    {
+      "chart": "Chart_HD #1218",
+      "num_of_notes": 571,
+      "bpm": 180.0,
+      "md5": "c04d2895b26e67872b078cfb053cb789",
+      "old_filename": "Chart_HD #1218"
+    },
+    {
+      "chart": "Chart_HD #1227",
+      "num_of_notes": 423,
+      "bpm": 134.0,
+      "md5": "f81bf7a48435fda65d6a40c566d7f051",
+      "old_filename": "Chart_HD #1227"
+    },
+    {
+      "chart": "Chart_HD #1233",
+      "num_of_notes": 629,
+      "bpm": 193.0,
+      "md5": "08028401cead2f752f8b1f63a7925e7b",
+      "old_filename": "Chart_HD #1233"
+    },
+    {
+      "chart": "Chart_HD #1235",
+      "num_of_notes": 842,
+      "bpm": 174.0,
+      "md5": "41c05906e14d1541922eb8765cdb6f66",
+      "old_filename": "Chart_HD #1235"
+    },
+    {
+      "chart": "Chart_HD #126",
+      "num_of_notes": 779,
+      "bpm": 203.0,
+      "md5": "d81bfc0254b0bca111f204fe13eddd9a",
+      "old_filename": "Chart_HD #126"
+    },
+    {
+      "chart": "Chart_HD #1281",
+      "num_of_notes": 715,
+      "bpm": 210.0,
+      "md5": "5916a914119146e9906ceb924697c505",
+      "old_filename": "Chart_HD #1281"
+    },
+    {
+      "chart": "Chart_HD #1331",
+      "num_of_notes": 429,
+      "bpm": 140.0,
+      "md5": "f7dbdf7657af5107d451ec093eebc362",
+      "old_filename": "Chart_HD #1331"
+    },
+    {
+      "chart": "Chart_HD #1339",
+      "num_of_notes": 333,
+      "bpm": 160.0,
+      "md5": "d84cdea1c46f90b82ceca42c6283df54",
+      "old_filename": "Chart_HD #1339"
+    },
+    {
+      "chart": "Chart_HD #1358",
+      "num_of_notes": 593,
+      "bpm": 175.0,
+      "md5": "13de2e35cf801fd4b54b98eb957c1fcf",
+      "old_filename": "Chart_HD #1358"
+    },
+    {
+      "chart": "Chart_HD #1402",
+      "num_of_notes": 400,
+      "bpm": 191.0,
+      "md5": "95405cde258b1abe5c18c8dcb97de356",
+      "old_filename": "Chart_HD #1402"
+    },
+    {
+      "chart": "Chart_HD #1404",
+      "num_of_notes": 608,
+      "bpm": 193.0,
+      "md5": "c3d006386bd0b6ef46735619f54d3d0f",
+      "old_filename": "Chart_HD #1404"
+    },
+    {
+      "chart": "Chart_HD #1411",
+      "num_of_notes": 389,
+      "bpm": 145.0,
+      "md5": "b068df34913823fd4b52ddafaa9aeeae",
+      "old_filename": "Chart_HD #1411"
+    },
+    {
+      "chart": "Chart_HD #1423",
+      "num_of_notes": 289,
+      "bpm": 200.0,
+      "md5": "8aa6d60e2fc690e4f9e49b9cb938b5e8",
+      "old_filename": "Chart_HD #1423"
+    },
+    {
+      "chart": "Chart_HD #1444",
+      "num_of_notes": 581,
+      "bpm": 176.0,
+      "md5": "0fef73a21c6f604386b5eaef782eb2bc",
+      "old_filename": "Chart_HD #1444"
+    },
+    {
+      "chart": "Chart_HD #1456",
+      "num_of_notes": 513,
+      "bpm": 192.0,
+      "md5": "69229af8c0cc0bd63cd4e0055353d6bc",
+      "old_filename": "Chart_HD #1456"
+    },
+    {
+      "chart": "Chart_HD #1467",
+      "num_of_notes": 507,
+      "bpm": 128.0,
+      "md5": "9f7cded5b83528ec57473945a04be9db",
+      "old_filename": "Chart_HD #1467"
+    },
+    {
+      "chart": "Chart_HD #150",
+      "num_of_notes": 628,
+      "bpm": 222.0,
+      "md5": "15d8f5a8ddc1bb8bb617b69389ca8045",
+      "old_filename": "Chart_HD #150"
+    },
+    {
+      "chart": "Chart_HD #1501",
+      "num_of_notes": 559,
+      "bpm": 180.0,
+      "md5": "5ed0fad5f5ce6e21136019d3892cfc91",
+      "old_filename": "Chart_HD #1501"
+    },
+    {
+      "chart": "Chart_HD #1517",
+      "num_of_notes": 459,
+      "bpm": 172.0,
+      "md5": "d51b3f1fb2fb23690c416c010eed36ba",
+      "old_filename": "Chart_HD #1517"
+    },
+    {
+      "chart": "Chart_HD #1546",
+      "num_of_notes": 566,
+      "bpm": 200.0,
+      "md5": "4d81a79e5aba2d81597c4ee330a036ec",
+      "old_filename": "Chart_HD #1546"
+    },
+    {
+      "chart": "Chart_HD #1567",
+      "num_of_notes": 465,
+      "bpm": 155.0,
+      "md5": "5d314150ad84bd815bcebc11612db09f",
+      "old_filename": "Chart_HD #1567"
+    },
+    {
+      "chart": "Chart_HD #1575",
+      "num_of_notes": 382,
+      "bpm": 220.0,
+      "md5": "13a4850c5066170396200a5c2edf6be6",
+      "old_filename": "Chart_HD #1575"
+    },
+    {
+      "chart": "Chart_HD #1586",
+      "num_of_notes": 453,
+      "bpm": 140.0,
+      "md5": "9fc96e98c4d2076ffcfbacac6e962399",
+      "old_filename": "Chart_HD #1586"
+    },
+    {
+      "chart": "Chart_HD #1595",
+      "num_of_notes": 644,
+      "bpm": 185.0,
+      "md5": "3c61cb73b88d8b830d6e804bf187d8d7",
+      "old_filename": "Chart_HD #1595"
+    },
+    {
+      "chart": "Chart_HD #1610",
+      "num_of_notes": 586,
+      "bpm": 192.0,
+      "md5": "f68421c50d1050c50d809801638836ee",
+      "old_filename": "Chart_HD #1610"
+    },
+    {
+      "chart": "Chart_HD #1628",
+      "num_of_notes": 603,
+      "bpm": 132.0,
+      "md5": "b3e49e5a001f367e123c55cffabefe5c",
+      "old_filename": "Chart_HD #1628"
+    },
+    {
+      "chart": "Chart_HD #1638",
+      "num_of_notes": 772,
+      "bpm": 173.0,
+      "md5": "728f421b35e602fed4ecd32948cd8523",
+      "old_filename": "Chart_HD #1638"
+    },
+    {
+      "chart": "Chart_HD #1648",
+      "num_of_notes": 429,
+      "bpm": 175.0,
+      "md5": "6197f2df1368af8fb8f2b7c36988821c",
+      "old_filename": "Chart_HD #1648"
+    },
+    {
+      "chart": "Chart_HD #1699",
+      "num_of_notes": 700,
+      "bpm": 190.0,
+      "md5": "89f748cb0421847e91e4a32e8239f9eb",
+      "old_filename": "Chart_HD #1699"
+    },
+    {
+      "chart": "Chart_HD #1740",
+      "num_of_notes": 303,
+      "bpm": 280.0,
+      "md5": "cf2ebb92b3e6848dca9651538afcc615",
+      "old_filename": "Chart_HD #1740"
+    },
+    {
+      "chart": "Chart_HD #176",
+      "num_of_notes": 396,
+      "bpm": 150.0,
+      "md5": "329e44690f03ecec5b509c9a2aea8b89",
+      "old_filename": "Chart_HD #176"
+    },
+    {
+      "chart": "Chart_HD #1759",
+      "num_of_notes": 647,
+      "bpm": 170.0,
+      "md5": "9a983bb97dde6d6af11ecbf52a3bcf91",
+      "old_filename": "Chart_HD #1759"
+    },
+    {
+      "chart": "Chart_HD #1763",
+      "num_of_notes": 421,
+      "bpm": 135.0,
+      "md5": "c70eef1e459ab871e4200f09c7593d3a",
+      "old_filename": "Chart_HD #1763"
+    },
+    {
+      "chart": "Chart_HD #1766",
+      "num_of_notes": 530,
+      "bpm": 144.0,
+      "md5": "a5330435d5721a140f186c60c97e7348",
+      "old_filename": "Chart_HD #1766"
+    },
+    {
+      "chart": "Chart_HD #1774",
+      "num_of_notes": 744,
+      "bpm": 205.0,
+      "md5": "61856600b87a1c759315d0c4be3ec710",
+      "old_filename": "Chart_HD #1774"
+    },
+    {
+      "chart": "Chart_HD #1786",
+      "num_of_notes": 968,
+      "bpm": 190.0,
+      "md5": "e8c4cc2a603d81dff75a3c79e11589f6",
+      "old_filename": "Chart_HD #1786"
+    },
+    {
+      "chart": "Chart_HD #1812",
+      "num_of_notes": 746,
+      "bpm": 200.0,
+      "md5": "b659f2efff20cb049b545ce5c127594f",
+      "old_filename": "Chart_HD #1812"
+    },
+    {
+      "chart": "Chart_HD #1833",
+      "num_of_notes": 919,
+      "bpm": 185.0,
+      "md5": "2f4c580e64a95d9dfc3413a59e2cc8ed",
+      "old_filename": "Chart_HD #1833"
+    },
+    {
+      "chart": "Chart_HD #1837",
+      "num_of_notes": 520,
+      "bpm": 216.0,
+      "md5": "d46af488e031488d83049ea8136cfeae",
+      "old_filename": "Chart_HD #1837"
+    },
+    {
+      "chart": "Chart_HD #1848",
+      "num_of_notes": 548,
+      "bpm": 193.0,
+      "md5": "37c99832a73bb0ad0b57c9416922b21c",
+      "old_filename": "Chart_HD #1848"
+    },
+    {
+      "chart": "Chart_HD #1897",
+      "num_of_notes": 575,
+      "bpm": 210.0,
+      "md5": "62df6deeadb9c981caf33f5356e710c8",
+      "old_filename": "Chart_HD #1897"
+    },
+    {
+      "chart": "Chart_HD #205",
+      "num_of_notes": 555,
+      "bpm": 206.0,
+      "md5": "7a474621bdf970bd26ac54a4c2dcec80",
+      "old_filename": "Chart_HD #205"
+    },
+    {
+      "chart": "Chart_HD #1947",
+      "num_of_notes": 1058,
+      "bpm": 240.0,
+      "md5": "b60fcad06eca69f7dbbebb63966f1a54",
+      "old_filename": "Chart_HD #1947"
+    },
+    {
+      "chart": "Chart_HD #1990",
+      "num_of_notes": 463,
+      "bpm": 145.0,
+      "md5": "14626ab4a3a84100e1ead6a9933d2039",
+      "old_filename": "Chart_HD #1990"
+    },
+    {
+      "chart": "Chart_HD #2010",
+      "num_of_notes": 400,
+      "bpm": 180.0,
+      "md5": "518cddd35fe34d74eb692b06a15ed555",
+      "old_filename": "Chart_HD #2010"
+    },
+    {
+      "chart": "Chart_HD #2016",
+      "num_of_notes": 357,
+      "bpm": 120.0,
+      "md5": "a5b2ef77669875d402b182487e5b8319",
+      "old_filename": "Chart_HD #2016"
+    },
+    {
+      "chart": "Chart_HD #2018",
+      "num_of_notes": 355,
+      "bpm": 179.0,
+      "md5": "90665bcbc6fa8b4e96b9ea28442367b0",
+      "old_filename": "Chart_HD #2018"
+    },
+    {
+      "chart": "Chart_HD #2027",
+      "num_of_notes": 456,
+      "bpm": 180.0,
+      "md5": "61e42b64916c949346b215eecd738888",
+      "old_filename": "Chart_HD #2027"
+    },
+    {
+      "chart": "Chart_HD #2029",
+      "num_of_notes": 777,
+      "bpm": 158.0,
+      "md5": "142e850f318e2317e4b93cd1d5227c2a",
+      "old_filename": "Chart_HD #2029"
+    },
+    {
+      "chart": "Chart_HD #2063",
+      "num_of_notes": 673,
+      "bpm": 190.0,
+      "md5": "1a7fc94a1022d55a4b1aea8a5b44e1e1",
+      "old_filename": "Chart_HD #2063"
+    },
+    {
+      "chart": "Chart_HD #2064",
+      "num_of_notes": 529,
+      "bpm": 180.0,
+      "md5": "6f1c7a639b799fcdc5e266c986ae65e5",
+      "old_filename": "Chart_HD #2064"
+    },
+    {
+      "chart": "Chart_HD #217",
+      "num_of_notes": 458,
+      "bpm": 175.0,
+      "md5": "da4e3e2f019b00621676ee5c8d655da8",
+      "old_filename": "Chart_HD #217"
+    },
+    {
+      "chart": "Chart_HD #2111",
+      "num_of_notes": 593,
+      "bpm": 164.0,
+      "md5": "f68df893110c68fd1c897543965281c6",
+      "old_filename": "Chart_HD #2111"
+    },
+    {
+      "chart": "Chart_HD #2118",
+      "num_of_notes": 475,
+      "bpm": 128.0,
+      "md5": "47a3108ef7d6e4102effc74fce6583fb",
+      "old_filename": "Chart_HD #2118"
+    },
+    {
+      "chart": "Chart_HD #2183",
+      "num_of_notes": 331,
+      "bpm": 140.0,
+      "md5": "857ffcf7d26eb4772dc3752da019bf19",
+      "old_filename": "Chart_HD #2183"
+    },
+    {
+      "chart": "Chart_HD #2207",
+      "num_of_notes": 585,
+      "bpm": 150.0,
+      "md5": "00b56518e15e45bbb92610c1bb79efb9",
+      "old_filename": "Chart_HD #2207"
+    },
+    {
+      "chart": "Chart_HD #2209",
+      "num_of_notes": 394,
+      "bpm": 150.0,
+      "md5": "dda572e26a5d0a5acaf9b3a372b05f90",
+      "old_filename": "Chart_HD #2209"
+    },
+    {
+      "chart": "Chart_HD #232",
+      "num_of_notes": 821,
+      "bpm": 196.0,
+      "md5": "7326bb33e21b216161deb276d6b5e169",
+      "old_filename": "Chart_HD #232"
+    },
+    {
+      "chart": "Chart_HD #2253",
+      "num_of_notes": 538,
+      "bpm": 155.0,
+      "md5": "98074ff73a474dae1745d92a26b75012",
+      "old_filename": "Chart_HD #2253"
+    },
+    {
+      "chart": "Chart_HD #2278",
+      "num_of_notes": 430,
+      "bpm": 160.0,
+      "md5": "a0d4a37e7a5573d77bac885fbc13d2d1",
+      "old_filename": "Chart_HD #2278"
+    },
+    {
+      "chart": "Chart_HD #2282",
+      "num_of_notes": 609,
+      "bpm": 190.0,
+      "md5": "00eb94ffe67b3e43376f48bb70592460",
+      "old_filename": "Chart_HD #2282"
+    },
+    {
+      "chart": "Chart_HD #2255",
+      "num_of_notes": 856,
+      "bpm": 212.0,
+      "md5": "6b3f9130ff19ba57d71d4648c72ef991",
+      "old_filename": "Chart_HD #2255"
+    },
+    {
+      "chart": "Chart_HD #2352",
+      "num_of_notes": 550,
+      "bpm": 128.0,
+      "md5": "c5989c17ff5fcb95a8271af72a93b490",
+      "old_filename": "Chart_HD #2352"
+    },
+    {
+      "chart": "Chart_HD #2377",
+      "num_of_notes": 192,
+      "bpm": 186.0,
+      "md5": "626ba9e9f22c466194735e65ceb7c832",
+      "old_filename": "Chart_HD #2377"
+    },
+    {
+      "chart": "Chart_HD #2386",
+      "num_of_notes": 432,
+      "bpm": 175.0,
+      "md5": "b76bfeed58dc68c4bd77233aa6f3b465",
+      "old_filename": "Chart_HD #2386"
+    },
+    {
+      "chart": "Chart_HD #2391",
+      "num_of_notes": 863,
+      "bpm": 160.0,
+      "md5": "d279d9939ab043a355c2206672b68c5a",
+      "old_filename": "Chart_HD #2391"
+    },
+    {
+      "chart": "Chart_HD #2392",
+      "num_of_notes": 615,
+      "bpm": 192.0,
+      "md5": "05f6f8001d34e6a44e816c952b822c26",
+      "old_filename": "Chart_HD #2392"
+    },
+    {
+      "chart": "Chart_HD #2398",
+      "num_of_notes": 624,
+      "bpm": 132.0,
+      "md5": "719d0d98515c89969ae87e56af835ba9",
+      "old_filename": "Chart_HD #2398"
+    },
+    {
+      "chart": "Chart_HD #2400",
+      "num_of_notes": 644,
+      "bpm": 146.0,
+      "md5": "35730283e8bd62e4cb82de86a5989209",
+      "old_filename": "Chart_HD #2400"
+    },
+    {
+      "chart": "Chart_HD #2409",
+      "num_of_notes": 755,
+      "bpm": 174.0,
+      "md5": "7170a106b0aff59f7165a4a1fd75c2e5",
+      "old_filename": "Chart_HD #2409"
+    },
+    {
+      "chart": "Chart_HD #2432",
+      "num_of_notes": 473,
+      "bpm": 210.0,
+      "md5": "f5a4386f5b82efefc201e45fbe403743",
+      "old_filename": "Chart_HD #2432"
+    },
+    {
+      "chart": "Chart_HD #2433",
+      "num_of_notes": 570,
+      "bpm": 180.0,
+      "md5": "7b7fc527b87c071ccd9eb0073c4e4695",
+      "old_filename": "Chart_HD #2433"
+    },
+    {
+      "chart": "Chart_HD #2446",
+      "num_of_notes": 329,
+      "bpm": 160.0,
+      "md5": "18b47d3e2185319e54ae101c6e3019f0",
+      "old_filename": "Chart_HD #2446"
+    },
+    {
+      "chart": "Chart_HD #2473",
+      "num_of_notes": 790,
+      "bpm": 200.0,
+      "md5": "6d7cd4ad9a3618c097a74ffcc2b2aa3a",
+      "old_filename": "Chart_HD #2473"
+    },
+    {
+      "chart": "Chart_HD #2481",
+      "num_of_notes": 372,
+      "bpm": 158.0,
+      "md5": "86f9982413740f87de0b799addbcf686",
+      "old_filename": "Chart_HD #2481"
+    },
+    {
+      "chart": "Chart_HD #2482",
+      "num_of_notes": 580,
+      "bpm": 180.0,
+      "md5": "50b5c6dc330a83d5955e93d27c291f16",
+      "old_filename": "Chart_HD #2482"
+    },
+    {
+      "chart": "Chart_HD #2485",
+      "num_of_notes": 477,
+      "bpm": 160.0,
+      "md5": "2bb65694b56ef7864153962100da7abc",
+      "old_filename": "Chart_HD #2485"
+    },
+    {
+      "chart": "Chart_HD #2490",
+      "num_of_notes": 356,
+      "bpm": 128.0,
+      "md5": "24c3946a0720b2a056d40ca975863a5f",
+      "old_filename": "Chart_HD #2490"
+    },
+    {
+      "chart": "Chart_HD #2520",
+      "num_of_notes": 733,
+      "bpm": 223.0,
+      "md5": "41d8b8fab3d335937e4ba5344c84734f",
+      "old_filename": "Chart_HD #2520"
+    },
+    {
+      "chart": "Chart_HD #2524",
+      "num_of_notes": 500,
+      "bpm": 172.0,
+      "md5": "b27869c8e850a7fd7644a811883e547b",
+      "old_filename": "Chart_HD #2524"
+    },
+    {
+      "chart": "Chart_HD #2560",
+      "num_of_notes": 511,
+      "bpm": 140.0,
+      "md5": "dec9198fa96d84696b27121d34706a53",
+      "old_filename": "Chart_HD #2560"
+    },
+    {
+      "chart": "Chart_HD #2719",
+      "num_of_notes": 393,
+      "bpm": 140.0,
+      "md5": "892096b0ee286b1ded17d9c3e0cbc68d",
+      "old_filename": "Chart_HD #2719"
+    },
+    {
+      "chart": "Chart_HD #2723",
+      "num_of_notes": 401,
+      "bpm": 174.0,
+      "md5": "b99e6ca1ec3ef6163584d2cbfe55b954",
+      "old_filename": "Chart_HD #2723"
+    },
+    {
+      "chart": "Chart_HD #2738",
+      "num_of_notes": 533,
+      "bpm": 140.0,
+      "md5": "157f18ca8ff71225c4406f31a0838365",
+      "old_filename": "Chart_HD #2738"
+    },
+    {
+      "chart": "Chart_HD #2743",
+      "num_of_notes": 534,
+      "bpm": 180.0,
+      "md5": "32aeb7c0d19aaf5e0bfba96c333f4f39",
+      "old_filename": "Chart_HD #2743"
+    },
+    {
+      "chart": "Chart_HD #2765",
+      "num_of_notes": 773,
+      "bpm": 180.0,
+      "md5": "2cddfc6890696924c2b7f7cafd1bf848",
+      "old_filename": "Chart_HD #2765"
+    },
+    {
+      "chart": "Chart_HD #2770",
+      "num_of_notes": 694,
+      "bpm": 175.0,
+      "md5": "43d52893dc03d2ebef2896186c7e1fd6",
+      "old_filename": "Chart_HD #2770"
+    },
+    {
+      "chart": "Chart_HD #2795",
+      "num_of_notes": 412,
+      "bpm": 180.0,
+      "md5": "05beff2cf4e45d516da1bbe91a1a0822",
+      "old_filename": "Chart_HD #2795"
+    },
+    {
+      "chart": "Chart_HD #2817",
+      "num_of_notes": 467,
+      "bpm": 140.0,
+      "md5": "c12eb559ce3f0365cfd02054258729c0",
+      "old_filename": "Chart_HD #2817"
+    },
+    {
+      "chart": "Chart_HD #2827",
+      "num_of_notes": 571,
+      "bpm": 174.59,
+      "md5": "10738c4ccafe941fe1a6351f747e05a9",
+      "old_filename": "Chart_HD #2827"
+    },
+    {
+      "chart": "Chart_HD #310",
+      "num_of_notes": 904,
+      "bpm": 200.0,
+      "md5": "fb5b49452cdfe20fd48a4cad4074d3e2",
+      "old_filename": "Chart_HD #310"
+    },
+    {
+      "chart": "Chart_HD #2941",
+      "num_of_notes": 545,
+      "bpm": 155.0,
+      "md5": "a4ed20dcc9f4ce04fc585acf4996aa44",
+      "old_filename": "Chart_HD #2941"
+    },
+    {
+      "chart": "Chart_HD #2946",
+      "num_of_notes": 531,
+      "bpm": 250.0,
+      "md5": "bea318dad3b44d480340282e66893be9",
+      "old_filename": "Chart_HD #2946"
+    },
+    {
+      "chart": "Chart_HD #311",
+      "num_of_notes": 724,
+      "bpm": 150.0,
+      "md5": "a3909b46fe106e3b6618f1517afc220a",
+      "old_filename": "Chart_HD #311"
+    },
+    {
+      "chart": "Chart_HD #2978",
+      "num_of_notes": 639,
+      "bpm": 175.0,
+      "md5": "033d0c4e22556286d9818406625da455",
+      "old_filename": "Chart_HD #2978"
+    },
+    {
+      "chart": "Chart_HD #2998",
+      "num_of_notes": 445,
+      "bpm": 111.0,
+      "md5": "234fd944f7e12a8cbb82ab8f6b36dd0f",
+      "old_filename": "Chart_HD #2998"
+    },
+    {
+      "chart": "Chart_HD #3068",
+      "num_of_notes": 533,
+      "bpm": 170.0,
+      "md5": "e25cc868a9948733b6c6a41cf6ae28eb",
+      "old_filename": "Chart_HD #3068"
+    },
+    {
+      "chart": "Chart_HD #3094",
+      "num_of_notes": 533,
+      "bpm": 170.0,
+      "md5": "ae1e27cfff4d0d81bdd04189dc468dfa",
+      "old_filename": "Chart_HD #3094"
+    },
+    {
+      "chart": "Chart_HD #3103",
+      "num_of_notes": 700,
+      "bpm": 190.0,
+      "md5": "55055510cc6e635ca14518ca65a0b7d1",
+      "old_filename": "Chart_HD #3103"
+    },
+    {
+      "chart": "Chart_HD #3149",
+      "num_of_notes": 594,
+      "bpm": 188.0,
+      "md5": "0fab657f46d4595955329b7853fff6b8",
+      "old_filename": "Chart_HD #3149"
+    },
+    {
+      "chart": "Chart_HD #3174",
+      "num_of_notes": 584,
+      "bpm": 142.0,
+      "md5": "7c79de9457ab8a5b85c3c8ca6c676282",
+      "old_filename": "Chart_HD #3174"
+    },
+    {
+      "chart": "Chart_HD #3183",
+      "num_of_notes": 492,
+      "bpm": 175.0,
+      "md5": "c1f2556291c44e49ed821982e0bd9e73",
+      "old_filename": "Chart_HD #3183"
+    },
+    {
+      "chart": "Chart_HD #3186",
+      "num_of_notes": 478,
+      "bpm": 110.0,
+      "md5": "e6b1e32ec73cbe9fccee25012602c22d",
+      "old_filename": "Chart_HD #3186"
+    },
+    {
+      "chart": "Chart_HD #3187",
+      "num_of_notes": 544,
+      "bpm": 180.0,
+      "md5": "d484c4e221ce0d466cc8135776674ed9",
+      "old_filename": "Chart_HD #3187"
+    },
+    {
+      "chart": "Chart_HD #3209",
+      "num_of_notes": 473,
+      "bpm": 179.0,
+      "md5": "666b501e59ff2fa8be452a95b6757ed9",
+      "old_filename": "Chart_HD #3209"
+    },
+    {
+      "chart": "Chart_HD #3214",
+      "num_of_notes": 900,
+      "bpm": 175.0,
+      "md5": "2119b2dd17c554f0694dc4fadd80e24a",
+      "old_filename": "Chart_HD #3214"
+    },
+    {
+      "chart": "Chart_HD #3280",
+      "num_of_notes": 704,
+      "bpm": 150.0,
+      "md5": "e047f69b1801e38f6ceaa6b2ce1001e7",
+      "old_filename": "Chart_HD #3280"
+    },
+    {
+      "chart": "Chart_HD #3289",
+      "num_of_notes": 1250,
+      "bpm": 321.321,
+      "md5": "76096b44a4df3ddca8980e63ba486c43",
+      "old_filename": "Chart_HD #3289"
+    },
+    {
+      "chart": "Chart_HD #3298",
+      "num_of_notes": 516,
+      "bpm": 200.0,
+      "md5": "f511dac1dd5b92feb92acc4ca92be676",
+      "old_filename": "Chart_HD #3298"
+    },
+    {
+      "chart": "Chart_HD #3302",
+      "num_of_notes": 805,
+      "bpm": 165.0,
+      "md5": "153a3b9703e7c8413c455f7a1a7c287b",
+      "old_filename": "Chart_HD #3302"
+    },
+    {
+      "chart": "Chart_HD #3339",
+      "num_of_notes": 925,
+      "bpm": 184.0,
+      "md5": "fbba2b0062f31beaf4c5a4c9e440e0a8",
+      "old_filename": "Chart_HD #3339"
+    },
+    {
+      "chart": "Chart_HD #3366",
+      "num_of_notes": 762,
+      "bpm": 163.0,
+      "md5": "7b59f06bdc4897de5074afe3e55f27df",
+      "old_filename": "Chart_HD #3366"
+    },
+    {
+      "chart": "Chart_HD #3373",
+      "num_of_notes": 507,
+      "bpm": 112.0,
+      "md5": "98ed6b13241b668459a3b73c48fae651",
+      "old_filename": "Chart_HD #3373"
+    },
+    {
+      "chart": "Chart_HD #3387",
+      "num_of_notes": 222,
+      "bpm": 180.0,
+      "md5": "854938ead0fa49d54417831ec25d7047",
+      "old_filename": "Chart_HD #3387"
+    },
+    {
+      "chart": "Chart_HD #3393",
+      "num_of_notes": 397,
+      "bpm": 175.0,
+      "md5": "5da401488e801e9fa7c67767743cca72",
+      "old_filename": "Chart_HD #3393"
+    },
+    {
+      "chart": "Chart_HD #3399",
+      "num_of_notes": 601,
+      "bpm": 132.0,
+      "md5": "575e6c0c723a4ead202e0eb09e4c3b8f",
+      "old_filename": "Chart_HD #3399"
+    },
+    {
+      "chart": "Chart_HD #355",
+      "num_of_notes": 660,
+      "bpm": 190.0,
+      "md5": "ce37b6852b72a1670cee84a320d73117",
+      "old_filename": "Chart_HD #355"
+    },
+    {
+      "chart": "Chart_HD #3421",
+      "num_of_notes": 505,
+      "bpm": 150.0,
+      "md5": "6ce0e4975148abe8b9eae3a875f742f3",
+      "old_filename": "Chart_HD #3421"
+    },
+    {
+      "chart": "Chart_HD #3423",
+      "num_of_notes": 611,
+      "bpm": 200.0,
+      "md5": "d4cd010c2036981107155e0394fecd34",
+      "old_filename": "Chart_HD #3423"
+    },
+    {
+      "chart": "Chart_HD #3457",
+      "num_of_notes": 644,
+      "bpm": 188.0,
+      "md5": "7dc263762d4c3a679306585d9fdf0977",
+      "old_filename": "Chart_HD #3457"
+    },
+    {
+      "chart": "Chart_HD #3459",
+      "num_of_notes": 629,
+      "bpm": 150.0,
+      "md5": "c750d6f8025183fadadf3ccb86154580",
+      "old_filename": "Chart_HD #3459"
+    },
+    {
+      "chart": "Chart_HD #3470",
+      "num_of_notes": 802,
+      "bpm": 170.0,
+      "md5": "505f5e709ccfb25f8269a0b96bcc6656",
+      "old_filename": "Chart_HD #3470"
+    },
+    {
+      "chart": "Chart_HD #3477",
+      "num_of_notes": 353,
+      "bpm": 128.0,
+      "md5": "5f55e88f4c068b442ef2938f2d81d9ad",
+      "old_filename": "Chart_HD #3477"
+    },
+    {
+      "chart": "Chart_HD #3513",
+      "num_of_notes": 559,
+      "bpm": 128.0,
+      "md5": "7450484028befc24858bd0e4019be8ad",
+      "old_filename": "Chart_HD #3513"
+    },
+    {
+      "chart": "Chart_HD #3530",
+      "num_of_notes": 441,
+      "bpm": 188.0,
+      "md5": "aaf0a802cc18c1297407d748cb179e7a",
+      "old_filename": "Chart_HD #3530"
+    },
+    {
+      "chart": "Chart_HD #3549",
+      "num_of_notes": 600,
+      "bpm": 150.0,
+      "md5": "3d2e1355b208a20c2244c5f02e94e395",
+      "old_filename": "Chart_HD #3549"
+    },
+    {
+      "chart": "Chart_HD #3564",
+      "num_of_notes": 604,
+      "bpm": 180.0,
+      "md5": "be21383981a78cfa82e42a18c56e8c66",
+      "old_filename": "Chart_HD #3564"
+    },
+    {
+      "chart": "Chart_HD #3582",
+      "num_of_notes": 454,
+      "bpm": 112.0,
+      "md5": "5eef2e453ad402b0620cdc8ec04a5d6a",
+      "old_filename": "Chart_HD #3582"
+    },
+    {
+      "chart": "Chart_HD #3604",
+      "num_of_notes": 1111,
+      "bpm": 219.0,
+      "md5": "ba9c2537370841e7d49061b6dbf303dd",
+      "old_filename": "Chart_HD #3604"
+    },
+    {
+      "chart": "Chart_HD #3624",
+      "num_of_notes": 175,
+      "bpm": 150.0,
+      "md5": "d6218df12d0c77ad4ef37079aed5cd7d",
+      "old_filename": "Chart_HD #3624"
+    },
+    {
+      "chart": "Chart_HD #379",
+      "num_of_notes": 662,
+      "bpm": 280.0,
+      "md5": "754dda803aee75de6c64832a0e7fe55f",
+      "old_filename": "Chart_HD #379"
+    },
+    {
+      "chart": "Chart_HD #3644",
+      "num_of_notes": 334,
+      "bpm": 155.0,
+      "md5": "b585e05e418f378aa09a18a155842def",
+      "old_filename": "Chart_HD #3644"
+    },
+    {
+      "chart": "Chart_HD #3653",
+      "num_of_notes": 312,
+      "bpm": 140.0,
+      "md5": "539091cb8e833c21ff8f1fca66d40d0a",
+      "old_filename": "Chart_HD #3653"
+    },
+    {
+      "chart": "Chart_HD #3683",
+      "num_of_notes": 616,
+      "bpm": 151.0,
+      "md5": "ec183c5880399750a9b1b1019ddbe97d",
+      "old_filename": "Chart_HD #3683"
+    },
+    {
+      "chart": "Chart_HD #3685",
+      "num_of_notes": 486,
+      "bpm": 150.0,
+      "md5": "39adf24e944ab855d69ac938146e7139",
+      "old_filename": "Chart_HD #3685"
+    },
+    {
+      "chart": "Chart_HD #3727",
+      "num_of_notes": 555,
+      "bpm": 174.0,
+      "md5": "1cebb05a5b5b754734087833557359a0",
+      "old_filename": "Chart_HD #3727"
+    },
+    {
+      "chart": "Chart_HD #390",
+      "num_of_notes": 806,
+      "bpm": 150.0,
+      "md5": "9dbf03d6a7f7a85d532a59aaddf4e751",
+      "old_filename": "Chart_HD #390"
+    },
+    {
+      "chart": "Chart_HD #3760",
+      "num_of_notes": 186,
+      "bpm": 136.0,
+      "md5": "3e93578efc124bc328b35ab60d73946d",
+      "old_filename": "Chart_HD #3760"
+    },
+    {
+      "chart": "Chart_HD #3769",
+      "num_of_notes": 595,
+      "bpm": 132.0,
+      "md5": "9d242a7e6112f92e3160427e7dd6b89f",
+      "old_filename": "Chart_HD #3769"
+    },
+    {
+      "chart": "Chart_HD #3774",
+      "num_of_notes": 970,
+      "bpm": 150.0,
+      "md5": "86d23af0cc595a703241536a2d29ee4b",
+      "old_filename": "Chart_HD #3774"
+    },
+    {
+      "chart": "Chart_HD #3789",
+      "num_of_notes": 533,
+      "bpm": 175.0,
+      "md5": "2a3f73f00bb71ead807aef16f1bbf985",
+      "old_filename": "Chart_HD #3789"
+    },
+    {
+      "chart": "Chart_HD #3845",
+      "num_of_notes": 666,
+      "bpm": 200.0,
+      "md5": "84f0f1773adf5e139e5a2e5c878f2547",
+      "old_filename": "Chart_HD #3845"
+    },
+    {
+      "chart": "Chart_HD #3870",
+      "num_of_notes": 422,
+      "bpm": 180.0,
+      "md5": "3ff1b177aaea32feac893ce0b47b417a",
+      "old_filename": "Chart_HD #3870"
+    },
+    {
+      "chart": "Chart_HD #407",
+      "num_of_notes": 631,
+      "bpm": 150.0,
+      "md5": "5fbeb644f7dc0e87b764e96cdd2184e8",
+      "old_filename": "Chart_HD #407"
+    },
+    {
+      "chart": "Chart_HD #3943",
+      "num_of_notes": 565,
+      "bpm": 152.0,
+      "md5": "9b5fa45479afb725b8631678fa1f183b",
+      "old_filename": "Chart_HD #3943"
+    },
+    {
+      "chart": "Chart_HD #3961",
+      "num_of_notes": 478,
+      "bpm": 180.0,
+      "md5": "864f722bfc9a09e26b7222e979589b45",
+      "old_filename": "Chart_HD #3961"
+    },
+    {
+      "chart": "Chart_HD #3995",
+      "num_of_notes": 352,
+      "bpm": 130.0,
+      "md5": "6b629c76d5e8c6abdbeddc9f26c39016",
+      "old_filename": "Chart_HD #3995"
+    },
+    {
+      "chart": "Chart_HD #4005",
+      "num_of_notes": 800,
+      "bpm": 128.0,
+      "md5": "5ffea1e647c53eb9965019523448d33a",
+      "old_filename": "Chart_HD #4005"
+    },
+    {
+      "chart": "Chart_HD #4007",
+      "num_of_notes": 309,
+      "bpm": 126.0,
+      "md5": "8054e4def1c863e2472d7fcb8db07093",
+      "old_filename": "Chart_HD #4007"
+    },
+    {
+      "chart": "Chart_HD #4022",
+      "num_of_notes": 552,
+      "bpm": 128.0,
+      "md5": "9d45d21e5f7a00cfed6f0eaaa0e7e7db",
+      "old_filename": "Chart_HD #4022"
+    },
+    {
+      "chart": "Chart_HD #4025",
+      "num_of_notes": 364,
+      "bpm": 175.0,
+      "md5": "c3f0b291db4c5181c3541d3e47bde8fe",
+      "old_filename": "Chart_HD #4025"
+    },
+    {
+      "chart": "Chart_HD #4045",
+      "num_of_notes": 315,
+      "bpm": 180.0,
+      "md5": "cffc9c8ac2a466c491c7f423a5ed8fbe",
+      "old_filename": "Chart_HD #4045"
+    },
+    {
+      "chart": "Chart_HD #4092",
+      "num_of_notes": 386,
+      "bpm": 127.0,
+      "md5": "f322ac4b4b8c64d89ee495b41b8c7eaf",
+      "old_filename": "Chart_HD #4092"
+    },
+    {
+      "chart": "Chart_HD #4131",
+      "num_of_notes": 723,
+      "bpm": 165.0,
+      "md5": "14f9c6f4345166263357cb29d0f89ecb",
+      "old_filename": "Chart_HD #4131"
+    },
+    {
+      "chart": "Chart_HD #4133",
+      "num_of_notes": 176,
+      "bpm": 131.0,
+      "md5": "8a8256270c5d9bcbbcc5c0b44bb8135d",
+      "old_filename": "Chart_HD #4133"
+    },
+    {
+      "chart": "Chart_HD #4137",
+      "num_of_notes": 924,
+      "bpm": 197.0,
+      "md5": "9c7e6e2429a8dc3d8d1b2ebddf4ab4e9",
+      "old_filename": "Chart_HD #4137"
+    },
+    {
+      "chart": "Chart_HD #4245",
+      "num_of_notes": 453,
+      "bpm": 200.0,
+      "md5": "fe71fde2e37abe09a9e26c2992e6bf28",
+      "old_filename": "Chart_HD #4245"
+    },
+    {
+      "chart": "Chart_HD #4249",
+      "num_of_notes": 892,
+      "bpm": 200.0,
+      "md5": "9e783766881e40c17099b5d00b97be73",
+      "old_filename": "Chart_HD #4249"
+    },
+    {
+      "chart": "Chart_HD #4263",
+      "num_of_notes": 621,
+      "bpm": 202.0,
+      "md5": "afa0fce79bef455922eb2fb86aa64d9c",
+      "old_filename": "Chart_HD #4263"
+    },
+    {
+      "chart": "Chart_HD #4271",
+      "num_of_notes": 741,
+      "bpm": 128.0,
+      "md5": "3ba5c1bac1c35165551b241f34d11483",
+      "old_filename": "Chart_HD #4271"
+    },
+    {
+      "chart": "Chart_HD #4289",
+      "num_of_notes": 733,
+      "bpm": 170.0,
+      "md5": "b4d4ecb9f676f1e84b175fb945027a44",
+      "old_filename": "Chart_HD #4289"
+    },
+    {
+      "chart": "Chart_HD #447",
+      "num_of_notes": 347,
+      "bpm": 120.0,
+      "md5": "2d3a5115d9262244694f6579c75bf1c1",
+      "old_filename": "Chart_HD #447"
+    },
+    {
+      "chart": "Chart_HD #4337",
+      "num_of_notes": 476,
+      "bpm": 120.0,
+      "md5": "a14113d3002fb629fa1489d1c6b61d1b",
+      "old_filename": "Chart_HD #4337"
+    },
+    {
+      "chart": "Chart_HD #4352",
+      "num_of_notes": 650,
+      "bpm": 195.0,
+      "md5": "46211f9c280bb9d4e841fb6287799fd4",
+      "old_filename": "Chart_HD #4352"
+    },
+    {
+      "chart": "Chart_HD #4364",
+      "num_of_notes": 323,
+      "bpm": 170.0,
+      "md5": "359063b9bf3546c659b227c8641cb67e",
+      "old_filename": "Chart_HD #4364"
+    },
+    {
+      "chart": "Chart_HD #4376",
+      "num_of_notes": 683,
+      "bpm": 197.0,
+      "md5": "5b822ce584a946a84a7855c0b1348e41",
+      "old_filename": "Chart_HD #4376"
+    },
+    {
+      "chart": "Chart_HD #4442",
+      "num_of_notes": 666,
+      "bpm": 180.0,
+      "md5": "fa748893cd18b199ebb111c934d1969c",
+      "old_filename": "Chart_HD #4442"
+    },
+    {
+      "chart": "Chart_HD #4485",
+      "num_of_notes": 354,
+      "bpm": 128.0,
+      "md5": "6de06e9436a286b9733700720afa6914",
+      "old_filename": "Chart_HD #4485"
+    },
+    {
+      "chart": "Chart_HD #4531",
+      "num_of_notes": 425,
+      "bpm": 175.0,
+      "md5": "d17abc3383df362c16aa8c0ed0eacb45",
+      "old_filename": "Chart_HD #4531"
+    },
+    {
+      "chart": "Chart_HD #4558",
+      "num_of_notes": 459,
+      "bpm": 125.0,
+      "md5": "7ddb13d3c64557738f6d5f03d139dd23",
+      "old_filename": "Chart_HD #4558"
+    },
+    {
+      "chart": "Chart_HD #4565",
+      "num_of_notes": 614,
+      "bpm": 180.0,
+      "md5": "c6717e11836af30003a85a2157d0dcd3",
+      "old_filename": "Chart_HD #4565"
+    },
+    {
+      "chart": "Chart_HD #4610",
+      "num_of_notes": 703,
+      "bpm": 170.0,
+      "md5": "24549fb02f93648cd6384880aea6e252",
+      "old_filename": "Chart_HD #4610"
+    },
+    {
+      "chart": "Chart_HD",
+      "num_of_notes": 602,
+      "bpm": 126.0,
+      "md5": "e9b7869df2a1bbb1544629fcf0d20a7a",
+      "old_filename": "Chart_HD"
+    },
+    {
+      "chart": "Chart_HD #4637",
+      "num_of_notes": 601,
+      "bpm": 131.0,
+      "md5": "73a43dbcd9035110ab594e97f4125df2",
+      "old_filename": "Chart_HD #4637"
+    },
+    {
+      "chart": "Chart_HD #4659",
+      "num_of_notes": 562,
+      "bpm": 182.0,
+      "md5": "6c9b8c755f396e662dc809b5c97fa52a",
+      "old_filename": "Chart_HD #4659"
+    },
+    {
+      "chart": "Chart_HD #4662",
+      "num_of_notes": 902,
+      "bpm": 180.0,
+      "md5": "d657fc0fae69cd8e25bc17fdef809131",
+      "old_filename": "Chart_HD #4662"
+    },
+    {
+      "chart": "Chart_HD #4666",
+      "num_of_notes": 580,
+      "bpm": 160.0,
+      "md5": "3e751095f2682dcb8e72d6e000522f1b",
+      "old_filename": "Chart_HD #4666"
+    },
+    {
+      "chart": "Chart_HD #4689",
+      "num_of_notes": 523,
+      "bpm": 180.0,
+      "md5": "5a785a14ba7c2a77cbbd776ca6106c75",
+      "old_filename": "Chart_HD #4689"
+    },
+    {
+      "chart": "Chart_HD #486",
+      "num_of_notes": 489,
+      "bpm": 200.0,
+      "md5": "50916a13a2e71d8dba5252a48aec972d",
+      "old_filename": "Chart_HD #486"
+    },
+    {
+      "chart": "Chart_HD #493",
+      "num_of_notes": 654,
+      "bpm": 170.0,
+      "md5": "8486d8ae6e1cbddb62e2f86b4b0d76a0",
+      "old_filename": "Chart_HD #493"
+    },
+    {
+      "chart": "Chart_HD #4854",
+      "num_of_notes": 480,
+      "bpm": 175.0,
+      "md5": "12db26414bb0855278e7df053bc3950f",
+      "old_filename": "Chart_HD #4854"
+    },
+    {
+      "chart": "Chart_HD #4877",
+      "num_of_notes": 303,
+      "bpm": 175.0,
+      "md5": "7eea7304bae3faac2f221bf0abf34fee",
+      "old_filename": "Chart_HD #4877"
+    },
+    {
+      "chart": "Chart_HD #4884",
+      "num_of_notes": 607,
+      "bpm": 132.0,
+      "md5": "b05b08faa67655f8ca8f684786fb40f7",
+      "old_filename": "Chart_HD #4884"
+    },
+    {
+      "chart": "Chart_HD #4891",
+      "num_of_notes": 581,
+      "bpm": 180.0,
+      "md5": "728e8056327effca93ef025063252a2b",
+      "old_filename": "Chart_HD #4891"
+    },
+    {
+      "chart": "Chart_HD #4893",
+      "num_of_notes": 960,
+      "bpm": 227.0,
+      "md5": "b06fa37c1486110c04adf2737bcd39c8",
+      "old_filename": "Chart_HD #4893"
+    },
+    {
+      "chart": "Chart_HD #4906",
+      "num_of_notes": 278,
+      "bpm": 120.0,
+      "md5": "7afce65c47e8a793defceab48f45067f",
+      "old_filename": "Chart_HD #4906"
+    },
+    {
+      "chart": "Chart_HD #4964",
+      "num_of_notes": 210,
+      "bpm": 128.0,
+      "md5": "5a7f88a10fa70b189f3468376f7b9bdb",
+      "old_filename": "Chart_HD #4964"
+    },
+    {
+      "chart": "Chart_HD #4968",
+      "num_of_notes": 562,
+      "bpm": 174.0,
+      "md5": "349f30b08b50297fb4ca30a32709fb5f",
+      "old_filename": "Chart_HD #4968"
+    },
+    {
+      "chart": "Chart_HD #5072",
+      "num_of_notes": 549,
+      "bpm": 172.0,
+      "md5": "c434b608eed8fac17f8517198ec02b37",
+      "old_filename": "Chart_HD #5072"
+    },
+    {
+      "chart": "Chart_HD #5078",
+      "num_of_notes": 569,
+      "bpm": 142.0,
+      "md5": "fae4beb13a2263004e8cca3eade38d6e",
+      "old_filename": "Chart_HD #5078"
+    },
+    {
+      "chart": "Chart_HD #5092",
+      "num_of_notes": 657,
+      "bpm": 191.0,
+      "md5": "e9c032a06136965adac1c3e196c193ed",
+      "old_filename": "Chart_HD #5092"
+    },
+    {
+      "chart": "Chart_HD #5093",
+      "num_of_notes": 362,
+      "bpm": 128.0,
+      "md5": "b15093b3a21f32fcd5790b9c59798c17",
+      "old_filename": "Chart_HD #5093"
+    },
+    {
+      "chart": "Chart_HD #5131",
+      "num_of_notes": 124,
+      "bpm": 128.0,
+      "md5": "a16b79d23224cad40570258ab18efb6c",
+      "old_filename": "Chart_HD #5131"
+    },
+    {
+      "chart": "Chart_HD #5141",
+      "num_of_notes": 700,
+      "bpm": 177.0,
+      "md5": "5b638be10e516c0694d4d895430d3305",
+      "old_filename": "Chart_HD #5141"
+    },
+    {
+      "chart": "Chart_HD #5146",
+      "num_of_notes": 526,
+      "bpm": 209.0,
+      "md5": "2da2b124ddc0df95b2e77a6a7103543f",
+      "old_filename": "Chart_HD #5146"
+    },
+    {
+      "chart": "Chart_HD #549",
+      "num_of_notes": 661,
+      "bpm": 174.0,
+      "md5": "1b01c611dfeccf28f830cb252204229b",
+      "old_filename": "Chart_HD #549"
+    },
+    {
+      "chart": "Chart_HD #5323",
+      "num_of_notes": 591,
+      "bpm": 140.0,
+      "md5": "16c6f83a3237d4fe6ab0327641e4bf0c",
+      "old_filename": "Chart_HD #5323"
+    },
+    {
+      "chart": "Chart_HD #5373",
+      "num_of_notes": 320,
+      "bpm": 120.0,
+      "md5": "49048ec0ee58afab6dd2f9ac5fef8a7d",
+      "old_filename": "Chart_HD #5373"
+    },
+    {
+      "chart": "Chart_HD #5385",
+      "num_of_notes": 515,
+      "bpm": 175.0,
+      "md5": "112a8dffa7f81c83c538de38d8c67a11",
+      "old_filename": "Chart_HD #5385"
+    },
+    {
+      "chart": "Chart_HD #5390",
+      "num_of_notes": 442,
+      "bpm": 192.0,
+      "md5": "3138b53a7ab4b5f0aeb0d841fece40a2",
+      "old_filename": "Chart_HD #5390"
+    },
+    {
+      "chart": "Chart_HD #567",
+      "num_of_notes": 663,
+      "bpm": 227.0,
+      "md5": "165764a5609268bc086ffb0c60ef5600",
+      "old_filename": "Chart_HD #567"
+    },
+    {
+      "chart": "Chart_HD #5656",
+      "num_of_notes": 497,
+      "bpm": 148.0,
+      "md5": "c5069893d3a41cc60c031d1ef9538af5",
+      "old_filename": "Chart_HD #5656"
+    },
+    {
+      "chart": "Chart_HD #5660",
+      "num_of_notes": 795,
+      "bpm": 177.0,
+      "md5": "a2a491a5dea55fe154c95e527b8aa430",
+      "old_filename": "Chart_HD #5660"
+    },
+    {
+      "chart": "Chart_HD #5663",
+      "num_of_notes": 596,
+      "bpm": 145.0,
+      "md5": "9ea29e9b967cd8a622c61d0e6a8d0021",
+      "old_filename": "Chart_HD #5663"
+    },
+    {
+      "chart": "Chart_HD #5666",
+      "num_of_notes": 482,
+      "bpm": 158.0,
+      "md5": "46588589a116a82aad3054a9b427476e",
+      "old_filename": "Chart_HD #5666"
+    },
+    {
+      "chart": "Chart_HD #5759",
+      "num_of_notes": 648,
+      "bpm": 120.0,
+      "md5": "9c9edb190df383b77ee9285916bf466b",
+      "old_filename": "Chart_HD #5759"
+    },
+    {
+      "chart": "Chart_HD #5817",
+      "num_of_notes": 697,
+      "bpm": 175.0,
+      "md5": "cadd1328b7c94226bc20c4baebd75951",
+      "old_filename": "Chart_HD #5817"
+    },
+    {
+      "chart": "Chart_HD #5832",
+      "num_of_notes": 613,
+      "bpm": 132.0,
+      "md5": "42f272ad74b5177853ef9cea1ab7ec2c",
+      "old_filename": "Chart_HD #5832"
+    },
+    {
+      "chart": "Chart_HD #5837",
+      "num_of_notes": 578,
+      "bpm": 215.0,
+      "md5": "3c1640acc1bf561de5b0c8fcf3caf034",
+      "old_filename": "Chart_HD #5837"
+    },
+    {
+      "chart": "Chart_HD #5850",
+      "num_of_notes": 761,
+      "bpm": 194.0,
+      "md5": "233246d3a99dc89919001dbddb928a8e",
+      "old_filename": "Chart_HD #5850"
+    },
+    {
+      "chart": "Chart_HD #5852",
+      "num_of_notes": 612,
+      "bpm": 170.0,
+      "md5": "3596c10c571ad4cee04e28f1b3587563",
+      "old_filename": "Chart_HD #5852"
+    },
+    {
+      "chart": "Chart_HD #5853",
+      "num_of_notes": 904,
+      "bpm": 230.0,
+      "md5": "70abfbd399a4f961462510446be572f1",
+      "old_filename": "Chart_HD #5853"
+    },
+    {
+      "chart": "Chart_HD #5897",
+      "num_of_notes": 428,
+      "bpm": 154.0,
+      "md5": "92d93247fddd54dcf35e7c573510f338",
+      "old_filename": "Chart_HD #5897"
+    },
+    {
+      "chart": "Chart_HD #5919",
+      "num_of_notes": 868,
+      "bpm": 190.0,
+      "md5": "8ee6f6abc04c82edb2039cc396e05a17",
+      "old_filename": "Chart_HD #5919"
+    },
+    {
+      "chart": "Chart_HD #5958",
+      "num_of_notes": 796,
+      "bpm": 301.0,
+      "md5": "7ae35447302eb1244ce0e5d3013697ae",
+      "old_filename": "Chart_HD #5958"
+    },
+    {
+      "chart": "Chart_HD #5979",
+      "num_of_notes": 390,
+      "bpm": 160.0,
+      "md5": "d81bb1c5af1fef2a59a7de65a3fbb614",
+      "old_filename": "Chart_HD #5979"
+    },
+    {
+      "chart": "Chart_HD #5985",
+      "num_of_notes": 449,
+      "bpm": 180.0,
+      "md5": "3ac7d222ab1252943c6e69df994956df",
+      "old_filename": "Chart_HD #5985"
+    },
+    {
+      "chart": "Chart_HD #6006",
+      "num_of_notes": 626,
+      "bpm": 132.0,
+      "md5": "efc094ad390ab612d257be9834f9bd24",
+      "old_filename": "Chart_HD #6006"
+    },
+    {
+      "chart": "Chart_HD #6054",
+      "num_of_notes": 797,
+      "bpm": 180.0,
+      "md5": "56fefc78cf59452b520c061718d8d3ee",
+      "old_filename": "Chart_HD #6054"
+    },
+    {
+      "chart": "Chart_HD #695",
+      "num_of_notes": 608,
+      "bpm": 141.0,
+      "md5": "d6d22657075fd8b39106b7bb4f902802",
+      "old_filename": "Chart_HD #695"
+    },
+    {
+      "chart": "Chart_HD #726",
+      "num_of_notes": 422,
+      "bpm": 160.0,
+      "md5": "8acf5de4b5a489803fa4a5f225f49eda",
+      "old_filename": "Chart_HD #726"
+    },
+    {
+      "chart": "Chart_HD #782",
+      "num_of_notes": 578,
+      "bpm": 110.0,
+      "md5": "69d3054d91d021d7540f1ff471fb8e97",
+      "old_filename": "Chart_HD #782"
+    },
+    {
+      "chart": "Chart_HD #795",
+      "num_of_notes": 651,
+      "bpm": 230.0,
+      "md5": "5a9f57d165be5a6106ca7989172259fb",
+      "old_filename": "Chart_HD #795"
+    },
+    {
+      "chart": "Chart_HD #805",
+      "num_of_notes": 497,
+      "bpm": 150.0,
+      "md5": "2c2f9371cfc3cc451d723fd8c6b5eb5e",
+      "old_filename": "Chart_HD #805"
+    },
+    {
+      "chart": "Chart_HD #78",
+      "num_of_notes": 985,
+      "bpm": 191.0,
+      "md5": "7e8810a92c1df42c24950d10b983ffb6",
+      "old_filename": "Chart_HD #78"
+    },
+    {
+      "chart": "Chart_HD #824",
+      "num_of_notes": 549,
+      "bpm": 158.0,
+      "md5": "9e8edda159aefcbef4a3e960d8a34eac",
+      "old_filename": "Chart_HD #824"
+    },
+    {
+      "chart": "Chart_HD #837",
+      "num_of_notes": 200,
+      "bpm": 120.0,
+      "md5": "4f6febc5ed0524fffbe0306d2fe806c2",
+      "old_filename": "Chart_HD #837"
+    },
+    {
+      "chart": "Chart_HD #839",
+      "num_of_notes": 433,
+      "bpm": 130.0,
+      "md5": "1d82b38d40aee05d70dc101a03e22e16",
+      "old_filename": "Chart_HD #839"
+    },
+    {
+      "chart": "Chart_HD #846",
+      "num_of_notes": 601,
+      "bpm": 230.0,
+      "md5": "3acd64764f50248dbd7aec3f550525d9",
+      "old_filename": "Chart_HD #846"
+    },
+    {
+      "chart": "Chart_HD #851",
+      "num_of_notes": 469,
+      "bpm": 180.0,
+      "md5": "a38e4f9bc2c4b1be69f13abed64e398d",
+      "old_filename": "Chart_HD #851"
+    },
+    {
+      "chart": "Chart_HD #904",
+      "num_of_notes": 701,
+      "bpm": 175.0,
+      "md5": "55dcc2705a1431fdbb6724e72241ded9",
+      "old_filename": "Chart_HD #904"
+    },
+    {
+      "chart": "Chart_HD #931",
+      "num_of_notes": 771,
+      "bpm": 145.0,
+      "md5": "0395c4db57c79d44a1d8421e009b31f6",
+      "old_filename": "Chart_HD #931"
+    },
+    {
+      "chart": "Chart_HD #948",
+      "num_of_notes": 1290,
+      "bpm": 200.0,
+      "md5": "1474536f72af6e85b4d59b1ebbd914b8",
+      "old_filename": "Chart_HD #948"
+    },
+    {
+      "chart": "Chart_HD #956",
+      "num_of_notes": 449,
+      "bpm": 104.0,
+      "md5": "8417d5965162568a1b1ea4b00e476c36",
+      "old_filename": "Chart_HD #956"
+    },
+    {
+      "chart": "Chart_HD #984",
+      "num_of_notes": 567,
+      "bpm": 190.0,
+      "md5": "64bba920db38c36e53033a68e9f23459",
+      "old_filename": "Chart_HD #984"
+    },
+    {
+      "chart": "Chart_HD_Error",
+      "num_of_notes": 528,
+      "bpm": 209.0,
+      "md5": "61f0501267e0bd739a44011c63f7b8d1",
+      "old_filename": "Chart_HD_Error"
+    },
+    {
+      "chart": "Chart_HD #11",
+      "num_of_notes": 835,
+      "bpm": 175.0,
+      "md5": "73e114dac3c7934fda8662debfa1d38d",
+      "old_filename": "Chart_HD #11"
+    },
+    {
+      "chart": "Chart_HD #138",
+      "num_of_notes": 596,
+      "bpm": 220.0,
+      "md5": "c6d7aceb5606a6b4f395e20bd9f0934a",
+      "old_filename": "Chart_HD #138"
+    },
+    {
+      "chart": "Chart_HD #1728",
+      "num_of_notes": 408,
+      "bpm": 160.0,
+      "md5": "968f382e4e9e35cd851c284c0dbb1c79",
+      "old_filename": "Chart_HD #1728"
+    },
+    {
+      "chart": "Chart_HD #1861",
+      "num_of_notes": 738,
+      "bpm": 160.0,
+      "md5": "181540fc75f778e86a79f5ff08f9420f",
+      "old_filename": "Chart_HD #1861"
+    },
+    {
+      "chart": "Chart_HD #2004",
+      "num_of_notes": 914,
+      "bpm": 205.0,
+      "md5": "7212f4c1ca7859ea2ceabf3a82aa0316",
+      "old_filename": "Chart_HD #2004"
+    },
+    {
+      "chart": "Chart_HD #2345",
+      "num_of_notes": 856,
+      "bpm": 212.0,
+      "md5": "90132c90d3b0b633bda308ac47483857",
+      "old_filename": "Chart_HD #2345"
+    },
+    {
+      "chart": "Chart_HD #2441",
+      "num_of_notes": 388,
+      "bpm": 170.0,
+      "md5": "942e466594abd128ddaf58231ec6e76c",
+      "old_filename": "Chart_HD #2441"
+    },
+    {
+      "chart": "Chart_HD #259",
+      "num_of_notes": 639,
+      "bpm": 161.0,
+      "md5": "aa0e64a334c81ccb1d93c5857afc3131",
+      "old_filename": "Chart_HD #259"
+    },
+    {
+      "chart": "Chart_HD #2911",
+      "num_of_notes": 491,
+      "bpm": 150.0,
+      "md5": "755c93858a6f2333c19eb741ed33ae32",
+      "old_filename": "Chart_HD #2911"
+    },
+    {
+      "chart": "Chart_HD #293",
+      "num_of_notes": 657,
+      "bpm": 167.0,
+      "md5": "0dffcbbe2d39f93023a8b2baccc31d8d",
+      "old_filename": "Chart_HD #293"
+    },
+    {
+      "chart": "Chart_HD #2951",
+      "num_of_notes": 600,
+      "bpm": 198.0,
+      "md5": "9181734561725e0e944b5f6c688e44cb",
+      "old_filename": "Chart_HD #2951"
+    },
+    {
+      "chart": "Chart_HD #3162",
+      "num_of_notes": 626,
+      "bpm": 180.0,
+      "md5": "38e36f21e731e3e7aad35770cbf31625",
+      "old_filename": "Chart_HD #3162"
+    },
+    {
+      "chart": "Chart_HD #4461",
+      "num_of_notes": 588,
+      "bpm": 188.0,
+      "md5": "a64ca4d0b9a0cc9bdf177dd45599c0f3",
+      "old_filename": "Chart_HD #4461"
+    },
+    {
+      "chart": "Chart_HD #564",
+      "num_of_notes": 752,
+      "bpm": 180.0,
+      "md5": "fd2f42950792184a84190565501d6de9",
+      "old_filename": "Chart_HD #564"
+    }
+  ],
+  "IN": [
+    {
+      "chart": "Chart_IN #63",
+      "num_of_notes": 780,
+      "bpm": 158.0,
+      "md5": "eca598c5bd4f3001899562c6f0d63c0b",
+      "old_filename": "Chart_IN #63"
+    },
+    {
+      "chart": "Chart_IN #1118",
+      "num_of_notes": 505,
+      "bpm": 128.0,
+      "md5": "ef98c37ee2c80d0f84a37ab86fe50709",
+      "old_filename": "Chart_IN #1118"
+    },
+    {
+      "chart": "Chart_IN #1133",
+      "num_of_notes": 1125,
+      "bpm": 128.0,
+      "md5": "035cd9169db2f5ed64982fc9f7c0f35f",
+      "old_filename": "Chart_IN #1133"
+    },
+    {
+      "chart": "Chart_IN #1171",
+      "num_of_notes": 1002,
+      "bpm": 158.0,
+      "md5": "1eb9a63eb052241ad917e05391a5096a",
+      "old_filename": "Chart_IN #1171"
+    },
+    {
+      "chart": "Chart_IN #1201",
+      "num_of_notes": 517,
+      "bpm": 180.0,
+      "md5": "95ee09ef9b477d620c6e211ede295c1d",
+      "old_filename": "Chart_IN #1201"
+    },
+    {
+      "chart": "Chart_IN #1220",
+      "num_of_notes": 1275,
+      "bpm": 215.0,
+      "md5": "7ae19565d1e47f4614a364df18a972e6",
+      "old_filename": "Chart_IN #1220"
+    },
+    {
+      "chart": "Chart_IN #1237",
+      "num_of_notes": 1186,
+      "bpm": 212.0,
+      "md5": "788507aead1bfccc872f50461651ae2b",
+      "old_filename": "Chart_IN #1237"
+    },
+    {
+      "chart": "Chart_IN #1266",
+      "num_of_notes": 774,
+      "bpm": 158.0,
+      "md5": "29416789709af8b145985bb86d3c66a2",
+      "old_filename": "Chart_IN #1266"
+    },
+    {
+      "chart": "Chart_IN",
+      "num_of_notes": 1267,
+      "bpm": 177.0,
+      "md5": "f8d092c8c6642da57490be93292a202b",
+      "old_filename": "Chart_IN"
+    },
+    {
+      "chart": "Chart_IN #1302",
+      "num_of_notes": 888,
+      "bpm": 120.0,
+      "md5": "dc3386e3da6ed339cb5acb0f81c3cf4e",
+      "old_filename": "Chart_IN #1302"
+    },
+    {
+      "chart": "Chart_IN #1309",
+      "num_of_notes": 793,
+      "bpm": 193.0,
+      "md5": "3c9058b8093c03c8ccf7733a5fd2c796",
+      "old_filename": "Chart_IN #1309"
+    },
+    {
+      "chart": "Chart_IN #1325",
+      "num_of_notes": 1084,
+      "bpm": 200.0,
+      "md5": "9a9b6e1646246ca30a096206290b4a4a",
+      "old_filename": "Chart_IN #1325"
+    },
+    {
+      "chart": "Chart_IN #133",
+      "num_of_notes": 968,
+      "bpm": 230.0,
+      "md5": "346a150dc5807f29310692a44ca19958",
+      "old_filename": "Chart_IN #133"
+    },
+    {
+      "chart": "Chart_IN #139",
+      "num_of_notes": 712,
+      "bpm": 180.0,
+      "md5": "4430d05390a395f7a9ef4afecf893561",
+      "old_filename": "Chart_IN #139"
+    },
+    {
+      "chart": "Chart_IN #1380",
+      "num_of_notes": 1213,
+      "bpm": 165.0,
+      "md5": "b808b1301f21e5a8e878b6f0c229c2c3",
+      "old_filename": "Chart_IN #1380"
+    },
+    {
+      "chart": "Chart_IN #1382",
+      "num_of_notes": 711,
+      "bpm": 132.0,
+      "md5": "900090f5bdfd212d979ee8c041c7b078",
+      "old_filename": "Chart_IN #1382"
+    },
+    {
+      "chart": "Chart_IN #1458",
+      "num_of_notes": 874,
+      "bpm": 110.0,
+      "md5": "64289e758a797f196cd1fe3f07c90834",
+      "old_filename": "Chart_IN #1458"
+    },
+    {
+      "chart": "Chart_IN #1469",
+      "num_of_notes": 930,
+      "bpm": 160.0,
+      "md5": "c1ab2db607a142a446278436ded87333",
+      "old_filename": "Chart_IN #1469"
+    },
+    {
+      "chart": "Chart_IN #1484",
+      "num_of_notes": 855,
+      "bpm": 193.0,
+      "md5": "e62fad9c76a83a8ea7fb7299f29d957d",
+      "old_filename": "Chart_IN #1484"
+    },
+    {
+      "chart": "Chart_IN #1490",
+      "num_of_notes": 755,
+      "bpm": 200.0,
+      "md5": "9449f51fdf1ded14af963ace30f53f2f",
+      "old_filename": "Chart_IN #1490"
+    },
+    {
+      "chart": "Chart_IN #1496",
+      "num_of_notes": 1243,
+      "bpm": 200.0,
+      "md5": "fe26ac1b9dbae7c30f767909ea7f3f24",
+      "old_filename": "Chart_IN #1496"
+    },
+    {
+      "chart": "Chart_IN #153",
+      "num_of_notes": 729,
+      "bpm": 146.0,
+      "md5": "d296b078f38923a66d988e758ace7fca",
+      "old_filename": "Chart_IN #153"
+    },
+    {
+      "chart": "Chart_IN #1527",
+      "num_of_notes": 662,
+      "bpm": 172.0,
+      "md5": "133ceec872a71df93ed46f1dcfb336cb",
+      "old_filename": "Chart_IN #1527"
+    },
+    {
+      "chart": "Chart_IN #1534",
+      "num_of_notes": 1273,
+      "bpm": 177.0,
+      "md5": "f08841166647241828dfca777b2e2182",
+      "old_filename": "Chart_IN #1534"
+    },
+    {
+      "chart": "Chart_IN #1540",
+      "num_of_notes": 960,
+      "bpm": 165.0,
+      "md5": "cdbff23d0b2262f834923049409e80ee",
+      "old_filename": "Chart_IN #1540"
+    },
+    {
+      "chart": "Chart_IN #155",
+      "num_of_notes": 975,
+      "bpm": 110.0,
+      "md5": "13f731677d8fb4e524486a8bb517710b",
+      "old_filename": "Chart_IN #155"
+    },
+    {
+      "chart": "Chart_IN #1549",
+      "num_of_notes": 563,
+      "bpm": 142.0,
+      "md5": "c0f52547801739ad01e974711620ee87",
+      "old_filename": "Chart_IN #1549"
+    },
+    {
+      "chart": "Chart_IN #1553",
+      "num_of_notes": 830,
+      "bpm": 170.0,
+      "md5": "2cb8d90017fc6ddb46b13eecb2eeba02",
+      "old_filename": "Chart_IN #1553"
+    },
+    {
+      "chart": "Chart_IN #1559",
+      "num_of_notes": 610,
+      "bpm": 175.0,
+      "md5": "4a1258dc256c636b2d9a55ae0ed69607",
+      "old_filename": "Chart_IN #1559"
+    },
+    {
+      "chart": "Chart_IN #161",
+      "num_of_notes": 986,
+      "bpm": 206.0,
+      "md5": "4d2f2c43b16cf4778f19d9cb99643ac2",
+      "old_filename": "Chart_IN #161"
+    },
+    {
+      "chart": "Chart_IN #1602",
+      "num_of_notes": 1026,
+      "bpm": 205.0,
+      "md5": "00478d441b6411c9d3e0a3600f5e342f",
+      "old_filename": "Chart_IN #1602"
+    },
+    {
+      "chart": "Chart_IN #1620",
+      "num_of_notes": 866,
+      "bpm": 112.0,
+      "md5": "c41c189156d97983500ffbcc22064792",
+      "old_filename": "Chart_IN #1620"
+    },
+    {
+      "chart": "Chart_IN #166",
+      "num_of_notes": 886,
+      "bpm": 200.0,
+      "md5": "fc0d0567f08de537ccf733f61921dd25",
+      "old_filename": "Chart_IN #166"
+    },
+    {
+      "chart": "Chart_IN #1653",
+      "num_of_notes": 881,
+      "bpm": 170.0,
+      "md5": "52337eea7457fe91603be173c0af24b2",
+      "old_filename": "Chart_IN #1653"
+    },
+    {
+      "chart": "Chart_IN #1730",
+      "num_of_notes": 1060,
+      "bpm": 175.0,
+      "md5": "ed5dbe36f49b641c346ff586d5a29580",
+      "old_filename": "Chart_IN #1730"
+    },
+    {
+      "chart": "Chart_IN #1750",
+      "num_of_notes": 1541,
+      "bpm": 175.0,
+      "md5": "92c14a0bc1dbe6ffb5d18cb33572fc5b",
+      "old_filename": "Chart_IN #1750"
+    },
+    {
+      "chart": "Chart_IN #1798",
+      "num_of_notes": 643,
+      "bpm": 170.0,
+      "md5": "abe1c35d1f28ca3e29622c4668e94aac",
+      "old_filename": "Chart_IN #1798"
+    },
+    {
+      "chart": "Chart_IN #1842",
+      "num_of_notes": 723,
+      "bpm": 132.0,
+      "md5": "95a51d49fd2f52d680220ee4b7395e39",
+      "old_filename": "Chart_IN #1842"
+    },
+    {
+      "chart": "Chart_IN #1850",
+      "num_of_notes": 777,
+      "bpm": 180.0,
+      "md5": "1ee064a263e5e6ab40a0633add00eca5",
+      "old_filename": "Chart_IN #1850"
+    },
+    {
+      "chart": "Chart_IN #1903",
+      "num_of_notes": 1286,
+      "bpm": 280.0,
+      "md5": "532d90c1e4c05366439a890143c2631c",
+      "old_filename": "Chart_IN #1903"
+    },
+    {
+      "chart": "Chart_IN #1920",
+      "num_of_notes": 459,
+      "bpm": 135.0,
+      "md5": "f27d36001c2db5a6806d245794e44350",
+      "old_filename": "Chart_IN #1920"
+    },
+    {
+      "chart": "Chart_IN #1931",
+      "num_of_notes": 939,
+      "bpm": 180.0,
+      "md5": "cd6404dff645c9d2951ddb4b2c38b0c0",
+      "old_filename": "Chart_IN #1931"
+    },
+    {
+      "chart": "Chart_IN #207",
+      "num_of_notes": 914,
+      "bpm": 180.0,
+      "md5": "9a9282c10d78df29b44609db9a1a1e07",
+      "old_filename": "Chart_IN #207"
+    },
+    {
+      "chart": "Chart_IN #208",
+      "num_of_notes": 938,
+      "bpm": 144.0,
+      "md5": "66612be3d39dd8b3693d5b38eda48866",
+      "old_filename": "Chart_IN #208"
+    },
+    {
+      "chart": "Chart_IN #1971",
+      "num_of_notes": 898,
+      "bpm": 175.0,
+      "md5": "6d4a268685769f5525cbe8d240e96c84",
+      "old_filename": "Chart_IN #1971"
+    },
+    {
+      "chart": "Chart_IN #1972",
+      "num_of_notes": 884,
+      "bpm": 190.0,
+      "md5": "bd2c7d69994bc0d59eaadd4422e26026",
+      "old_filename": "Chart_IN #1972"
+    },
+    {
+      "chart": "Chart_IN #1978",
+      "num_of_notes": 655,
+      "bpm": 125.0,
+      "md5": "5e05e3889666cb2400ff0ef3b2ccad46",
+      "old_filename": "Chart_IN #1978"
+    },
+    {
+      "chart": "Chart_IN #2055",
+      "num_of_notes": 951,
+      "bpm": 200.0,
+      "md5": "c48536fd3ad901d0092dff5d711fd3bb",
+      "old_filename": "Chart_IN #2055"
+    },
+    {
+      "chart": "Chart_IN #2067",
+      "num_of_notes": 1059,
+      "bpm": 173.0,
+      "md5": "a8994dff516664c2c52e120d57e9323e",
+      "old_filename": "Chart_IN #2067"
+    },
+    {
+      "chart": "Chart_IN #2072",
+      "num_of_notes": 1322,
+      "bpm": 180.0,
+      "md5": "6ae19917393282a8ffd5d10ddacee320",
+      "old_filename": "Chart_IN #2072"
+    },
+    {
+      "chart": "Chart_IN #2084",
+      "num_of_notes": 237,
+      "bpm": 128.0,
+      "md5": "5c1c2366013c1d02c225dcdd37987456",
+      "old_filename": "Chart_IN #2084"
+    },
+    {
+      "chart": "Chart_IN #2092",
+      "num_of_notes": 644,
+      "bpm": 112.0,
+      "md5": "bbffee73b2cffe3721493c4f9a1419bb",
+      "old_filename": "Chart_IN #2092"
+    },
+    {
+      "chart": "Chart_IN #2106",
+      "num_of_notes": 616,
+      "bpm": 180.0,
+      "md5": "4378a1e37ea95d744f570790be996217",
+      "old_filename": "Chart_IN #2106"
+    },
+    {
+      "chart": "Chart_IN #2128",
+      "num_of_notes": 1014,
+      "bpm": 175.0,
+      "md5": "cb6d79e41cc02be777cb643967b2686b",
+      "old_filename": "Chart_IN #2128"
+    },
+    {
+      "chart": "Chart_IN #2140",
+      "num_of_notes": 721,
+      "bpm": 210.0,
+      "md5": "d7fb75ea4a0a9f3717d9a34c549d230f",
+      "old_filename": "Chart_IN #2140"
+    },
+    {
+      "chart": "Chart_IN #2148",
+      "num_of_notes": 773,
+      "bpm": 132.0,
+      "md5": "2844eed1acf51e127152b6bc7c106bd2",
+      "old_filename": "Chart_IN #2148"
+    },
+    {
+      "chart": "Chart_IN #2149",
+      "num_of_notes": 1199,
+      "bpm": 174.0,
+      "md5": "7c45b148f903d3601ac9b0bab9ff119f",
+      "old_filename": "Chart_IN #2149"
+    },
+    {
+      "chart": "Chart_IN #2163",
+      "num_of_notes": 627,
+      "bpm": 120.0,
+      "md5": "4cfe75b1046be695f7a477347aeae1ff",
+      "old_filename": "Chart_IN #2163"
+    },
+    {
+      "chart": "Chart_IN #2172",
+      "num_of_notes": 1239,
+      "bpm": 175.0,
+      "md5": "dc77214cc0538de960deca205f65f9e5",
+      "old_filename": "Chart_IN #2172"
+    },
+    {
+      "chart": "Chart_IN #2173",
+      "num_of_notes": 631,
+      "bpm": 128.0,
+      "md5": "4a1fa0dd03df59dde44465193bea1e73",
+      "old_filename": "Chart_IN #2173"
+    },
+    {
+      "chart": "Chart_IN #2178",
+      "num_of_notes": 1186,
+      "bpm": 150.0,
+      "md5": "74c3786a81ccd4b33b7e281c2e861a18",
+      "old_filename": "Chart_IN #2178"
+    },
+    {
+      "chart": "Chart_IN #2214",
+      "num_of_notes": 1300,
+      "bpm": 190.0,
+      "md5": "ffe7f4e19ac1469aff2e0b8d07462e55",
+      "old_filename": "Chart_IN #2214"
+    },
+    {
+      "chart": "Chart_IN #2217",
+      "num_of_notes": 597,
+      "bpm": 180.0,
+      "md5": "8852d0d263833c4bd0f065df3ba6910f",
+      "old_filename": "Chart_IN #2217"
+    },
+    {
+      "chart": "Chart_IN #2225",
+      "num_of_notes": 470,
+      "bpm": 175.0,
+      "md5": "82046111e703d672eeeeb856d1a8b7fa",
+      "old_filename": "Chart_IN #2225"
+    },
+    {
+      "chart": "Chart_IN #2237",
+      "num_of_notes": 840,
+      "bpm": 172.0,
+      "md5": "382ac09a630e9f6cfd084fbb1987defb",
+      "old_filename": "Chart_IN #2237"
+    },
+    {
+      "chart": "Chart_IN #2238",
+      "num_of_notes": 738,
+      "bpm": 152.0,
+      "md5": "564f75c0cb40cec39fcb2d4b365ef3f0",
+      "old_filename": "Chart_IN #2238"
+    },
+    {
+      "chart": "Chart_IN #2241",
+      "num_of_notes": 387,
+      "bpm": 175.0,
+      "md5": "7653d2acd65cb966123410b6722b13d0",
+      "old_filename": "Chart_IN #2241"
+    },
+    {
+      "chart": "Chart_IN #2243",
+      "num_of_notes": 910,
+      "bpm": 185.0,
+      "md5": "72d1b46457f08c932b712e2251d543e9",
+      "old_filename": "Chart_IN #2243"
+    },
+    {
+      "chart": "Chart_IN #2263",
+      "num_of_notes": 785,
+      "bpm": 200.0,
+      "md5": "3da570800e94cdfd1dea3e2fff330289",
+      "old_filename": "Chart_IN #2263"
+    },
+    {
+      "chart": "Chart_IN #238",
+      "num_of_notes": 888,
+      "bpm": 180.0,
+      "md5": "90e1112a739211d4b755f45454054c10",
+      "old_filename": "Chart_IN #238"
+    },
+    {
+      "chart": "Chart_IN #2281",
+      "num_of_notes": 1011,
+      "bpm": 170.0,
+      "md5": "068e8f8b4770ecf9c201c419778400b5",
+      "old_filename": "Chart_IN #2281"
+    },
+    {
+      "chart": "Chart_IN #239",
+      "num_of_notes": 781,
+      "bpm": 120.0,
+      "md5": "4d509b4b36c1f5f462e536d5834b7267",
+      "old_filename": "Chart_IN #239"
+    },
+    {
+      "chart": "Chart_IN #241",
+      "num_of_notes": 722,
+      "bpm": 164.0,
+      "md5": "5f0d9850f5818d58b62bca9aee3acf95",
+      "old_filename": "Chart_IN #241"
+    },
+    {
+      "chart": "Chart_IN #2333",
+      "num_of_notes": 1279,
+      "bpm": 184.0,
+      "md5": "c1b20c46067ee5c197bbb433a8f99270",
+      "old_filename": "Chart_IN #2333"
+    },
+    {
+      "chart": "Chart_IN #2335",
+      "num_of_notes": 726,
+      "bpm": 180.0,
+      "md5": "8633112efe287ea2b76ab6399cf9da7c",
+      "old_filename": "Chart_IN #2335"
+    },
+    {
+      "chart": "Chart_IN #2369",
+      "num_of_notes": 816,
+      "bpm": 150.0,
+      "md5": "80d40ee3ddee5e40d6ef23efa452af96",
+      "old_filename": "Chart_IN #2369"
+    },
+    {
+      "chart": "Chart_IN #2389",
+      "num_of_notes": 1530,
+      "bpm": 230.0,
+      "md5": "122d1f7ead90a34b8b3d0c41ce2cdb94",
+      "old_filename": "Chart_IN #2389"
+    },
+    {
+      "chart": "Chart_IN #2407",
+      "num_of_notes": 450,
+      "bpm": 175.0,
+      "md5": "7fe7760cb042649b7f2de3c8da3661ab",
+      "old_filename": "Chart_IN #2407"
+    },
+    {
+      "chart": "Chart_IN #2417",
+      "num_of_notes": 885,
+      "bpm": 200.0,
+      "md5": "2c95eea5d8d23cf128e7a736e987b4c3",
+      "old_filename": "Chart_IN #2417"
+    },
+    {
+      "chart": "Chart_IN #2429",
+      "num_of_notes": 901,
+      "bpm": 160.0,
+      "md5": "92e022b9e5b445a7aa467d7991c42204",
+      "old_filename": "Chart_IN #2429"
+    },
+    {
+      "chart": "Chart_IN #2458",
+      "num_of_notes": 811,
+      "bpm": 151.0,
+      "md5": "2f909bce70aa0aaa3f8f32288fc07b1e",
+      "old_filename": "Chart_IN #2458"
+    },
+    {
+      "chart": "Chart_IN #2504",
+      "num_of_notes": 697,
+      "bpm": 127.0,
+      "md5": "8bce6caec9b5d13c1ee849d1d2ddcd42",
+      "old_filename": "Chart_IN #2504"
+    },
+    {
+      "chart": "Chart_IN #2528",
+      "num_of_notes": 1326,
+      "bpm": 196.0,
+      "md5": "7b50770eebd956ef1815b216ef3bb515",
+      "old_filename": "Chart_IN #2528"
+    },
+    {
+      "chart": "Chart_IN #268",
+      "num_of_notes": 888,
+      "bpm": 200.0,
+      "md5": "65ab4ef33b212c183e6935310efca8bb",
+      "old_filename": "Chart_IN #268"
+    },
+    {
+      "chart": "Chart_IN #2558",
+      "num_of_notes": 661,
+      "bpm": 135.0,
+      "md5": "24934857dad03f99d3f74642bbdbb7ab",
+      "old_filename": "Chart_IN #2558"
+    },
+    {
+      "chart": "Chart_IN #279",
+      "num_of_notes": 1178,
+      "bpm": 191.0,
+      "md5": "4c2f77d12ebf7f0badbb050231803fec",
+      "old_filename": "Chart_IN #279"
+    },
+    {
+      "chart": "Chart_IN #281",
+      "num_of_notes": 893,
+      "bpm": 163.0,
+      "md5": "1acfd4f7c745a40f77c432adea23909e",
+      "old_filename": "Chart_IN #281"
+    },
+    {
+      "chart": "Chart_IN #2705",
+      "num_of_notes": 1031,
+      "bpm": 126.0,
+      "md5": "608ae052191dff7fea7fbd3fe0de8dd8",
+      "old_filename": "Chart_IN #2705"
+    },
+    {
+      "chart": "Chart_IN #2730",
+      "num_of_notes": 673,
+      "bpm": 174.0,
+      "md5": "93d69d7308ba350e1221eb3d31b58100",
+      "old_filename": "Chart_IN #2730"
+    },
+    {
+      "chart": "Chart_IN #2741",
+      "num_of_notes": 1305,
+      "bpm": 128.0,
+      "md5": "e8cf7bd21610b7974c37379db87819d9",
+      "old_filename": "Chart_IN #2741"
+    },
+    {
+      "chart": "Chart_IN #288",
+      "num_of_notes": 839,
+      "bpm": 192.0,
+      "md5": "0fbb3bee621b3e62a94261173260d11f",
+      "old_filename": "Chart_IN #288"
+    },
+    {
+      "chart": "Chart_IN #2753",
+      "num_of_notes": 899,
+      "bpm": 190.0,
+      "md5": "30695bdeae33c64dd4fb3cd4e34124c2",
+      "old_filename": "Chart_IN #2753"
+    },
+    {
+      "chart": "Chart_IN #2767",
+      "num_of_notes": 689,
+      "bpm": 140.0,
+      "md5": "df41e4579858546343dcbdd251ab9b63",
+      "old_filename": "Chart_IN #2767"
+    },
+    {
+      "chart": "Chart_IN #2781",
+      "num_of_notes": 581,
+      "bpm": 128.0,
+      "md5": "e0bfd2453657c21ecd9c462db152c1b2",
+      "old_filename": "Chart_IN #2781"
+    },
+    {
+      "chart": "Chart_IN #2787",
+      "num_of_notes": 800,
+      "bpm": 191.0,
+      "md5": "6678785632a886760c89b4950e205205",
+      "old_filename": "Chart_IN #2787"
+    },
+    {
+      "chart": "Chart_IN #2811",
+      "num_of_notes": 1009,
+      "bpm": 190.0,
+      "md5": "8203b879ef42bf91a317cbbd06840c06",
+      "old_filename": "Chart_IN #2811"
+    },
+    {
+      "chart": "Chart_IN #2835",
+      "num_of_notes": 706,
+      "bpm": 131.0,
+      "md5": "ccae287240f8ae917839f3ecbd257a25",
+      "old_filename": "Chart_IN #2835"
+    },
+    {
+      "chart": "Chart_IN #2840",
+      "num_of_notes": 851,
+      "bpm": 175.0,
+      "md5": "a44813229edd927d89860462376bfac4",
+      "old_filename": "Chart_IN #2840"
+    },
+    {
+      "chart": "Chart_IN #2875",
+      "num_of_notes": 1171,
+      "bpm": 210.0,
+      "md5": "89d0f25004b529bc51aea9fd2273f59e",
+      "old_filename": "Chart_IN #2875"
+    },
+    {
+      "chart": "Chart_IN #2965",
+      "num_of_notes": 1358,
+      "bpm": 190.0,
+      "md5": "7f93d820a1d1b3273feb591e14ab685f",
+      "old_filename": "Chart_IN #2965"
+    },
+    {
+      "chart": "Chart_IN #3034",
+      "num_of_notes": 1532,
+      "bpm": 321.321,
+      "md5": "4ddcd5d923007d661911989e79fe8a59",
+      "old_filename": "Chart_IN #3034"
+    },
+    {
+      "chart": "Chart_IN #3060",
+      "num_of_notes": 666,
+      "bpm": 154.0,
+      "md5": "5d0909fa9f3a2caf1d2c9751a6da4d94",
+      "old_filename": "Chart_IN #3060"
+    },
+    {
+      "chart": "Chart_IN #3071",
+      "num_of_notes": 983,
+      "bpm": 185.0,
+      "md5": "0bea30710520a183d5514a528fdaacd8",
+      "old_filename": "Chart_IN #3071"
+    },
+    {
+      "chart": "Chart_IN #3099",
+      "num_of_notes": 576,
+      "bpm": 134.0,
+      "md5": "ce738038e7894590c0a889a838addc07",
+      "old_filename": "Chart_IN #3099"
+    },
+    {
+      "chart": "Chart_IN #3131",
+      "num_of_notes": 660,
+      "bpm": 188.0,
+      "md5": "1ef23afeea8612a9c92aab9782d1f21b",
+      "old_filename": "Chart_IN #3131"
+    },
+    {
+      "chart": "Chart_IN #3150",
+      "num_of_notes": 523,
+      "bpm": 150.0,
+      "md5": "3e007513fceeab7d0aa36bd021d1cfb1",
+      "old_filename": "Chart_IN #3150"
+    },
+    {
+      "chart": "Chart_IN #3178",
+      "num_of_notes": 789,
+      "bpm": 170.0,
+      "md5": "1acab65bba93c59ac530d8fdb36d202b",
+      "old_filename": "Chart_IN #3178"
+    },
+    {
+      "chart": "Chart_IN #3192",
+      "num_of_notes": 440,
+      "bpm": 140.0,
+      "md5": "0a250758fd02fa771225d08cab3cdabc",
+      "old_filename": "Chart_IN #3192"
+    },
+    {
+      "chart": "Chart_IN #3210",
+      "num_of_notes": 999,
+      "bpm": 174.0,
+      "md5": "c93604933fe2973c625a5fc236a90fc5",
+      "old_filename": "Chart_IN #3210"
+    },
+    {
+      "chart": "Chart_IN #3219",
+      "num_of_notes": 774,
+      "bpm": 140.0,
+      "md5": "0f76e326ca7b0c8179cd2fae069d9e8a",
+      "old_filename": "Chart_IN #3219"
+    },
+    {
+      "chart": "Chart_IN #3233",
+      "num_of_notes": 1053,
+      "bpm": 150.0,
+      "md5": "c5fb34d310e13ac436d4729f448d7f27",
+      "old_filename": "Chart_IN #3233"
+    },
+    {
+      "chart": "Chart_IN #339",
+      "num_of_notes": 843,
+      "bpm": 145.0,
+      "md5": "c40d388128e31b6755b3c8695b590de2",
+      "old_filename": "Chart_IN #339"
+    },
+    {
+      "chart": "Chart_IN #3245",
+      "num_of_notes": 1090,
+      "bpm": 176.0,
+      "md5": "2caea09e9ad440b903ccc9b784253e14",
+      "old_filename": "Chart_IN #3245"
+    },
+    {
+      "chart": "Chart_IN #3251",
+      "num_of_notes": 584,
+      "bpm": 175.0,
+      "md5": "f29d3fd54a5aaf503bf9cfae6a6ed98f",
+      "old_filename": "Chart_IN #3251"
+    },
+    {
+      "chart": "Chart_IN #341",
+      "num_of_notes": 564,
+      "bpm": 175.0,
+      "md5": "525793cbb7829f56f7932455de8f88fc",
+      "old_filename": "Chart_IN #341"
+    },
+    {
+      "chart": "Chart_IN #3327",
+      "num_of_notes": 520,
+      "bpm": 222.0,
+      "md5": "07d20b0fc8ee54b7a60f5d883faa4c43",
+      "old_filename": "Chart_IN #3327"
+    },
+    {
+      "chart": "Chart_IN #3350",
+      "num_of_notes": 1084,
+      "bpm": 301.0,
+      "md5": "a437da31d497d8cad70e8c630571ff51",
+      "old_filename": "Chart_IN #3350"
+    },
+    {
+      "chart": "Chart_IN #3352",
+      "num_of_notes": 931,
+      "bpm": 180.0,
+      "md5": "05321aa2b94d3b6f17ddbba825d3db7f",
+      "old_filename": "Chart_IN #3352"
+    },
+    {
+      "chart": "Chart_IN #3380",
+      "num_of_notes": 1018,
+      "bpm": 230.0,
+      "md5": "082ec3ddd4edea91a8a0d825fc9b2978",
+      "old_filename": "Chart_IN #3380"
+    },
+    {
+      "chart": "Chart_IN #3392",
+      "num_of_notes": 707,
+      "bpm": 148.0,
+      "md5": "c83df4dc1bff2aba0bee13b208002846",
+      "old_filename": "Chart_IN #3392"
+    },
+    {
+      "chart": "Chart_IN #353",
+      "num_of_notes": 1235,
+      "bpm": 205.0,
+      "md5": "6736d81a23526033c9da25057b958515",
+      "old_filename": "Chart_IN #353"
+    },
+    {
+      "chart": "Chart_IN #3400",
+      "num_of_notes": 829,
+      "bpm": 192.0,
+      "md5": "0ff16774ecf0d6a2fc89bea8d6fada14",
+      "old_filename": "Chart_IN #3400"
+    },
+    {
+      "chart": "Chart_IN #3430",
+      "num_of_notes": 725,
+      "bpm": 160.0,
+      "md5": "b57bfe95b7d38831986b2a43627e41c0",
+      "old_filename": "Chart_IN #3430"
+    },
+    {
+      "chart": "Chart_IN #3439",
+      "num_of_notes": 662,
+      "bpm": 120.0,
+      "md5": "5145b5f4c35339945580c87fb35a216c",
+      "old_filename": "Chart_IN #3439"
+    },
+    {
+      "chart": "Chart_IN #3441",
+      "num_of_notes": 900,
+      "bpm": 195.0,
+      "md5": "b40c7431eec5c34db2458a7f53346a80",
+      "old_filename": "Chart_IN #3441"
+    },
+    {
+      "chart": "Chart_IN #3450",
+      "num_of_notes": 412,
+      "bpm": 200.0,
+      "md5": "62947a195f52586fdcddbfa945333b6a",
+      "old_filename": "Chart_IN #3450"
+    },
+    {
+      "chart": "Chart_IN #3462",
+      "num_of_notes": 669,
+      "bpm": 155.0,
+      "md5": "1264c1e45a03da0fa0a0d8c36cec3414",
+      "old_filename": "Chart_IN #3462"
+    },
+    {
+      "chart": "Chart_IN #366",
+      "num_of_notes": 1066,
+      "bpm": 209.0,
+      "md5": "e35d8574ed282261bd36ba6fd1c6913b",
+      "old_filename": "Chart_IN #366"
+    },
+    {
+      "chart": "Chart_IN #368",
+      "num_of_notes": 540,
+      "bpm": 128.0,
+      "md5": "27fc2a7a339e2a27a8f087d0163f53dc",
+      "old_filename": "Chart_IN #368"
+    },
+    {
+      "chart": "Chart_IN #374",
+      "num_of_notes": 858,
+      "bpm": 180.0,
+      "md5": "83ce32218d4845fc2cb47c9d3ebaae68",
+      "old_filename": "Chart_IN #374"
+    },
+    {
+      "chart": "Chart_IN #3586",
+      "num_of_notes": 593,
+      "bpm": 120.0,
+      "md5": "8c090a7ab7b0796951b92fc6706d6eda",
+      "old_filename": "Chart_IN #3586"
+    },
+    {
+      "chart": "Chart_IN #3587",
+      "num_of_notes": 861,
+      "bpm": 188.0,
+      "md5": "a11c3edd4de2d8de0c91cf8606f20197",
+      "old_filename": "Chart_IN #3587"
+    },
+    {
+      "chart": "Chart_IN #3600",
+      "num_of_notes": 1240,
+      "bpm": 240.0,
+      "md5": "a1925513dce51553dc034a69f203d239",
+      "old_filename": "Chart_IN #3600"
+    },
+    {
+      "chart": "Chart_IN #3606",
+      "num_of_notes": 830,
+      "bpm": 194.0,
+      "md5": "cca935b42cbb37ff5f0dccdac09c9236",
+      "old_filename": "Chart_IN #3606"
+    },
+    {
+      "chart": "Chart_IN #3657",
+      "num_of_notes": 946,
+      "bpm": 155.0,
+      "md5": "46a171034f062ef7878b2b0902cbeb3a",
+      "old_filename": "Chart_IN #3657"
+    },
+    {
+      "chart": "Chart_IN #3690",
+      "num_of_notes": 407,
+      "bpm": 136.0,
+      "md5": "72429d232a45dde59535356914609d32",
+      "old_filename": "Chart_IN #3690"
+    },
+    {
+      "chart": "Chart_IN #3703",
+      "num_of_notes": 787,
+      "bpm": 132.0,
+      "md5": "c3face43c9676514f3103adafc13ab0f",
+      "old_filename": "Chart_IN #3703"
+    },
+    {
+      "chart": "Chart_IN #3706",
+      "num_of_notes": 918,
+      "bpm": 193.0,
+      "md5": "c6b117ef1061a1afa578f771bae05bcc",
+      "old_filename": "Chart_IN #3706"
+    },
+    {
+      "chart": "Chart_IN #3709",
+      "num_of_notes": 791,
+      "bpm": 150.0,
+      "md5": "506df7396d34174c9546fd58e17d3fc2",
+      "old_filename": "Chart_IN #3709"
+    },
+    {
+      "chart": "Chart_IN #3779",
+      "num_of_notes": 1140,
+      "bpm": 150.0,
+      "md5": "b460831bbcda063ada000cf97348f079",
+      "old_filename": "Chart_IN #3779"
+    },
+    {
+      "chart": "Chart_IN #3781",
+      "num_of_notes": 981,
+      "bpm": 182.0,
+      "md5": "b47317ad16fbfed6b7da80562248ce88",
+      "old_filename": "Chart_IN #3781"
+    },
+    {
+      "chart": "Chart_IN #3795",
+      "num_of_notes": 978,
+      "bpm": 180.0,
+      "md5": "20f54b81e57d77ca46dbb4339f08c362",
+      "old_filename": "Chart_IN #3795"
+    },
+    {
+      "chart": "Chart_IN #394",
+      "num_of_notes": 713,
+      "bpm": 180.0,
+      "md5": "1dcd16f5d8239a8108336a4d0752e95c",
+      "old_filename": "Chart_IN #394"
+    },
+    {
+      "chart": "Chart_IN #3808",
+      "num_of_notes": 1200,
+      "bpm": 203.0,
+      "md5": "0c618af7124e91aae3facaeb6827d4bb",
+      "old_filename": "Chart_IN #3808"
+    },
+    {
+      "chart": "Chart_IN #3819",
+      "num_of_notes": 833,
+      "bpm": 174.59,
+      "md5": "dd75f086982fdbd1b1ba4cd77be7810f",
+      "old_filename": "Chart_IN #3819"
+    },
+    {
+      "chart": "Chart_IN #3837",
+      "num_of_notes": 820,
+      "bpm": 180.0,
+      "md5": "450b4aac7762a6ec3adc103dcbd674ba",
+      "old_filename": "Chart_IN #3837"
+    },
+    {
+      "chart": "Chart_IN #3863",
+      "num_of_notes": 520,
+      "bpm": 120.0,
+      "md5": "2fbce9fca020c0a3ba99145cfc16ab1a",
+      "old_filename": "Chart_IN #3863"
+    },
+    {
+      "chart": "Chart_IN #3959",
+      "num_of_notes": 820,
+      "bpm": 134.0,
+      "md5": "56e9f191c0f1e69dfe7b9e866c9b538e",
+      "old_filename": "Chart_IN #3959"
+    },
+    {
+      "chart": "Chart_IN #3962",
+      "num_of_notes": 873,
+      "bpm": 190.0,
+      "md5": "77c1347e7899ced658d78a3431a7760f",
+      "old_filename": "Chart_IN #3962"
+    },
+    {
+      "chart": "Chart_IN #3974",
+      "num_of_notes": 732,
+      "bpm": 175.0,
+      "md5": "44424b473d4451dd1a198ce9b3e114bd",
+      "old_filename": "Chart_IN #3974"
+    },
+    {
+      "chart": "Chart_IN #4010",
+      "num_of_notes": 2222,
+      "bpm": 219.0,
+      "md5": "6db1882ec1b0a4c873fdc1e1589b8f5d",
+      "old_filename": "Chart_IN #4010"
+    },
+    {
+      "chart": "Chart_IN #4014",
+      "num_of_notes": 708,
+      "bpm": 128.0,
+      "md5": "1c10ff8bf39281480d0b8f2946fed532",
+      "old_filename": "Chart_IN #4014"
+    },
+    {
+      "chart": "Chart_IN #4019",
+      "num_of_notes": 1262,
+      "bpm": 174.0,
+      "md5": "4c4517953172edc8e1681fd906216a35",
+      "old_filename": "Chart_IN #4019"
+    },
+    {
+      "chart": "Chart_IN #4020",
+      "num_of_notes": 908,
+      "bpm": 150.0,
+      "md5": "2aa8d573602bdf5c67a715d603b80a5e",
+      "old_filename": "Chart_IN #4020"
+    },
+    {
+      "chart": "Chart_IN #416",
+      "num_of_notes": 554,
+      "bpm": 180.0,
+      "md5": "4c6d564db4c41b6950a8ad1684130aa5",
+      "old_filename": "Chart_IN #416"
+    },
+    {
+      "chart": "Chart_IN #4026",
+      "num_of_notes": 613,
+      "bpm": 128.0,
+      "md5": "76fde38015f3059733fcb0797366c441",
+      "old_filename": "Chart_IN #4026"
+    },
+    {
+      "chart": "Chart_IN #417",
+      "num_of_notes": 866,
+      "bpm": 180.0,
+      "md5": "b6f66b6e698c53d42f0b6596d9b5881b",
+      "old_filename": "Chart_IN #417"
+    },
+    {
+      "chart": "Chart_IN #4038",
+      "num_of_notes": 1454,
+      "bpm": 197.0,
+      "md5": "cd6c616fc1349db5c0db19ea7e316a88",
+      "old_filename": "Chart_IN #4038"
+    },
+    {
+      "chart": "Chart_IN #4041",
+      "num_of_notes": 935,
+      "bpm": 160.0,
+      "md5": "adc9c37ba5e72721500673c648f800ef",
+      "old_filename": "Chart_IN #4041"
+    },
+    {
+      "chart": "Chart_IN #4065",
+      "num_of_notes": 711,
+      "bpm": 177.0,
+      "md5": "1863d3dad989a5a214056fbca3b3c781",
+      "old_filename": "Chart_IN #4065"
+    },
+    {
+      "chart": "Chart_IN #4090",
+      "num_of_notes": 885,
+      "bpm": 250.0,
+      "md5": "1b2d24cadcfc7470a025bfb61bec87c3",
+      "old_filename": "Chart_IN #4090"
+    },
+    {
+      "chart": "Chart_IN #427",
+      "num_of_notes": 750,
+      "bpm": 160.0,
+      "md5": "e7c45864ea62b1193e534f7dc7a49b9f",
+      "old_filename": "Chart_IN #427"
+    },
+    {
+      "chart": "Chart_IN #4146",
+      "num_of_notes": 827,
+      "bpm": 150.0,
+      "md5": "333226d2a667cc6f79fccd92ae830d35",
+      "old_filename": "Chart_IN #4146"
+    },
+    {
+      "chart": "Chart_IN #4180",
+      "num_of_notes": 1156,
+      "bpm": 170.0,
+      "md5": "b7c8225b166fdab9a53745e8796db1ff",
+      "old_filename": "Chart_IN #4180"
+    },
+    {
+      "chart": "Chart_IN #4233",
+      "num_of_notes": 588,
+      "bpm": 128.0,
+      "md5": "a775baf27a38e689158d610cbd786365",
+      "old_filename": "Chart_IN #4233"
+    },
+    {
+      "chart": "Chart_IN #4239",
+      "num_of_notes": 1305,
+      "bpm": 200.0,
+      "md5": "bde4873b34b8995319f2d2e60fa24a53",
+      "old_filename": "Chart_IN #4239"
+    },
+    {
+      "chart": "Chart_IN #4247",
+      "num_of_notes": 977,
+      "bpm": 200.0,
+      "md5": "71bee280b27693427f021ecb3799744d",
+      "old_filename": "Chart_IN #4247"
+    },
+    {
+      "chart": "Chart_IN #4320",
+      "num_of_notes": 1500,
+      "bpm": 180.0,
+      "md5": "8932cf8c537f10f1ef3f4cff59e1fec6",
+      "old_filename": "Chart_IN #4320"
+    },
+    {
+      "chart": "Chart_IN #4342",
+      "num_of_notes": 520,
+      "bpm": 140.0,
+      "md5": "e6d3f6d07e0cab6c9f772cc419a0c80b",
+      "old_filename": "Chart_IN #4342"
+    },
+    {
+      "chart": "Chart_IN #4367",
+      "num_of_notes": 650,
+      "bpm": 141.0,
+      "md5": "5d56f2f657049f57b0db9bd70958d98d",
+      "old_filename": "Chart_IN #4367"
+    },
+    {
+      "chart": "Chart_IN #4368",
+      "num_of_notes": 996,
+      "bpm": 140.0,
+      "md5": "e8f5137f6c327e76bf6461e745e6807a",
+      "old_filename": "Chart_IN #4368"
+    },
+    {
+      "chart": "Chart_IN #4402",
+      "num_of_notes": 676,
+      "bpm": 220.0,
+      "md5": "4f351cbc740f7bcf2986bf3941ff98c5",
+      "old_filename": "Chart_IN #4402"
+    },
+    {
+      "chart": "Chart_IN #4403",
+      "num_of_notes": 1000,
+      "bpm": 190.0,
+      "md5": "e44e3584b5a55be65a8ac0448a281e69",
+      "old_filename": "Chart_IN #4403"
+    },
+    {
+      "chart": "Chart_IN #4419",
+      "num_of_notes": 963,
+      "bpm": 170.0,
+      "md5": "1487217e6292c53aaedd00df9c9b245e",
+      "old_filename": "Chart_IN #4419"
+    },
+    {
+      "chart": "Chart_IN #4428",
+      "num_of_notes": 649,
+      "bpm": 172.0,
+      "md5": "0b4a1fa0411dddd80c08cf1bfae28f9e",
+      "old_filename": "Chart_IN #4428"
+    },
+    {
+      "chart": "Chart_IN #4443",
+      "num_of_notes": 1020,
+      "bpm": 202.0,
+      "md5": "17ba720b967606e73e5b04d6372b64f4",
+      "old_filename": "Chart_IN #4443"
+    },
+    {
+      "chart": "Chart_IN #4514",
+      "num_of_notes": 774,
+      "bpm": 170.0,
+      "md5": "4494f5a875fe9b7af7c5de0d958024b5",
+      "old_filename": "Chart_IN #4514"
+    },
+    {
+      "chart": "Chart_IN #4515",
+      "num_of_notes": 1449,
+      "bpm": 210.0,
+      "md5": "8d209bfbc3367472886463281535b37f",
+      "old_filename": "Chart_IN #4515"
+    },
+    {
+      "chart": "Chart_IN #4519",
+      "num_of_notes": 1029,
+      "bpm": 160.0,
+      "md5": "2bce6d7c27e251815a4f9a5502a42c96",
+      "old_filename": "Chart_IN #4519"
+    },
+    {
+      "chart": "Chart_IN #4523",
+      "num_of_notes": 742,
+      "bpm": 132.0,
+      "md5": "f8fd0235c6da0143b2053f9cff28e483",
+      "old_filename": "Chart_IN #4523"
+    },
+    {
+      "chart": "Chart_IN #465",
+      "num_of_notes": 852,
+      "bpm": 200.0,
+      "md5": "a2eb1364acd344db65ff62328fc4622c",
+      "old_filename": "Chart_IN #465"
+    },
+    {
+      "chart": "Chart_IN #4537",
+      "num_of_notes": 1066,
+      "bpm": 174.0,
+      "md5": "7a98876996402108db5a11a58e6d5cfb",
+      "old_filename": "Chart_IN #4537"
+    },
+    {
+      "chart": "Chart_IN #4538",
+      "num_of_notes": 800,
+      "bpm": 170.0,
+      "md5": "799b35311420b57f3b6dc613d43962c7",
+      "old_filename": "Chart_IN #4538"
+    },
+    {
+      "chart": "Chart_IN #4544",
+      "num_of_notes": 613,
+      "bpm": 180.0,
+      "md5": "ac697a18d9fdf3df0da31ab1016122ed",
+      "old_filename": "Chart_IN #4544"
+    },
+    {
+      "chart": "Chart_IN #4563",
+      "num_of_notes": 1449,
+      "bpm": 150.0,
+      "md5": "0e8ff64e65bf35382e30f980b5eec041",
+      "old_filename": "Chart_IN #4563"
+    },
+    {
+      "chart": "Chart_IN #4588",
+      "num_of_notes": 836,
+      "bpm": 191.0,
+      "md5": "738800196336c194f3596d9d9fdc44e1",
+      "old_filename": "Chart_IN #4588"
+    },
+    {
+      "chart": "Chart_IN #4597",
+      "num_of_notes": 897,
+      "bpm": 150.0,
+      "md5": "029bb51791905fdac6972d81dc398054",
+      "old_filename": "Chart_IN #4597"
+    },
+    {
+      "chart": "Chart_IN #4648",
+      "num_of_notes": 1034,
+      "bpm": 222.0,
+      "md5": "82fbf9ef6b52f2019ba4f35281cf8f10",
+      "old_filename": "Chart_IN #4648"
+    },
+    {
+      "chart": "Chart_IN #4672",
+      "num_of_notes": 1063,
+      "bpm": 172.0,
+      "md5": "92855c86f4dd2555586b47155c039953",
+      "old_filename": "Chart_IN #4672"
+    },
+    {
+      "chart": "Chart_IN #4712",
+      "num_of_notes": 732,
+      "bpm": 132.0,
+      "md5": "660125b774d9ea784df2ec20bfc680ce",
+      "old_filename": "Chart_IN #4712"
+    },
+    {
+      "chart": "Chart_IN #491",
+      "num_of_notes": 745,
+      "bpm": 175.0,
+      "md5": "c8437fcade41cfa350f1a48666e12b6f",
+      "old_filename": "Chart_IN #491"
+    },
+    {
+      "chart": "Chart_IN #501",
+      "num_of_notes": 433,
+      "bpm": 186.0,
+      "md5": "4b8d3e7fdf92f5ac6afeebb5fed36064",
+      "old_filename": "Chart_IN #501"
+    },
+    {
+      "chart": "Chart_IN #4842",
+      "num_of_notes": 689,
+      "bpm": 180.0,
+      "md5": "bd2492ff2a7cc203178d4f48798813ec",
+      "old_filename": "Chart_IN #4842"
+    },
+    {
+      "chart": "Chart_IN #4844",
+      "num_of_notes": 700,
+      "bpm": 140.0,
+      "md5": "8cd27ee2ba13ec4c1fba401b2ef3abd7",
+      "old_filename": "Chart_IN #4844"
+    },
+    {
+      "chart": "Chart_IN #4857",
+      "num_of_notes": 795,
+      "bpm": 158.0,
+      "md5": "aeb9d9f289d862f31e3f486bc725f4b5",
+      "old_filename": "Chart_IN #4857"
+    },
+    {
+      "chart": "Chart_IN #4858",
+      "num_of_notes": 913,
+      "bpm": 125.0,
+      "md5": "27a7b66d6f8aa895c7107a1d619c9a2a",
+      "old_filename": "Chart_IN #4858"
+    },
+    {
+      "chart": "Chart_IN #4901",
+      "num_of_notes": 1210,
+      "bpm": 140.0,
+      "md5": "c688d8b9d351cd51821fd636220f83a9",
+      "old_filename": "Chart_IN #4901"
+    },
+    {
+      "chart": "Chart_IN #4959",
+      "num_of_notes": 553,
+      "bpm": 128.0,
+      "md5": "7fd43a08a76289ec43c7f4e1e8392f9b",
+      "old_filename": "Chart_IN #4959"
+    },
+    {
+      "chart": "Chart_IN #5051",
+      "num_of_notes": 898,
+      "bpm": 180.0,
+      "md5": "0f74c6dedb04258d4db909407418b105",
+      "old_filename": "Chart_IN #5051"
+    },
+    {
+      "chart": "Chart_IN #5080",
+      "num_of_notes": 1137,
+      "bpm": 280.0,
+      "md5": "5ebad14dd77597069435c03a9b8dee92",
+      "old_filename": "Chart_IN #5080"
+    },
+    {
+      "chart": "Chart_IN #5082",
+      "num_of_notes": 676,
+      "bpm": 160.0,
+      "md5": "c086e80ccc16a7faa63db6071ae34346",
+      "old_filename": "Chart_IN #5082"
+    },
+    {
+      "chart": "Chart_IN #5087",
+      "num_of_notes": 1065,
+      "bpm": 227.0,
+      "md5": "c8990d0bd298107cc43b855c4922dabb",
+      "old_filename": "Chart_IN #5087"
+    },
+    {
+      "chart": "Chart_IN #5127",
+      "num_of_notes": 844,
+      "bpm": 170.0,
+      "md5": "5f7dd1e25b4f873683434ec40237801e",
+      "old_filename": "Chart_IN #5127"
+    },
+    {
+      "chart": "Chart_IN #5143",
+      "num_of_notes": 959,
+      "bpm": 155.0,
+      "md5": "0c4eead5487d029e7bb2df08220052aa",
+      "old_filename": "Chart_IN #5143"
+    },
+    {
+      "chart": "Chart_IN #5161",
+      "num_of_notes": 365,
+      "bpm": 126.0,
+      "md5": "8cb6c5c63dc8a997bde62210cbf85438",
+      "old_filename": "Chart_IN #5161"
+    },
+    {
+      "chart": "Chart_IN #537",
+      "num_of_notes": 865,
+      "bpm": 188.0,
+      "md5": "cd12554c056e72fcc977738fc7f6a12a",
+      "old_filename": "Chart_IN #537"
+    },
+    {
+      "chart": "Chart_IN #5221",
+      "num_of_notes": 1150,
+      "bpm": 190.0,
+      "md5": "50fd7b575cdd22cab2a121b47ba06e9a",
+      "old_filename": "Chart_IN #5221"
+    },
+    {
+      "chart": "Chart_IN #5229",
+      "num_of_notes": 684,
+      "bpm": 150.0,
+      "md5": "75d93be9f8e6ac56892dbd9214e9d819",
+      "old_filename": "Chart_IN #5229"
+    },
+    {
+      "chart": "Chart_IN #5231",
+      "num_of_notes": 844,
+      "bpm": 223.0,
+      "md5": "afec08295b55366812d8533747b14e12",
+      "old_filename": "Chart_IN #5231"
+    },
+    {
+      "chart": "Chart_IN #5233",
+      "num_of_notes": 1000,
+      "bpm": 128.0,
+      "md5": "e736521695003cffd2c37d1159d07019",
+      "old_filename": "Chart_IN #5233"
+    },
+    {
+      "chart": "Chart_IN #5248",
+      "num_of_notes": 724,
+      "bpm": 120.0,
+      "md5": "81aeb2691aae483e68f217c5fd7ad386",
+      "old_filename": "Chart_IN #5248"
+    },
+    {
+      "chart": "Chart_IN #5257",
+      "num_of_notes": 768,
+      "bpm": 192.0,
+      "md5": "151b72a6c1aec73a5bc487e5b18fc4a3",
+      "old_filename": "Chart_IN #5257"
+    },
+    {
+      "chart": "Chart_IN #5259",
+      "num_of_notes": 941,
+      "bpm": 150.0,
+      "md5": "1c5473ca1636470dac68b7aedeb078da",
+      "old_filename": "Chart_IN #5259"
+    },
+    {
+      "chart": "Chart_IN #5260",
+      "num_of_notes": 535,
+      "bpm": 179.0,
+      "md5": "01fe7fa268a850e6b753ce282136c742",
+      "old_filename": "Chart_IN #5260"
+    },
+    {
+      "chart": "Chart_IN #5341",
+      "num_of_notes": 840,
+      "bpm": 131.0,
+      "md5": "f80fbc08e5199a0428373c07f5079ced",
+      "old_filename": "Chart_IN #5341"
+    },
+    {
+      "chart": "Chart_IN #5357",
+      "num_of_notes": 992,
+      "bpm": 227.0,
+      "md5": "c0ee1175ad6148f17b92152714305c6a",
+      "old_filename": "Chart_IN #5357"
+    },
+    {
+      "chart": "Chart_IN #5668",
+      "num_of_notes": 969,
+      "bpm": 175.0,
+      "md5": "8f01391ba52b95b5eb85e684b38747dc",
+      "old_filename": "Chart_IN #5668"
+    },
+    {
+      "chart": "Chart_IN #5745",
+      "num_of_notes": 459,
+      "bpm": 130.0,
+      "md5": "51021042e1b888e3c06bca60efa45e74",
+      "old_filename": "Chart_IN #5745"
+    },
+    {
+      "chart": "Chart_IN #5750",
+      "num_of_notes": 729,
+      "bpm": 140.0,
+      "md5": "747ff6e209f497b449ca4d5bdf741573",
+      "old_filename": "Chart_IN #5750"
+    },
+    {
+      "chart": "Chart_IN #5757",
+      "num_of_notes": 1149,
+      "bpm": 192.0,
+      "md5": "6ad3eddf1cbb2f18bd869ab50359bec9",
+      "old_filename": "Chart_IN #5757"
+    },
+    {
+      "chart": "Chart_IN #5806",
+      "num_of_notes": 1028,
+      "bpm": 175.0,
+      "md5": "4dd1431bb73b490269985dfe99d5ba95",
+      "old_filename": "Chart_IN #5806"
+    },
+    {
+      "chart": "Chart_IN #5843",
+      "num_of_notes": 711,
+      "bpm": 145.0,
+      "md5": "8239686f5313a3574e5b3c6c9b356851",
+      "old_filename": "Chart_IN #5843"
+    },
+    {
+      "chart": "Chart_IN #5886",
+      "num_of_notes": 954,
+      "bpm": 132.0,
+      "md5": "e8454a759f817759f2d0d7abe1b15182",
+      "old_filename": "Chart_IN #5886"
+    },
+    {
+      "chart": "Chart_IN #5888",
+      "num_of_notes": 745,
+      "bpm": 132.0,
+      "md5": "425e741380d1249f4386ea15069a12f7",
+      "old_filename": "Chart_IN #5888"
+    },
+    {
+      "chart": "Chart_IN #5890",
+      "num_of_notes": 481,
+      "bpm": 128.0,
+      "md5": "4d9653316cfe13860ed6baefda235b32",
+      "old_filename": "Chart_IN #5890"
+    },
+    {
+      "chart": "Chart_IN #5893",
+      "num_of_notes": 346,
+      "bpm": 128.0,
+      "md5": "d8d4fdc9dbf3b65688b5fb1deed64f34",
+      "old_filename": "Chart_IN #5893"
+    },
+    {
+      "chart": "Chart_IN #5923",
+      "num_of_notes": 1102,
+      "bpm": 216.0,
+      "md5": "834955cc7ae362b4afad1cda520172ab",
+      "old_filename": "Chart_IN #5923"
+    },
+    {
+      "chart": "Chart_IN #5931",
+      "num_of_notes": 1041,
+      "bpm": 179.0,
+      "md5": "f1e8b10ca6895e15bb533965ad5d220c",
+      "old_filename": "Chart_IN #5931"
+    },
+    {
+      "chart": "Chart_IN #5957",
+      "num_of_notes": 734,
+      "bpm": 132.0,
+      "md5": "b0604a91ef162596af00a380007beb03",
+      "old_filename": "Chart_IN #5957"
+    },
+    {
+      "chart": "Chart_IN #5968",
+      "num_of_notes": 776,
+      "bpm": 180.0,
+      "md5": "d7af89d2b99a0dd44985e9cf726d0497",
+      "old_filename": "Chart_IN #5968"
+    },
+    {
+      "chart": "Chart_IN #5992",
+      "num_of_notes": 562,
+      "bpm": 150.0,
+      "md5": "b5be576f52e62fb8b51691066a6328cf",
+      "old_filename": "Chart_IN #5992"
+    },
+    {
+      "chart": "Chart_IN #691",
+      "num_of_notes": 1389,
+      "bpm": 200.0,
+      "md5": "74d2927ed68eabf1b1d3f6c9af89f53b",
+      "old_filename": "Chart_IN #691"
+    },
+    {
+      "chart": "Chart_IN #699",
+      "num_of_notes": 972,
+      "bpm": 180.0,
+      "md5": "4f5d5397c0fd268d0ae31472c6e7770c",
+      "old_filename": "Chart_IN #699"
+    },
+    {
+      "chart": "Chart_IN #723",
+      "num_of_notes": 1304,
+      "bpm": 180.0,
+      "md5": "222d1c5db3e877ab8189adb3318d957a",
+      "old_filename": "Chart_IN #723"
+    },
+    {
+      "chart": "Chart_IN #766",
+      "num_of_notes": 733,
+      "bpm": 104.0,
+      "md5": "5f50a0d33637bb7de598f5cbf39a05c9",
+      "old_filename": "Chart_IN #766"
+    },
+    {
+      "chart": "Chart_IN #788",
+      "num_of_notes": 978,
+      "bpm": 197.0,
+      "md5": "a9e7ba9dd910be9472a59b148e1d1b30",
+      "old_filename": "Chart_IN #788"
+    },
+    {
+      "chart": "Chart_IN #792",
+      "num_of_notes": 819,
+      "bpm": 142.0,
+      "md5": "adab6759cb6a13dbf4dea19d00f1ec14",
+      "old_filename": "Chart_IN #792"
+    },
+    {
+      "chart": "Chart_IN #796",
+      "num_of_notes": 987,
+      "bpm": 184.0,
+      "md5": "f85f576ab125d1d5c79a85c115420e5e",
+      "old_filename": "Chart_IN #796"
+    },
+    {
+      "chart": "Chart_IN #835",
+      "num_of_notes": 921,
+      "bpm": 140.0,
+      "md5": "ea0ac8f27727b87d678fc15eaf0f957b",
+      "old_filename": "Chart_IN #835"
+    },
+    {
+      "chart": "Chart_IN #862",
+      "num_of_notes": 1339,
+      "bpm": 175.0,
+      "md5": "21ffbbcc41b4aa6e4820157340817190",
+      "old_filename": "Chart_IN #862"
+    },
+    {
+      "chart": "Chart_IN #863",
+      "num_of_notes": 1194,
+      "bpm": 145.0,
+      "md5": "bcdef7f2d7bb170fe69585e03cf90bae",
+      "old_filename": "Chart_IN #863"
+    },
+    {
+      "chart": "Chart_IN #865",
+      "num_of_notes": 895,
+      "bpm": 174.0,
+      "md5": "480ced3f57df43032a82d51312f4e7af",
+      "old_filename": "Chart_IN #865"
+    },
+    {
+      "chart": "Chart_IN #868",
+      "num_of_notes": 755,
+      "bpm": 145.0,
+      "md5": "c88c1813af125520163fa9df0b90244a",
+      "old_filename": "Chart_IN #868"
+    },
+    {
+      "chart": "Chart_IN #870",
+      "num_of_notes": 577,
+      "bpm": 170.0,
+      "md5": "918fc575bb0ca67f41c4d30fcd00ac07",
+      "old_filename": "Chart_IN #870"
+    },
+    {
+      "chart": "Chart_IN #900",
+      "num_of_notes": 1333,
+      "bpm": 213.0,
+      "md5": "11c209921535956a6c3da05745427741",
+      "old_filename": "Chart_IN #900"
+    },
+    {
+      "chart": "Chart_IN #923",
+      "num_of_notes": 485,
+      "bpm": 155.0,
+      "md5": "43041115a4cd2f996a2c48ce45615b9d",
+      "old_filename": "Chart_IN #923"
+    },
+    {
+      "chart": "Chart_IN #928",
+      "num_of_notes": 735,
+      "bpm": 130.0,
+      "md5": "37585da8fbfbb517ebc341328a6aa659",
+      "old_filename": "Chart_IN #928"
+    },
+    {
+      "chart": "Chart_IN #92",
+      "num_of_notes": 777,
+      "bpm": 160.0,
+      "md5": "88ca621c0f0b92f7b97404b7e8732fce",
+      "old_filename": "Chart_IN #92"
+    },
+    {
+      "chart": "Chart_IN #986",
+      "num_of_notes": 804,
+      "bpm": 150.0,
+      "md5": "a86991ca054b54848a6185bc73bb8a1d",
+      "old_filename": "Chart_IN #986"
+    },
+    {
+      "chart": "Chart_IN_Error",
+      "num_of_notes": 1069,
+      "bpm": 209.0,
+      "md5": "00cc9a5b671cd4860dc0f8b9610fd988",
+      "old_filename": "Chart_IN_Error"
+    },
+    {
+      "chart": "Chart_IN #1524",
+      "num_of_notes": 935,
+      "bpm": 180.0,
+      "md5": "3889205e1824ca22cc00a22d0a29d853",
+      "old_filename": "Chart_IN #1524"
+    },
+    {
+      "chart": "Chart_IN #1572",
+      "num_of_notes": 793,
+      "bpm": 167.0,
+      "md5": "28007d394dfae0a7fd69a27bac6f05d2",
+      "old_filename": "Chart_IN #1572"
+    },
+    {
+      "chart": "Chart_IN #2047",
+      "num_of_notes": 696,
+      "bpm": 170.0,
+      "md5": "c8748efdd59cb6172f570c9de44e969d",
+      "old_filename": "Chart_IN #2047"
+    },
+    {
+      "chart": "Chart_IN #2509",
+      "num_of_notes": 835,
+      "bpm": 150.0,
+      "md5": "baae141281165a34a099e68f66aec412",
+      "old_filename": "Chart_IN #2509"
+    },
+    {
+      "chart": "Chart_IN #2525",
+      "num_of_notes": 874,
+      "bpm": 180.0,
+      "md5": "2b90de855a783531c9430256a4e92453",
+      "old_filename": "Chart_IN #2525"
+    },
+    {
+      "chart": "Chart_IN #3021",
+      "num_of_notes": 1353,
+      "bpm": 160.0,
+      "md5": "50a39c5038ac7ffaf4b6f23649dd40ad",
+      "old_filename": "Chart_IN #3021"
+    },
+    {
+      "chart": "Chart_IN #3044",
+      "num_of_notes": 1238,
+      "bpm": 220.0,
+      "md5": "eb1a4ead286f726a6c5afef70c6ed2d1",
+      "old_filename": "Chart_IN #3044"
+    },
+    {
+      "chart": "Chart_IN #3268",
+      "num_of_notes": 698,
+      "bpm": 188.0,
+      "md5": "15c9e1bcd40f8f49e39aca20d002613d",
+      "old_filename": "Chart_IN #3268"
+    },
+    {
+      "chart": "Chart_IN #3334",
+      "num_of_notes": 857,
+      "bpm": 160.0,
+      "md5": "4c6bfc2a3954d7043ba884cc50e3e0cd",
+      "old_filename": "Chart_IN #3334"
+    },
+    {
+      "chart": "Chart_IN #4267",
+      "num_of_notes": 1083,
+      "bpm": 175.0,
+      "md5": "805fd764d020346cc18473e616fed113",
+      "old_filename": "Chart_IN #4267"
+    },
+    {
+      "chart": "Chart_IN #4590",
+      "num_of_notes": 1257,
+      "bpm": 198.0,
+      "md5": "e0b39820dc615d44985bd518a36270c7",
+      "old_filename": "Chart_IN #4590"
+    },
+    {
+      "chart": "Chart_IN #4932",
+      "num_of_notes": 1197,
+      "bpm": 205.0,
+      "md5": "8d7f54e1fd87591681eed76ddbc25f6f",
+      "old_filename": "Chart_IN #4932"
+    },
+    {
+      "chart": "Chart_IN #5809",
+      "num_of_notes": 1080,
+      "bpm": 161.0,
+      "md5": "e92138b9f5d245561b890f497b40549b",
+      "old_filename": "Chart_IN #5809"
+    }
+  ],
+  "AT": [
+    {
+      "chart": "Chart_AT",
+      "num_of_notes": 1444,
+      "bpm": 213.0,
+      "md5": "588c4e008062e5f0b3e0c4a961ced97c",
+      "old_filename": "Chart_AT"
+    },
+    {
+      "chart": "Chart_AT #1298",
+      "num_of_notes": 1579,
+      "bpm": 230.0,
+      "md5": "0b98378b937d11c1b5d54924ac592235",
+      "old_filename": "Chart_AT #1298"
+    },
+    {
+      "chart": "Chart_AT #1418",
+      "num_of_notes": 1377,
+      "bpm": 212.0,
+      "md5": "712399d4bf3cf9df0dbda5a5b7e4978b",
+      "old_filename": "Chart_AT #1418"
+    },
+    {
+      "chart": "Chart_AT",
+      "num_of_notes": 2330,
+      "bpm": 321.321,
+      "md5": "916e21dafc9dc35041b3e88a743ea06b",
+      "old_filename": "Chart_AT"
+    },
+    {
+      "chart": "Chart_AT #1571",
+      "num_of_notes": 377,
+      "bpm": 128.0,
+      "md5": "eb7ddd29e152bd0168941ab8927e7fa4",
+      "old_filename": "Chart_AT #1571"
+    },
+    {
+      "chart": "Chart_AT #1600",
+      "num_of_notes": 824,
+      "bpm": 134.0,
+      "md5": "ad3e12faf9f8597edcc83e7e019a5b06",
+      "old_filename": "Chart_AT #1600"
+    },
+    {
+      "chart": "Chart_AT #1772",
+      "num_of_notes": 1207,
+      "bpm": 223.0,
+      "md5": "e98d3ba1a04f3a4c92822d2293e6c536",
+      "old_filename": "Chart_AT #1772"
+    },
+    {
+      "chart": "Chart_AT #1876",
+      "num_of_notes": 1283,
+      "bpm": 150.0,
+      "md5": "94b6d8219ad24ad06b460a3d9eeda19d",
+      "old_filename": "Chart_AT #1876"
+    },
+    {
+      "chart": "Chart_AT #1910",
+      "num_of_notes": 720,
+      "bpm": 200.0,
+      "md5": "5645a6b00d2ff25dfeb5cde1b183a826",
+      "old_filename": "Chart_AT #1910"
+    },
+    {
+      "chart": "Chart_AT #2126",
+      "num_of_notes": 1344,
+      "bpm": 280.0,
+      "md5": "e0fe5a2ffaa75fac4568f9c13e2f3877",
+      "old_filename": "Chart_AT #2126"
+    },
+    {
+      "chart": "Chart_AT #2228",
+      "num_of_notes": 1671,
+      "bpm": 200.0,
+      "md5": "43cdd241c56beabdbce071022c7da564",
+      "old_filename": "Chart_AT #2228"
+    },
+    {
+      "chart": "Chart_AT #2494",
+      "num_of_notes": 1325,
+      "bpm": 230.0,
+      "md5": "7eb44614eabe651eb04c02d45acfd20c",
+      "old_filename": "Chart_AT #2494"
+    },
+    {
+      "chart": "Chart_AT #3444",
+      "num_of_notes": 2222,
+      "bpm": 219.0,
+      "md5": "78218a69313189ad1adc591b91055673",
+      "old_filename": "Chart_AT #3444"
+    },
+    {
+      "chart": "Chart_AT #3746",
+      "num_of_notes": 1156,
+      "bpm": 174.0,
+      "md5": "1eb8d24cb50aa94cbd611813d2e3ba0c",
+      "old_filename": "Chart_AT #3746"
+    },
+    {
+      "chart": "Chart_AT #3813",
+      "num_of_notes": 1236,
+      "bpm": 170.0,
+      "md5": "4c39c3c8a2b189dbfc406182731b6678",
+      "old_filename": "Chart_AT #3813"
+    },
+    {
+      "chart": "Chart_AT #4167",
+      "num_of_notes": 638,
+      "bpm": 179.0,
+      "md5": "f536dbafd2565ffca24fd8e4c9060d62",
+      "old_filename": "Chart_AT #4167"
+    },
+    {
+      "chart": "Chart_AT #4200",
+      "num_of_notes": 1344,
+      "bpm": 163.0,
+      "md5": "9698bfbbb3c92543408fdea070ccf025",
+      "old_filename": "Chart_AT #4200"
+    },
+    {
+      "chart": "Chart_AT #4360",
+      "num_of_notes": 1098,
+      "bpm": 150.0,
+      "md5": "707a310d80b56d0e90433576609b8ef8",
+      "old_filename": "Chart_AT #4360"
+    },
+    {
+      "chart": "Chart_AT #4381",
+      "num_of_notes": 1236,
+      "bpm": 177.0,
+      "md5": "bb5f63d8af3cc963fb8671ebb46ebba2",
+      "old_filename": "Chart_AT #4381"
+    },
+    {
+      "chart": "Chart_AT #4471",
+      "num_of_notes": 938,
+      "bpm": 180.0,
+      "md5": "6f40fd2c9d58f1e89d616fe400eb9c57",
+      "old_filename": "Chart_AT #4471"
+    },
+    {
+      "chart": "Chart_AT #4706",
+      "num_of_notes": 570,
+      "bpm": 185.0,
+      "md5": "55f2739f269c0585155c051781775f9a",
+      "old_filename": "Chart_AT #4706"
+    },
+    {
+      "chart": "Chart_AT #4874",
+      "num_of_notes": 1300,
+      "bpm": 190.0,
+      "md5": "6542afdee34f2fa86ca62af81fddd960",
+      "old_filename": "Chart_AT #4874"
+    },
+    {
+      "chart": "Chart_AT #4917",
+      "num_of_notes": 1650,
+      "bpm": 191.0,
+      "md5": "25eb2ef11d8d4c15dec4eae4cfbe60fd",
+      "old_filename": "Chart_AT #4917"
+    },
+    {
+      "chart": "Chart_AT #4957",
+      "num_of_notes": 888,
+      "bpm": 180.0,
+      "md5": "572a57d2de7a76b38e52f3fdb678634a",
+      "old_filename": "Chart_AT #4957"
+    },
+    {
+      "chart": "Chart_AT #5313",
+      "num_of_notes": 1089,
+      "bpm": 172.0,
+      "md5": "3bf70e559e70cc26af394b4e0393f390",
+      "old_filename": "Chart_AT #5313"
+    },
+    {
+      "chart": "Chart_AT #5665",
+      "num_of_notes": 1088,
+      "bpm": 194.0,
+      "md5": "176d1319fed5e7f5faaf2519da24578a",
+      "old_filename": "Chart_AT #5665"
+    },
+    {
+      "chart": "Chart_AT #5764",
+      "num_of_notes": 1700,
+      "bpm": 180.0,
+      "md5": "d3705fe7daa0d9eeceb10820c5b2b08d",
+      "old_filename": "Chart_AT #5764"
+    },
+    {
+      "chart": "Chart_AT #5771",
+      "num_of_notes": 1114,
+      "bpm": 230.0,
+      "md5": "f6df141531c9d278f8799398f8678727",
+      "old_filename": "Chart_AT #5771"
+    },
+    {
+      "chart": "Chart_AT #821",
+      "num_of_notes": 1200,
+      "bpm": 172.0,
+      "md5": "918addb5a520382b4a76576a4ff9d784",
+      "old_filename": "Chart_AT #821"
+    },
+    {
+      "chart": "Chart_AT #351",
+      "num_of_notes": 1444,
+      "bpm": 213.0,
+      "md5": "8a790869c26393481b95efa32ec9cb67",
+      "old_filename": "Chart_AT #351"
+    },
+    {
+      "chart": "Chart_AT #841",
+      "num_of_notes": 1145,
+      "bpm": 161.0,
+      "md5": "d7e58bf9150a951575b5c98d92cc22ce",
+      "old_filename": "Chart_AT #841"
+    }
+  ],
+  "Legacy": [
+    {
+      "chart": "Chart_Legacy",
+      "num_of_notes": 615,
+      "bpm": 160.0,
+      "md5": "c112f5e6477856d3b14893f0d86128b7",
+      "old_filename": "Chart_Legacy"
+    },
+    {
+      "chart": "Chart_Legacy #3107",
+      "num_of_notes": 1293,
+      "bpm": 176.0,
+      "md5": "7611c7c18b93c252b8fb76dde5ecc868",
+      "old_filename": "Chart_Legacy #3107"
+    },
+    {
+      "chart": "Chart_Legacy #3246",
+      "num_of_notes": 1122,
+      "bpm": 177.0,
+      "md5": "2b70d3354675b3ca3ad2765c2a50f7e3",
+      "old_filename": "Chart_Legacy #3246"
+    },
+    {
+      "chart": "Chart_Legacy #5350",
+      "num_of_notes": 684,
+      "bpm": 250.0,
+      "md5": "361742cb4a4ed87908558c69acae9cd1",
+      "old_filename": "Chart_Legacy #5350"
+    }
+  ],
+  "SP": []
+}

@@ -5,7 +5,6 @@ Musics/*
 Output/*
 programFileBackups/*
 data/cache
-data/illustrationFilenameLUT.json
 dist
 build
 main.spec

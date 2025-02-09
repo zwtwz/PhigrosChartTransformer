@@ -1,1 +1,1 @@
-./data/illustrationFilenameLUT.json filter=lfs diff=lfs merge=lfs -text
+data/illustrationFilenameLUT.json filter=lfs diff=lfs merge=lfs -text

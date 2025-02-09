@@ -5,14 +5,15 @@ currentPath = os.getcwd()
 
 # 程序运行目录，如有需要自行更改（虽然我没测试过改了以后能不能运行）
 rootPath = currentPath # 根目录，默认为当前路径
-dataPath = os.path.join(rootPath, 'data') # 数据文件目录
-inputChartsPath = os.path.join(rootPath, 'Charts') # 原始谱面目录
-illustrationsPath = os.path.join(rootPath, 'Illustrations') # 曲绘目录
-musicsPath = os.path.join(rootPath, 'Musics') # 音乐目录
-outputChartsPath = os.path.join(rootPath, 'Output') # 输出谱面目录
-
-#别动
-paths = [rootPath, dataPath, inputChartsPath, illustrationsPath, musicsPath, outputChartsPath]
+paths = {
+    "rootPath" : rootPath,
+    "dataPath" : os.path.join(rootPath, 'data'), # 数据文件目录
+    "cacheDataPath" : os.path.join(rootPath, 'data', 'cache'), # 数据缓存目录
+    "inputChartsPath" : os.path.join(rootPath, 'Charts'), # 原始谱面目录
+    "illustrationsPath" : os.path.join(rootPath, 'Illustrations'), # 曲绘目录
+    "musicsPath" : os.path.join(rootPath, 'Musics'), # 音乐目录
+    "outputChartsPath" : os.path.join(rootPath, 'Output') # 输出谱面目录
+}
 
 # 控制是否在曲绘文件夹内搜索使用已存在的曲绘文件
 # （就是phi包内自带的）
@@ -23,7 +24,7 @@ useExistedIllustration = True
 # 程序处理的难度，不要哪个删哪个（不能全删完）（注意格式,大小写,必须一字不差）
 # 可以是如下值：EZ , HD , IN , AT , SP , Legacy
 # 更改完后需要重置谱面元数据
-handlingLevels = ["EZ", "HD", "IN", "AT", "SP", "Legacy"]
+enabledLevels = ["EZ", "HD", "IN", "AT", "SP", "Legacy"]
 
 
 

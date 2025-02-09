@@ -1,73 +1,140 @@
 #文件搜索模块
-import json, os, config
+import orjson, os, config, hashlib, JSONDatabase
 
+input_charts_path = config.paths["inputChartsPath"]
 levels = ('EZ', 'HD', 'IN', 'AT', 'Legacy', 'SP')
-lutPath = os.path.join(config.dataPath, "chartFilenameLUT.json")
+lutPath = os.path.join(config.paths["dataPath"], "chartFilenameLUT.json")
 
+db = JSONDatabase.JSONDatabase(lutPath, "chartSearch", enable_non_volatile_cache=False)
 
-def getNumber(j): # 我用的版本已经找不到numOfNotes了，所以自己写了物量计算函数
+def getFileMd5(img_bin) -> str:
+    """获取文件的 MD5 值"""
+    md5 = hashlib.md5()
+    md5.update(img_bin)
+    return md5.hexdigest()
+
+def get_number(j): # 我用的版本已经找不到numOfNotes了，所以自己写了物量计算函数
     return sum([
         len(line['notesAbove']) + len(line['notesBelow'])
         for line in j['judgeLineList']
     ])
 
+
 #生成谱面文件查找表
-def generatechartFilenameLUT(rootPath):
+def generate_chart_filename_lut(input_charts_path):
     print("正在生成谱面查找列表...")
-    global originalChartInfomations
-    originalChartInfomations = {}
-    originalChartFilenames = os.listdir(rootPath)
+    original_chart_filename_list = os.listdir(input_charts_path)
 
     #分等级生成信息，按物量排序，包含谱面文件名和bpm
     for level in levels:
-        print("正在处理 " + level + " 难度...")
-        levelSpecilizedInfomations = []
-        NONIndex = []
+        print(f"正在处理 {level} 难度...")
 
-        #按难度筛选谱面
-        levelSpecilizedFilenames = [i for i in originalChartFilenames if i[:8] == 'Chart_' + level[:2]]
+        formatted_level_specilized_infomations = []  #创建列表，存储最终格式的物量与谱面信息列表
 
-        #生成谱面信息字典，及谱面索引元组列表
-        for ordinal in range(len(levelSpecilizedFilenames)):
-            filename = levelSpecilizedFilenames[ordinal]
-            chartPath = os.path.join(rootPath, filename)
-            with open(chartPath, 'r', encoding='utf-8') as f:
-                singelChartInfomation = {}
-                js = json.load(f)
-                non = str(getNumber(js))
-                NONIndex.append(non) #物量列表
-                singelChartInfomation["chart"] = filename
-                singelChartInfomation["bpm"] = js["judgeLineList"][0]["bpm"]
-                levelSpecilizedInfomations.append((non, singelChartInfomation))
+        # 按难度筛选谱面
+        level_specilized_filenames = [fn for fn in original_chart_filename_list if fn.startswith('Chart_' + level[:2])]
 
-        #无需排序，格式化索引
-        foramtedLevelSpecilizedInfomations = {}
-        #生成格式化后的谱面信息字典
-        for i in NONIndex:
-            numOfNotes = i
-            foramtedLevelSpecilizedInfomations[numOfNotes] = []
-        numOflevelSpecilizedCharts = len(foramtedLevelSpecilizedInfomations)
-        print("  共有 " + str(numOflevelSpecilizedCharts) + " 个谱面")
+        # 生成谱面信息字典及谱面索引元组列表
+        for ordinal, filename in enumerate(level_specilized_filenames):
+            chart_path = os.path.join(input_charts_path, filename)
+            try:
+                with open(chart_path, 'rb') as f:
+                    f_bin = f.read()
+                    js = orjson.loads(f_bin.decode("utf-8"))
+                    single_chart_information = {
+                        "chart": filename,
+                        "num_of_notes": get_number(js),
+                        "bpm": js["judgeLineList"][0]["bpm"],
+                        "md5": getFileMd5(f_bin),
+                        "old_filename": filename
+                    }
+                    formatted_level_specilized_infomations.append((single_chart_information))
+            except FileNotFoundError:
+                print(f"  文件 {chart_path} 不存在")
+                continue
+            except orjson.JSONDecodeError:
+                print(f"  文件 {chart_path} 解析失败")
+                continue
 
-        for i in levelSpecilizedInfomations:
-            numOfNotes = i[0]
-            ordinal = i[1]
-            foramtedLevelSpecilizedInfomations[numOfNotes].append(ordinal)
-        originalChartInfomations[level] = (foramtedLevelSpecilizedInfomations)
+        # 格式化索引
+        num_of_level_specilized_charts = len(formatted_level_specilized_infomations)
+        print(f"  共有 {num_of_level_specilized_charts} 个谱面")
+
+        db.set(level, formatted_level_specilized_infomations)
     
     print("存储谱面查找列表中...")
-    with open(lutPath, 'w', encoding='utf-8') as f:
-        json.dump(originalChartInfomations, f, ensure_ascii=False, indent=4)
+    db.commit()
+
+
+#更新谱面文件查找表
+def update_chart_filename_lut(input_charts_path):
+    print("正在更新谱面查找列表...")
+    original_chart_filename_list = os.listdir(input_charts_path)
+
+    #分等级生成信息，按物量排序，包含谱面文件名和bpm
+    for level in levels:
+        print(f"正在处理 {level} 难度...")
+        num_of_updated_charts = 0
+        num_of_new_charts = 0
+
+        # 按难度筛选谱面
+        level_specilized_filenames = [fn for fn in original_chart_filename_list if fn.startswith('Chart_' + level[:2])]
+
+        # 生成谱面信息字典及谱面索引元组列表
+        for ordinal, filename in enumerate(level_specilized_filenames):
+            chart_path = os.path.join(input_charts_path, filename)
+            try:
+                with open(chart_path, 'rb') as f:
+                    f_bin = f.read()
+                    js = orjson.loads(f_bin.decode("utf-8"))
+                    new_md5 = getFileMd5(f_bin)
+                    old_info = db.select(level, where={"md5": new_md5})
+
+                    if len(old_info) == 0:
+                        # 插入新谱面
+                        print("  新增谱面: " + filename)
+                        db.append(level, {
+                            "chart": filename,
+                            "num_of_notes": get_number(js),
+                            "bpm": js["judgeLineList"][0]["bpm"],
+                            "md5": new_md5,
+                            "old_filename": filename
+                        })
+                        num_of_new_charts += 1
+                    else:
+                        # 更新谱面
+                        db.modify(level, {
+                            "chart": filename,
+                            "num_of_notes": get_number(js),
+                            "bpm": js["judgeLineList"][0]["bpm"],
+                            "md5": new_md5,
+                            "old_filename": old_info[0]["chart"]
+                        }, where={"md5": new_md5})
+                        num_of_updated_charts += 1
+
+            except FileNotFoundError:
+                print(f"  文件 {chart_path} 不存在")
+                continue
+            except orjson.JSONDecodeError:
+                print(f"  文件 {chart_path} 解析失败")
+                continue
+
+        # 输出结果
+        print(f"  共更新 {num_of_updated_charts} 个谱面")
+        print(f"  共新增 {num_of_new_charts} 个谱面")
+    
+    print("存储谱面查找列表中...")
+    db.commit()
 
 
 #谱面查找函数
 def searchSingleChartFilename(numOfNotes, level, bpm=None, isErrorDealing=False):
     print(" 开始查找%s谱面……" % level)
-    if not isinstance(numOfNotes, str):
-        numOfNotes = str(numOfNotes)
+    if not isinstance(numOfNotes, int):
+        numOfNotes = int(numOfNotes)
     
-    if level in originalChartInfomations and numOfNotes in originalChartInfomations[level]:
-        charts = originalChartInfomations[level][numOfNotes]
+    if db.exists(level):
+        charts = db.select(level, where={"num_of_notes": numOfNotes})
         match len(charts):
             case 1:
                 return [0, charts[0]["chart"], charts[0]["bpm"]]
@@ -95,19 +162,22 @@ def searchSingleChartFilename(numOfNotes, level, bpm=None, isErrorDealing=False)
                         return [-1]
                     case _:
                         if not isErrorDealing:
-                            print("仍然查找到多张铺面，跳过此铺:")
+                            print("查找到多张铺面:")
                             for chart in chartsMatchBpm:
                                 print(chart["chart"])
                             print("  物量：%s bpm：%s"%(numOfNotes, bpmOfChart))
-                            return [1]
-                        else:
-                            print("进行错误处理")
-                            return [2, [i["chart"] for i in chartsMatchBpm]]
-
+                            return [-2, [i["chart"] for i in chartsMatchBpm]]
     print("未找到谱面")
     return [-1]
 
-def searchChartFilename(charts, isErrorDealing=False):
+
+def searchChartFilename(charts):
+    """
+    查找谱面，传入charts引用，补充数据
+    返回正数：此数据为歌曲bpm
+    返回-2：找不到谱面
+    返回-1：存在多张谱面，需要手动选择
+    """
     numOfLevels = len(charts)
     searchError = []
 
@@ -125,6 +195,7 @@ def searchChartFilename(charts, isErrorDealing=False):
         else:
             searchError.append(i)
     
+    result = 1024  # 结果优先级为越小越优先，因此需要选一个很大的值
     if len(searchError) == 0:
         return float(bpm)
     elif len(searchError) >= numOfLevels:
@@ -136,35 +207,31 @@ def searchChartFilename(charts, isErrorDealing=False):
             chart = charts[i]
             numOfNotes = chart["numOfNotes"]
             level = chart["level"]
-            chartFileInformation = searchSingleChartFilename(numOfNotes, level, bpm=bpm, isErrorDealing=isErrorDealing)
+            chartFileInformation = searchSingleChartFilename(numOfNotes, level, bpm=bpm)
 
             if chartFileInformation[0] == 0:
                 print("    找到：" + chartFileInformation[1])
                 chart["chart"] = chartFileInformation[1]
-            elif chartFileInformation[0] == 2 and isErrorDealing:
+            elif chartFileInformation[0] == -2:
                 chart["possibleCharts"] = chartFileInformation[1]
+                chart["chart"] = ""
+                if -1 < result:
+                    result = -1
             elif not level == "Legacy":
                 print("查找谱面失败")
-                if chartFileInformation[0] == 1:
-                    return -1
-                else:
-                    return None
+                chart["chart"] = ""
+                if chartFileInformation[0] == -1:
+                    result = -2
     
-    return float(bpm)
+    if float(bpm) < result:
+        result = float(bpm)
+    return result
 
 
 
 #谱面信息初始化
-originalChartsPath = config.inputChartsPath
-try:
-    originalChartInfomations
-except NameError:
-    if os.path.exists(lutPath):
-        with open(lutPath, 'r', encoding='utf-8') as f:
-            originalChartInfomations = json.load(f)
-    else:
-        print("正在初始化谱面信息")
-        generatechartFilenameLUT(originalChartsPath)
+if not all([db.exists(level) for level in levels]):
+    generate_chart_filename_lut(input_charts_path)
 
 if __name__ == "__main__":
     while True:
@@ -173,4 +240,6 @@ if __name__ == "__main__":
         while level not in levels:
             print("存在以下难度：" + str(levels))
             level = input("请选择上述之一输入：")
-        print(searchChartFilename([{"level": level, "numOfNotes": numOfNotes}]))
+        #print(searchChartFilename([{"level": level, "numOfNotes": numOfNotes}]))
+        bpm = float(input("请输入BPM："))
+        print(searchSingleChartFilename(numOfNotes, level, bpm))

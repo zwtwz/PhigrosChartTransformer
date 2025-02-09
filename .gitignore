@@ -4,10 +4,12 @@ Illustrations/*
 Musics/*
 Output/*
 programFileBackups/*
-data/illustrateFilenameLUT.json
+data/illustrationFilenameLUT.json
 data/chartFilenameLUT.json
 data/onProcessingSongsInformation.json
+data/cache
 dist
 build
 main.spec
 Tesseract-OCR
+get_time.py

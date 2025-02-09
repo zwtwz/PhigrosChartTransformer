@@ -2,7 +2,7 @@
 import requests, json, re, config
 from lxml import html, etree
 
-handlingLevels = config.handlingLevels
+handlingLevels = config.enabledLevels
 
 requests.urllib3.disable_warnings() #不知道为什么我这里ssl证书老是有问题，所以忽略警告
 

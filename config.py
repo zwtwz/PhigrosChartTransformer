@@ -24,7 +24,7 @@ useExistedIllustration = True
 # 程序处理的难度，不要哪个删哪个（不能全删完）（注意格式,大小写,必须一字不差）
 # 可以是如下值：EZ , HD , IN , AT , SP , Legacy
 # 更改完后需要重置谱面元数据
-handlingLevels = ["EZ", "HD", "IN", "AT", "SP", "Legacy"]
+enabledLevels = ["EZ", "HD", "IN", "AT", "SP", "Legacy"]
 
 
 

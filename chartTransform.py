@@ -1,14 +1,14 @@
 #转铺模块
 #转换phigros谱面为outputChart谱面
-import json, math, os, config
+import orjson, math, os, config
 from zipfile import ZipFile
 
 #初始化配置
-outputDir = config.outputChartsPath
-illustrationDir = config.illustrationsPath
-musicDir = config.musicsPath
-chartDir = config.inputChartsPath
-handlingLevels = config.handlingLevels
+outputDir = config.paths["outputChartsPath"]
+illustrationDir = config.paths["illustrationsPath"]
+musicDir = config.paths["musicsPath"]
+chartDir = config.paths["inputChartsPath"]
+handlingLevels = config.enabledLevels
 
 
 #音符转换逻辑
@@ -46,55 +46,30 @@ def transformNote(originalNote, isAbove):
         "yOffset": 0.0
     }
 
-#测试数据
-metadata = {
-            "name": "ENERGY SYNERGY MATRIX",
-            "composer": "Tanchiky",
-            "illustrator": "Karameru",
-            "illustration": "Illustration #2003.png",
-            "music": "music #5536.wav",
-            "charts": [
-                {
-                    "level": "EZ",
-                    "difficulty": 5.5,
-                    "chart": "Chart_EZ #2356",
-                    "charter": "Su1fuR"
-                },
-                {
-                    "level": "HD",
-                    "difficulty": 11.5,
-                    "chart": "Chart_HD #4479",
-                    "charter": "Su1fuR"
-                },
-                {
-                    "level": "IN",
-                    "difficulty": 14.4,
-                    "chart": "Chart_IN #397",
-                    "charter": "B B M pow"
-                },
-                {
-                    "level": "Legacy",
-                    "difficulty": 14.8,
-                    "chart": "Chart_Legacy",
-                    "charter": "Ctymax vs 阿爽"
-                }
-            ]
-        }
 
 
-
-def transform(metadata, savingPath=outputDir, isErrorDealing=False):
-    """转换谱面，生成pez文件"""
+def transform(metadata: dict, savingPath=outputDir, isErrorDealing=False) -> (None|int):
+    """
+    转换谱面，生成pez文件
+    返回None为成功
+    返回1为音频文件不存在
+    返回2为图片文件不存在
+    返回3为有谱面文件不存在
+    """
     print("开始转换谱面...")
     #读取歌曲元数据
     songName = metadata["name"]
     illustrationPath = os.path.join(illustrationDir, metadata["illustration"])
     musicPath = os.path.join(musicDir, metadata["music"])
-    if not os.path.exists(illustrationPath) and not os.path.exists(musicPath):
-        print("Error: 音频文件或图片文件不存在")
-        return
+    if not os.path.isfile(musicPath):
+        print("Error: 音乐文件不存在")
+        return 1
+    if not os.path.isfile(illustrationPath):
+        print("Error: 图片文件不存在")
+        return 2
 
     #依次处理铺面
+    has_chart_not_exists = False
     for chart in metadata["charts"]:
         difficulty = str(chart["difficulty"])
         level = chart["level"]
@@ -110,12 +85,13 @@ def transform(metadata, savingPath=outputDir, isErrorDealing=False):
         outputName = "%s [%s]"%(metadata["name"], level)
         print("  正在处理 %s 谱面"%level)
 
-        if not os.path.exists(inputChartPath):
+        if not os.path.isfile(inputChartPath):
             print("Error: 谱面文件不存在!" + inputChartPath)
+            has_chart_not_exists = True
             continue
 
         with open(inputChartPath,"r",encoding="utf-8") as file_json:
-            inputChart = json.loads(file_json.read())
+            inputChart = orjson.loads(file_json.read())
             
         #创建rpe格式谱，并写入元数据等
         outputChart = {
@@ -245,17 +221,19 @@ def transform(metadata, savingPath=outputDir, isErrorDealing=False):
         if isErrorDealing:
             outputZipFilePath = os.path.join(savingPath, outputName + ".pez")
         else:
+            if not os.path.exists(os.path.join(savingPath, chart["level"])):
+                os.makedirs(os.path.join(savingPath, chart["level"]))
             outputZipFilePath = os.path.join(savingPath, chart["level"], outputName + ".pez")
 
         with ZipFile(outputZipFilePath, 'w') as zipf:
             #将将元数据写入info.txt和info.yaml
             zipf.writestr("info.txt",infotxt)
             zipf.writestr("info.yml",infoyaml)
-            zipf.writestr(outputName + ".json", json.dumps(outputChart))
+            zipf.writestr(outputName + ".json", orjson.dumps(outputChart))
             zipf.write(illustrationPath, outputChart["META"]["background"])
             zipf.write(musicPath, outputChart["META"]["song"])
 
     print("谱面转换完成！")
 
-if __name__ == '__main__':
-    transform(metadata)
+    if has_chart_not_exists:
+        return 3

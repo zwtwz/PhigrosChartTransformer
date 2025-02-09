@@ -103,14 +103,13 @@ def update_chart_filename_lut(input_charts_path):
                         num_of_new_charts += 1
                     else:
                         # 更新谱面
-                        db.append(level, {
+                        db.modify(level, {
                             "chart": filename,
                             "num_of_notes": get_number(js),
                             "bpm": js["judgeLineList"][0]["bpm"],
                             "md5": new_md5,
                             "old_filename": old_info[0]["chart"]
-                        })
-                        db.delete(level, where={"md5": old_info[0]["md5"]})
+                        }, where={"md5": new_md5})
                         num_of_updated_charts += 1
 
             except FileNotFoundError:
@@ -176,8 +175,8 @@ def searchChartFilename(charts):
     """
     查找谱面，传入charts引用，补充数据
     返回正数：此数据为歌曲bpm
-    返回-1：找不到谱面
-    返回-2：存在多张谱面，需要手动选择
+    返回-2：找不到谱面
+    返回-1：存在多张谱面，需要手动选择
     """
     numOfLevels = len(charts)
     searchError = []
@@ -196,6 +195,7 @@ def searchChartFilename(charts):
         else:
             searchError.append(i)
     
+    result = 1024  # 结果优先级为越小越优先，因此需要选一个很大的值
     if len(searchError) == 0:
         return float(bpm)
     elif len(searchError) >= numOfLevels:
@@ -214,13 +214,18 @@ def searchChartFilename(charts):
                 chart["chart"] = chartFileInformation[1]
             elif chartFileInformation[0] == -2:
                 chart["possibleCharts"] = chartFileInformation[1]
-                return -2
+                chart["chart"] = ""
+                if -1 < result:
+                    result = -1
             elif not level == "Legacy":
                 print("查找谱面失败")
+                chart["chart"] = ""
                 if chartFileInformation[0] == -1:
-                    return -1
+                    result = -2
     
-    return float(bpm)
+    if float(bpm) < result:
+        result = float(bpm)
+    return result
 
 
 

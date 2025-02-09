@@ -128,9 +128,10 @@ def generateIllustrationLUT():
 def updateIllustrationLUT():
     print("更新图像特征码中...")
     new_illustrations = [i for i in os.listdir(illustrationsPath) if ".png" in i]
+    num_of_total_illustrations = len(new_illustrations)
+    num_of_new_illustrations = 0
 
     for illustration in new_illustrations:
-        print("正在处理：" + illustration)
         imgPath = os.path.join(illustrationsPath,illustration)
         if os.path.exists(imgPath):
             with open(imgPath,"rb") as f:
@@ -146,6 +147,8 @@ def updateIllustrationLUT():
         
         existed_files = db.select("illustrationLUT", where={"md5": new_md5})
         if len(existed_files) == 0:
+            print("新增：" + illustration)
+            num_of_new_illustrations += 1
             fv = generateFeatureVector(img).tolist()
             #字典中分别是：文件名、特征向量、MD5、原文件名
             db.append("illustrationLUT", {
@@ -155,16 +158,18 @@ def updateIllustrationLUT():
                 "old_filename": illustration
             })
 
-        if len(existed_files) > 0:
+        else:
             db.delete("illustrationLUT", where={"md5": new_md5})
             db.append("illustrationLUT", {
                 "filename": illustration,
                 "fv": existed_files[0]["fv"],
                 "md5": new_md5,
-                "old_filename": existed_files[0]["old_filename"]
+                "old_filename": existed_files[0]["filename"]
             })
             
-
+    print("曲绘处理完成")
+    print("共计：" + str(num_of_total_illustrations))
+    print("新增：" + str(num_of_new_illustrations))
     db.commit()
 
 
@@ -191,8 +196,11 @@ def illustrationSearch(img1Bin,user_check: bool = False):
         if not os.path.exists(search_img_path):
             print("Error: 插图文件不存在!" + search_img_path)
             return None
-        cv2.imshow("搜索结果", cv2.imread(search_img_path))
+        print("(关闭展示图像的窗口以继续)")
         print("查找到图片：%s 相似度：%s" % (mostSimilarImg[0], mostSimilarImg[1]))
+        cv2.imshow("搜索结果", cv2.imread(search_img_path))
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
         print("是否使用此图片？(y/n)")
         while True:
             choice = input()

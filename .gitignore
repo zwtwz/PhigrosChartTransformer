@@ -7,6 +7,7 @@ programFileBackups/*
 data/illustrationFilenameLUT.json
 data/chartFilenameLUT.json
 data/onProcessingSongsInformation.json
+data/cache
 dist
 build
 main.spec

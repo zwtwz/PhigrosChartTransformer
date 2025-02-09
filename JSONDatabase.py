@@ -91,11 +91,11 @@ class JSONDatabase:
     """为json数据存储提供类似于sqlite的接口"""
     data_file_path: str  # JSON 数据存储文件
     caller: str  # 调用者标识
-    cache_dir: str = field(default=config.paths["cacheDataPath"])  # 缓存存储目录
+    cache_dir: str = field(default=config.paths["cacheDataPath"])   # 缓存存储目录
     compact_encoding: bool = field(default=False)
     enable_non_volatile_cache: bool = field(default=True)  # 是否启用非易失性缓存
-    __cache__: Dict[str, Dict[str, Any]] = field(default_factory=dict)  # 非易失性缓存
-    __lock__: threading.Lock = field(default_factory=threading.Lock, init=False)  # 文件写入锁
+    __cache: Dict[str, Dict[str, Any]] = field(default_factory=dict)  # 非易失性缓存
+    __lock: threading.Lock = field(default_factory=threading.Lock, init=False)  # 文件写入锁
 
     def __repr__(self):
         return f"<JSONDatabase caller={self.caller} data_file_path={self.data_file_path}>"
@@ -103,7 +103,7 @@ class JSONDatabase:
     def __str__(self):
         return self.__repr__()
 
-    def __load_data__(self) -> Dict:
+    def __load_data(self) -> Dict:
         """从 JSON 文件加载数据"""
         try:
             with open(self.data_file_path, "rb") as f:
@@ -111,15 +111,15 @@ class JSONDatabase:
         except (FileNotFoundError, orjson.JSONDecodeError):
             return {}
 
-    def __save_data__(self, data: Dict):
+    def __save_data(self, data: Dict):
         """保存数据到 JSON 文件（加锁以避免竞态条件）"""
         # 若不启用 compact_encoding，则使用 orjson.OPT_INDENT_2 产生格式化输出
         option = orjson.OPT_INDENT_2 if not self.compact_encoding else 0
-        with self.__lock__:
+        with self.__lock:
             with open(self.data_file_path, "wb") as f:
                 f.write(orjson.dumps(data, option=option))
 
-    def __get_by_path__(self, data: Union[Dict, List], path: str) -> Any:
+    def __get_by_path(self, data: Union[Dict, List], path: str) -> Any:
         """通过路径获取数据（支持字典和列表），返回引用"""
         if path == ".":  # 获取整个数据
             return data
@@ -137,7 +137,7 @@ class JSONDatabase:
                 return None
         return data
 
-    def __get_parent_element_by_path__(self, data: Union[Dict, List], path: str) -> Union[Dict, List]:
+    def __get_parent_element_by_path(self, data: Union[Dict, List], path: str) -> Union[Dict, List]:
         """通过路径获取数据（支持字典和列表）的父元素，返回引用"""
         if path == ".":  # 获取整个数据
             return data
@@ -160,7 +160,12 @@ class JSONDatabase:
         else:
             return None
 
-    def __set_by_path__(self, data: Union[Dict, List], path: str, value: Any):
+    def __get_last_key(self, path: str) -> str:
+            """获取路径的最后一个键名"""
+            keys = path.split(".")
+            return keys[-1] if keys else ""
+    
+    def __set_by_path(self, data: Union[Dict, List], path: str, value: Any):
         """通过路径设置数据（支持字典和列表）"""
         keys = path.split(".")
         d = data
@@ -190,7 +195,7 @@ class JSONDatabase:
         else:
             raise ValueError(f"路径 '{path}' 结尾无效，数据结构错误")
 
-    def __merge_data__(self,
+    def __merge_data(self,
                        base: Union[Dict, List],
                        update: Union[Dict, List],
                        overwrite: bool,
@@ -209,7 +214,7 @@ class JSONDatabase:
         if isinstance(base, dict) and isinstance(update, dict):
             for key, value in update.items():
                 if key in base:
-                    base[key] = self.__merge_data__(base[key], value, overwrite, list_merge_mode)
+                    base[key] = self.__merge_data(base[key], value, overwrite, list_merge_mode)
                 else:
                     base[key] = value
             return base
@@ -240,8 +245,8 @@ class JSONDatabase:
 
     def get(self, path: str = ".", default=None, enable_deepcopy:bool=True) -> Any:
         """获取缓存中加载的的数据，默认值：None; enable_deepcopy: 是否启用深拷贝，启用后会返回延迟拷贝的新对象"""
-        cache_data = self.__load_cache__()
-        target_data = self.__get_by_path__(cache_data, path)
+        cache_data = self.__load_cache()
+        target_data = self.__get_by_path(cache_data, path)
 
         if target_data is None:
             return default
@@ -254,10 +259,10 @@ class JSONDatabase:
 
     def set(self, path: str, value: Any):
         """设置数据到缓存文件"""
-        cache_data = self.__load_cache__()
-        self.__set_by_path__(cache_data, path, value)
+        cache_data = self.__load_cache()
+        self.__set_by_path(cache_data, path, value)
         if self.enable_non_volatile_cache:
-            self.__save_cache__()
+            self.save_cache()
 
     def commit(self, merge: bool = False, overwrite: bool = False, list_merge_mode: str = "unique"):
         """
@@ -270,19 +275,19 @@ class JSONDatabase:
         list_merge_mode: 列表合并模式，
         支持 "append"（直接追加）/ "unique"（去重合并，默认）/ "index"（按索引覆盖）
         """
-        cache_data = self.__load_cache__()
+        cache_data = self.__load_cache()
 
         if merge:
-            file_data = self.__load_data__()
-            merged_data = self.__merge_data__(file_data, cache_data, overwrite, list_merge_mode=list_merge_mode)
+            file_data = self.__load_data()
+            merged_data = self.__merge_data(file_data, cache_data, overwrite, list_merge_mode=list_merge_mode)
             file_data = merged_data
         else:
             file_data = cache_data
 
-        self.__save_data__(file_data)
-        self.__cache__[self.caller] = file_data
+        self.__save_data(file_data)
+        self.__cache[self.caller] = file_data
 
-    def __load_cache_file__(self) -> Dict:
+    def __load_cache_file(self) -> Dict:
         """加载指定 caller 的缓存文件"""
         cache_path = os.path.join(self.cache_dir, f"{self.caller}.json")
         try:
@@ -291,26 +296,26 @@ class JSONDatabase:
         except (FileNotFoundError, orjson.JSONDecodeError):
             return {}
 
-    def __load_cache__(self) -> Dict:
+    def __load_cache(self) -> Dict:
         """加载指定 caller 的缓存"""
-        if self.caller in self.__cache__:
-            return self.__cache__[self.caller]
+        if self.caller in self.__cache:
+            return self.__cache[self.caller]
         else:
-            cache_data = self.__load_cache_file__()
-            self.__cache__[self.caller] = cache_data
-            self.__save_cache__()
+            cache_data = self.__load_cache_file()
+            self.__cache[self.caller] = cache_data
+            self.save_cache()
             return cache_data
 
-    def __save_cache__(self):
+    def save_cache(self):
         """保存缓存数据到指定 caller 的缓存文件"""
-        if self.caller not in self.__cache__:
-            self.__cache__[self.caller] = self.__load_data__()
+        if self.caller not in self.__cache:
+            self.__cache[self.caller] = self.__load_data()
         cache_path = os.path.join(self.cache_dir, f"{self.caller}.json")
         option = orjson.OPT_INDENT_2 if not self.compact_encoding else 0
         with open(cache_path, "wb") as f:
-            f.write(orjson.dumps(self.__cache__[self.caller], option=option))
+            f.write(orjson.dumps(self.__cache[self.caller], option=option))
 
-    def __clear_cache_file__(self):
+    def __clear_cache_file(self):
         """清除指定 caller 的缓存文件"""
         cache_path = os.path.join(self.cache_dir, f"{self.caller}.json")
         if os.path.exists(cache_path):
@@ -328,10 +333,10 @@ class JSONDatabase:
                 else:
                     print("无效输入。")
         if user_choice.lower() == "y":
-            self.__clear_cache_file__()  # 清除缓存文件
-            self.__cache__[self.caller] = self.__load_data__()
+            self.__clear_cache_file()  # 清除缓存文件
+            self.__cache[self.caller] = self.__load_data()
             if self.enable_non_volatile_cache:
-                self.__save_cache__()
+                self.save_cache()
             print("缓存已重置。")
         elif user_choice.lower() == "n":
             print("缓存未重置。")
@@ -350,14 +355,14 @@ class JSONDatabase:
                     else:
                         print("无效输入。")
             if user_choice.lower() == "y":
-                self.__cache__[self.caller] = self.__load_cache_file__()
+                self.__cache[self.caller] = self.__load_cache_file()
                 print("缓存已加载。")
             elif user_choice.lower() == "n":
                 print("缓存未加载。")
         else:
             self.reset_cache(user_check)
 
-    def __apply_where_filter__(self,
+    def __apply_where_filter(self,
                                data: Union[List[Dict],
                                            Dict[str, Dict]],
                                where: Union[Dict[str, Any],
@@ -370,10 +375,15 @@ class JSONDatabase:
 
         if isinstance(where, dict):
             def filter_func(item):
+                if not isinstance(item, dict):
+                    return False
                 matches = [item.get(k) == v for k, v in where.items()]
                 return all(matches) if match_mode == "and" else any(matches)
         elif callable(where):
-            filter_func = where
+            def filter_func(item: dict):
+                if not isinstance(item, dict):
+                    return False
+                return where(item)
         else:
             raise ValueError("where 参数必须是字典或函数。")
 
@@ -396,8 +406,8 @@ class JSONDatabase:
         - where: 过滤条件（支持 {"key": "value"} 或 lambda item: 条件）
         - match_mode: "and"（所有键值匹配）或 "or"（只需匹配其中之一）
         """
-        data = self.__load_cache__()
-        d = self.__get_by_path__(data, table)
+        data = self.__load_cache()
+        d = self.__get_by_path(data, table)
         if d is None:
             return False
 
@@ -405,7 +415,7 @@ class JSONDatabase:
             return True
 
         if isinstance(d, list):
-            filtered = self.__apply_where_filter__(d, where, match_mode)
+            filtered = self.__apply_where_filter(d, where, match_mode)
             return len(filtered) > 0
         else:
             raise ValueError("where 参数仅适用于列表类型的数据。")
@@ -415,25 +425,29 @@ class JSONDatabase:
         path: str, 
         where: Union[Dict[str, Any], Callable[[Dict], bool], None] = None, 
         match_mode: str = "and", 
-        fields: List[str] = None
+        fields: List[str] = None,
+        deepcopy = True
     ) -> Union[List[Dict], Dict[str, Dict]]:
         """执行 SQL 风格查询"""
-        data = self.__load_cache__()
-        table_data = self.__get_by_path__(data, path)
+        data = self.__load_cache()
+        table_data = self.__get_by_path(data, path)
 
         if not isinstance(table_data, (list, dict)):
             raise ValueError(f"路径 '{path}' 不是列表或字典，无法执行查询。")
 
-        filtered_data = self.__apply_where_filter__(table_data, where, match_mode)
+        filtered_data = self.__apply_where_filter(table_data, where, match_mode)
 
         if fields:
             if isinstance(filtered_data, list):
-                return [{field: self.__get_by_path__(item, field) for field in fields} for item in filtered_data]
+                return [{field: self.__get_by_path(item, field) for field in fields} for item in filtered_data]
             elif isinstance(filtered_data, dict):
-                return {k: {field: self.__get_by_path__(v, field) for field in fields} for k, v in filtered_data.items()}
+                return {k: {field: self.__get_by_path(v, field) for field in fields} for k, v in filtered_data.items()}
             else:
                 raise ValueError("fields 参数必须用于列表或字典数据。")
 
+        if not deepcopy:
+            return filtered_data
+        
         if isinstance(filtered_data, list):
             return LazyCopyList(filtered_data)
         elif isinstance(filtered_data, dict):
@@ -448,13 +462,13 @@ class JSONDatabase:
                             None] = None,
                match_mode: str = "and"):
         """根据路径和 where 参数删除数据并写入缓存"""
-        cache_data = self.__load_cache__()
-        target_data = self.__get_by_path__(cache_data, path)
+        cache_data = self.__load_cache()
+        target_data = self.__get_by_path(cache_data, path)
 
         if where is None:
             # 删除整个元素
             key_of_element = path.split(".")[-1] if "." in path else path
-            parent = self.__get_parent_element_by_path__(cache_data, path)
+            parent = self.__get_parent_element_by_path(cache_data, path)
             if parent is None:
                 raise ValueError(f"无法找到路径 '{path}' 的父元素。")
             if isinstance(parent, dict):
@@ -470,7 +484,7 @@ class JSONDatabase:
         else:
             if not isinstance(target_data, (list, dict)):
                 raise ValueError(f"路径 '{path}' 不是列表或字典，无法执行 where 筛选删除。")
-            filtered_data = self.__apply_where_filter__(target_data, where, match_mode)
+            filtered_data = self.__apply_where_filter(target_data, where, match_mode)
             if isinstance(target_data, list):
                 for item in filtered_data:
                     target_data.remove(item)
@@ -481,7 +495,7 @@ class JSONDatabase:
                         target_data.pop(key)
                         
         if self.enable_non_volatile_cache:
-            self.__save_cache__()
+            self.save_cache()
 
     def append(self,
                path: str,
@@ -490,8 +504,8 @@ class JSONDatabase:
         将数据添加到指定路径并写入缓存。
         路径需要指向 list 或 dict 类型。对于 dict 类型的目标，data 需要是 dict。
         """
-        cache_data = self.__load_cache__()
-        target_data = self.__get_by_path__(cache_data, path)
+        cache_data = self.__load_cache()
+        target_data = self.__get_by_path(cache_data, path)
         if target_data is None:
             raise ValueError(f"路径 '{path}' 不存在。")
         if isinstance(target_data, list):
@@ -504,16 +518,83 @@ class JSONDatabase:
             raise ValueError(f"路径 '{path}' 不是列表或字典，无法添加数据。")
         
         if self.enable_non_volatile_cache:
-            self.__save_cache__()
+            self.save_cache()
+    
+    def modify(
+        self, 
+        path: str,
+        new_data: Any,
+        where: Union[Dict[str, Any], Callable[[Dict], bool], None] = None, 
+        match_mode: str = "and", 
+        fields: List[str] = None
+    ) -> None:
+        """
+        根据路径和 where 参数修改数据并写入缓存。
+        where 参数可以是字典、函数或 None。
+        如果为字典，则将字典中的键值对应用到符合条件的数据上。
+        如果为函数，则将函数返回值应用到符合条件的数据上。
+        如果为 None，则将整个数据替换为 fields 参数指定的值。
+        match_mode 参数可以是 "and" 或 "or"，表示where 条件的匹配方式。
+        fields 参数表示要修改的字段名列表，如果为 None，则修改所有符合where的数据。
+        """
+        
+        cache_data = self.__load_cache()
+        parent_data = self.__get_parent_element_by_path(cache_data, path)
+        last_key = self.__get_last_key(path)
+
+        if where is None:
+            # 修改整个元素
+            target_data = parent_data
+            target_data_keys = [last_key]
+        else:
+            target_data = parent_data[last_key]
+            if not isinstance(target_data, (list, dict)):
+                raise ValueError(f"路径 '{path}' 不是列表或字典，无法执行 where 筛选修改。")
+            
+            """应用 WHERE 过滤逻辑"""
+            if isinstance(where, dict):
+                def filter_func(item: dict):
+                    matches = [item.get(k) == v for k, v in where.items()]
+                    return all(matches) if match_mode == "and" else any(matches)
+            elif callable(where):
+                def filter_func(item: dict):
+                    if not isinstance(item, dict):
+                        return False
+                    return where(item)
+            else:
+                raise ValueError("where 参数必须是字典或函数。")
+
+            if isinstance(target_data, list):
+                target_data_keys = [i for i,v in enumerate(target_data) if filter_func(v)]
+            elif isinstance(target_data, dict):
+                target_data_keys = [k for k,v in target_data.items() if filter_func(v)]
+            else:
+                raise ValueError("数据格式不支持 where 过滤。")
+        
+        for target_key in target_data_keys:
+            if not fields:
+                target_data[target_key] = new_data
+                continue
+            new_target_data = target_data[target_key]
+            for field in fields:
+                if field in new_target_data:
+                    new_target_data[field] = new_data
+                else:
+                    raise ValueError(f"目标键{target_key}中不存在字段{field}，数据无法修改。")
+        
+        if self.enable_non_volatile_cache:
+            self.save_cache()
+            
+
 
     def __post_init__(self):
         if not os.path.exists(self.cache_dir):
             os.makedirs(self.cache_dir, exist_ok=True)
         # 初次将文件数据加载到对应 caller 的缓存中
-        self.__cache__[self.caller] = self.__load_data__()
+        self.__cache[self.caller] = self.__load_data()
 
     def close(self):
         """关闭数据库连接"""
         if self.enable_non_volatile_cache:
-            self.__save_cache__()
-        self.__cache__.pop(self.caller, None)
+            self.save_cache()
+        self.__cache.pop(self.caller, None)

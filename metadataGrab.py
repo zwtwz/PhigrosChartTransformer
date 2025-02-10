@@ -1,8 +1,16 @@
 #从主程序调用，在特定网址搜索传入的歌曲名，抓取歌曲元数据
-import requests, json, re, config
-from lxml import html, etree
+import requests, re, config, hashlib, os
+from lxml import html
+from typing import Callable
+from songRecognize import songRecognize
 
-handlingLevels = config.enabledLevels
+musics_path = config.paths["musicsPath"]
+enabled_levels = config.enabledLevels
+
+if "SP" in enabled_levels:
+    #将SP提到最前，满足查找谱面时的顺序
+    enabled_levels.remove("SP")
+    enabled_levels.insert(0, "SP")
 
 requests.urllib3.disable_warnings() #不知道为什么我这里ssl证书老是有问题，所以忽略警告
 
@@ -11,8 +19,16 @@ proxy = {
     'https': 'http://127.0.0.1:1081',
 }
 
+
+def get_file_md5(file_path) -> str:
+    """获取文件的 MD5 值"""
+    with open(file_path, 'rb') as f:
+        md5 = hashlib.md5()
+        md5.update(f.read())
+        return md5.hexdigest()
+
 #获取页面内容
-def getElements(url, params={}):
+def get_elements(url, params={}):
     tryingTime = 0
     while tryingTime < 3:
         try:
@@ -30,7 +46,7 @@ def getElements(url, params={}):
     response.encoding = 'utf-8'
     return html.fromstring(response.text)
     
-def fileBinTextGet(url):
+def get_web_file_bin(url):
     try:
         result = requests.get(url).content
     except:
@@ -44,7 +60,7 @@ def metadataGrab(matchedLink):
     try:
         #谱面信息获取
         #获取页面内容并读取基本信息
-        tree = getElements(matchedLink)
+        tree = get_elements(matchedLink)
         if tree is None:
             print("Error：页面内容为空")
             return None
@@ -52,7 +68,7 @@ def metadataGrab(matchedLink):
         songName = tree.xpath('string(//table[@class="wikitable centre-text"]/tbody/tr[1]/th/text())').replace("\n", "")
         composer = tree.xpath('string(//table[@class="wikitable centre-text"]//tr[th[contains(text(), "Artist")]]/td[1])').replace("\n", "")
 
-        durationText = tree.xpath('string(//table[@class="wikitable centre-text"]//th[contains(text(), "Duration")]/following-sibling::td[1]/text())').replace("\n", "")
+        durationText:str = tree.xpath('string(//table[@class="wikitable centre-text"]//th[contains(text(), "Duration")]/following-sibling::td[1]/text())').replace("\n", "")
         durationList = re.split(":", durationText.replace(" ", ""))
         try:
             duration = int(durationList[0]) * 60 + int(durationList[1])
@@ -123,7 +139,7 @@ def metadataGrab(matchedLink):
                     "chart": "",
                     "charter": charters[i]
                 }
-            if chart["level"] in handlingLevels:
+            if chart["level"] in enabled_levels:
                 charts.append(chart)
 
         metadata = {
@@ -172,7 +188,7 @@ def searchSong(songName):
             searchWord = " ".join(cleanedItems[i - len(cleanedItems):len(cleanedItems)])
             
         print("搜索中：" + searchWord)
-        htmltreeOfSearchResult = getElements(url, {'query': searchWord})
+        htmltreeOfSearchResult = get_elements(url, {'query': searchWord})
         if htmltreeOfSearchResult is not None:
             elements = htmltreeOfSearchResult.xpath('//*[@id="mw-content-text"]/section/div/div[2]/ul/li[*]/article/h3/a')
         else:
@@ -192,6 +208,135 @@ def searchSong(songName):
                     result = metadataGrab(matchedLink)
                     if result is not None:
                         return result
+
+
+def get_metadata(mode: int = 0,
+                  duration_of_music_file: int = 0,
+                  music_file_name: str = "",
+                  after_get_song_name: Callable = lambda *a, **k: None) -> dict:
+    """
+    获取谱面元数据\n
+    mode: 0 全自动听歌识曲\n
+    mode: 1 手动输入网址\n
+    mode: 2 手动输入全部元数据\n
+    after_get_song_name: 手动输入曲名后执行的函数\n
+    music_file_name: 本地歌曲文件名\n
+    duration_of_music_file: 本地文件歌曲时长\n
+    status: 0:未处理 1:已处理 2:异常\n
+        [谱面信息，曲绘，谱面文件]
+    """
+    error_metadata = {
+        "music": music_file_name,
+        "old_music_file_name": music_file_name,
+        "md5": get_file_md5(os.path.join(musics_path, music_file_name)),
+        "status": [2,0,0]
+    }
+
+    if mode == 0:
+        #自动识别
+        recognized_song_name = songRecognize()
+        after_get_song_name()
+        if recognized_song_name is None:
+            return error_metadata.copy()
+        metadata = searchSong(recognized_song_name)
+        if metadata is None:
+            return error_metadata.copy()
+        
+        #歌曲时长匹配检测
+        if not metadata["duration"] in range(duration_of_music_file-3, duration_of_music_file+3) :
+            print("歌曲时长不匹配:")
+            print(" 本地文件: " + str(duration_of_music_file))
+            print(" wiki记录: " + str(metadata["duration"]))
+            return error_metadata.copy()
+        
+    elif mode == 1:
+        #手动输入网址
+        url = input("请输入wiki链接，留空跳过：")
+        after_get_song_name()
+        if url == "":
+            print("Error: 跳过")
+            return error_metadata.copy()
+        metadata = metadataGrab(url)
+        if metadata == None:
+            print("Error: 获取元数据失败")
+            return error_metadata.copy()
+    
+    elif mode == 2:
+        #手动输入全部元数据模式
+        while True:
+            song_name = input("曲名（留空跳过此歌曲）：")
+            after_get_song_name()
+            if song_name == "":
+                print("Error: 跳过此歌曲")
+                metadata = None
+                break
+            metadata = {
+                "name": song_name,
+                "composer": input("曲师(Artist)："),
+                "illustrator": input("绘师(Illustration)："),
+                "illustration": "",
+                "illustrationUrl": input("曲绘图片的在线链接（可以在图片上右键，复制图片链接）："),
+                "duration": 0,
+                "bpm": "",
+                "charts": None
+            }
+
+            charts = []
+            last_charter = "佚名"
+            for level in enabled_levels:
+                print("填写%s难度谱面信息：" % level)
+                difficulty = input("  谱面定数(Level)（留空跳过此难度）：")
+                if difficulty == "":
+                    continue
+                else:
+                    difficulty = float(difficulty)
+                
+                charter = input("  谱师(Chart design)（留空将设置为: %s ）\n    请输入：" % last_charter)
+                if charter == "":
+                    charter = last_charter
+                else:
+                    last_charter = charter
+
+                while True:
+                    try:
+                        numOfNotes = int(input("  物量(Note count)（整数）："))
+                    except:
+                        print("Error: 请输入整数")
+                        continue
+                    else:
+                        break
+
+                chart = {
+                    "level": level,
+                    "difficulty": difficulty,
+                    "numOfNotes": numOfNotes,
+                    "chart": "",
+                    "charter": charter
+                }
+                charts.append(chart)
+                if level == "SP":
+                    break
+            metadata["charts"] = charts
+
+            if input("请在核对以上信息正确后按下回车。\n输入其他字符将返回修改:") == "":
+                break
+        if metadata is None:
+            return error_metadata.copy()
+
+    metadata.update({
+        "music": music_file_name,
+        "old_music_file_name": music_file_name,
+        "md5": get_file_md5(os.path.join(musics_path, music_file_name)),
+        "status": [1,0,0]
+    })
+
+    #非法字符剔除
+    pattern = r'[<>:"/\\|?*\x00-\x1F]'
+    metadata["name"] = re.sub(pattern, "_", metadata["name"])
+    pattern = r'"'
+    metadata["illustrator"] = re.sub(pattern, "_", metadata["illustrator"])
+    return metadata
+
 
 if __name__ == "__main__":
     songname = input("输入歌名进行查询")

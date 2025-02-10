@@ -1,10 +1,7 @@
 #主程序
-import os, orjson, pygame, re, hashlib
-from tkinter import filedialog
+import os, pygame
 from tinytag import TinyTag
 from copy import deepcopy
-from typing import Union, Callable
-
 import config
 
 #程序运行目录检查，配置加载
@@ -21,9 +18,9 @@ for _, path in config.paths.items():
         os.mkdir(path)
 
 import chartSearch
-import songRecognize
-import metadataGrab
-from chartTransform import transform as ct
+from metadataGrab import get_file_md5, get_metadata
+from chartTransform import chart_transform
+from fileSelect import select_dir
 import illustrationSearch
 import JSONDatabase
 import prompts
@@ -32,14 +29,7 @@ for handlingLevel in enabled_levels:
     if not handlingLevel in ["IN", "EZ", "HD", "SP", "Legacy", "AT"]:
         print("Error: 配置文件中的handlingLevels参数错误")
         exit()
-if "SP" in enabled_levels:
-    #将SP提到最前，满足查找谱面时的顺序
-    enabled_levels.remove("SP")
-    enabled_levels.insert(0, "SP")
 
-
-use_existed_illustration = config.useExistedIllustration
-enabled_levels = config.enabledLevels
 use_auto_song_recognizing = config.useAutoSongRecognizing
 
 db = JSONDatabase.JSONDatabase(data_file_path, "main")
@@ -58,291 +48,6 @@ class MusicPlayer:
         pygame.mixer.music.unload()
     def is_playing(self):
         return pygame.mixer.music.get_busy()
-
-
-def none_func(*args, **kwargs): return None
-
-
-def select_dir():
-    """弹出文件选择对话框，选择目录"""
-    filepath = filedialog.askdirectory(initialdir="%%homepath%%\\Desktop",
-                                title="选择文件保存目录")
-    return filepath
-
-
-def get_file_md5(file_path) -> str:
-    """获取文件的 MD5 值"""
-    with open(file_path, 'rb') as f:
-        md5 = hashlib.md5()
-        md5.update(f.read())
-        return md5.hexdigest()
-
-
-
-def get_metadata(mode: int = 0,
-                  duration_of_music_file: int = 0,
-                  music_file_name: str = "",
-                  after_get_song_name: Callable = none_func) -> dict:
-    """
-    获取谱面元数据\n
-    mode: 0 全自动听歌识曲\n
-    mode: 1 手动输入网址\n
-    mode: 2 手动输入全部元数据\n
-    after_get_song_name: 手动输入曲名后执行的函数\n
-    music_file_name: 本地歌曲文件名\n
-    duration_of_music_file: 本地文件歌曲时长\n
-    status: 0:未处理 1:已处理 2:异常\n
-        [谱面信息，曲绘，谱面文件]
-    """
-    error_metadata = {
-        "music": music_file_name,
-        "old_music_file_name": music_file_name,
-        "md5": get_file_md5(os.path.join(musics_path, music_file_name)),
-        "status": [2,0,0]
-    }
-
-    if mode == 0:
-        #自动识别
-        recognized_song_name = songRecognize.songRecognize()
-        after_get_song_name()
-        if recognized_song_name is None:
-            return error_metadata.copy()
-        metadata = metadataGrab.searchSong(recognized_song_name)
-        if metadata is None:
-            return error_metadata.copy()
-        
-        #歌曲时长匹配检测
-        if not metadata["duration"] in range(duration_of_music_file-3, duration_of_music_file+3) :
-            print("歌曲时长不匹配:")
-            print(" 本地文件: " + str(duration_of_music_file))
-            print(" wiki记录: " + str(metadata["duration"]))
-            return error_metadata.copy()
-        
-    elif mode == 1:
-        #手动输入网址
-        url = input("请输入wiki链接，留空跳过：")
-        after_get_song_name()
-        if url == "":
-            print("Error: 跳过")
-            return error_metadata.copy()
-        metadata = metadataGrab.metadataGrab(url)
-        if metadata == None:
-            print("Error: 获取元数据失败")
-            return error_metadata.copy()
-    
-    elif mode == 2:
-        #手动输入全部元数据模式
-        while True:
-            song_name = input("曲名（留空跳过此歌曲）：")
-            after_get_song_name()
-            if song_name == "":
-                print("Error: 跳过此歌曲")
-                metadata = None
-                break
-            metadata = {
-                "name": song_name,
-                "composer": input("曲师(Artist)："),
-                "illustrator": input("绘师(Illustration)："),
-                "illustration": "",
-                "illustrationUrl": input("曲绘图片的在线链接（可以在图片上右键，复制图片链接）："),
-                "duration": 0,
-                "bpm": "",
-                "charts": None
-            }
-
-            charts = []
-            last_charter = "佚名"
-            for level in enabled_levels:
-                print("填写%s难度谱面信息：" % level)
-                difficulty = input("  谱面定数(Level)（留空跳过此难度）：")
-                if difficulty == "":
-                    continue
-                else:
-                    difficulty = float(difficulty)
-                
-                charter = input("  谱师(Chart design)（留空将设置为: %s ）\n    请输入：" % last_charter)
-                if charter == "":
-                    charter = last_charter
-                else:
-                    last_charter = charter
-
-                while True:
-                    try:
-                        numOfNotes = int(input("  物量(Note count)（整数）："))
-                    except:
-                        print("Error: 请输入整数")
-                        continue
-                    else:
-                        break
-
-                chart = {
-                    "level": level,
-                    "difficulty": difficulty,
-                    "numOfNotes": numOfNotes,
-                    "chart": "",
-                    "charter": charter
-                }
-                charts.append(chart)
-                if level == "SP":
-                    break
-            metadata["charts"] = charts
-
-            if input("请在核对以上信息正确后按下回车。\n输入其他字符将返回修改:") == "":
-                break
-        if metadata is None:
-            return error_metadata.copy()
-
-    metadata.update({
-        "music": music_file_name,
-        "old_music_file_name": music_file_name,
-        "md5": get_file_md5(os.path.join(musics_path, music_file_name)),
-        "status": [1,0,0]
-    })
-
-    #非法字符剔除
-    pattern = r'[<>:"/\\|?*\x00-\x1F]'
-    metadata["name"] = re.sub(pattern, "_", metadata["name"])
-    pattern = r'"'
-    metadata["illustrator"] = re.sub(pattern, "_", metadata["illustrator"])
-    return metadata
-    
-
-def get_illustration(illustration_url: str, song_name: str = "", mode: int = 0) -> Union[str, None]:
-    """
-    曲绘文件搜索或保存\n
-    mode: 0 自动模式\n
-    mode: 1 手动模式错误处理\n
-    mode: 2 强制网络下载
-    """
-    def select_file():
-        """弹出文件选择对话框，选择文件"""
-        # 在vscode内调试可能会出现文件选择框打不开的情况，但是单独打开文件能用。
-        filepath = filedialog.askopenfilename(initialdir=illustration_path,
-                                    title="选择曲绘",
-                                    filetypes=[('png imgs', '.png'), ('jpg imgs', '.jpg'), ('all files', '.*')])
-        return filepath
-    
-    
-    illustrationBin = metadataGrab.fileBinTextGet(illustration_url)
-    if illustrationBin is None:
-        print("曲绘下载失败")
-        if mode != 1:
-            return None
-        
-    if mode == 0 and use_existed_illustration:
-        illustration_file_name = illustrationSearch.illustrationSearch(illustrationBin)
-        return illustration_file_name
-    
-    if mode == 1:
-        # 手动模式先尝试查找
-        illustration_file_name = illustrationSearch.illustrationSearch(illustrationBin, True)
-        if not illustration_file_name is None:
-            return illustration_file_name
-        else:
-            # 查不到就手动选
-            illustration_file_path = select_file()
-            if illustration_file_path == "":
-                print("Error: 跳过")
-                return None
-            
-            if not os.path.exists(illustration_file_path):
-                print("Error: 文件不存在！")
-                return None
-            
-            illustration_file_name = os.path.basename(illustration_file_path)
-            if os.path.exists(os.path.join(illustration_path, illustration_file_name)):
-                return illustration_file_name
-            
-            with open(illustration_file_path, "rb") as f:
-                illustrationBin = f.read()
-            
-    illustration_file_name = song_name + ".png"
-    print("保存曲绘中：" + illustration_file_name)
-    with open(os.path.join(illustration_path, illustration_file_name), "wb") as f:
-        f.write(illustrationBin)
-
-    return illustration_file_name
-
-
-def get_chart(metadata: dict, mode: int = 0, save_path: str = "") -> Union[None, int]:
-    """
-    谱面搜索，传入metadata引用，补充数据\n
-    mode: 0 自动模式\n
-    mode: 1 手动选择模式\n
-    返回None：操作成功\n
-    返回-1：未找到谱面\n
-    返回-2：存在多张谱面，需要手动选择
-    """
-    search_result_bpm = chartSearch.searchChartFilename(metadata["charts"])
-    #部分曲子实际上没有Legacy难度，故删除之。
-    for i in range(len(metadata["charts"])):
-        chart = metadata["charts"][i]
-        if chart["level"] == "Legacy" and chart["chart"] == "":
-            del metadata["charts"][i]
-    del i
-    
-    if search_result_bpm > 0:
-        metadata["bpm"] = search_result_bpm
-        return None
-    
-    elif search_result_bpm == -1:
-        #多个谱面处理
-        if not mode == 1:
-            return -2
-        for chart in [item for item in metadata["charts"] if item["chart"] == ""]:
-            print("  处理 %s 难度" % chart["level"])
-            possibleCharts:list = chart["possibleCharts"]
-
-            #先检查是否有选项谱面已被选择
-            def filter_func(x: dict):
-                if "charts" in x.keys():
-                    return any([y["chart"] in possibleCharts for y in x["charts"]])
-                else:
-                    return False
-            charts_include_options = db.select("metadatas",
-                                         where=filter_func,
-                                         fields=["charts"])  # 返回 [{charts:[{chart: "chart1"}}...] 结构
-            unselected_options = possibleCharts.copy()  # 筛选没用过的谱面
-            for item in charts_include_options:
-                if not "charts" in item.keys() or len(item["charts"]) == 0:
-                    continue
-                for item2 in item["charts"]:
-                    if item2["chart"] in unselected_options:
-                        unselected_options.remove(item2["chart"])
-            
-            if len(unselected_options) == 1:
-                print("  自动选择：" + unselected_options[0])
-                chart["chart"] = unselected_options[0]
-                continue
-
-            #手动处理
-            #将“难度”替换为“选项n”，生成“选项元数据”，其中仅charts字段不同。
-            under_processing_metadata = deepcopy(metadata)
-            del under_processing_metadata["charts"]
-            under_processing_charts = []
-            numOfpossibleCharts = len(possibleCharts)
-
-            for i in range(numOfpossibleCharts):
-                possibleChart = possibleCharts[i]
-                onProcessingChart = deepcopy(chart)
-                onProcessingChart["level"] = "选项" + str(i + 1)
-                onProcessingChart["chart"] = possibleChart
-                under_processing_charts.append(onProcessingChart)
-
-            under_processing_metadata["charts"] = under_processing_charts
-
-            ct(under_processing_metadata, save_path, isErrorDealing=True)
-            while True:
-                try:
-                    choice = int(input("请选择要使用的文件，并输入整数：")) - 1
-                except:
-                    print("请输入整数!")
-                else:
-                    break
-            chart["chart"] = possibleCharts[choice]
-    else:
-        return -1
-    
 
 
 def info_handle(option=1):
@@ -452,7 +157,7 @@ def info_handle(option=1):
                     
             # 获取曲绘
             if metadata["status"][1] == 0 or option == 2:
-                illustration_file_name = get_illustration(metadata["illustrationUrl"],
+                illustration_file_name = illustrationSearch.get_illustration(metadata["illustrationUrl"],
                                                         music_file_name,
                                                         illustration_search_mode)
                 if illustration_file_name == None:
@@ -466,7 +171,7 @@ def info_handle(option=1):
 
             # 谱面处理
             if metadata["status"][2] == 0 or option == 3:
-                result_of_chart_serach = get_chart(metadata, chart_search_mode, save_path)
+                result_of_chart_serach = chartSearch.get_chart(metadata, chart_search_mode, save_path)
                 if result_of_chart_serach == -1:
                     metadata["status"][0] = 2
                     metadata["status"][2] = 0
@@ -482,7 +187,7 @@ def info_handle(option=1):
                     continue
                 metadata["status"][2] = 1
             
-            ct(metadata)  # 转换谱面
+            chart_transform(metadata)  # 转换谱面
             db.delete("metadatas", where={"music": music_file_name})
             db.append("metadatas", metadata)
             num_of_success_addressed += 1
@@ -523,7 +228,7 @@ def check_and_generate_pez():
         i += 1
         print(f"正在处理: {song_name} ({i}/{num_of_musics}, {int(i*100/num_of_musics)}%)")
         try:
-            result = ct(metadata)
+            result = chart_transform(metadata)
         except Exception as e:
             print("未知错误")
             print(e)

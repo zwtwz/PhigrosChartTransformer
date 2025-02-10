@@ -48,7 +48,7 @@ def transformNote(originalNote, isAbove):
 
 
 
-def transform(metadata: dict, savingPath=outputDir, isErrorDealing=False) -> (None|int):
+def chart_transform(metadata: dict, savingPath=outputDir, isErrorDealing=False) -> (None|int):
     """
     转换谱面，生成pez文件
     返回None为成功

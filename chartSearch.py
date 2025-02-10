@@ -1,5 +1,10 @@
 #文件搜索模块
-import orjson, os, config, hashlib, JSONDatabase
+import orjson, os, hashlib
+from copy import deepcopy
+
+import config
+import JSONDatabase
+from chartTransform import chart_transform
 
 input_charts_path = config.paths["inputChartsPath"]
 levels = ('EZ', 'HD', 'IN', 'AT', 'Legacy', 'SP')
@@ -226,6 +231,86 @@ def searchChartFilename(charts):
     if float(bpm) < result:
         result = float(bpm)
     return result
+
+
+def get_chart(metadata: dict, mode: int = 0, save_path: str = "") -> (None | int):
+    """
+    谱面搜索，传入metadata引用，补充数据\n
+    mode: 0 自动模式\n
+    mode: 1 手动选择模式\n
+    返回None：操作成功\n
+    返回-1：未找到谱面\n
+    返回-2：存在多张谱面，需要手动选择
+    """
+    search_result_bpm = searchChartFilename(metadata["charts"])
+    #部分曲子实际上没有Legacy难度，故删除之。
+    for i in range(len(metadata["charts"])):
+        chart = metadata["charts"][i]
+        if chart["level"] == "Legacy" and chart["chart"] == "":
+            del metadata["charts"][i]
+    del i
+    
+    if search_result_bpm > 0:
+        metadata["bpm"] = search_result_bpm
+        return None
+    
+    elif search_result_bpm == -1:
+        #多个谱面处理
+        if not mode == 1:
+            return -2
+        for chart in [item for item in metadata["charts"] if item["chart"] == ""]:
+            print("  处理 %s 难度" % chart["level"])
+            possibleCharts:list = chart["possibleCharts"]
+
+            #先检查是否有选项谱面已被选择
+            def filter_func(x: dict):
+                if "charts" in x.keys():
+                    return any([y["chart"] in possibleCharts for y in x["charts"]])
+                else:
+                    return False
+            charts_include_options = db.select("metadatas",
+                                         where=filter_func,
+                                         fields=["charts"])  # 返回 [{charts:[{chart: "chart1"}}...] 结构
+            unselected_options = possibleCharts.copy()  # 筛选没用过的谱面
+            for item in charts_include_options:
+                if not "charts" in item.keys() or len(item["charts"]) == 0:
+                    continue
+                for item2 in item["charts"]:
+                    if item2["chart"] in unselected_options:
+                        unselected_options.remove(item2["chart"])
+            
+            if len(unselected_options) == 1:
+                print("  自动选择：" + unselected_options[0])
+                chart["chart"] = unselected_options[0]
+                continue
+
+            #手动处理
+            #将“难度”替换为“选项n”，生成“选项元数据”，其中仅charts字段不同。
+            under_processing_metadata = deepcopy(metadata)
+            del under_processing_metadata["charts"]
+            under_processing_charts = []
+            numOfpossibleCharts = len(possibleCharts)
+
+            for i in range(numOfpossibleCharts):
+                possibleChart = possibleCharts[i]
+                onProcessingChart = deepcopy(chart)
+                onProcessingChart["level"] = "选项" + str(i + 1)
+                onProcessingChart["chart"] = possibleChart
+                under_processing_charts.append(onProcessingChart)
+
+            under_processing_metadata["charts"] = under_processing_charts
+
+            chart_transform(under_processing_metadata, save_path, isErrorDealing=True)
+            while True:
+                try:
+                    choice = int(input("请选择要使用的文件，并输入整数：")) - 1
+                except:
+                    print("请输入整数!")
+                else:
+                    break
+            chart["chart"] = possibleCharts[choice]
+    else:
+        return -1
 
 
 

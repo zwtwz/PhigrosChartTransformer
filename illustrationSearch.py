@@ -1,17 +1,20 @@
-import cv2, json, os, time
+import cv2, os, hashlib
 import numpy as np
-import config
-import hashlib
-from JSONDatabase import JSONDatabase
 
-dataPath = os.path.join(config.rootPath, "data")
-lutPath = os.path.join(dataPath, "illustrationFilenameLUT.json")
-illustrationsPath = config.paths["illustrationsPath"]
+import config
+from JSONDatabase import JSONDatabase
+from fileSelect import select_file
+from metadataGrab import get_web_file_bin
+
+data_path = os.path.join(config.rootPath, "data")
+lut_path = os.path.join(data_path, "illustrationFilenameLUT.json")
+illustration_path = config.paths["illustrationsPath"]
+use_existed_illustration = config.useExistedIllustration
 
 # 初始化 SIFT 检测器
 sift = cv2.SIFT_create()
 # 打开数据库
-db = JSONDatabase(lutPath, "illustrationSearch", compact_encoding=True, enable_non_volatile_cache=False)
+db = JSONDatabase(lut_path, "illustrationSearch", compact_encoding=True, enable_non_volatile_cache=False)
 
 
 def readImage(path=None, imgBin=None):
@@ -94,11 +97,11 @@ def generateFeatureVector(img):
 def generateIllustrationLUT():
     print("生成图像特征码中...")
     
-    illustrations = [i for i in os.listdir(illustrationsPath) if ".png" in i]
+    illustrations = [i for i in os.listdir(illustration_path) if ".png" in i]
     illustrationLUT = []
     for illustration in illustrations:
         print("正在处理：" + illustration)
-        imgPath = os.path.join(illustrationsPath,illustration)
+        imgPath = os.path.join(illustration_path,illustration)
         if os.path.exists(imgPath):
             with open(imgPath,"rb") as f:
                 img_bin = f.read()
@@ -127,12 +130,12 @@ def generateIllustrationLUT():
 #更新图像特征码查找表
 def updateIllustrationLUT():
     print("更新图像特征码中...")
-    new_illustrations = [i for i in os.listdir(illustrationsPath) if ".png" in i]
+    new_illustrations = [i for i in os.listdir(illustration_path) if ".png" in i]
     num_of_total_illustrations = len(new_illustrations)
     num_of_new_illustrations = 0
 
     for illustration in new_illustrations:
-        imgPath = os.path.join(illustrationsPath,illustration)
+        imgPath = os.path.join(illustration_path,illustration)
         if os.path.exists(imgPath):
             with open(imgPath,"rb") as f:
                 img_bin = f.read()
@@ -192,7 +195,7 @@ def illustrationSearch(img1Bin,user_check: bool = False):
             mostSimilarImg = [img2["filename"], similarity]
     
     if user_check:
-        search_img_path = os.path.join(illustrationsPath, mostSimilarImg[0])
+        search_img_path = os.path.join(illustration_path, mostSimilarImg[0])
         if not os.path.exists(search_img_path):
             print("Error: 插图文件不存在!" + search_img_path)
             return None
@@ -216,6 +219,56 @@ def illustrationSearch(img1Bin,user_check: bool = False):
     else:
         print("相似度过低，查找失败，图片：%s，相似度%s" % (mostSimilarImg[0], mostSimilarImg[1]))
 
+
+def get_illustration(illustration_url: str, song_name: str = "", mode: int = 0) -> (str | None):
+    """
+    曲绘文件搜索或保存\n
+    mode: 0 自动模式\n
+    mode: 1 手动模式错误处理\n
+    mode: 2 强制网络下载
+    """
+    
+    
+    
+    illustrationBin = get_web_file_bin(illustration_url)
+    if illustrationBin is None:
+        print("曲绘下载失败")
+        if mode != 1:
+            return None
+        
+    if mode == 0 and use_existed_illustration:
+        illustration_file_name = illustrationSearch.illustrationSearch(illustrationBin)
+        return illustration_file_name
+    
+    if mode == 1:
+        # 手动模式先尝试查找
+        illustration_file_name = illustrationSearch.illustrationSearch(illustrationBin, True)
+        if not illustration_file_name is None:
+            return illustration_file_name
+        else:
+            # 查不到就手动选
+            illustration_file_path = select_file()
+            if illustration_file_path == "":
+                print("Error: 跳过")
+                return None
+            
+            if not os.path.exists(illustration_file_path):
+                print("Error: 文件不存在！")
+                return None
+            
+            illustration_file_name = os.path.basename(illustration_file_path)
+            if os.path.exists(os.path.join(illustration_path, illustration_file_name)):
+                return illustration_file_name
+            
+            with open(illustration_file_path, "rb") as f:
+                illustrationBin = f.read()
+            
+    illustration_file_name = song_name + ".png"
+    print("保存曲绘中：" + illustration_file_name)
+    with open(os.path.join(illustration_path, illustration_file_name), "wb") as f:
+        f.write(illustrationBin)
+
+    return illustration_file_name
 
 
 if not db.exists("illustrationLUT"):

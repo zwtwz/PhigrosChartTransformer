@@ -10,3 +10,4 @@ build
 main.spec
 Tesseract-OCR
 get_time.py
+_internal

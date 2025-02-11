@@ -93,14 +93,39 @@ def generateFeatureVector(img):
     return descriptors
 
 
+#生成图像文件名查找表
+def generateIllustrationFilenameLUT():
+    print("生成图像文件记录中...")
+    
+    illustrations = [i for i in os.listdir(illustration_path) if ".png" in i]
+    fileLUT = []
+    for illustration in illustrations:
+        imgPath = os.path.join(illustration_path,illustration)
+        if os.path.exists(imgPath):
+            with open(imgPath,"rb") as f:
+                img_bin = f.read()
+                md5 = getFileMd5(img_bin)
+        else:
+            print("Error: 插图文件不存在!" + imgPath)
+            continue
+        
+        #字典中分别是：文件名、MD5、原文件名
+        fileLUT.append({
+            "filename": illustration,
+            "md5": md5,
+            "old_filename": illustration
+        })
+
+    db.set("fileLUT", fileLUT)
+    db.commit()
+
 #生成图像特征码查找表
-def generateIllustrationLUT():
+def generateIllustrationFvLUT():
     print("生成图像特征码中...")
     
     illustrations = [i for i in os.listdir(illustration_path) if ".png" in i]
     illustrationLUT = []
     for illustration in illustrations:
-        print("正在处理：" + illustration)
         imgPath = os.path.join(illustration_path,illustration)
         if os.path.exists(imgPath):
             with open(imgPath,"rb") as f:
@@ -109,18 +134,15 @@ def generateIllustrationLUT():
                 if img is None:
                     print("Error: Can't read IMG.")
                     continue
-                md5 = getFileMd5(img_bin)
                 fv = generateFeatureVector(img).tolist()
         else:
             print("Error: 插图文件不存在!" + imgPath)
             continue
         
-        #字典中分别是：文件名、特征向量、MD5、原文件名
+        #字典中分别是：文件名、特征向量
         illustrationLUT.append({
             "filename": illustration,
-            "fv": fv,
-            "md5": md5,
-            "old_filename": illustration
+            "fv": fv
         })
 
     db.set("illustrationLUT", illustrationLUT)
@@ -128,8 +150,8 @@ def generateIllustrationLUT():
 
 
 #更新图像特征码查找表
-def updateIllustrationLUT():
-    print("更新图像特征码中...")
+def updateIllustrationFilenameLUT():
+    print("更新图像文件记录中...")
     new_illustrations = [i for i in os.listdir(illustration_path) if ".png" in i]
     num_of_total_illustrations = len(new_illustrations)
     num_of_new_illustrations = 0
@@ -139,33 +161,26 @@ def updateIllustrationLUT():
         if os.path.exists(imgPath):
             with open(imgPath,"rb") as f:
                 img_bin = f.read()
-                img = readImage(imgBin=img_bin)
-                if img is None:
-                    print("Error: Can't read IMG.")
-                    continue
                 new_md5 = getFileMd5(img_bin)
         else:
             print("Error: 插图文件不存在!" + imgPath)
             continue
         
-        existed_files = db.select("illustrationLUT", where={"md5": new_md5})
+        existed_files = db.select("fileLUT", where={"md5": new_md5})
         if len(existed_files) == 0:
             print("新增：" + illustration)
             num_of_new_illustrations += 1
-            fv = generateFeatureVector(img).tolist()
-            #字典中分别是：文件名、特征向量、MD5、原文件名
+            #字典中分别是：文件名、MD5、原文件名
             db.append("illustrationLUT", {
                 "filename": illustration,
-                "fv": fv,
                 "md5": new_md5,
                 "old_filename": illustration
             })
 
         else:
-            db.delete("illustrationLUT", where={"md5": new_md5})
-            db.append("illustrationLUT", {
+            db.delete("fileLUT", where={"md5": new_md5})
+            db.append("fileLUT", {
                 "filename": illustration,
-                "fv": existed_files[0]["fv"],
                 "md5": new_md5,
                 "old_filename": existed_files[0]["filename"]
             })
@@ -174,6 +189,7 @@ def updateIllustrationLUT():
     print("共计：" + str(num_of_total_illustrations))
     print("新增：" + str(num_of_new_illustrations))
     db.commit()
+    generateIllustrationFvLUT()
 
 
 #查找最相似的图片路径
@@ -181,7 +197,7 @@ def illustrationSearch(img1Bin,user_check: bool = False):
     illustrationLUT = db.get("illustrationLUT")
     print("开始查找曲绘……")
     img1 = readImage(imgBin = img1Bin)
-    if str(type(img1)) == "<class 'NoneType'>":
+    if img1 is None:
         print("查找曲绘错误")
         return None
     
@@ -227,9 +243,6 @@ def get_illustration(illustration_url: str, song_name: str = "", mode: int = 0) 
     mode: 1 手动模式错误处理\n
     mode: 2 强制网络下载
     """
-    
-    
-    
     illustrationBin = get_web_file_bin(illustration_url)
     if illustrationBin is None:
         print("曲绘下载失败")
@@ -237,12 +250,12 @@ def get_illustration(illustration_url: str, song_name: str = "", mode: int = 0) 
             return None
         
     if mode == 0 and use_existed_illustration:
-        illustration_file_name = illustrationSearch.illustrationSearch(illustrationBin)
+        illustration_file_name = illustrationSearch(illustrationBin)
         return illustration_file_name
     
     if mode == 1:
         # 手动模式先尝试查找
-        illustration_file_name = illustrationSearch.illustrationSearch(illustrationBin, True)
+        illustration_file_name = illustrationSearch(illustrationBin, True)
         if not illustration_file_name is None:
             return illustration_file_name
         else:
@@ -271,16 +284,24 @@ def get_illustration(illustration_url: str, song_name: str = "", mode: int = 0) 
     return illustration_file_name
 
 
+def release_file():
+    db.delete("illustrationLUT")
+    db.commit()
+
 if not db.exists("illustrationLUT"):
-    generateIllustrationLUT()
+    generateIllustrationFvLUT()
+if not db.exists("fileLUT"):
+    generateIllustrationFilenameLUT()
 
 
 
 if __name__ == "__main__":
+    #测试
     with open(r"C:\Users\zwt\Desktop\rr.png", "rb") as img1:
         img1Bin = img1.read()
     illustrationSearch(img1Bin)
     with open(r"C:\Users\zwt\Desktop\rr.png", "rb") as img1:
         img1Bin = img1.read()
     illustrationSearch(img1Bin)
+    release_file()
 

@@ -377,7 +377,7 @@ class JSONDatabase:
             def filter_func(item):
                 if not isinstance(item, dict):
                     return False
-                matches = [item.get(k) == v for k, v in where.items()]
+                matches = (item.get(k) == v for k, v in where.items())
                 return all(matches) if match_mode == "and" else any(matches)
         elif callable(where):
             def filter_func(item: dict):

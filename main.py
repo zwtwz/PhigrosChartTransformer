@@ -279,7 +279,7 @@ def update_songs_info_file():
                     metadata["status"][0] = 2
                     metadata["status"][2] = 0
                     
-                illustrations = illustrationSearch.db.select("illustrationLUT", where={"old_filename": metadata["illustration"]})
+                illustrations = illustrationSearch.db.select("fileLUT", where={"old_filename": metadata["illustration"]})
                 new_illustration = illustrations[0]["filename"] if len(illustrations) > 0 else metadata["illustration"]
                 metadata["illustration"] = new_illustration
             except KeyError:
@@ -326,7 +326,7 @@ if __name__ == "__main__":
                 if choiceB == "n":
                     continue
                 chartSearch.update_chart_filename_lut(charts_path)
-                illustrationSearch.updateIllustrationLUT()
+                illustrationSearch.updateIllustrationFilenameLUT()
                 update_songs_info_file()
                 db.set("info.version",input("请输入新的数据库对应游戏版本号: "))
                 db.commit()
@@ -346,7 +346,8 @@ if __name__ == "__main__":
                     continue
 
                 chartSearch.generate_chart_filename_lut(charts_path)
-                illustrationSearch.generateIllustrationLUT()
+                illustrationSearch.generateIllustrationFvLUT()
+                illustrationSearch.generateIllustrationFilenameLUT()
 
             case "5":
                 #错误处理

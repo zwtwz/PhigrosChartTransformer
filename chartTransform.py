@@ -127,7 +127,7 @@ def chart_transform(metadata: dict, savingPath=outputDir, isErrorDealing=False) 
             difficulty,
             metadata["illustrator"],
             "Phigros官谱，仅限个人学习使用",
-            "本谱面为phigros官谱，由程序自动生成，仅限个人学习使用，并且请在24小时内删除。严禁传播。")
+            "本谱面为phigros官谱，由程序自动生成，仅限个人学习使用")
 
 
         #遍历判定线列表，转换数据

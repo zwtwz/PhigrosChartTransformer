@@ -8402,8 +8402,7 @@
       "composer": "ユメミド",
       "illustrator": "何呵",
       "illustration": "Illustration #3198.png",
-      "illustrationUrl": "https://img.moegirl.org.cn/common/thumb/b/b0/Phigros_Lyrith.png/456px-Phigros_Lyrith.png",
-      "music": "music #4344.wav",
+      "illustrationUrl": "https://static.wikia.nocookie.net/phigros/images/f/f5/Lyrith_-%E8%BF%B7%E5%AE%AE%E3%83%AA%E3%83%AA%E3%82%B9-_jacket.png/revision/latest/scale-to-width-down/690?cb=20201127210247",
       "duration": 0,
       "bpm": 177.0,
       "charts": [
@@ -8419,7 +8418,7 @@
           "difficulty": 11.6,
           "numOfNotes": 700,
           "chart": "Chart_HD #5141",
-          "charter": "Arenn Saki as \"mAze\""
+          "charter": "Arenn Saki as \"myStery\""
         },
         {
           "level": "IN",
@@ -8434,8 +8433,16 @@
           "numOfNotes": 1236,
           "chart": "Chart_AT #4381",
           "charter": "CN_115 as \"prediCameNt\""
+        },
+        {
+          "level": "Legacy",
+          "difficulty": 15.9,
+          "numOfNotes": 1122,
+          "chart": "Chart_Legacy #3246",
+          "charter": "Arenn Saki as \"lAβyrinS\""
         }
       ],
+      "music": "music #4344.wav",
       "old_music_file_name": "music #4344.wav",
       "md5": "30a3fdb4b24f2ddbccd5e32874c73dc9",
       "status": [

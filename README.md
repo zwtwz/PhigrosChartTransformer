@@ -116,7 +116,7 @@ pip install -r requirements.txt
 <br>
 
 ## 其他
-本程序的 谱面查找部分 由此项目修改借鉴而来：[Phi_Chart_Transform](https://github.com/Anslate/Phi_Chart_Transform)
+本程序的 谱面查找部分 由此项目修改借鉴而来：[Phi_Chart_Transform](https://github.com/Anslate/Phi_Chart_Transform)  
 谱面转换部分 由另外一个github上的项目修改而来，但是截止项目发布日期，我无法重新找到当时的那个项目了。
 在此对这两个项目表示感谢。  
 

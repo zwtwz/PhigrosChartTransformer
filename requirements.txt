@@ -2,7 +2,7 @@ playwright==1.50.0
 PyAutoGUI==0.9.54
 pyclip==0.7.0
 pytesseract==0.3.13
-Requests==2.32.3
+Requests==2.32.4
 tinytag==2.0.0
 orjson==3.10.15
 pygame==2.6.1
